@@ -1,0 +1,514 @@
+{
+  "as_of": "2026-06-10",
+  "n_sims": 20000,
+  "seed": 20260610,
+  "rho": -0.04476686905386954,
+  "odds_coverage": {
+    "with_odds": 0,
+    "total": 72,
+    "note": "source=STATSAPI_KEY (no ODDS_API_KEY present); provider returned 72 fixtures, 0 with odds_available"
+  },
+  "outcome_source": "MODEL fallback (no market lines available — model-shaped, NOT market)",
+  "groups": {
+    "A": {
+      "teams": {
+        "mexico": {
+          "p1": 54.85,
+          "p2": 26.625,
+          "p3": 12.905,
+          "p_advance": 81.475
+        },
+        "south_africa": {
+          "p1": 5.635,
+          "p2": 14.695,
+          "p3": 27.955,
+          "p_advance": 20.33
+        },
+        "south_korea": {
+          "p1": 25.885,
+          "p2": 34.055,
+          "p3": 25.375,
+          "p_advance": 59.94
+        },
+        "czech_republic": {
+          "p1": 13.63,
+          "p2": 24.625,
+          "p3": 33.765,
+          "p_advance": 38.255
+        }
+      },
+      "modal_table": [
+        "mexico",
+        "south_korea",
+        "czech_republic",
+        "south_africa"
+      ]
+    },
+    "B": {
+      "teams": {
+        "canada": {
+          "p1": 48.76,
+          "p2": 34.515,
+          "p3": 12.48,
+          "p_advance": 83.275
+        },
+        "bosnia_and_herzegovina": {
+          "p1": 4.705,
+          "p2": 14.505,
+          "p3": 36.97,
+          "p_advance": 19.21
+        },
+        "qatar": {
+          "p1": 4.835,
+          "p2": 13.545,
+          "p3": 35.1,
+          "p_advance": 18.38
+        },
+        "switzerland": {
+          "p1": 41.7,
+          "p2": 37.435,
+          "p3": 15.45,
+          "p_advance": 79.135
+        }
+      },
+      "modal_table": [
+        "canada",
+        "switzerland",
+        "bosnia_and_herzegovina",
+        "qatar"
+      ]
+    },
+    "C": {
+      "teams": {
+        "brazil": {
+          "p1": 65.83,
+          "p2": 25.095,
+          "p3": 7.435,
+          "p_advance": 90.925
+        },
+        "morocco": {
+          "p1": 26.075,
+          "p2": 45.745,
+          "p3": 21.215,
+          "p_advance": 71.82
+        },
+        "haiti": {
+          "p1": 2.125,
+          "p2": 9.505,
+          "p3": 28.345,
+          "p_advance": 11.63
+        },
+        "scotland": {
+          "p1": 5.97,
+          "p2": 19.655,
+          "p3": 43.005,
+          "p_advance": 25.625
+        }
+      },
+      "modal_table": [
+        "brazil",
+        "morocco",
+        "scotland",
+        "haiti"
+      ]
+    },
+    "D": {
+      "teams": {
+        "united_states": {
+          "p1": 42.715,
+          "p2": 26.965,
+          "p3": 18.2,
+          "p_advance": 69.68
+        },
+        "paraguay": {
+          "p1": 11.74,
+          "p2": 20.1,
+          "p3": 28.99,
+          "p_advance": 31.84
+        },
+        "australia": {
+          "p1": 26.64,
+          "p2": 28.28,
+          "p3": 24.92,
+          "p_advance": 54.92
+        },
+        "turkey": {
+          "p1": 18.905,
+          "p2": 24.655,
+          "p3": 27.89,
+          "p_advance": 43.56
+        }
+      },
+      "modal_table": [
+        "united_states",
+        "australia",
+        "turkey",
+        "paraguay"
+      ]
+    },
+    "E": {
+      "teams": {
+        "germany": {
+          "p1": 57.235,
+          "p2": 26.455,
+          "p3": 13.51,
+          "p_advance": 83.69
+        },
+        "curacao": {
+          "p1": 1.58,
+          "p2": 6.43,
+          "p3": 19.145,
+          "p_advance": 8.01
+        },
+        "ivory_coast": {
+          "p1": 16.05,
+          "p2": 30.265,
+          "p3": 38.395,
+          "p_advance": 46.315
+        },
+        "ecuador": {
+          "p1": 25.135,
+          "p2": 36.85,
+          "p3": 28.95,
+          "p_advance": 61.985
+        }
+      },
+      "modal_table": [
+        "germany",
+        "ecuador",
+        "ivory_coast",
+        "curacao"
+      ]
+    },
+    "F": {
+      "teams": {
+        "netherlands": {
+          "p1": 44.645,
+          "p2": 30.45,
+          "p3": 16.89,
+          "p_advance": 75.095
+        },
+        "japan": {
+          "p1": 37.57,
+          "p2": 33.375,
+          "p3": 19.335,
+          "p_advance": 70.945
+        },
+        "sweden": {
+          "p1": 10.13,
+          "p2": 19.2,
+          "p3": 31.61,
+          "p_advance": 29.33
+        },
+        "tunisia": {
+          "p1": 7.655,
+          "p2": 16.975,
+          "p3": 32.165,
+          "p_advance": 24.63
+        }
+      },
+      "modal_table": [
+        "netherlands",
+        "japan",
+        "sweden",
+        "tunisia"
+      ]
+    },
+    "G": {
+      "teams": {
+        "belgium": {
+          "p1": 50.7,
+          "p2": 27.29,
+          "p3": 14.75,
+          "p_advance": 77.99
+        },
+        "egypt": {
+          "p1": 13.515,
+          "p2": 25.26,
+          "p3": 32.525,
+          "p_advance": 38.775
+        },
+        "iran": {
+          "p1": 28.255,
+          "p2": 32.085,
+          "p3": 24.715,
+          "p_advance": 60.34
+        },
+        "new_zealand": {
+          "p1": 7.53,
+          "p2": 15.365,
+          "p3": 28.01,
+          "p_advance": 22.895
+        }
+      },
+      "modal_table": [
+        "belgium",
+        "iran",
+        "egypt",
+        "new_zealand"
+      ]
+    },
+    "H": {
+      "teams": {
+        "spain": {
+          "p1": 71.36,
+          "p2": 22.735,
+          "p3": 4.87,
+          "p_advance": 94.095
+        },
+        "cape_verde": {
+          "p1": 2.16,
+          "p2": 12.53,
+          "p3": 36.775,
+          "p_advance": 14.69
+        },
+        "saudi_arabia": {
+          "p1": 2.66,
+          "p2": 13.925,
+          "p3": 39.95,
+          "p_advance": 16.585
+        },
+        "uruguay": {
+          "p1": 23.82,
+          "p2": 50.81,
+          "p3": 18.405,
+          "p_advance": 74.63
+        }
+      },
+      "modal_table": [
+        "spain",
+        "uruguay",
+        "saudi_arabia",
+        "cape_verde"
+      ]
+    },
+    "I": {
+      "teams": {
+        "france": {
+          "p1": 58.455,
+          "p2": 25.57,
+          "p3": 12.215,
+          "p_advance": 84.025
+        },
+        "senegal": {
+          "p1": 19.475,
+          "p2": 32.7,
+          "p3": 30.41,
+          "p_advance": 52.175
+        },
+        "iraq": {
+          "p1": 3.67,
+          "p2": 11.38,
+          "p3": 25.78,
+          "p_advance": 15.05
+        },
+        "norway": {
+          "p1": 18.4,
+          "p2": 30.35,
+          "p3": 31.595,
+          "p_advance": 48.75
+        }
+      },
+      "modal_table": [
+        "france",
+        "senegal",
+        "norway",
+        "iraq"
+      ]
+    },
+    "J": {
+      "teams": {
+        "argentina": {
+          "p1": 72.185,
+          "p2": 19.43,
+          "p3": 6.54,
+          "p_advance": 91.615
+        },
+        "algeria": {
+          "p1": 11.67,
+          "p2": 32.835,
+          "p3": 34.385,
+          "p_advance": 44.505
+        },
+        "austria": {
+          "p1": 13.24,
+          "p2": 35.41,
+          "p3": 32.975,
+          "p_advance": 48.65
+        },
+        "jordan": {
+          "p1": 2.905,
+          "p2": 12.325,
+          "p3": 26.1,
+          "p_advance": 15.23
+        }
+      },
+      "modal_table": [
+        "argentina",
+        "austria",
+        "algeria",
+        "jordan"
+      ]
+    },
+    "K": {
+      "teams": {
+        "portugal": {
+          "p1": 49.53,
+          "p2": 32.09,
+          "p3": 13.14,
+          "p_advance": 81.62
+        },
+        "dr_congo": {
+          "p1": 4.55,
+          "p2": 14.01,
+          "p3": 33.19,
+          "p_advance": 18.56
+        },
+        "uzbekistan": {
+          "p1": 6.59,
+          "p2": 17.4,
+          "p3": 36.635,
+          "p_advance": 23.99
+        },
+        "colombia": {
+          "p1": 39.33,
+          "p2": 36.5,
+          "p3": 17.035,
+          "p_advance": 75.83
+        }
+      },
+      "modal_table": [
+        "portugal",
+        "colombia",
+        "uzbekistan",
+        "dr_congo"
+      ]
+    },
+    "L": {
+      "teams": {
+        "england": {
+          "p1": 62.77,
+          "p2": 26.775,
+          "p3": 8.125,
+          "p_advance": 89.545
+        },
+        "croatia": {
+          "p1": 28.67,
+          "p2": 43.81,
+          "p3": 19.59,
+          "p_advance": 72.48
+        },
+        "ghana": {
+          "p1": 3.51,
+          "p2": 13.725,
+          "p3": 34.915,
+          "p_advance": 17.235
+        },
+        "panama": {
+          "p1": 5.05,
+          "p2": 15.69,
+          "p3": 37.37,
+          "p_advance": 20.74
+        }
+      },
+      "modal_table": [
+        "england",
+        "croatia",
+        "panama",
+        "ghana"
+      ]
+    }
+  },
+  "projected_best_thirds": [
+    {
+      "team": "ivory_coast",
+      "p_best_third": 27.88,
+      "p_third": 38.395
+    },
+    {
+      "team": "scotland",
+      "p_best_third": 26.985,
+      "p_third": 43.005
+    },
+    {
+      "team": "czech_republic",
+      "p_best_third": 23.635,
+      "p_third": 33.765
+    },
+    {
+      "team": "algeria",
+      "p_best_third": 22.855,
+      "p_third": 34.385
+    },
+    {
+      "team": "austria",
+      "p_best_third": 22.49,
+      "p_third": 32.975
+    },
+    {
+      "team": "norway",
+      "p_best_third": 22.42,
+      "p_third": 31.595
+    },
+    {
+      "team": "ecuador",
+      "p_best_third": 22.135,
+      "p_third": 28.95
+    },
+    {
+      "team": "panama",
+      "p_best_third": 22.045,
+      "p_third": 37.37
+    }
+  ],
+  "team_names": {
+    "mexico": "Mexico",
+    "south_africa": "South Africa",
+    "south_korea": "South Korea",
+    "czech_republic": "Czech Republic",
+    "canada": "Canada",
+    "bosnia_and_herzegovina": "Bosnia and Herzegovina",
+    "qatar": "Qatar",
+    "switzerland": "Switzerland",
+    "brazil": "Brazil",
+    "morocco": "Morocco",
+    "haiti": "Haiti",
+    "scotland": "Scotland",
+    "united_states": "United States",
+    "paraguay": "Paraguay",
+    "australia": "Australia",
+    "turkey": "Turkey",
+    "germany": "Germany",
+    "curacao": "Curacao",
+    "ivory_coast": "Ivory Coast",
+    "ecuador": "Ecuador",
+    "netherlands": "Netherlands",
+    "japan": "Japan",
+    "sweden": "Sweden",
+    "tunisia": "Tunisia",
+    "belgium": "Belgium",
+    "egypt": "Egypt",
+    "iran": "Iran",
+    "new_zealand": "New Zealand",
+    "spain": "Spain",
+    "cape_verde": "Cape Verde",
+    "saudi_arabia": "Saudi Arabia",
+    "uruguay": "Uruguay",
+    "france": "France",
+    "senegal": "Senegal",
+    "iraq": "Iraq",
+    "norway": "Norway",
+    "argentina": "Argentina",
+    "algeria": "Algeria",
+    "austria": "Austria",
+    "jordan": "Jordan",
+    "portugal": "Portugal",
+    "dr_congo": "DR Congo",
+    "uzbekistan": "Uzbekistan",
+    "colombia": "Colombia",
+    "england": "England",
+    "croatia": "Croatia",
+    "ghana": "Ghana",
+    "panama": "Panama"
+  }
+}

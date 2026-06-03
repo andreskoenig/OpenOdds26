@@ -52,6 +52,7 @@ class PredictionResult:
     progression: Dict[str, Dict[str, float]]
     kappa: float = 0.0
     r0: float = 8.0
+    extras: Optional[dict] = None  # group stats + one sampled bracket (if requested)
 
     def predict_match(
         self, home: str, away: str, home_flag: bool
@@ -98,6 +99,7 @@ def run_prediction(
     squad_values: Optional[Sequence[dict]] = None,
     n_sims: int = 10000,
     seed: int = 0,
+    collect_extras: bool = False,
 ) -> PredictionResult:
     """Features -> fit -> simulate, threading one ``Hyperparams`` (SPEC §4-§6).
 
@@ -134,13 +136,16 @@ def run_prediction(
         for tid in team_ids
     }
 
-    progression = simulate_tournament(
-        sim_teams, matrix_fn, tournament_config, n_runs=n_sims, seed=seed
+    sim_out = simulate_tournament(
+        sim_teams, matrix_fn, tournament_config, n_runs=n_sims, seed=seed,
+        collect_extras=collect_extras,
     )
+    progression, extras = sim_out if collect_extras else (sim_out, None)
     p_win = {tid: progression[tid]["winner"] for tid in progression}
 
     return PredictionResult(
-        params=params, p_win=p_win, progression=progression, kappa=hp.kappa
+        params=params, p_win=p_win, progression=progression, kappa=hp.kappa,
+        extras=extras,
     )
 
 

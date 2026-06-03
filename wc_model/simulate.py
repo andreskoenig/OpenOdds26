@@ -18,6 +18,7 @@ Inputs (see ``simulate_tournament``):
 
 from __future__ import annotations
 
+from collections import Counter, defaultdict
 from typing import Callable, Dict, List, Optional, Tuple
 
 import numpy as np
@@ -84,21 +85,23 @@ def _match_goals(
     return ag, hg, p
 
 
-def _knockout_winner(
+def _knockout_play(
     a: str,
     b: str,
     teams: Dict[str, dict],
     matrix_fn: Callable[[str, str, bool], np.ndarray],
     rng: np.random.Generator,
-) -> str:
-    """Resolve a knockout tie to a single winner (SPEC §6).
+) -> Tuple[str, str, int, int, str]:
+    """Play a knockout tie (SPEC §6). Returns (winner, loser, goals_a, goals_b, method).
 
     Regulation scoreline; on a draw, extra time with λ scaled by 30/90; if still
-    level, penalties (~50/50 with a small tilt toward the higher-rated side).
+    level, penalties (~50/50 with a small tilt toward the higher-rated side). The
+    RNG draw order is identical to the original single-winner implementation.
     """
     ga, gb, p = _match_goals(a, b, teams, matrix_fn, rng)
     if ga != gb:
-        return a if ga > gb else b
+        w = a if ga > gb else b
+        return w, (b if w == a else a), ga, gb, "regulation"
 
     # Extra time: independent Poisson goals at 30/90 of the match goal rate.
     home, away, _ = _orient(a, b, teams)
@@ -112,13 +115,20 @@ def _knockout_winner(
         ga += et_away
         gb += et_home
     if ga != gb:
-        return a if ga > gb else b
+        w = a if ga > gb else b
+        return w, (b if w == a else a), ga, gb, "extra_time"
 
     # Penalties: ~50/50 with a small tilt toward the higher-rated side.
     rating_a = float(teams.get(a, {}).get("rating", 0.0))
     rating_b = float(teams.get(b, {}).get("rating", 0.0))
     tilt = float(np.clip(0.05 * (rating_a - rating_b), -0.15, 0.15))
-    return a if rng.random() < 0.5 + tilt else b
+    w = a if rng.random() < 0.5 + tilt else b
+    return w, (b if w == a else a), ga, gb, "penalties"
+
+
+def _knockout_winner(a, b, teams, matrix_fn, rng) -> str:
+    """Resolve a knockout tie to a single winner (thin wrapper over _knockout_play)."""
+    return _knockout_play(a, b, teams, matrix_fn, rng)[0]
 
 
 def _rank_group(group: List[str], stats: Dict[str, dict]) -> List[str]:
@@ -221,13 +231,126 @@ def _bracket_seed_slots(config: dict, n_qualifiers: int) -> Optional[List[str]]:
     return None
 
 
+# --- Explicit match-graph bracket (e.g. the 48-team 2026 R32 -> final) ------
+
+_EXPLICIT_ROUNDS = [("round_of_32", "R32"), ("round_of_16", "R16"),
+                    ("quarter_finals", "QF"), ("semi_finals", "SF")]
+
+
+def _is_explicit_bracket(config: dict) -> bool:
+    """True if knockout_bracket uses W:/L: match refs or T: third-place slots."""
+    kb = config.get("knockout_bracket")
+    if not isinstance(kb, dict):
+        return False
+    for v in kb.values():
+        matches = v if isinstance(v, list) else ([v] if isinstance(v, dict) and "home" in v else [])
+        for m in matches:
+            for s in (m.get("home"), m.get("away")):
+                if isinstance(s, str) and s[:2] in ("W:", "L:", "T:"):
+                    return True
+    return False
+
+
+def _third_slot_specs(kb: dict) -> List[Tuple[str, frozenset]]:
+    """The R32 'T:<groups>' slots with their eligible group sets, in match order."""
+    specs = []
+    for m in kb.get("round_of_32", []):
+        for s in (m["home"], m["away"]):
+            if isinstance(s, str) and s.startswith("T:"):
+                specs.append((s, frozenset(s[2:].split(","))))
+    return specs
+
+
+def _allocate_thirds(qualifying_groups: List[str],
+                     slot_specs: List[Tuple[str, frozenset]]) -> Dict[str, str]:
+    """Assign the 8 qualifying third-place GROUPS to the 8 'T:' slots.
+
+    Deterministic backtracking perfect matching respecting each slot's official
+    eligible-group set (so a third never meets its own group winner). This is a
+    valid, reproducible stand-in for FIFA's full 495-row Annex C combination
+    table: the eligibility sets are official; only the disambiguation among
+    multiple valid matchings may differ from FIFA's published row.
+    """
+    groups = sorted(qualifying_groups)
+    slots = list(slot_specs)
+    assign: Dict[str, str] = {}
+    used: set = set()
+
+    def bt(i: int) -> bool:
+        if i == len(slots):
+            return True
+        sid, elig = slots[i]
+        for g in groups:
+            if g not in used and g in elig:
+                used.add(g); assign[sid] = g
+                if bt(i + 1):
+                    return True
+                used.discard(g); del assign[sid]
+        return False
+
+    if bt(0):
+        return assign
+    # Defensive greedy fallback (should not happen for valid FIFA slot sets).
+    assign, used = {}, set()
+    for sid, elig in slots:
+        cand = [g for g in groups if g not in used and g in elig] or \
+               [g for g in groups if g not in used]
+        assign[sid] = cand[0]; used.add(cand[0])
+    return assign
+
+
+def _play_explicit_run(kb, ranked_by_group, advance, third_groups, teams,
+                       matrix_fn, rng, record=None):
+    """Play one full explicit-graph knockout. Returns (reached, champion).
+
+    ``reached``: team_id -> set of round labels it reached (R32/R16/QF/SF/final).
+    ``champion``: final winner. If ``record`` is a dict, per-match scorelines are
+    captured into it (for the sampled bracket).
+    """
+    alloc = _allocate_thirds(third_groups, _third_slot_specs(kb))
+    third_team = {sid: ranked_by_group[g][advance] for sid, g in alloc.items()}
+    results: Dict[str, tuple] = {}  # match_id -> (winner, loser, ga, gb, method)
+
+    def resolve(slot: str) -> str:
+        if slot.startswith("W:"):
+            return results[slot[2:]][0]
+        if slot.startswith("L:"):
+            return results[slot[2:]][1]
+        if slot.startswith("T:"):
+            return third_team[slot]
+        return ranked_by_group[slot[1:]][int(slot[0]) - 1]
+
+    reached = defaultdict(set)
+
+    def play(m, label):
+        h, a = resolve(m["home"]), resolve(m["away"])
+        if label:
+            reached[h].add(label); reached[a].add(label)
+        w, l, ga, gb, meth = _knockout_play(h, a, teams, matrix_fn, rng)
+        results[m["match"]] = (w, l, ga, gb, meth)
+        if record is not None:
+            record.append({"match": m["match"], "label": label, "home": h, "away": a,
+                           "home_goals": ga, "away_goals": gb, "decided_by": meth, "winner": w})
+        return w
+
+    for rkey, label in _EXPLICIT_ROUNDS:
+        for m in kb.get(rkey, []):
+            play(m, label)
+    champion = play(kb["final"], "final")
+    counts_winner = champion
+    if "third_place" in kb:
+        play(kb["third_place"], None)  # played for the sample; no reach credit
+    return reached, counts_winner
+
+
 def simulate_tournament(
     teams: Dict[str, dict],
     matrix_fn: Callable[[str, str, bool], np.ndarray],
     config: dict,
     n_runs: int = 10000,
     seed: int = 0,
-) -> Dict[str, Dict[str, float]]:
+    collect_extras: bool = False,
+):
     """Run N Monte Carlo tournaments and aggregate progression (SPEC §6).
 
     Per run: group stage (3/1/0, ranked, best third-placed teams selected), then
@@ -242,23 +365,26 @@ def simulate_tournament(
     groups: Dict[str, List[str]] = config["groups"]
     advance = int(config.get("advance_per_group", 2))
     best_thirds = int(config.get("best_thirds", 8))
-
     group_names = list(groups.keys())
     all_team_ids = [t for g in groups.values() for t in g]
 
-    n_qualifiers = len(group_names) * advance + best_thirds
-    if n_qualifiers < 2 or (n_qualifiers & (n_qualifiers - 1)) != 0:
-        raise ValueError(
-            f"qualifier count must be a power of two >= 2, got {n_qualifiers}"
-        )
-
-    # Knockout round sizes from the first round down to the final (size 2).
-    sizes = []
-    s = n_qualifiers
-    while s >= 2:
-        sizes.append(s)
-        s //= 2
-    round_labels = [_round_label(s) for s in sizes]
+    explicit = _is_explicit_bracket(config)
+    bracket_slots = None
+    if explicit:
+        round_labels = ["R32", "R16", "QF", "SF", "final"]
+    else:
+        n_qualifiers = len(group_names) * advance + best_thirds
+        if n_qualifiers < 2 or (n_qualifiers & (n_qualifiers - 1)) != 0:
+            raise ValueError(
+                f"qualifier count must be a power of two >= 2, got {n_qualifiers}"
+            )
+        sizes = []
+        s = n_qualifiers
+        while s >= 2:
+            sizes.append(s)
+            s //= 2
+        round_labels = [_round_label(s) for s in sizes]
+        bracket_slots = _bracket_seed_slots(config, n_qualifiers)
 
     counts: Dict[str, Dict[str, float]] = {
         t: {label: 0 for label in round_labels} for t in all_team_ids
@@ -266,59 +392,91 @@ def simulate_tournament(
     for t in all_team_ids:
         counts[t]["winner"] = 0
 
-    # Bracket crossing (constant across runs); None -> sequential fallback.
-    bracket_slots = _bracket_seed_slots(config, n_qualifiers)
+    gp_sum = {t: 0 for t in all_team_ids}      # extras: summed group points
+    adv_cnt = {t: 0 for t in all_team_ids}     # extras: times advanced to knockout
+    standings = {g: Counter() for g in group_names}
+    sample = None
 
     rng = np.random.default_rng(seed)
 
-    for _ in range(n_runs):
+    for run_idx in range(n_runs):
         # --- Group stage ---------------------------------------------------
         ranked_by_group: Dict[str, List[str]] = {}
+        group_stats: Dict[str, dict] = {}
         third_candidates: List[Tuple[str, dict, int]] = []
         for order_idx, gname in enumerate(group_names):
             ranked, stats = _play_group(groups[gname], teams, matrix_fn, rng)
             ranked_by_group[gname] = ranked
+            group_stats[gname] = stats
             if advance < len(ranked):
-                third = ranked[advance]  # team finishing just below the cut
-                third_candidates.append((third, stats[third], order_idx))
+                third_candidates.append((ranked[advance], stats[ranked[advance]], order_idx))
 
-        # Best third-placed teams (same fallback tiebreak; group order breaks ties).
-        third_candidates.sort(
-            key=lambda c: (-c[1]["pts"], -c[1]["gd"], -c[1]["gf"], c[2])
-        )
+        third_candidates.sort(key=lambda c: (-c[1]["pts"], -c[1]["gd"], -c[1]["gf"], c[2]))
         best_third_teams = [c[0] for c in third_candidates[:best_thirds]]
+        best_third_groups = [group_names[c[2]] for c in third_candidates[:best_thirds]]
 
-        # Seed the first knockout round.
-        if bracket_slots is not None:
-            # Follow the config's crossing: map each (position, group) slot to its
-            # team; adjacent pairs are the first-round matches (e.g. 1A v 2B).
-            qualifiers = [_resolve_slot(s, ranked_by_group, advance) for s in bracket_slots]
+        if collect_extras:
+            advanced = set(best_third_teams)
+            for gname in group_names:
+                for pos in range(advance):
+                    advanced.add(ranked_by_group[gname][pos])
+                for t in groups[gname]:
+                    gp_sum[t] += group_stats[gname][t]["pts"]
+                standings[gname][tuple(ranked_by_group[gname])] += 1
+            for t in advanced:
+                adv_cnt[t] += 1
+
+        if explicit:
+            record = [] if (collect_extras and run_idx == 0) else None
+            reached, champion = _play_explicit_run(
+                config["knockout_bracket"], ranked_by_group, advance,
+                best_third_groups, teams, matrix_fn, rng, record=record)
+            for t, labels in reached.items():
+                for lb in labels:
+                    counts[t][lb] += 1
+            counts[champion]["winner"] += 1
+            if record is not None:
+                sample = {
+                    "groups": {g: [{"team": t, "pts": group_stats[g][t]["pts"],
+                                    "gd": group_stats[g][t]["gd"], "gf": group_stats[g][t]["gf"]}
+                                   for t in ranked_by_group[g]] for g in group_names},
+                    "knockout": record,
+                    "champion": champion,
+                }
         else:
-            # Sequential fallback (unchanged): all 1st places, then 2nds, ..., thirds.
-            qualifiers = []
-            for pos in range(advance):
-                for gname in group_names:
-                    qualifiers.append(ranked_by_group[gname][pos])
-            qualifiers.extend(best_third_teams)
-
-        # --- Knockout bracket ---------------------------------------------
-        current = qualifiers
-        size = len(current)
-        while size >= 2:
-            label = _round_label(size)
-            for t in current:
-                counts[t][label] += 1
-            winners: List[str] = []
-            for k in range(0, size, 2):
-                winners.append(
+            if bracket_slots is not None:
+                qualifiers = [_resolve_slot(s, ranked_by_group, advance) for s in bracket_slots]
+            else:
+                qualifiers = []
+                for pos in range(advance):
+                    for gname in group_names:
+                        qualifiers.append(ranked_by_group[gname][pos])
+                qualifiers.extend(best_third_teams)
+            current = qualifiers
+            size = len(current)
+            while size >= 2:
+                label = _round_label(size)
+                for t in current:
+                    counts[t][label] += 1
+                winners = [
                     _knockout_winner(current[k], current[k + 1], teams, matrix_fn, rng)
-                )
-            current = winners
-            size //= 2
+                    for k in range(0, size, 2)
+                ]
+                current = winners
+                size //= 2
+            counts[current[0]]["winner"] += 1
 
-        counts[current[0]]["winner"] += 1
-
-    return {
+    progression = {
         t: {label: counts[t][label] / n_runs for label in (*round_labels, "winner")}
         for t in all_team_ids
     }
+    if not collect_extras:
+        return progression
+    extras = {
+        "expected_points": {t: gp_sum[t] / n_runs for t in all_team_ids},
+        "p_advance": {t: adv_cnt[t] / n_runs for t in all_team_ids},
+        "modal_standings": {g: (list(standings[g].most_common(1)[0][0]) if standings[g] else [])
+                            for g in group_names},
+        "sample": sample,
+    }
+    return progression, extras

@@ -1,0 +1,280 @@
+{
+  "_comment": "2026 FIFA World Cup (USA/Canada/Mexico). 48 teams, 12 groups A-L of 4; top 2 + 8 best thirds -> Round of 32. Groups/bracket from the 5-Dec-2025 draw (Wikipedia, cross-checked). Team values are canonical slug team_ids from data/teams.json. Hosts (host flag only): Mexico A1, Canada B1, USA D1.",
+  "edition": "2026",
+  "host_team_ids": [
+    "mexico",
+    "canada",
+    "united_states"
+  ],
+  "host_cities": [
+    "mexico",
+    "canada",
+    "united_states"
+  ],
+  "advance_per_group": 2,
+  "best_thirds": 8,
+  "best_thirds_rule": {
+    "count": 8,
+    "note": "8 of 12 third-placed teams advance; each R32 third-place slot (home/away 'T:<groups>') is open only to thirds from the listed groups, and a third never meets its own group winner. The full FIFA Annex C combination table (495 rows) is not transcribed; simulate.py assigns the 8 qualifying thirds to these slots by a deterministic constraint-respecting matching."
+  },
+  "groups": {
+    "A": [
+      "mexico",
+      "south_africa",
+      "south_korea",
+      "czech_republic"
+    ],
+    "B": [
+      "canada",
+      "bosnia_and_herzegovina",
+      "qatar",
+      "switzerland"
+    ],
+    "C": [
+      "brazil",
+      "morocco",
+      "haiti",
+      "scotland"
+    ],
+    "D": [
+      "united_states",
+      "paraguay",
+      "australia",
+      "turkey"
+    ],
+    "E": [
+      "germany",
+      "curacao",
+      "ivory_coast",
+      "ecuador"
+    ],
+    "F": [
+      "netherlands",
+      "japan",
+      "sweden",
+      "tunisia"
+    ],
+    "G": [
+      "belgium",
+      "egypt",
+      "iran",
+      "new_zealand"
+    ],
+    "H": [
+      "spain",
+      "cape_verde",
+      "saudi_arabia",
+      "uruguay"
+    ],
+    "I": [
+      "france",
+      "senegal",
+      "iraq",
+      "norway"
+    ],
+    "J": [
+      "argentina",
+      "algeria",
+      "austria",
+      "jordan"
+    ],
+    "K": [
+      "portugal",
+      "dr_congo",
+      "uzbekistan",
+      "colombia"
+    ],
+    "L": [
+      "england",
+      "croatia",
+      "ghana",
+      "panama"
+    ]
+  },
+  "tiebreak_rules": {
+    "_comment": "Official 2026 group ranking order.",
+    "order": [
+      "points",
+      "goal_difference",
+      "goals_scored",
+      "head_to_head_points",
+      "head_to_head_goal_difference",
+      "head_to_head_goals_scored",
+      "fair_play_points",
+      "drawing_of_lots"
+    ],
+    "unsimulatable_resolution": "seeded_random"
+  },
+  "schedule": [],
+  "knockout_bracket": {
+    "_comment": "Official 2026 bracket (matches 73-104), verified twice vs the Wikipedia knockout-stage page. Slots: 1X/2X = group winner/runner-up; 'T:...' = allocated best-third; 'W:Mxx'/'L:Mxx' = winner/loser of a prior match.",
+    "round_of_32": [
+      {
+        "match": "M73",
+        "home": "2A",
+        "away": "2B"
+      },
+      {
+        "match": "M74",
+        "home": "1E",
+        "away": "T:A,B,C,D,F"
+      },
+      {
+        "match": "M75",
+        "home": "1F",
+        "away": "2C"
+      },
+      {
+        "match": "M76",
+        "home": "1C",
+        "away": "2F"
+      },
+      {
+        "match": "M77",
+        "home": "1I",
+        "away": "T:C,D,F,G,H"
+      },
+      {
+        "match": "M78",
+        "home": "2E",
+        "away": "2I"
+      },
+      {
+        "match": "M79",
+        "home": "1A",
+        "away": "T:C,E,F,H,I"
+      },
+      {
+        "match": "M80",
+        "home": "1L",
+        "away": "T:E,H,I,J,K"
+      },
+      {
+        "match": "M81",
+        "home": "1D",
+        "away": "T:B,E,F,I,J"
+      },
+      {
+        "match": "M82",
+        "home": "1G",
+        "away": "T:A,E,H,I,J"
+      },
+      {
+        "match": "M83",
+        "home": "2K",
+        "away": "2L"
+      },
+      {
+        "match": "M84",
+        "home": "1H",
+        "away": "2J"
+      },
+      {
+        "match": "M85",
+        "home": "1B",
+        "away": "T:E,F,G,I,J"
+      },
+      {
+        "match": "M86",
+        "home": "1J",
+        "away": "2H"
+      },
+      {
+        "match": "M87",
+        "home": "1K",
+        "away": "T:D,E,I,J,L"
+      },
+      {
+        "match": "M88",
+        "home": "2D",
+        "away": "2G"
+      }
+    ],
+    "round_of_16": [
+      {
+        "match": "M89",
+        "home": "W:M74",
+        "away": "W:M77"
+      },
+      {
+        "match": "M90",
+        "home": "W:M73",
+        "away": "W:M75"
+      },
+      {
+        "match": "M91",
+        "home": "W:M76",
+        "away": "W:M78"
+      },
+      {
+        "match": "M92",
+        "home": "W:M79",
+        "away": "W:M80"
+      },
+      {
+        "match": "M93",
+        "home": "W:M83",
+        "away": "W:M84"
+      },
+      {
+        "match": "M94",
+        "home": "W:M81",
+        "away": "W:M82"
+      },
+      {
+        "match": "M95",
+        "home": "W:M86",
+        "away": "W:M88"
+      },
+      {
+        "match": "M96",
+        "home": "W:M85",
+        "away": "W:M87"
+      }
+    ],
+    "quarter_finals": [
+      {
+        "match": "M97",
+        "home": "W:M89",
+        "away": "W:M90"
+      },
+      {
+        "match": "M98",
+        "home": "W:M93",
+        "away": "W:M94"
+      },
+      {
+        "match": "M99",
+        "home": "W:M91",
+        "away": "W:M92"
+      },
+      {
+        "match": "M100",
+        "home": "W:M95",
+        "away": "W:M96"
+      }
+    ],
+    "semi_finals": [
+      {
+        "match": "M101",
+        "home": "W:M97",
+        "away": "W:M98"
+      },
+      {
+        "match": "M102",
+        "home": "W:M99",
+        "away": "W:M100"
+      }
+    ],
+    "third_place": {
+      "match": "M103",
+      "home": "L:M101",
+      "away": "L:M102"
+    },
+    "final": {
+      "match": "M104",
+      "home": "W:M101",
+      "away": "W:M102"
+    }
+  }
+}

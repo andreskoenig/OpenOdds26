@@ -1,0 +1,2028 @@
+[
+  {
+    "team_id": "abkhazia",
+    "canonical_name": "Abkhazia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "afghanistan",
+    "canonical_name": "Afghanistan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "albania",
+    "canonical_name": "Albania",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "alderney",
+    "canonical_name": "Alderney",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "algeria",
+    "canonical_name": "Algeria",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "ambazonia",
+    "canonical_name": "Ambazonia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "american_samoa",
+    "canonical_name": "American Samoa",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "andalusia",
+    "canonical_name": "Andalusia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "andorra",
+    "canonical_name": "Andorra",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "angola",
+    "canonical_name": "Angola",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "anguilla",
+    "canonical_name": "Anguilla",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "antigua_and_barbuda",
+    "canonical_name": "Antigua and Barbuda",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "arameans_suryoye",
+    "canonical_name": "Arameans Suryoye",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "argentina",
+    "canonical_name": "Argentina",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "armenia",
+    "canonical_name": "Armenia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "artsakh",
+    "canonical_name": "Artsakh",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "aruba",
+    "canonical_name": "Aruba",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "asturias",
+    "canonical_name": "Asturias",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "australia",
+    "canonical_name": "Australia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "austria",
+    "canonical_name": "Austria",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "aymara",
+    "canonical_name": "Aymara",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "azerbaijan",
+    "canonical_name": "Azerbaijan",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "bahamas",
+    "canonical_name": "Bahamas",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "bahrain",
+    "canonical_name": "Bahrain",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "bangladesh",
+    "canonical_name": "Bangladesh",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "barawa",
+    "canonical_name": "Barawa",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "barbados",
+    "canonical_name": "Barbados",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "basque_country",
+    "canonical_name": "Basque Country",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "belarus",
+    "canonical_name": "Belarus",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "belgium",
+    "canonical_name": "Belgium",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "belize",
+    "canonical_name": "Belize",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "benin",
+    "canonical_name": "Benin",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "bermuda",
+    "canonical_name": "Bermuda",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "bhutan",
+    "canonical_name": "Bhutan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "biafra",
+    "canonical_name": "Biafra",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "bolivia",
+    "canonical_name": "Bolivia",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "bonaire",
+    "canonical_name": "Bonaire",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "bosnia_and_herzegovina",
+    "canonical_name": "Bosnia and Herzegovina",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "botswana",
+    "canonical_name": "Botswana",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "brazil",
+    "canonical_name": "Brazil",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "british_virgin_islands",
+    "canonical_name": "British Virgin Islands",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "brittany",
+    "canonical_name": "Brittany",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "brunei",
+    "canonical_name": "Brunei",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "bulgaria",
+    "canonical_name": "Bulgaria",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "burkina_faso",
+    "canonical_name": "Burkina Faso",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "burundi",
+    "canonical_name": "Burundi",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "cambodia",
+    "canonical_name": "Cambodia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "cameroon",
+    "canonical_name": "Cameroon",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "canada",
+    "canonical_name": "Canada",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "canary_islands",
+    "canonical_name": "Canary Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "cape_verde",
+    "canonical_name": "Cape Verde",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "cascadia",
+    "canonical_name": "Cascadia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "catalonia",
+    "canonical_name": "Catalonia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "cayman_islands",
+    "canonical_name": "Cayman Islands",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "central_african_republic",
+    "canonical_name": "Central African Republic",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "central_spain",
+    "canonical_name": "Central Spain",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "chad",
+    "canonical_name": "Chad",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "chagos_islands",
+    "canonical_name": "Chagos Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "chameria",
+    "canonical_name": "Chameria",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "chechnya",
+    "canonical_name": "Chechnya",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "chile",
+    "canonical_name": "Chile",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "china",
+    "canonical_name": "China",
+    "aliases": [
+      "China PR"
+    ],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "cilento",
+    "canonical_name": "Cilento",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "colombia",
+    "canonical_name": "Colombia",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "comoros",
+    "canonical_name": "Comoros",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "congo",
+    "canonical_name": "Congo",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "cook_islands",
+    "canonical_name": "Cook Islands",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "corsica",
+    "canonical_name": "Corsica",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "costa_rica",
+    "canonical_name": "Costa Rica",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "county_of_nice",
+    "canonical_name": "County of Nice",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "crimea",
+    "canonical_name": "Crimea",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "croatia",
+    "canonical_name": "Croatia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "cuba",
+    "canonical_name": "Cuba",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "curacao",
+    "canonical_name": "Curacao",
+    "aliases": [
+      "Curaçao"
+    ],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "cyprus",
+    "canonical_name": "Cyprus",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "czech_republic",
+    "canonical_name": "Czech Republic",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "czechoslovakia",
+    "canonical_name": "Czechoslovakia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "d_lvid_k",
+    "canonical_name": "Délvidék",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "darfur",
+    "canonical_name": "Darfur",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "denmark",
+    "canonical_name": "Denmark",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "djibouti",
+    "canonical_name": "Djibouti",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "dominica",
+    "canonical_name": "Dominica",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "dominican_republic",
+    "canonical_name": "Dominican Republic",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "donetsk_pr",
+    "canonical_name": "Donetsk PR",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "dr_congo",
+    "canonical_name": "DR Congo",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "east_turkestan",
+    "canonical_name": "East Turkestan",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "ecuador",
+    "canonical_name": "Ecuador",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "egypt",
+    "canonical_name": "Egypt",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "el_salvador",
+    "canonical_name": "El Salvador",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "elba_island",
+    "canonical_name": "Elba Island",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "ellan_vannin",
+    "canonical_name": "Ellan Vannin",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "england",
+    "canonical_name": "England",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "equatorial_guinea",
+    "canonical_name": "Equatorial Guinea",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "eritrea",
+    "canonical_name": "Eritrea",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "estonia",
+    "canonical_name": "Estonia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "eswatini",
+    "canonical_name": "Eswatini",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "ethiopia",
+    "canonical_name": "Ethiopia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "falkland_islands",
+    "canonical_name": "Falkland Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "faroe_islands",
+    "canonical_name": "Faroe Islands",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "felvid_k",
+    "canonical_name": "Felvidék",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "fiji",
+    "canonical_name": "Fiji",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "finland",
+    "canonical_name": "Finland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "fr_ya",
+    "canonical_name": "Frøya",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "france",
+    "canonical_name": "France",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "franconia",
+    "canonical_name": "Franconia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "french_guiana",
+    "canonical_name": "French Guiana",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "g_g_uzia",
+    "canonical_name": "Găgăuzia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "gabon",
+    "canonical_name": "Gabon",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "galicia",
+    "canonical_name": "Galicia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "gambia",
+    "canonical_name": "Gambia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "georgia",
+    "canonical_name": "Georgia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "german_dr",
+    "canonical_name": "German DR",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "germany",
+    "canonical_name": "Germany",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "ghana",
+    "canonical_name": "Ghana",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "gibraltar",
+    "canonical_name": "Gibraltar",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "gotland",
+    "canonical_name": "Gotland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "gozo",
+    "canonical_name": "Gozo",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "greece",
+    "canonical_name": "Greece",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "greenland",
+    "canonical_name": "Greenland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "grenada",
+    "canonical_name": "Grenada",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "guadeloupe",
+    "canonical_name": "Guadeloupe",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "guam",
+    "canonical_name": "Guam",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "guatemala",
+    "canonical_name": "Guatemala",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "guernsey",
+    "canonical_name": "Guernsey",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "guinea",
+    "canonical_name": "Guinea",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "guinea_bissau",
+    "canonical_name": "Guinea-Bissau",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "guyana",
+    "canonical_name": "Guyana",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "haiti",
+    "canonical_name": "Haiti",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "hitra",
+    "canonical_name": "Hitra",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "hmong",
+    "canonical_name": "Hmong",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "honduras",
+    "canonical_name": "Honduras",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "hong_kong",
+    "canonical_name": "Hong Kong",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "hungary",
+    "canonical_name": "Hungary",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "iceland",
+    "canonical_name": "Iceland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "india",
+    "canonical_name": "India",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "indonesia",
+    "canonical_name": "Indonesia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "iran",
+    "canonical_name": "Iran",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "iraq",
+    "canonical_name": "Iraq",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "iraqi_kurdistan",
+    "canonical_name": "Iraqi Kurdistan",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "isle_of_man",
+    "canonical_name": "Isle of Man",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "isle_of_wight",
+    "canonical_name": "Isle of Wight",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "israel",
+    "canonical_name": "Israel",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "italy",
+    "canonical_name": "Italy",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "ivory_coast",
+    "canonical_name": "Ivory Coast",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "jamaica",
+    "canonical_name": "Jamaica",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "japan",
+    "canonical_name": "Japan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "jersey",
+    "canonical_name": "Jersey",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "jordan",
+    "canonical_name": "Jordan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "k_rp_talja",
+    "canonical_name": "Kárpátalja",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "kabylia",
+    "canonical_name": "Kabylia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "kazakhstan",
+    "canonical_name": "Kazakhstan",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "kenya",
+    "canonical_name": "Kenya",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "kernow",
+    "canonical_name": "Kernow",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "kiribati",
+    "canonical_name": "Kiribati",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "kosovo",
+    "canonical_name": "Kosovo",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "kurdistan",
+    "canonical_name": "Kurdistan",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "kuwait",
+    "canonical_name": "Kuwait",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "kyrgyzstan",
+    "canonical_name": "Kyrgyzstan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "land_islands",
+    "canonical_name": "Åland Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "laos",
+    "canonical_name": "Laos",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "latvia",
+    "canonical_name": "Latvia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "lebanon",
+    "canonical_name": "Lebanon",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "lesotho",
+    "canonical_name": "Lesotho",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "liberia",
+    "canonical_name": "Liberia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "libya",
+    "canonical_name": "Libya",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "liechtenstein",
+    "canonical_name": "Liechtenstein",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "lithuania",
+    "canonical_name": "Lithuania",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "luhansk_pr",
+    "canonical_name": "Luhansk PR",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "luxembourg",
+    "canonical_name": "Luxembourg",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "macau",
+    "canonical_name": "Macau",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "macedonia",
+    "canonical_name": "Macedonia",
+    "aliases": [
+      "North Macedonia"
+    ],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "madagascar",
+    "canonical_name": "Madagascar",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "madrid",
+    "canonical_name": "Madrid",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "malawi",
+    "canonical_name": "Malawi",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "malaysia",
+    "canonical_name": "Malaysia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "maldives",
+    "canonical_name": "Maldives",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "mali",
+    "canonical_name": "Mali",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "malta",
+    "canonical_name": "Malta",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "manchukuo",
+    "canonical_name": "Manchukuo",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "mapuche",
+    "canonical_name": "Mapuche",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "marshall_islands",
+    "canonical_name": "Marshall Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "martinique",
+    "canonical_name": "Martinique",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "matabeleland",
+    "canonical_name": "Matabeleland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "maule_sur",
+    "canonical_name": "Maule Sur",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "mauritania",
+    "canonical_name": "Mauritania",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "mauritius",
+    "canonical_name": "Mauritius",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "mayotte",
+    "canonical_name": "Mayotte",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "menorca",
+    "canonical_name": "Menorca",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "mexico",
+    "canonical_name": "Mexico",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "micronesia",
+    "canonical_name": "Micronesia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "moldova",
+    "canonical_name": "Moldova",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "monaco",
+    "canonical_name": "Monaco",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "mongolia",
+    "canonical_name": "Mongolia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "montenegro",
+    "canonical_name": "Montenegro",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "montserrat",
+    "canonical_name": "Montserrat",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "morocco",
+    "canonical_name": "Morocco",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "mozambique",
+    "canonical_name": "Mozambique",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "myanmar",
+    "canonical_name": "Myanmar",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "namibia",
+    "canonical_name": "Namibia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "nepal",
+    "canonical_name": "Nepal",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "netherlands",
+    "canonical_name": "Netherlands",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "new_caledonia",
+    "canonical_name": "New Caledonia",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "new_zealand",
+    "canonical_name": "New Zealand",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "nicaragua",
+    "canonical_name": "Nicaragua",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "niger",
+    "canonical_name": "Niger",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "nigeria",
+    "canonical_name": "Nigeria",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "niue",
+    "canonical_name": "Niue",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "north_korea",
+    "canonical_name": "North Korea",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "north_vietnam",
+    "canonical_name": "North Vietnam",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "northern_cyprus",
+    "canonical_name": "Northern Cyprus",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "northern_ireland",
+    "canonical_name": "Northern Ireland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "northern_mariana_islands",
+    "canonical_name": "Northern Mariana Islands",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "norway",
+    "canonical_name": "Norway",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "occitania",
+    "canonical_name": "Occitania",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "oman",
+    "canonical_name": "Oman",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "orkney",
+    "canonical_name": "Orkney",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "padania",
+    "canonical_name": "Padania",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "pakistan",
+    "canonical_name": "Pakistan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "palau",
+    "canonical_name": "Palau",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "palestine",
+    "canonical_name": "Palestine",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "panama",
+    "canonical_name": "Panama",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "panjab",
+    "canonical_name": "Panjab",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "papua_new_guinea",
+    "canonical_name": "Papua New Guinea",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "paraguay",
+    "canonical_name": "Paraguay",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "parishes_of_jersey",
+    "canonical_name": "Parishes of Jersey",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "peru",
+    "canonical_name": "Peru",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "philippines",
+    "canonical_name": "Philippines",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "poland",
+    "canonical_name": "Poland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "portugal",
+    "canonical_name": "Portugal",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "provence",
+    "canonical_name": "Provence",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "puerto_rico",
+    "canonical_name": "Puerto Rico",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "qatar",
+    "canonical_name": "Qatar",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "quebec",
+    "canonical_name": "Quebec",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "r_union",
+    "canonical_name": "Réunion",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "raetia",
+    "canonical_name": "Raetia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "republic_of_ireland",
+    "canonical_name": "Republic of Ireland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "republic_of_st_pauli",
+    "canonical_name": "Republic of St. Pauli",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "rhodes",
+    "canonical_name": "Rhodes",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "romani_people",
+    "canonical_name": "Romani people",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "romania",
+    "canonical_name": "Romania",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "russia",
+    "canonical_name": "Russia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "rwanda",
+    "canonical_name": "Rwanda",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "ry_ky",
+    "canonical_name": "Ryūkyū",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "s_pmi",
+    "canonical_name": "Sápmi",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saare_county",
+    "canonical_name": "Saare County",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saarland",
+    "canonical_name": "Saarland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saint_barth_lemy",
+    "canonical_name": "Saint Barthélemy",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saint_helena",
+    "canonical_name": "Saint Helena",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saint_kitts_and_nevis",
+    "canonical_name": "Saint Kitts and Nevis",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "saint_lucia",
+    "canonical_name": "Saint Lucia",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "saint_martin",
+    "canonical_name": "Saint Martin",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saint_pierre_and_miquelon",
+    "canonical_name": "Saint Pierre and Miquelon",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saint_vincent_and_the_grenadines",
+    "canonical_name": "Saint Vincent and the Grenadines",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "samoa",
+    "canonical_name": "Samoa",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "san_marino",
+    "canonical_name": "San Marino",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "sao_tome_and_principe",
+    "canonical_name": "Sao Tome and Principe",
+    "aliases": [
+      "São Tomé and Príncipe"
+    ],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "sark",
+    "canonical_name": "Sark",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "saudi_arabia",
+    "canonical_name": "Saudi Arabia",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "saugeais",
+    "canonical_name": "Saugeais",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "scotland",
+    "canonical_name": "Scotland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "sealand",
+    "canonical_name": "Sealand",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "seborga",
+    "canonical_name": "Seborga",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "senegal",
+    "canonical_name": "Senegal",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "serbia",
+    "canonical_name": "Serbia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "seychelles",
+    "canonical_name": "Seychelles",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "shetland",
+    "canonical_name": "Shetland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "sierra_leone",
+    "canonical_name": "Sierra Leone",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "silesia",
+    "canonical_name": "Silesia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "singapore",
+    "canonical_name": "Singapore",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "sint_maarten",
+    "canonical_name": "Sint Maarten",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "slovakia",
+    "canonical_name": "Slovakia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "slovenia",
+    "canonical_name": "Slovenia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "solomon_islands",
+    "canonical_name": "Solomon Islands",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "somalia",
+    "canonical_name": "Somalia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "somaliland",
+    "canonical_name": "Somaliland",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "south_africa",
+    "canonical_name": "South Africa",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "south_korea",
+    "canonical_name": "South Korea",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "south_ossetia",
+    "canonical_name": "South Ossetia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "south_sudan",
+    "canonical_name": "South Sudan",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "south_yemen",
+    "canonical_name": "South Yemen",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "spain",
+    "canonical_name": "Spain",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "sri_lanka",
+    "canonical_name": "Sri Lanka",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "sudan",
+    "canonical_name": "Sudan",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "suriname",
+    "canonical_name": "Suriname",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "surrey",
+    "canonical_name": "Surrey",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "sweden",
+    "canonical_name": "Sweden",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "switzerland",
+    "canonical_name": "Switzerland",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "syria",
+    "canonical_name": "Syria",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "sz_kely_land",
+    "canonical_name": "Székely Land",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "tahiti",
+    "canonical_name": "Tahiti",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "taiwan",
+    "canonical_name": "Taiwan",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "tajikistan",
+    "canonical_name": "Tajikistan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "tamil_eelam",
+    "canonical_name": "Tamil Eelam",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "tanzania",
+    "canonical_name": "Tanzania",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "thailand",
+    "canonical_name": "Thailand",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "tibet",
+    "canonical_name": "Tibet",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "ticino",
+    "canonical_name": "Ticino",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "timor_leste",
+    "canonical_name": "Timor-Leste",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "togo",
+    "canonical_name": "Togo",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "tonga",
+    "canonical_name": "Tonga",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "trinidad_and_tobago",
+    "canonical_name": "Trinidad and Tobago",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "tunisia",
+    "canonical_name": "Tunisia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "turkey",
+    "canonical_name": "Turkey",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "turkmenistan",
+    "canonical_name": "Turkmenistan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "turks_and_caicos_islands",
+    "canonical_name": "Turks and Caicos Islands",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "tuvalu",
+    "canonical_name": "Tuvalu",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "two_sicilies",
+    "canonical_name": "Two Sicilies",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "uganda",
+    "canonical_name": "Uganda",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "ukraine",
+    "canonical_name": "Ukraine",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "united_arab_emirates",
+    "canonical_name": "United Arab Emirates",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "united_koreans_in_japan",
+    "canonical_name": "United Koreans in Japan",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "united_states",
+    "canonical_name": "United States",
+    "aliases": [],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "uruguay",
+    "canonical_name": "Uruguay",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "us_virgin_islands",
+    "canonical_name": "US Virgin Islands",
+    "aliases": [
+      "United States Virgin Islands"
+    ],
+    "confederation": "CONCACAF"
+  },
+  {
+    "team_id": "uzbekistan",
+    "canonical_name": "Uzbekistan",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "vanuatu",
+    "canonical_name": "Vanuatu",
+    "aliases": [],
+    "confederation": "OFC"
+  },
+  {
+    "team_id": "vatican_city",
+    "canonical_name": "Vatican City",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "venezuela",
+    "canonical_name": "Venezuela",
+    "aliases": [],
+    "confederation": "CONMEBOL"
+  },
+  {
+    "team_id": "vietnam",
+    "canonical_name": "Vietnam",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "vietnam_republic",
+    "canonical_name": "Vietnam Republic",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "wales",
+    "canonical_name": "Wales",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "wallis_islands_and_futuna",
+    "canonical_name": "Wallis Islands and Futuna",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "west_papua",
+    "canonical_name": "West Papua",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "western_armenia",
+    "canonical_name": "Western Armenia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "western_australia",
+    "canonical_name": "Western Australia",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "western_isles",
+    "canonical_name": "Western Isles",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "western_sahara",
+    "canonical_name": "Western Sahara",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "yemen",
+    "canonical_name": "Yemen",
+    "aliases": [],
+    "confederation": "AFC"
+  },
+  {
+    "team_id": "yemen_dpr",
+    "canonical_name": "Yemen DPR",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "ynys_m_n",
+    "canonical_name": "Ynys Môn",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "yorkshire",
+    "canonical_name": "Yorkshire",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "yoruba_nation",
+    "canonical_name": "Yoruba Nation",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "yugoslavia",
+    "canonical_name": "Yugoslavia",
+    "aliases": [],
+    "confederation": "UEFA"
+  },
+  {
+    "team_id": "zambia",
+    "canonical_name": "Zambia",
+    "aliases": [],
+    "confederation": "CAF"
+  },
+  {
+    "team_id": "zanzibar",
+    "canonical_name": "Zanzibar",
+    "aliases": [],
+    "confederation": null
+  },
+  {
+    "team_id": "zimbabwe",
+    "canonical_name": "Zimbabwe",
+    "aliases": [],
+    "confederation": "CAF"
+  }
+]

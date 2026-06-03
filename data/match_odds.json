@@ -1,0 +1,6482 @@
+[
+  {
+    "match_id": "45784_2022-12-18_argentina_france",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 3.1,
+    "odds_away": 2.88,
+    "captured_at": "2022-12-18"
+  },
+  {
+    "match_id": "45782_2022-12-17_croatia_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.5,
+    "odds_away": 3.1,
+    "captured_at": "2022-12-17"
+  },
+  {
+    "match_id": "45778_2022-12-14_france_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2022-12-14"
+  },
+  {
+    "match_id": "45777_2022-12-13_argentina_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.1,
+    "odds_away": 4.75,
+    "captured_at": "2022-12-13"
+  },
+  {
+    "match_id": "45775_2022-12-10_england_france",
+    "bookmaker": "Bet365",
+    "odds_home": 2.75,
+    "odds_draw": 3.1,
+    "odds_away": 2.7,
+    "captured_at": "2022-12-10"
+  },
+  {
+    "match_id": "45774_2022-12-10_morocco_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 3.8,
+    "odds_away": 1.57,
+    "captured_at": "2022-12-10"
+  },
+  {
+    "match_id": "45772_2022-12-09_netherlands_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.1,
+    "odds_away": 2.2,
+    "captured_at": "2022-12-09"
+  },
+  {
+    "match_id": "45771_2022-12-09_croatia_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 8.5,
+    "odds_draw": 4.5,
+    "odds_away": 1.4,
+    "captured_at": "2022-12-09"
+  },
+  {
+    "match_id": "45770_2022-12-06_portugal_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.5,
+    "odds_away": 3.8,
+    "captured_at": "2022-12-06"
+  },
+  {
+    "match_id": "45769_2022-12-06_morocco_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.62,
+    "captured_at": "2022-12-06"
+  },
+  {
+    "match_id": "45768_2022-12-05_brazil_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.5,
+    "odds_away": 13.0,
+    "captured_at": "2022-12-05"
+  },
+  {
+    "match_id": "45767_2022-12-05_japan_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.25,
+    "odds_away": 2.05,
+    "captured_at": "2022-12-05"
+  },
+  {
+    "match_id": "45766_2022-12-04_england_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.6,
+    "odds_away": 6.5,
+    "captured_at": "2022-12-04"
+  },
+  {
+    "match_id": "45765_2022-12-04_france_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.75,
+    "odds_away": 9.0,
+    "captured_at": "2022-12-04"
+  },
+  {
+    "match_id": "45764_2022-12-03_argentina_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 6.0,
+    "odds_away": 9.0,
+    "captured_at": "2022-12-03"
+  },
+  {
+    "match_id": "45763_2022-12-03_netherlands_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 3.3,
+    "odds_away": 4.33,
+    "captured_at": "2022-12-03"
+  },
+  {
+    "match_id": "45759_2022-12-02_serbia_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.55,
+    "odds_draw": 3.3,
+    "odds_away": 2.8,
+    "captured_at": "2022-12-02"
+  },
+  {
+    "match_id": "45760_2022-12-02_cameroon_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 11.0,
+    "odds_draw": 5.25,
+    "odds_away": 1.3,
+    "captured_at": "2022-12-02"
+  },
+  {
+    "match_id": "45761_2022-12-02_ghana_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.8,
+    "odds_away": 1.75,
+    "captured_at": "2022-12-02"
+  },
+  {
+    "match_id": "45762_2022-12-02_south_korea_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.85,
+    "captured_at": "2022-12-02"
+  },
+  {
+    "match_id": "45756_2022-12-01_costa_rica_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 26.0,
+    "odds_draw": 11.0,
+    "odds_away": 1.08,
+    "captured_at": "2022-12-01"
+  },
+  {
+    "match_id": "45755_2022-12-01_japan_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.33,
+    "odds_away": 1.5,
+    "captured_at": "2022-12-01"
+  },
+  {
+    "match_id": "45757_2022-12-01_croatia_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.4,
+    "odds_away": 2.38,
+    "captured_at": "2022-12-01"
+  },
+  {
+    "match_id": "45758_2022-12-01_canada_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.4,
+    "odds_away": 1.83,
+    "captured_at": "2022-12-01"
+  },
+  {
+    "match_id": "45751_2022-11-30_poland_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 8.5,
+    "odds_draw": 4.5,
+    "odds_away": 1.4,
+    "captured_at": "2022-11-30"
+  },
+  {
+    "match_id": "45752_2022-11-30_saudi_arabia_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.57,
+    "captured_at": "2022-11-30"
+  },
+  {
+    "match_id": "45753_2022-11-30_australia_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 5.0,
+    "odds_away": 1.4,
+    "captured_at": "2022-11-30"
+  },
+  {
+    "match_id": "45754_2022-11-30_tunisia_france",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 3.8,
+    "odds_away": 1.62,
+    "captured_at": "2022-11-30"
+  },
+  {
+    "match_id": "45750_2022-11-29_iran_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.4,
+    "odds_away": 1.9,
+    "captured_at": "2022-11-29"
+  },
+  {
+    "match_id": "45749_2022-11-29_wales_england",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.33,
+    "odds_away": 1.4,
+    "captured_at": "2022-11-29"
+  },
+  {
+    "match_id": "45747_2022-11-29_ecuador_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.0,
+    "odds_away": 3.25,
+    "captured_at": "2022-11-29"
+  },
+  {
+    "match_id": "45748_2022-11-29_qatar_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 7.0,
+    "odds_away": 1.18,
+    "captured_at": "2022-11-29"
+  },
+  {
+    "match_id": "45746_2022-11-28_portugal_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 3.3,
+    "odds_away": 4.5,
+    "captured_at": "2022-11-28"
+  },
+  {
+    "match_id": "45744_2022-11-28_brazil_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.2,
+    "odds_away": 7.5,
+    "captured_at": "2022-11-28"
+  },
+  {
+    "match_id": "45745_2022-11-28_south_korea_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.75,
+    "odds_draw": 3.1,
+    "odds_away": 2.75,
+    "captured_at": "2022-11-28"
+  },
+  {
+    "match_id": "45743_2022-11-28_cameroon_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.8,
+    "odds_away": 1.7,
+    "captured_at": "2022-11-28"
+  },
+  {
+    "match_id": "45740_2022-11-27_spain_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.5,
+    "odds_away": 2.75,
+    "captured_at": "2022-11-27"
+  },
+  {
+    "match_id": "45742_2022-11-27_croatia_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.25,
+    "odds_away": 3.5,
+    "captured_at": "2022-11-27"
+  },
+  {
+    "match_id": "45741_2022-11-27_belgium_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 3.5,
+    "odds_away": 4.2,
+    "captured_at": "2022-11-27"
+  },
+  {
+    "match_id": "45739_2022-11-27_japan_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.5,
+    "captured_at": "2022-11-27"
+  },
+  {
+    "match_id": "45736_2022-11-26_argentina_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.75,
+    "odds_away": 6.5,
+    "captured_at": "2022-11-26"
+  },
+  {
+    "match_id": "45738_2022-11-26_france_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.6,
+    "odds_away": 4.5,
+    "captured_at": "2022-11-26"
+  },
+  {
+    "match_id": "45735_2022-11-26_poland_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.7,
+    "odds_draw": 3.6,
+    "odds_away": 5.25,
+    "captured_at": "2022-11-26"
+  },
+  {
+    "match_id": "45737_2022-11-26_tunisia_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.3,
+    "odds_away": 3.6,
+    "captured_at": "2022-11-26"
+  },
+  {
+    "match_id": "45734_2022-11-25_england_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.2,
+    "odds_away": 8.0,
+    "captured_at": "2022-11-25"
+  },
+  {
+    "match_id": "45732_2022-11-25_netherlands_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.3,
+    "odds_away": 4.75,
+    "captured_at": "2022-11-25"
+  },
+  {
+    "match_id": "45731_2022-11-25_qatar_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 5.25,
+    "odds_draw": 3.6,
+    "odds_away": 1.7,
+    "captured_at": "2022-11-25"
+  },
+  {
+    "match_id": "45733_2022-11-25_wales_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.2,
+    "odds_away": 3.8,
+    "captured_at": "2022-11-25"
+  },
+  {
+    "match_id": "45728_2022-11-24_brazil_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.33,
+    "odds_away": 7.0,
+    "captured_at": "2022-11-24"
+  },
+  {
+    "match_id": "45730_2022-11-24_portugal_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.28,
+    "odds_draw": 5.25,
+    "odds_away": 10.0,
+    "captured_at": "2022-11-24"
+  },
+  {
+    "match_id": "45729_2022-11-24_uruguay_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2022-11-24"
+  },
+  {
+    "match_id": "45727_2022-11-24_switzerland_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.4,
+    "odds_away": 5.0,
+    "captured_at": "2022-11-24"
+  },
+  {
+    "match_id": "45726_2022-11-23_belgium_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 4.0,
+    "odds_away": 5.75,
+    "captured_at": "2022-11-23"
+  },
+  {
+    "match_id": "45724_2022-11-23_spain_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 9.0,
+    "odds_away": 17.0,
+    "captured_at": "2022-11-23"
+  },
+  {
+    "match_id": "45723_2022-11-23_germany_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 5.0,
+    "odds_away": 7.5,
+    "captured_at": "2022-11-23"
+  },
+  {
+    "match_id": "45725_2022-11-23_morocco_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.25,
+    "odds_away": 2.25,
+    "captured_at": "2022-11-23"
+  },
+  {
+    "match_id": "45722_2022-11-22_france_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2022-11-22"
+  },
+  {
+    "match_id": "45720_2022-11-22_mexico_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.1,
+    "odds_away": 3.2,
+    "captured_at": "2022-11-22"
+  },
+  {
+    "match_id": "45721_2022-11-22_denmark_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2022-11-22"
+  },
+  {
+    "match_id": "45719_2022-11-22_argentina_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 8.5,
+    "odds_away": 23.0,
+    "captured_at": "2022-11-22"
+  },
+  {
+    "match_id": "45718_2022-11-21_united_states_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.1,
+    "odds_away": 3.2,
+    "captured_at": "2022-11-21"
+  },
+  {
+    "match_id": "45716_2022-11-21_senegal_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.6,
+    "odds_away": 1.66,
+    "captured_at": "2022-11-21"
+  },
+  {
+    "match_id": "45717_2022-11-21_england_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.75,
+    "odds_away": 9.0,
+    "captured_at": "2022-11-21"
+  },
+  {
+    "match_id": "45715_2022-11-20_qatar_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.0,
+    "odds_away": 2.2,
+    "captured_at": "2022-11-20"
+  },
+  {
+    "match_id": "45680_2022-11-18_bahrain_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.2,
+    "odds_away": 1.36,
+    "captured_at": "2022-11-18"
+  },
+  {
+    "match_id": "45683_2022-11-18_egypt_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 4.5,
+    "odds_away": 1.5,
+    "captured_at": "2022-11-18"
+  },
+  {
+    "match_id": "45681_2022-11-18_cameroon_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.1,
+    "odds_away": 4.0,
+    "captured_at": "2022-11-18"
+  },
+  {
+    "match_id": "45671_2022-11-17_portugal_nigeria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.28,
+    "odds_draw": 4.5,
+    "odds_away": 9.0,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45668_2022-11-17_morocco_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.5,
+    "odds_away": 4.5,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45664_2022-11-17_jordan_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 8.5,
+    "odds_away": 1.14,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45663_2022-11-17_japan_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 2.9,
+    "odds_away": 3.3,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45677_2022-11-17_switzerland_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.3,
+    "odds_away": 5.5,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45647_2022-11-16_mexico_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.2,
+    "odds_away": 3.5,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45651_2022-11-16_oman_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 23.0,
+    "odds_draw": 11.0,
+    "odds_away": 1.07,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45653_2022-11-16_poland_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45656_2022-11-16_united_arab_emirates_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 23.0,
+    "odds_draw": 7.5,
+    "odds_away": 1.1,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45654_2022-11-16_saudi_arabia_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.65,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45633_2022-11-12_iraq_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.4,
+    "captured_at": "2022-11-12"
+  },
+  {
+    "match_id": "45631_2022-11-11_bahrain_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.65,
+    "captured_at": "2022-11-11"
+  },
+  {
+    "match_id": "45632_2022-11-11_south_korea_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.75,
+    "odds_away": 9.5,
+    "captured_at": "2022-11-11"
+  },
+  {
+    "match_id": "45629_2022-11-10_iran_nicaragua",
+    "bookmaker": "Bet365",
+    "odds_home": 1.07,
+    "odds_draw": 9.0,
+    "odds_away": 29.0,
+    "captured_at": "2022-11-10"
+  },
+  {
+    "match_id": "45630_2022-11-10_saudi_arabia_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.1,
+    "odds_away": 3.6,
+    "captured_at": "2022-11-10"
+  },
+  {
+    "match_id": "45628_2022-11-09_mexico_iraq",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.33,
+    "odds_away": 9.0,
+    "captured_at": "2022-11-09"
+  },
+  {
+    "match_id": "45625_2022-11-09_albania_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 3.6,
+    "odds_away": 1.53,
+    "captured_at": "2022-11-09"
+  },
+  {
+    "match_id": "45626_2022-11-09_cameroon_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.75,
+    "odds_away": 5.0,
+    "captured_at": "2022-11-09"
+  },
+  {
+    "match_id": "45622_2022-11-06_saudi_arabia_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.75,
+    "odds_away": 5.0,
+    "captured_at": "2022-11-06"
+  },
+  {
+    "match_id": "45617_2022-10-23_qatar_guatemala",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2022-10-23"
+  },
+  {
+    "match_id": "45598_2022-09-27_paraguay_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.2,
+    "odds_away": 2.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45577_2022-09-27_brazil_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 9.0,
+    "odds_away": 23.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45601_2022-09-27_saudi_arabia_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.7,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45586_2022-09-27_ghana_nicaragua",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 5.75,
+    "odds_away": 12.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45600_2022-09-27_qatar_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.5,
+    "odds_away": 1.91,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45580_2022-09-27_canada_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 3.25,
+    "odds_away": 2.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45589_2022-09-27_iran_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.1,
+    "odds_away": 2.15,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45583_2022-09-27_ecuador_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 3.25,
+    "odds_draw": 3.25,
+    "odds_away": 2.15,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45591_2022-09-27_south_korea_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 4.0,
+    "odds_away": 5.75,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45582_2022-09-27_costa_rica_uzbekistan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.25,
+    "odds_away": 2.88,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45610_2022-09-27_norway_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.3,
+    "odds_away": 2.9,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45606_2022-09-27_switzerland_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.6,
+    "odds_away": 4.75,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45605_2022-09-27_portugal_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.1,
+    "odds_away": 3.4,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45566_2022-09-26_england_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.5,
+    "odds_away": 3.0,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45551_2022-09-25_new_zealand_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.1,
+    "odds_away": 2.38,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45554_2022-09-25_denmark_france",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.3,
+    "odds_away": 2.38,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45556_2022-09-25_netherlands_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.5,
+    "odds_away": 2.75,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45555_2022-09-25_wales_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 3.2,
+    "odds_away": 2.7,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45553_2022-09-25_austria_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.6,
+    "odds_away": 2.3,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45524_2022-09-24_bolivia_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 3.75,
+    "odds_away": 1.4,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45546_2022-09-24_serbia_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.75,
+    "odds_away": 4.2,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45540_2022-09-24_czech_republic_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 4.0,
+    "odds_away": 1.7,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45541_2022-09-24_spain_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.33,
+    "odds_away": 6.0,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45513_2022-09-23_morocco_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 2.6,
+    "odds_draw": 3.2,
+    "odds_away": 2.63,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45503_2022-09-23_brazil_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.5,
+    "odds_away": 12.0,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45516_2022-09-23_saudi_arabia_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.25,
+    "odds_away": 1.75,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45505_2022-09-23_canada_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.7,
+    "odds_draw": 3.8,
+    "odds_away": 4.2,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45508_2022-09-23_iran_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.5,
+    "odds_away": 1.83,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45499_2022-09-23_japan_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.2,
+    "odds_away": 2.9,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45511_2022-09-23_south_korea_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.2,
+    "odds_away": 7.5,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45518_2022-09-23_italy_england",
+    "bookmaker": "Bet365",
+    "odds_home": 3.2,
+    "odds_draw": 3.2,
+    "odds_away": 2.25,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45517_2022-09-23_germany_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.75,
+    "odds_away": 9.5,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45482_2022-09-22_australia_new_zealand",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.33,
+    "odds_away": 6.0,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45489_2022-09-22_croatia_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.1,
+    "odds_away": 3.1,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45490_2022-09-22_france_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.75,
+    "odds_away": 6.5,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45491_2022-09-22_belgium_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.25,
+    "odds_away": 9.0,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45492_2022-09-22_poland_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.75,
+    "odds_away": 1.91,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45438_2022-06-14_south_korea_egypt",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.75,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45437_2022-06-14_japan_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.75,
+    "odds_away": 5.75,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45436_2022-06-14_chile_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.4,
+    "odds_away": 2.88,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45426_2022-06-14_netherlands_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.2,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45427_2022-06-14_poland_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 2.88,
+    "odds_draw": 3.4,
+    "odds_away": 2.5,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45425_2022-06-14_germany_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.75,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45424_2022-06-14_england_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.5,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45399_2022-06-13_denmark_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.83,
+    "odds_draw": 3.5,
+    "odds_away": 4.75,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45400_2022-06-13_france_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.5,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45390_2022-06-12_iran_algeria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45382_2022-06-12_switzerland_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 3.2,
+    "odds_draw": 3.5,
+    "odds_away": 2.2,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45384_2022-06-12_slovenia_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.4,
+    "odds_away": 1.83,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45381_2022-06-12_spain_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.2,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45373_2022-06-11_ecuador_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.5,
+    "odds_away": 5.5,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45374_2022-06-11_uruguay_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 15.0,
+    "odds_away": 41.0,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45364_2022-06-11_hungary_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.45,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45366_2022-06-11_netherlands_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.0,
+    "odds_away": 9.0,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45365_2022-06-11_wales_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.6,
+    "odds_away": 1.85,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45363_2022-06-11_england_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.5,
+    "odds_away": 4.75,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45343_2022-06-10_south_korea_paraguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.4,
+    "odds_away": 4.0,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45345_2022-06-10_japan_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45344_2022-06-10_chile_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 2.9,
+    "odds_away": 3.0,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45336_2022-06-10_austria_france",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.8,
+    "odds_away": 1.7,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45337_2022-06-10_denmark_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.8,
+    "odds_away": 4.5,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45311_2022-06-09_morocco_south_africa",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45306_2022-06-09_burundi_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.33,
+    "odds_away": 1.33,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45331_2022-06-09_saudi_arabia_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 2.9,
+    "odds_away": 2.4,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45321_2022-06-09_switzerland_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.5,
+    "odds_away": 2.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45323_2022-06-09_sweden_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.3,
+    "odds_away": 2.4,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45320_2022-06-09_portugal_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 6.0,
+    "odds_away": 9.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45300_2022-06-08_wales_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.75,
+    "odds_away": 1.7,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45301_2022-06-08_belgium_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45275_2022-06-07_germany_england",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.3,
+    "odds_away": 3.3,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45281_2022-06-07_united_arab_emirates_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.75,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45265_2022-06-06_south_korea_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.2,
+    "odds_away": 3.1,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45266_2022-06-06_japan_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 4.33,
+    "odds_away": 1.44,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45258_2022-06-06_austria_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 2.75,
+    "odds_draw": 3.5,
+    "odds_away": 2.25,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45259_2022-06-06_croatia_france",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.2,
+    "odds_away": 2.1,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45227_2022-06-05_central_african_republic_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 3.75,
+    "odds_away": 1.4,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45229_2022-06-05_botswana_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.25,
+    "odds_draw": 3.25,
+    "odds_away": 1.62,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45230_2022-06-05_costa_rica_martinique",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 6.5,
+    "odds_away": 19.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45246_2022-06-05_mexico_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.0,
+    "odds_away": 2.9,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45249_2022-06-05_united_states_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 2.9,
+    "odds_away": 3.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45245_2022-06-05_argentina_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.03,
+    "odds_draw": 15.0,
+    "odds_away": 41.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45248_2022-06-05_saudi_arabia_colombia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.33,
+    "odds_draw": 3.3,
+    "odds_away": 1.75,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45238_2022-06-05_serbia_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.4,
+    "odds_away": 5.5,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45236_2022-06-05_portugal_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 4.0,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45237_2022-06-05_czech_republic_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 4.33,
+    "odds_draw": 3.6,
+    "odds_away": 1.65,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45224_2022-06-05_wales_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 2.55,
+    "odds_draw": 3.1,
+    "odds_away": 2.9,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45212_2022-06-04_senegal_benin",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 3.6,
+    "odds_away": 9.0,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45218_2022-06-04_italy_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.75,
+    "odds_away": 1.85,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45217_2022-06-04_hungary_england",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.45,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45199_2022-06-03_belgium_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.6,
+    "odds_away": 2.7,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45197_2022-06-03_croatia_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.6,
+    "odds_away": 3.4,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45198_2022-06-03_france_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.2,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45163_2022-06-02_tunisia_equatorial_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.2,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45165_2022-06-02_panama_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.83,
+    "odds_draw": 3.2,
+    "odds_away": 4.2,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45184_2022-06-02_south_korea_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.45,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45183_2022-06-02_japan_paraguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45174_2022-06-02_serbia_norway",
+    "bookmaker": "Bet365",
+    "odds_home": 2.05,
+    "odds_draw": 3.4,
+    "odds_away": 3.6,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45172_2022-06-02_spain_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.4,
+    "odds_away": 3.3,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45171_2022-06-02_czech_republic_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 3.2,
+    "odds_away": 2.25,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45152_2022-06-01_ghana_madagascar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45161_2022-06-01_united_states_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.0,
+    "odds_away": 3.5,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45155_2022-06-01_australia_jordan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.3,
+    "odds_away": 3.5,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45154_2022-06-01_poland_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 4.0,
+    "odds_away": 7.0,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45096_2022-03-29_france_south_africa",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 7.0,
+    "odds_away": 21.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45113_2022-03-29_wales_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.1,
+    "odds_away": 2.63,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45088_2022-03-29_belgium_burkina_faso",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.25,
+    "odds_away": 9.5,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45093_2022-03-29_england_ivory_coast",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.5,
+    "odds_away": 7.5,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45101_2022-03-29_netherlands_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.6,
+    "odds_away": 3.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45107_2022-03-29_spain_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 8.5,
+    "odds_away": 23.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45104_2022-03-29_qatar_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.0,
+    "odds_away": 2.63,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45092_2022-03-29_denmark_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.2,
+    "odds_away": 3.25,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45108_2022-03-29_switzerland_kosovo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.75,
+    "odds_away": 5.75,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45091_2022-03-29_croatia_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 3.8,
+    "odds_away": 7.5,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45074_2022-03-29_saudi_arabia_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.25,
+    "odds_away": 3.3,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45071_2022-03-29_united_arab_emirates_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.57,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45069_2022-03-29_iran_lebanon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.0,
+    "odds_away": 19.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45072_2022-03-29_japan_vietnam",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 7.5,
+    "odds_away": 23.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45068_2022-03-29_tunisia_mali",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 2.88,
+    "odds_away": 3.3,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45064_2022-03-29_algeria_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.1,
+    "odds_away": 4.75,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45065_2022-03-29_morocco_dr_congo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 3.9,
+    "odds_away": 8.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45066_2022-03-29_nigeria_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 2.88,
+    "odds_away": 5.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45067_2022-03-29_senegal_egypt",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 2.9,
+    "odds_away": 4.5,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45079_2022-03-29_chile_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.2,
+    "odds_away": 3.3,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45075_2022-03-29_ecuador_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.2,
+    "odds_away": 2.2,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45077_2022-03-29_bolivia_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.53,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45080_2022-03-29_poland_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.0,
+    "odds_away": 3.6,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45081_2022-03-29_portugal_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.5,
+    "odds_away": 17.0,
+    "captured_at": "2022-03-29"
+  },
+  {
+    "match_id": "45045_2022-03-27_honduras_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 5.75,
+    "odds_away": 1.25,
+    "captured_at": "2022-03-27"
+  },
+  {
+    "match_id": "45046_2022-03-27_united_states_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.5,
+    "odds_away": 7.0,
+    "captured_at": "2022-03-27"
+  },
+  {
+    "match_id": "45043_2022-03-27_el_salvador_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.2,
+    "odds_away": 2.0,
+    "captured_at": "2022-03-27"
+  },
+  {
+    "match_id": "45044_2022-03-27_canada_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2022-03-27"
+  },
+  {
+    "match_id": "45038_2022-03-26_netherlands_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 1.7,
+    "odds_draw": 3.6,
+    "odds_away": 5.0,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45034_2022-03-26_germany_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 8.0,
+    "odds_away": 13.0,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45042_2022-03-26_spain_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 6.5,
+    "odds_away": 15.0,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45039_2022-03-26_qatar_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.5,
+    "odds_away": 4.33,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45032_2022-03-26_england_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.6,
+    "odds_away": 5.5,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45031_2022-03-26_croatia_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.8,
+    "odds_away": 6.5,
+    "captured_at": "2022-03-26"
+  },
+  {
+    "match_id": "45015_2022-03-25_france_ivory_coast",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.33,
+    "odds_away": 7.0,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45006_2022-03-25_egypt_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 2.75,
+    "odds_away": 3.25,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45007_2022-03-25_ghana_nigeria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 2.75,
+    "odds_away": 2.8,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45004_2022-03-25_cameroon_algeria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 2.8,
+    "odds_away": 2.8,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45008_2022-03-25_mali_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 2.75,
+    "odds_away": 3.3,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45005_2022-03-25_dr_congo_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 2.75,
+    "odds_away": 2.0,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "45009_2022-03-25_argentina_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 7.0,
+    "odds_away": 12.0,
+    "captured_at": "2022-03-25"
+  },
+  {
+    "match_id": "44998_2022-03-24_scotland_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.1,
+    "odds_away": 4.0,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44994_2022-03-24_hungary_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.4,
+    "odds_away": 2.0,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44978_2022-03-24_china_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 8.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.45,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44977_2022-03-24_south_korea_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 2.9,
+    "odds_away": 4.0,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44980_2022-03-24_australia_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 2.75,
+    "odds_away": 2.7,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44986_2022-03-24_paraguay_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 2.75,
+    "odds_away": 2.5,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44985_2022-03-24_brazil_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.0,
+    "odds_away": 11.0,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44987_2022-03-24_uruguay_peru",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.8,
+    "odds_away": 7.5,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44991_2022-03-24_wales_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 2.9,
+    "odds_away": 3.0,
+    "captured_at": "2022-03-24"
+  },
+  {
+    "match_id": "44951_2022-02-06_senegal_egypt",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 2.63,
+    "odds_away": 4.33,
+    "captured_at": "2022-02-06"
+  },
+  {
+    "match_id": "44950_2022-02-05_cameroon_burkina_faso",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.4,
+    "odds_away": 4.5,
+    "captured_at": "2022-02-05"
+  },
+  {
+    "match_id": "44949_2022-02-03_cameroon_egypt",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 2.75,
+    "odds_away": 4.0,
+    "captured_at": "2022-02-03"
+  },
+  {
+    "match_id": "44944_2022-02-02_burkina_faso_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 2.9,
+    "odds_away": 1.91,
+    "captured_at": "2022-02-02"
+  },
+  {
+    "match_id": "44938_2022-02-01_oman_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 4.33,
+    "odds_away": 1.4,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44934_2022-02-01_iran_united_arab_emirates",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.5,
+    "odds_away": 10.0,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44935_2022-02-01_syria_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.44,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44937_2022-02-01_japan_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.4,
+    "odds_away": 7.0,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44941_2022-02-01_argentina_colombia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.2,
+    "odds_away": 4.2,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44940_2022-02-01_uruguay_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.5,
+    "odds_away": 7.0,
+    "captured_at": "2022-02-01"
+  },
+  {
+    "match_id": "44923_2022-01-30_senegal_equatorial_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.6,
+    "odds_away": 8.0,
+    "captured_at": "2022-01-30"
+  },
+  {
+    "match_id": "44922_2022-01-30_egypt_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 2.9,
+    "odds_away": 2.25,
+    "captured_at": "2022-01-30"
+  },
+  {
+    "match_id": "44925_2022-01-30_mexico_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.25,
+    "odds_away": 9.0,
+    "captured_at": "2022-01-30"
+  },
+  {
+    "match_id": "44924_2022-01-30_canada_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 2.8,
+    "odds_away": 2.75,
+    "captured_at": "2022-01-30"
+  },
+  {
+    "match_id": "44919_2022-01-29_burkina_faso_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 2.9,
+    "odds_away": 2.2,
+    "captured_at": "2022-01-29"
+  },
+  {
+    "match_id": "44920_2022-01-29_cameroon_gambia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.4,
+    "odds_away": 8.5,
+    "captured_at": "2022-01-29"
+  },
+  {
+    "match_id": "44908_2022-01-27_saudi_arabia_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.8,
+    "odds_away": 8.5,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44904_2022-01-27_iran_iraq",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 4.75,
+    "odds_away": 13.0,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44903_2022-01-27_lebanon_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.25,
+    "odds_away": 1.62,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44906_2022-01-27_japan_china",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.5,
+    "odds_away": 8.5,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44907_2022-01-27_australia_vietnam",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 8.0,
+    "odds_away": 26.0,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44910_2022-01-27_paraguay_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 3.25,
+    "odds_away": 2.3,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44909_2022-01-27_ecuador_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 3.1,
+    "odds_away": 2.38,
+    "captured_at": "2022-01-27"
+  },
+  {
+    "match_id": "44892_2022-01-25_morocco_malawi",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 11.0,
+    "captured_at": "2022-01-25"
+  },
+  {
+    "match_id": "44893_2022-01-25_senegal_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.25,
+    "odds_away": 8.5,
+    "captured_at": "2022-01-25"
+  },
+  {
+    "match_id": "44890_2022-01-24_cameroon_comoros",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 12.0,
+    "odds_away": 34.0,
+    "captured_at": "2022-01-24"
+  },
+  {
+    "match_id": "44889_2022-01-23_nigeria_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.1,
+    "odds_away": 5.25,
+    "captured_at": "2022-01-23"
+  },
+  {
+    "match_id": "44884_2022-01-20_gambia_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.3,
+    "odds_away": 1.73,
+    "captured_at": "2022-01-20"
+  },
+  {
+    "match_id": "44877_2022-01-18_ghana_comoros",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.25,
+    "odds_away": 11.0,
+    "captured_at": "2022-01-18"
+  },
+  {
+    "match_id": "44876_2022-01-18_gabon_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 2.75,
+    "odds_away": 1.83,
+    "captured_at": "2022-01-18"
+  },
+  {
+    "match_id": "44874_2022-01-18_malawi_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 11.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.3,
+    "captured_at": "2022-01-18"
+  },
+  {
+    "match_id": "44872_2022-01-17_cameroon_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.5,
+    "odds_away": 6.5,
+    "captured_at": "2022-01-17"
+  },
+  {
+    "match_id": "44870_2022-01-16_tunisia_mauritania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.2,
+    "odds_away": 8.0,
+    "captured_at": "2022-01-16"
+  },
+  {
+    "match_id": "44861_2022-01-14_gabon_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 3.4,
+    "odds_away": 1.62,
+    "captured_at": "2022-01-14"
+  },
+  {
+    "match_id": "44860_2022-01-14_morocco_comoros",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 4.75,
+    "odds_away": 17.0,
+    "captured_at": "2022-01-14"
+  },
+  {
+    "match_id": "44858_2022-01-14_senegal_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.0,
+    "odds_away": 4.75,
+    "captured_at": "2022-01-14"
+  },
+  {
+    "match_id": "44856_2022-01-13_cameroon_ethiopia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 5.25,
+    "odds_away": 15.0,
+    "captured_at": "2022-01-13"
+  },
+  {
+    "match_id": "44854_2022-01-12_tunisia_mali",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 2.88,
+    "odds_away": 2.88,
+    "captured_at": "2022-01-12"
+  },
+  {
+    "match_id": "44847_2022-01-10_morocco_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 2.55,
+    "odds_away": 4.2,
+    "captured_at": "2022-01-10"
+  },
+  {
+    "match_id": "44845_2022-01-10_senegal_zimbabwe",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.0,
+    "odds_away": 12.0,
+    "captured_at": "2022-01-10"
+  },
+  {
+    "match_id": "44843_2022-01-09_cameroon_burkina_faso",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.5,
+    "odds_away": 6.5,
+    "captured_at": "2022-01-09"
+  },
+  {
+    "match_id": "44841_2022-01-05_algeria_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.83,
+    "odds_draw": 3.1,
+    "odds_away": 4.2,
+    "captured_at": "2022-01-05"
+  },
+  {
+    "match_id": "44752_2021-11-16_oman_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 3.8,
+    "odds_away": 1.45,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44749_2021-11-16_syria_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 3.8,
+    "odds_away": 1.5,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44750_2021-11-16_china_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.25,
+    "odds_draw": 4.0,
+    "odds_away": 1.6,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44748_2021-11-16_iraq_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.53,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44751_2021-11-16_vietnam_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.45,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44739_2021-11-16_tunisia_zambia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.5,
+    "odds_away": 11.0,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44746_2021-11-16_morocco_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 10.0,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44743_2021-11-16_cameroon_ivory_coast",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44753_2021-11-16_jamaica_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.2,
+    "odds_away": 2.0,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44767_2021-11-16_argentina_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.1,
+    "odds_away": 3.4,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44764_2021-11-16_bolivia_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 3.1,
+    "odds_away": 2.6,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44763_2021-11-16_netherlands_norway",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.5,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44759_2021-11-16_wales_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.4,
+    "odds_away": 2.0,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44758_2021-11-16_finland_france",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.33,
+    "odds_away": 1.44,
+    "captured_at": "2021-11-16"
+  },
+  {
+    "match_id": "44728_2021-11-15_poland_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.8,
+    "odds_away": 6.5,
+    "captured_at": "2021-11-15"
+  },
+  {
+    "match_id": "44723_2021-11-15_switzerland_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 9.5,
+    "odds_away": 26.0,
+    "captured_at": "2021-11-15"
+  },
+  {
+    "match_id": "44724_2021-11-15_scotland_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.55,
+    "captured_at": "2021-11-15"
+  },
+  {
+    "match_id": "44729_2021-11-15_san_marino_england",
+    "bookmaker": "Bet365",
+    "odds_home": 101.0,
+    "odds_draw": 34.0,
+    "odds_away": 1.01,
+    "captured_at": "2021-11-15"
+  },
+  {
+    "match_id": "44698_2021-11-14_azerbaijan_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 2.8,
+    "odds_away": 2.38,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44702_2021-11-14_ghana_south_africa",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.2,
+    "odds_away": 4.5,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44708_2021-11-14_spain_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.5,
+    "odds_away": 7.5,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44706_2021-11-14_portugal_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.2,
+    "odds_away": 5.5,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44715_2021-11-14_armenia_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 19.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.13,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44710_2021-11-14_croatia_russia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 4.2,
+    "odds_away": 5.75,
+    "captured_at": "2021-11-14"
+  },
+  {
+    "match_id": "44686_2021-11-13_equatorial_guinea_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.1,
+    "odds_away": 1.8,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44689_2021-11-13_malawi_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 10.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.36,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44692_2021-11-13_france_kazakhstan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.04,
+    "odds_draw": 15.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44697_2021-11-13_montenegro_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 7.0,
+    "odds_away": 1.2,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44693_2021-11-13_wales_belarus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 6.0,
+    "odds_away": 13.0,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44694_2021-11-13_belgium_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.04,
+    "odds_draw": 15.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-11-13"
+  },
+  {
+    "match_id": "44666_2021-11-12_morocco_sudan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 6.5,
+    "odds_away": 15.0,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44679_2021-11-12_uruguay_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.1,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44677_2021-11-12_andorra_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 41.0,
+    "odds_draw": 11.0,
+    "odds_away": 1.06,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44676_2021-11-12_england_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 8.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44672_2021-11-12_italy_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44674_2021-11-12_denmark_faroe_islands",
+    "bookmaker": "Bet365",
+    "odds_home": 1.04,
+    "odds_draw": 17.0,
+    "odds_away": 41.0,
+    "captured_at": "2021-11-12"
+  },
+  {
+    "match_id": "44631_2021-11-11_serbia_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.75,
+    "odds_away": 7.0,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44645_2021-11-11_vietnam_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 12.0,
+    "odds_draw": 5.5,
+    "odds_away": 1.25,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44641_2021-11-11_lebanon_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 11.0,
+    "odds_draw": 4.2,
+    "odds_away": 1.36,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44643_2021-11-11_south_korea_united_arab_emirates",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 5.5,
+    "odds_away": 12.0,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44646_2021-11-11_australia_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.75,
+    "odds_away": 5.25,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44638_2021-11-11_togo_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 3.6,
+    "odds_away": 1.45,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44635_2021-11-11_ethiopia_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.29,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44657_2021-11-11_ecuador_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 10.0,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44654_2021-11-11_germany_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.01,
+    "odds_draw": 26.0,
+    "odds_away": 67.0,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44650_2021-11-11_greece_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.33,
+    "odds_away": 1.5,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44652_2021-11-11_malta_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 26.0,
+    "odds_draw": 9.0,
+    "odds_away": 1.1,
+    "captured_at": "2021-11-11"
+  },
+  {
+    "match_id": "44619_2021-10-14_argentina_peru",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-10-14"
+  },
+  {
+    "match_id": "44618_2021-10-14_colombia_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2021-10-14"
+  },
+  {
+    "match_id": "44613_2021-10-13_canada_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.8,
+    "odds_away": 6.5,
+    "captured_at": "2021-10-13"
+  },
+  {
+    "match_id": "44612_2021-10-13_united_states_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.5,
+    "odds_away": 8.0,
+    "captured_at": "2021-10-13"
+  },
+  {
+    "match_id": "44585_2021-10-12_saudi_arabia_china",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.8,
+    "odds_away": 7.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44580_2021-10-12_iran_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.0,
+    "odds_away": 3.25,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44583_2021-10-12_japan_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 3.2,
+    "odds_away": 4.33,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44610_2021-10-12_morocco_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 3.8,
+    "odds_away": 7.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44603_2021-10-12_namibia_senegal",
+    "bookmaker": "Bet365",
+    "odds_home": 9.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.36,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44601_2021-10-12_zimbabwe_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.05,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44598_2021-10-12_albania_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.1,
+    "odds_away": 2.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44586_2021-10-12_portugal_luxembourg",
+    "bookmaker": "Bet365",
+    "odds_home": 1.06,
+    "odds_draw": 13.0,
+    "odds_away": 23.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44597_2021-10-12_england_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 9.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44591_2021-10-12_lithuania_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.18,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44595_2021-10-12_denmark_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44587_2021-10-12_serbia_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 8.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-10-12"
+  },
+  {
+    "match_id": "44575_2021-10-11_mozambique_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 3.6,
+    "odds_away": 1.5,
+    "captured_at": "2021-10-11"
+  },
+  {
+    "match_id": "44565_2021-10-11_netherlands_gibraltar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.0,
+    "odds_draw": 26.0,
+    "odds_away": 67.0,
+    "captured_at": "2021-10-11"
+  },
+  {
+    "match_id": "44572_2021-10-11_macedonia_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.2,
+    "captured_at": "2021-10-11"
+  },
+  {
+    "match_id": "44569_2021-10-11_croatia_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 9.5,
+    "captured_at": "2021-10-11"
+  },
+  {
+    "match_id": "44564_2021-10-11_estonia_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.5,
+    "captured_at": "2021-10-11"
+  },
+  {
+    "match_id": "44562_2021-10-10_spain_france",
+    "bookmaker": "Bet365",
+    "odds_home": 2.88,
+    "odds_draw": 3.1,
+    "odds_away": 2.6,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44561_2021-10-10_italy_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.5,
+    "odds_away": 3.8,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44547_2021-10-10_mauritania_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 11.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.3,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44545_2021-10-10_mexico_honduras",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 9.0,
+    "odds_away": 13.0,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44544_2021-10-10_panama_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.1,
+    "odds_away": 2.0,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44542_2021-10-10_costa_rica_el_salvador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.3,
+    "odds_away": 6.5,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44543_2021-10-10_jamaica_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.0,
+    "odds_away": 1.8,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44557_2021-10-10_argentina_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 3.6,
+    "odds_away": 6.5,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44555_2021-10-10_colombia_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.1,
+    "odds_away": 1.95,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44556_2021-10-10_venezuela_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.05,
+    "captured_at": "2021-10-10"
+  },
+  {
+    "match_id": "44538_2021-10-09_portugal_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.0,
+    "odds_away": 13.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44541_2021-10-09_morocco_guinea_bissau",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 7.0,
+    "odds_away": 17.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44534_2021-10-09_senegal_namibia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 6.0,
+    "odds_away": 23.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44532_2021-10-09_ghana_zimbabwe",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.33,
+    "odds_away": 10.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44518_2021-10-09_luxembourg_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 5.0,
+    "odds_away": 1.33,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44530_2021-10-09_poland_san_marino",
+    "bookmaker": "Bet365",
+    "odds_home": 1.01,
+    "odds_draw": 34.0,
+    "odds_away": 67.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44528_2021-10-09_andorra_england",
+    "bookmaker": "Bet365",
+    "odds_home": 41.0,
+    "odds_draw": 17.0,
+    "odds_away": 1.02,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44522_2021-10-09_switzerland_northern_ireland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 10.0,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44527_2021-10-09_moldova_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 21.0,
+    "odds_draw": 9.0,
+    "odds_away": 1.1,
+    "captured_at": "2021-10-09"
+  },
+  {
+    "match_id": "44514_2021-10-08_cameroon_mozambique",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 4.33,
+    "odds_away": 12.0,
+    "captured_at": "2021-10-08"
+  },
+  {
+    "match_id": "44503_2021-10-08_latvia_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 23.0,
+    "odds_draw": 12.0,
+    "odds_away": 1.06,
+    "captured_at": "2021-10-08"
+  },
+  {
+    "match_id": "44506_2021-10-08_cyprus_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 6.0,
+    "odds_away": 1.2,
+    "captured_at": "2021-10-08"
+  },
+  {
+    "match_id": "44509_2021-10-08_germany_romania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 11.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-10-08"
+  },
+  {
+    "match_id": "44500_2021-10-08_czech_republic_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.25,
+    "odds_away": 5.25,
+    "captured_at": "2021-10-08"
+  },
+  {
+    "match_id": "44499_2021-10-07_belgium_france",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.2,
+    "odds_away": 2.4,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44478_2021-10-07_australia_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44476_2021-10-07_saudi_arabia_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.2,
+    "odds_away": 1.85,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44475_2021-10-07_united_arab_emirates_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 3.5,
+    "odds_away": 1.65,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44474_2021-10-07_south_korea_syria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44484_2021-10-07_tunisia_mauritania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 5.75,
+    "odds_away": 13.0,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44480_2021-10-07_united_states_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.25,
+    "odds_away": 10.0,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44492_2021-10-07_venezuela_brazil",
+    "bookmaker": "Bet365",
+    "odds_home": 12.0,
+    "odds_draw": 4.75,
+    "odds_away": 1.3,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44495_2021-10-07_uruguay_colombia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.0,
+    "odds_away": 4.33,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44493_2021-10-07_paraguay_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.62,
+    "captured_at": "2021-10-07"
+  },
+  {
+    "match_id": "44472_2021-10-06_italy_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.6,
+    "captured_at": "2021-10-06"
+  },
+  {
+    "match_id": "44468_2021-10-06_morocco_guinea_bissau",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 9.0,
+    "odds_away": 17.0,
+    "captured_at": "2021-10-06"
+  },
+  {
+    "match_id": "44459_2021-09-09_argentina_bolivia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 13.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-09-09"
+  },
+  {
+    "match_id": "44458_2021-09-09_uruguay_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.4,
+    "odds_away": 6.0,
+    "captured_at": "2021-09-09"
+  },
+  {
+    "match_id": "44454_2021-09-08_canada_el_salvador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.8,
+    "odds_away": 7.0,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44448_2021-09-08_poland_england",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 3.5,
+    "odds_away": 1.67,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44442_2021-09-08_northern_ireland_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 3.75,
+    "odds_away": 1.57,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44440_2021-09-08_kosovo_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.18,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44445_2021-09-08_belarus_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 8.5,
+    "odds_away": 1.13,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44449_2021-09-08_iceland_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.14,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44444_2021-09-08_wales_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 6.0,
+    "odds_away": 13.0,
+    "captured_at": "2021-09-08"
+  },
+  {
+    "match_id": "44407_2021-09-07_luxembourg_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.3,
+    "odds_away": 2.15,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44420_2021-09-07_iraq_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.6,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44423_2021-09-07_oman_saudi_arabia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.25,
+    "odds_draw": 3.25,
+    "odds_away": 2.2,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44421_2021-09-07_china_japan",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 4.75,
+    "odds_away": 1.36,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44422_2021-09-07_vietnam_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 10.0,
+    "odds_draw": 5.25,
+    "odds_away": 1.25,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44419_2021-09-07_south_korea_lebanon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 5.25,
+    "odds_away": 13.0,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44409_2021-09-07_zambia_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 2.9,
+    "odds_away": 1.95,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44434_2021-09-07_croatia_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.5,
+    "odds_away": 5.75,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44430_2021-09-07_denmark_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.0,
+    "odds_away": 9.5,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44427_2021-09-07_france_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 6.5,
+    "odds_away": 19.0,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44425_2021-09-07_azerbaijan_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.14,
+    "captured_at": "2021-09-07"
+  },
+  {
+    "match_id": "44400_2021-09-06_ivory_coast_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.0,
+    "odds_away": 3.75,
+    "captured_at": "2021-09-06"
+  },
+  {
+    "match_id": "44402_2021-09-06_south_africa_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 2.7,
+    "odds_away": 2.7,
+    "captured_at": "2021-09-06"
+  },
+  {
+    "match_id": "44394_2021-09-05_costa_rica_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.57,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44392_2021-09-05_uruguay_bolivia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44390_2021-09-05_ecuador_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 1.83,
+    "odds_draw": 3.5,
+    "odds_away": 3.8,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44386_2021-09-05_san_marino_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 67.0,
+    "odds_draw": 26.0,
+    "odds_away": 1.01,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44381_2021-09-05_switzerland_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 4.33,
+    "odds_draw": 3.5,
+    "odds_away": 1.85,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44379_2021-09-05_spain_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 9.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44388_2021-09-05_germany_armenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 13.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44383_2021-09-05_belgium_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.6,
+    "odds_away": 6.5,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44384_2021-09-05_england_andorra",
+    "bookmaker": "Bet365",
+    "odds_home": 1.0,
+    "odds_draw": 26.0,
+    "odds_away": 67.0,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44382_2021-09-05_belarus_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 8.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.5,
+    "captured_at": "2021-09-05"
+  },
+  {
+    "match_id": "44357_2021-09-04_qatar_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.5,
+    "odds_away": 1.33,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44370_2021-09-04_slovakia_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.25,
+    "odds_away": 2.05,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44362_2021-09-04_faroe_islands_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 10.0,
+    "odds_away": 1.1,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44367_2021-09-04_netherlands_montenegro",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 8.0,
+    "odds_away": 15.0,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44361_2021-09-04_ukraine_france",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.57,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44359_2021-09-04_serbia_luxembourg",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 6.0,
+    "odds_away": 12.0,
+    "captured_at": "2021-09-04"
+  },
+  {
+    "match_id": "44353_2021-09-03_ghana_ethiopia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 5.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-09-03"
+  },
+  {
+    "match_id": "44351_2021-09-03_cameroon_malawi",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 5.0,
+    "odds_away": 17.0,
+    "captured_at": "2021-09-03"
+  },
+  {
+    "match_id": "44348_2021-09-03_tunisia_equatorial_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 5.0,
+    "odds_away": 17.0,
+    "captured_at": "2021-09-03"
+  },
+  {
+    "match_id": "44325_2021-09-02_saudi_arabia_vietnam",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 5.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44324_2021-09-02_australia_china",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.6,
+    "odds_away": 4.2,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44321_2021-09-02_iran_syria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.0,
+    "odds_away": 10.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44320_2021-09-02_south_korea_iraq",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.0,
+    "odds_away": 10.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44323_2021-09-02_japan_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 8.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44317_2021-09-02_morocco_sudan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 5.25,
+    "odds_away": 12.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44339_2021-09-02_ecuador_paraguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44327_2021-09-02_sweden_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.75,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44336_2021-09-02_liechtenstein_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 51.0,
+    "odds_draw": 24.0,
+    "odds_away": 1.01,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44331_2021-09-02_estonia_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 26.0,
+    "odds_draw": 13.0,
+    "odds_away": 1.05,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44334_2021-09-02_poland_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44333_2021-09-02_hungary_england",
+    "bookmaker": "Bet365",
+    "odds_home": 9.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.4,
+    "captured_at": "2021-09-02"
+  },
+  {
+    "match_id": "44290_2021-09-01_qatar_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 3.2,
+    "odds_away": 2.25,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44291_2021-09-01_switzerland_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44289_2021-09-01_finland_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 2.88,
+    "odds_draw": 3.0,
+    "odds_away": 2.6,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44296_2021-09-01_senegal_togo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 5.75,
+    "odds_away": 15.0,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44310_2021-09-01_russia_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 3.25,
+    "odds_away": 2.6,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44305_2021-09-01_norway_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.75,
+    "odds_away": 1.73,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44303_2021-09-01_denmark_scotland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.0,
+    "odds_away": 8.0,
+    "captured_at": "2021-09-01"
+  },
+  {
+    "match_id": "44280_2021-07-29_united_states_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.3,
+    "odds_away": 3.8,
+    "captured_at": "2021-07-29"
+  },
+  {
+    "match_id": "44277_2021-07-25_costa_rica_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.0,
+    "odds_away": 2.25,
+    "captured_at": "2021-07-25"
+  },
+  {
+    "match_id": "44276_2021-07-24_qatar_el_salvador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.4,
+    "odds_away": 4.75,
+    "captured_at": "2021-07-24"
+  },
+  {
+    "match_id": "44272_2021-07-20_costa_rica_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.0,
+    "odds_away": 3.1,
+    "captured_at": "2021-07-20"
+  },
+  {
+    "match_id": "44270_2021-07-18_united_states_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.75,
+    "odds_away": 4.5,
+    "captured_at": "2021-07-18"
+  },
+  {
+    "match_id": "44263_2021-07-17_grenada_qatar",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 9.0,
+    "odds_away": 1.08,
+    "captured_at": "2021-07-17"
+  },
+  {
+    "match_id": "44257_2021-07-15_haiti_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 5.0,
+    "odds_away": 1.33,
+    "captured_at": "2021-07-15"
+  },
+  {
+    "match_id": "44249_2021-07-13_qatar_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.0,
+    "odds_away": 3.5,
+    "captured_at": "2021-07-13"
+  },
+  {
+    "match_id": "44241_2021-07-11_canada_martinique",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 6.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-07-11"
+  },
+  {
+    "match_id": "44237_2021-07-11_england_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 2.9,
+    "odds_away": 3.4,
+    "captured_at": "2021-07-11"
+  },
+  {
+    "match_id": "44225_2021-07-07_england_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.5,
+    "odds_away": 5.5,
+    "captured_at": "2021-07-07"
+  },
+  {
+    "match_id": "44219_2021-07-06_italy_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.1,
+    "odds_away": 3.1,
+    "captured_at": "2021-07-06"
+  },
+  {
+    "match_id": "44217_2021-07-05_brazil_peru",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.5,
+    "odds_away": 15.0,
+    "captured_at": "2021-07-05"
+  },
+  {
+    "match_id": "44216_2021-07-04_qatar_el_salvador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.4,
+    "odds_away": 3.5,
+    "captured_at": "2021-07-04"
+  },
+  {
+    "match_id": "44211_2021-07-03_uruguay_colombia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.0,
+    "odds_away": 3.6,
+    "captured_at": "2021-07-03"
+  },
+  {
+    "match_id": "44209_2021-07-03_ukraine_england",
+    "bookmaker": "Bet365",
+    "odds_home": 7.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.5,
+    "captured_at": "2021-07-03"
+  },
+  {
+    "match_id": "44208_2021-07-03_czech_republic_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.15,
+    "captured_at": "2021-07-03"
+  },
+  {
+    "match_id": "44202_2021-07-02_belgium_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.2,
+    "odds_away": 2.25,
+    "captured_at": "2021-07-02"
+  },
+  {
+    "match_id": "44201_2021-07-02_switzerland_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 3.9,
+    "odds_away": 1.62,
+    "captured_at": "2021-07-02"
+  },
+  {
+    "match_id": "44198_2021-06-29_england_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.3,
+    "odds_away": 3.1,
+    "captured_at": "2021-06-29"
+  },
+  {
+    "match_id": "44195_2021-06-28_france_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.8,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-28"
+  },
+  {
+    "match_id": "44194_2021-06-28_croatia_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 3.9,
+    "odds_away": 1.57,
+    "captured_at": "2021-06-28"
+  },
+  {
+    "match_id": "44191_2021-06-27_brazil_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.5,
+    "odds_away": 8.5,
+    "captured_at": "2021-06-27"
+  },
+  {
+    "match_id": "44190_2021-06-27_belgium_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.3,
+    "odds_away": 3.0,
+    "captured_at": "2021-06-27"
+  },
+  {
+    "match_id": "44189_2021-06-27_netherlands_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-27"
+  },
+  {
+    "match_id": "44188_2021-06-26_wales_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.1,
+    "odds_away": 1.95,
+    "captured_at": "2021-06-26"
+  },
+  {
+    "match_id": "44183_2021-06-24_bolivia_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.18,
+    "captured_at": "2021-06-24"
+  },
+  {
+    "match_id": "44180_2021-06-23_ecuador_peru",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.2,
+    "odds_away": 3.2,
+    "captured_at": "2021-06-23"
+  },
+  {
+    "match_id": "44178_2021-06-23_germany_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 9.5,
+    "odds_away": 19.0,
+    "captured_at": "2021-06-23"
+  },
+  {
+    "match_id": "44179_2021-06-23_portugal_france",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.3,
+    "odds_away": 1.95,
+    "captured_at": "2021-06-23"
+  },
+  {
+    "match_id": "44176_2021-06-23_spain_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 6.5,
+    "odds_away": 17.0,
+    "captured_at": "2021-06-23"
+  },
+  {
+    "match_id": "44177_2021-06-23_sweden_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.4,
+    "odds_away": 2.4,
+    "captured_at": "2021-06-23"
+  },
+  {
+    "match_id": "44173_2021-06-22_scotland_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.6,
+    "odds_draw": 3.8,
+    "odds_away": 2.45,
+    "captured_at": "2021-06-22"
+  },
+  {
+    "match_id": "44174_2021-06-22_england_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.5,
+    "captured_at": "2021-06-22"
+  },
+  {
+    "match_id": "44171_2021-06-21_uruguay_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 2.88,
+    "odds_away": 3.7,
+    "captured_at": "2021-06-21"
+  },
+  {
+    "match_id": "44168_2021-06-21_finland_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.75,
+    "odds_away": 1.36,
+    "captured_at": "2021-06-21"
+  },
+  {
+    "match_id": "44167_2021-06-21_denmark_russia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.2,
+    "odds_away": 5.5,
+    "captured_at": "2021-06-21"
+  },
+  {
+    "match_id": "44169_2021-06-21_netherlands_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 6.5,
+    "odds_away": 13.0,
+    "captured_at": "2021-06-21"
+  },
+  {
+    "match_id": "44164_2021-06-20_venezuela_ecuador",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.57,
+    "captured_at": "2021-06-20"
+  },
+  {
+    "match_id": "44162_2021-06-20_italy_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.0,
+    "odds_away": 8.5,
+    "captured_at": "2021-06-20"
+  },
+  {
+    "match_id": "44158_2021-06-19_spain_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.75,
+    "odds_away": 11.0,
+    "captured_at": "2021-06-19"
+  },
+  {
+    "match_id": "44160_2021-06-19_germany_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.4,
+    "odds_away": 3.3,
+    "captured_at": "2021-06-19"
+  },
+  {
+    "match_id": "44159_2021-06-19_hungary_france",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 5.5,
+    "odds_away": 1.25,
+    "captured_at": "2021-06-19"
+  },
+  {
+    "match_id": "44154_2021-06-18_england_scotland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.25,
+    "odds_away": 11.0,
+    "captured_at": "2021-06-18"
+  },
+  {
+    "match_id": "44153_2021-06-18_croatia_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.25,
+    "odds_away": 3.5,
+    "captured_at": "2021-06-18"
+  },
+  {
+    "match_id": "44149_2021-06-17_netherlands_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.8,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-17"
+  },
+  {
+    "match_id": "44147_2021-06-17_denmark_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 4.33,
+    "odds_draw": 3.3,
+    "odds_away": 1.95,
+    "captured_at": "2021-06-17"
+  },
+  {
+    "match_id": "44145_2021-06-16_italy_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.6,
+    "odds_away": 5.75,
+    "captured_at": "2021-06-16"
+  },
+  {
+    "match_id": "44141_2021-06-15_germany_france",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.3,
+    "odds_away": 2.88,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44140_2021-06-15_hungary_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 8.5,
+    "odds_draw": 4.5,
+    "odds_away": 1.4,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44138_2021-06-15_tunisia_mali",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 2.75,
+    "odds_away": 4.0,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44128_2021-06-15_saudi_arabia_uzbekistan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.2,
+    "odds_away": 3.0,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44126_2021-06-15_iran_iraq",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.0,
+    "odds_away": 7.5,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44124_2021-06-15_australia_jordan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.8,
+    "odds_away": 6.5,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44132_2021-06-15_japan_kyrgyzstan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 9.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-06-15"
+  },
+  {
+    "match_id": "44120_2021-06-14_argentina_chile",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.6,
+    "odds_away": 6.5,
+    "captured_at": "2021-06-14"
+  },
+  {
+    "match_id": "44119_2021-06-14_spain_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.0,
+    "odds_away": 10.0,
+    "captured_at": "2021-06-14"
+  },
+  {
+    "match_id": "44118_2021-06-14_poland_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.7,
+    "odds_draw": 3.5,
+    "odds_away": 5.75,
+    "captured_at": "2021-06-14"
+  },
+  {
+    "match_id": "44114_2021-06-13_brazil_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 10.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-06-13"
+  },
+  {
+    "match_id": "44112_2021-06-13_netherlands_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.33,
+    "odds_away": 6.5,
+    "captured_at": "2021-06-13"
+  },
+  {
+    "match_id": "44113_2021-06-13_england_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 4.0,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-13"
+  },
+  {
+    "match_id": "44108_2021-06-13_south_korea_lebanon",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 8.0,
+    "odds_away": 11.0,
+    "captured_at": "2021-06-13"
+  },
+  {
+    "match_id": "44107_2021-06-12_russia_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.3,
+    "odds_away": 2.05,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44106_2021-06-12_denmark_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44105_2021-06-12_wales_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.2,
+    "odds_away": 1.91,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44104_2021-06-12_morocco_burkina_faso",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44102_2021-06-12_ghana_ivory_coast",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.1,
+    "odds_away": 2.88,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44099_2021-06-12_haiti_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 9.5,
+    "odds_draw": 3.8,
+    "odds_away": 1.44,
+    "captured_at": "2021-06-12"
+  },
+  {
+    "match_id": "44095_2021-06-11_tunisia_algeria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 2.88,
+    "odds_away": 2.88,
+    "captured_at": "2021-06-11"
+  },
+  {
+    "match_id": "44090_2021-06-11_japan_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.25,
+    "odds_away": 3.4,
+    "captured_at": "2021-06-11"
+  },
+  {
+    "match_id": "44097_2021-06-11_saudi_arabia_singapore",
+    "bookmaker": "Bet365",
+    "odds_home": 1.03,
+    "odds_draw": 17.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-06-11"
+  },
+  {
+    "match_id": "44082_2021-06-11_nepal_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 34.0,
+    "odds_draw": 26.0,
+    "odds_away": 1.01,
+    "captured_at": "2021-06-11"
+  },
+  {
+    "match_id": "44076_2021-06-09_united_states_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.8,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-09"
+  },
+  {
+    "match_id": "44075_2021-06-09_portugal_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 7.5,
+    "odds_away": 17.0,
+    "captured_at": "2021-06-09"
+  },
+  {
+    "match_id": "44077_2021-06-09_south_korea_sri_lanka",
+    "bookmaker": "Bet365",
+    "odds_home": 1.01,
+    "odds_draw": 29.0,
+    "odds_away": 31.0,
+    "captured_at": "2021-06-09"
+  },
+  {
+    "match_id": "44048_2021-06-08_france_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.07,
+    "odds_draw": 11.0,
+    "odds_away": 26.0,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44055_2021-06-08_senegal_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 3.8,
+    "odds_away": 8.0,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44052_2021-06-08_morocco_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.2,
+    "odds_away": 5.0,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44054_2021-06-08_poland_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44069_2021-06-08_colombia_argentina",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.0,
+    "odds_away": 2.55,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44070_2021-06-08_venezuela_uruguay",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.4,
+    "odds_away": 1.83,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44068_2021-06-08_ecuador_peru",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 9.0,
+    "captured_at": "2021-06-08"
+  },
+  {
+    "match_id": "44028_2021-06-07_germany_latvia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.02,
+    "odds_draw": 17.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-06-07"
+  },
+  {
+    "match_id": "44030_2021-06-07_serbia_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.0,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-07"
+  },
+  {
+    "match_id": "44044_2021-06-07_qatar_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.9,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-07"
+  },
+  {
+    "match_id": "44043_2021-06-07_bahrain_iran",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 3.9,
+    "odds_away": 1.5,
+    "captured_at": "2021-06-07"
+  },
+  {
+    "match_id": "44040_2021-06-07_japan_tajikistan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.02,
+    "odds_draw": 21.0,
+    "odds_away": 26.0,
+    "captured_at": "2021-06-07"
+  },
+  {
+    "match_id": "44024_2021-06-06_honduras_costa_rica",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.0,
+    "odds_away": 2.5,
+    "captured_at": "2021-06-06"
+  },
+  {
+    "match_id": "44017_2021-06-06_belgium_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.5,
+    "odds_away": 4.75,
+    "captured_at": "2021-06-06"
+  },
+  {
+    "match_id": "44022_2021-06-06_netherlands_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 5.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-06-06"
+  },
+  {
+    "match_id": "44019_2021-06-06_england_romania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.5,
+    "odds_away": 13.0,
+    "captured_at": "2021-06-06"
+  },
+  {
+    "match_id": "44004_2021-06-05_tunisia_dr_congo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.83,
+    "odds_draw": 3.25,
+    "odds_away": 4.75,
+    "captured_at": "2021-06-05"
+  },
+  {
+    "match_id": "44002_2021-06-05_senegal_zambia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.6,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-05"
+  },
+  {
+    "match_id": "44005_2021-06-05_wales_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.4,
+    "odds_away": 5.75,
+    "captured_at": "2021-06-05"
+  },
+  {
+    "match_id": "44006_2021-06-05_saudi_arabia_yemen",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 10.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-06-05"
+  },
+  {
+    "match_id": "44008_2021-06-05_south_korea_turkmenistan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 9.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-06-05"
+  },
+  {
+    "match_id": "43983_2021-06-04_nigeria_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "captured_at": "2021-06-04"
+  },
+  {
+    "match_id": "43987_2021-06-04_spain_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.3,
+    "odds_away": 3.5,
+    "captured_at": "2021-06-04"
+  },
+  {
+    "match_id": "43964_2021-06-03_united_states_honduras",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.33,
+    "odds_away": 8.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43959_2021-06-03_belgium_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.5,
+    "odds_away": 8.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43960_2021-06-03_switzerland_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.04,
+    "odds_draw": 15.0,
+    "odds_away": 26.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43976_2021-06-03_kuwait_australia",
+    "bookmaker": "Bet365",
+    "odds_home": 6.25,
+    "odds_draw": 4.2,
+    "odds_away": 1.5,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43977_2021-06-03_qatar_india",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 11.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43966_2021-06-03_iran_hong_kong",
+    "bookmaker": "Bet365",
+    "odds_home": 1.02,
+    "odds_draw": 26.0,
+    "odds_away": 26.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43973_2021-06-03_uruguay_paraguay",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2021-06-03"
+  },
+  {
+    "match_id": "43946_2021-06-02_france_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 10.0,
+    "captured_at": "2021-06-02"
+  },
+  {
+    "match_id": "43947_2021-06-02_germany_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.5,
+    "odds_away": 3.6,
+    "captured_at": "2021-06-02"
+  },
+  {
+    "match_id": "43945_2021-06-02_england_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.33,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-02"
+  },
+  {
+    "match_id": "43949_2021-06-02_netherlands_scotland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 7.0,
+    "captured_at": "2021-06-02"
+  },
+  {
+    "match_id": "43940_2021-06-01_poland_russia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.88,
+    "odds_draw": 3.2,
+    "odds_away": 2.45,
+    "captured_at": "2021-06-01"
+  },
+  {
+    "match_id": "43937_2021-06-01_croatia_armenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2021-06-01"
+  },
+  {
+    "match_id": "43933_2021-05-30_switzerland_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.25,
+    "odds_away": 4.33,
+    "captured_at": "2021-05-30"
+  },
+  {
+    "match_id": "43925_2021-05-28_japan_myanmar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.0,
+    "odds_draw": 51.0,
+    "odds_away": 51.0,
+    "captured_at": "2021-05-28"
+  },
+  {
+    "match_id": "43901_2021-03-31_switzerland_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 4.2,
+    "odds_away": 9.0,
+    "captured_at": "2021-03-31"
+  },
+  {
+    "match_id": "43915_2021-03-31_germany_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 10.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-03-31"
+  },
+  {
+    "match_id": "43911_2021-03-31_england_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.0,
+    "odds_away": 9.5,
+    "captured_at": "2021-03-31"
+  },
+  {
+    "match_id": "43902_2021-03-31_spain_kosovo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.07,
+    "odds_draw": 11.0,
+    "odds_away": 26.0,
+    "captured_at": "2021-03-31"
+  },
+  {
+    "match_id": "43909_2021-03-31_austria_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.1,
+    "odds_away": 2.45,
+    "captured_at": "2021-03-31"
+  },
+  {
+    "match_id": "43893_2021-03-30_cameroon_rwanda",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.25,
+    "odds_away": 8.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43892_2021-03-30_morocco_burundi",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 5.25,
+    "odds_away": 23.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43896_2021-03-30_senegal_eswatini",
+    "bookmaker": "Bet365",
+    "odds_home": 1.05,
+    "odds_draw": 9.0,
+    "odds_away": 19.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43870_2021-03-30_costa_rica_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.5,
+    "odds_away": 1.65,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43871_2021-03-30_iran_syria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.2,
+    "odds_away": 7.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43889_2021-03-30_saudi_arabia_palestine",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.5,
+    "odds_away": 8.5,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43880_2021-03-30_luxembourg_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 21.0,
+    "odds_draw": 9.0,
+    "odds_away": 1.11,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43887_2021-03-30_croatia_malta",
+    "bookmaker": "Bet365",
+    "odds_home": 1.06,
+    "odds_draw": 11.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43881_2021-03-30_wales_czech_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.2,
+    "odds_away": 2.35,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43883_2021-03-30_gibraltar_netherlands",
+    "bookmaker": "Bet365",
+    "odds_home": 67.0,
+    "odds_draw": 26.0,
+    "odds_away": 1.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43882_2021-03-30_belgium_belarus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 9.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43879_2021-03-30_azerbaijan_serbia",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.36,
+    "captured_at": "2021-03-30"
+  },
+  {
+    "match_id": "43855_2021-03-29_ecuador_bolivia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 4.5,
+    "odds_away": 8.0,
+    "captured_at": "2021-03-29"
+  },
+  {
+    "match_id": "43859_2021-03-29_cayman_islands_canada",
+    "bookmaker": "Bet365",
+    "odds_home": 34.0,
+    "odds_draw": 21.0,
+    "odds_away": 1.01,
+    "captured_at": "2021-03-29"
+  },
+  {
+    "match_id": "43851_2021-03-28_ghana_sao_tome_and_principe",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 9.0,
+    "odds_away": 13.0,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43853_2021-03-28_tunisia_equatorial_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 4.75,
+    "odds_away": 12.0,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43829_2021-03-28_northern_ireland_united_states",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.5,
+    "odds_away": 1.73,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43848_2021-03-28_romania_germany",
+    "bookmaker": "Bet365",
+    "odds_home": 10.0,
+    "odds_draw": 5.75,
+    "odds_away": 1.29,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43836_2021-03-28_switzerland_lithuania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.06,
+    "odds_draw": 12.0,
+    "odds_away": 29.0,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43844_2021-03-28_poland_andorra",
+    "bookmaker": "Bet365",
+    "odds_home": 1.01,
+    "odds_draw": 26.0,
+    "odds_away": 51.0,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43834_2021-03-28_georgia_spain",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 7.0,
+    "odds_away": 1.17,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43843_2021-03-28_albania_england",
+    "bookmaker": "Bet365",
+    "odds_home": 13.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.22,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43840_2021-03-28_denmark_moldova",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 11.0,
+    "odds_away": 21.0,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43838_2021-03-28_kazakhstan_france",
+    "bookmaker": "Bet365",
+    "odds_home": 34.0,
+    "odds_draw": 11.0,
+    "odds_away": 1.07,
+    "captured_at": "2021-03-28"
+  },
+  {
+    "match_id": "43809_2021-03-27_wales_mexico",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.6,
+    "odds_away": 1.75,
+    "captured_at": "2021-03-27"
+  },
+  {
+    "match_id": "43817_2021-03-27_serbia_portugal",
+    "bookmaker": "Bet365",
+    "odds_home": 4.75,
+    "odds_draw": 3.75,
+    "odds_away": 1.7,
+    "captured_at": "2021-03-27"
+  },
+  {
+    "match_id": "43819_2021-03-27_czech_republic_belgium",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.57,
+    "captured_at": "2021-03-27"
+  },
+  {
+    "match_id": "43824_2021-03-27_croatia_cyprus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 8.0,
+    "odds_away": 23.0,
+    "captured_at": "2021-03-27"
+  },
+  {
+    "match_id": "43821_2021-03-27_netherlands_latvia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.02,
+    "odds_draw": 19.0,
+    "odds_away": 34.0,
+    "captured_at": "2021-03-27"
+  },
+  {
+    "match_id": "43801_2021-03-26_mauritania_morocco",
+    "bookmaker": "Bet365",
+    "odds_home": 9.5,
+    "odds_draw": 4.0,
+    "odds_away": 1.36,
+    "captured_at": "2021-03-26"
+  },
+  {
+    "match_id": "43802_2021-03-26_cape_verde_cameroon",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 2.63,
+    "odds_away": 2.63,
+    "captured_at": "2021-03-26"
+  },
+  {
+    "match_id": "43797_2021-03-25_libya_tunisia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 2.9,
+    "odds_away": 1.95,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43789_2021-03-25_south_africa_ghana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 2.75,
+    "odds_away": 3.1,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43768_2021-03-25_saudi_arabia_kuwait",
+    "bookmaker": "Bet365",
+    "odds_home": 1.53,
+    "odds_draw": 3.8,
+    "odds_away": 5.5,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43769_2021-03-25_united_states_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.0,
+    "odds_away": 9.0,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43767_2021-03-25_japan_south_korea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.7,
+    "odds_away": 5.75,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43783_2021-03-25_england_san_marino",
+    "bookmaker": "Bet365",
+    "odds_home": 1.0,
+    "odds_draw": 51.0,
+    "odds_away": 101.0,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43776_2021-03-25_spain_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.5,
+    "odds_away": 15.0,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43785_2021-03-25_hungary_poland",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.25,
+    "odds_away": 2.0,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43786_2021-03-25_germany_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 9.0,
+    "odds_away": 17.0,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43778_2021-03-25_bulgaria_switzerland",
+    "bookmaker": "Bet365",
+    "odds_home": 10.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.36,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43780_2021-03-25_israel_denmark",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.5,
+    "odds_away": 1.75,
+    "captured_at": "2021-03-25"
+  },
+  {
+    "match_id": "43740_2021-03-24_qatar_luxembourg",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.3,
+    "odds_away": 4.5,
+    "captured_at": "2021-03-24"
+  },
+  {
+    "match_id": "43756_2021-03-24_slovenia_croatia",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.75,
+    "captured_at": "2021-03-24"
+  },
+  {
+    "match_id": "43750_2021-03-24_belgium_wales",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 5.0,
+    "odds_away": 10.0,
+    "captured_at": "2021-03-24"
+  },
+  {
+    "match_id": "43746_2021-03-24_portugal_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.03,
+    "odds_draw": 15.0,
+    "odds_away": 41.0,
+    "captured_at": "2021-03-24"
+  },
+  {
+    "match_id": "43748_2021-03-24_france_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 1.29,
+    "odds_draw": 5.25,
+    "odds_away": 11.0,
+    "captured_at": "2021-03-24"
+  },
+  {
+    "match_id": "43719_2020-12-04_qatar_bangladesh",
+    "bookmaker": "Bet365",
+    "odds_home": 1.02,
+    "odds_draw": 15.0,
+    "odds_away": 23.0,
+    "captured_at": "2020-12-04"
+  },
+  {
+    "match_id": "45682_2022-11-18_dominican_republic_cuba",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.6,
+    "odds_away": 1.75,
+    "captured_at": "2022-11-18"
+  },
+  {
+    "match_id": "45676_2022-11-17_saint_lucia_san_marino",
+    "bookmaker": "Bet365",
+    "odds_home": 1.9,
+    "odds_draw": 3.0,
+    "odds_away": 4.2,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45665_2022-11-17_luxembourg_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 5.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.7,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45675_2022-11-17_south_africa_mozambique",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.4,
+    "odds_away": 8.0,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45662_2022-11-17_israel_zambia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.0,
+    "odds_away": 3.6,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45666_2022-11-17_malta_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 11.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.36,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45670_2022-11-17_macedonia_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.15,
+    "odds_draw": 3.2,
+    "odds_away": 3.0,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45667_2022-11-17_montenegro_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.0,
+    "odds_away": 2.5,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45673_2022-11-17_romania_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.6,
+    "odds_draw": 3.0,
+    "odds_away": 2.7,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45674_2022-11-17_rwanda_sudan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.9,
+    "odds_draw": 3.0,
+    "odds_away": 4.33,
+    "captured_at": "2022-11-17"
+  },
+  {
+    "match_id": "45637_2022-11-16_albania_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.2,
+    "odds_away": 1.67,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45638_2022-11-16_algeria_mali",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.6,
+    "odds_away": 4.33,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45643_2022-11-16_gibraltar_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.4,
+    "odds_away": 4.0,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45640_2022-11-16_cyprus_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 2.9,
+    "odds_away": 2.4,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45646_2022-11-16_kosovo_armenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.6,
+    "odds_away": 4.75,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45639_2022-11-16_andorra_austria",
+    "bookmaker": "Bet365",
+    "odds_home": 34.0,
+    "odds_draw": 10.0,
+    "odds_away": 1.06,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45641_2022-11-16_czech_republic_faroe_islands",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 6.5,
+    "odds_away": 15.0,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45648_2022-11-16_moldova_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.0,
+    "odds_away": 3.0,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45645_2022-11-16_ivory_coast_burundi",
+    "bookmaker": "Bet365",
+    "odds_home": 1.28,
+    "odds_draw": 4.5,
+    "odds_away": 9.0,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45657_2022-11-16_uzbekistan_kazakhstan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.75,
+    "odds_draw": 3.4,
+    "odds_away": 4.33,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45649_2022-11-16_nepal_pakistan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.2,
+    "odds_away": 2.7,
+    "captured_at": "2022-11-16"
+  },
+  {
+    "match_id": "45636_2022-11-15_venezuela_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.0,
+    "captured_at": "2022-11-15"
+  },
+  {
+    "match_id": "45579_2022-09-27_burkina_faso_comoros",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.2,
+    "odds_away": 5.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45574_2022-09-27_algeria_nigeria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.1,
+    "odds_away": 3.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45594_2022-09-27_malta_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 4.0,
+    "odds_away": 1.53,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45590_2022-09-27_ivory_coast_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.6,
+    "odds_away": 4.75,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45584_2022-09-27_egypt_liberia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.2,
+    "odds_draw": 6.0,
+    "odds_away": 19.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45602_2022-09-27_south_africa_botswana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 4.2,
+    "odds_away": 5.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45576_2022-09-27_bahrain_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 2.3,
+    "odds_draw": 3.25,
+    "odds_away": 2.9,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45603_2022-09-27_united_arab_emirates_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.5,
+    "odds_away": 1.62,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45588_2022-09-27_indonesia_curacao",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.4,
+    "odds_away": 2.4,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45604_2022-09-27_vietnam_india",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.5,
+    "odds_away": 6.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45597_2022-09-27_nepal_bangladesh",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.25,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45612_2022-09-27_kosovo_cyprus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.8,
+    "odds_away": 5.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45611_2022-09-27_sweden_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.6,
+    "odds_away": 5.5,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45608_2022-09-27_ukraine_scotland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.5,
+    "odds_away": 3.1,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45609_2022-09-27_albania_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.2,
+    "odds_away": 4.0,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45613_2022-09-27_greece_northern_ireland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.2,
+    "odds_away": 4.33,
+    "captured_at": "2022-09-27"
+  },
+  {
+    "match_id": "45565_2022-09-26_jordan_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 2.9,
+    "odds_away": 3.1,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45564_2022-09-26_iraq_syria",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.1,
+    "odds_away": 3.6,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45572_2022-09-26_san_marino_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 8.5,
+    "odds_draw": 6.0,
+    "odds_away": 1.2,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45571_2022-09-26_macedonia_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.4,
+    "odds_away": 4.33,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45570_2022-09-26_gibraltar_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 6.5,
+    "odds_away": 1.17,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45568_2022-09-26_montenegro_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.1,
+    "odds_away": 3.0,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45567_2022-09-26_hungary_italy",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.1,
+    "odds_away": 2.25,
+    "captured_at": "2022-09-26"
+  },
+  {
+    "match_id": "45552_2022-09-25_niger_liberia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.38,
+    "odds_draw": 3.1,
+    "odds_away": 2.75,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45558_2022-09-25_luxembourg_lithuania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.0,
+    "odds_away": 6.0,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45560_2022-09-25_azerbaijan_kazakhstan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.2,
+    "odds_away": 3.4,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45559_2022-09-25_slovakia_belarus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.4,
+    "odds_away": 6.0,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45562_2022-09-25_moldova_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.18,
+    "odds_draw": 7.0,
+    "odds_away": 10.0,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45561_2022-09-25_andorra_latvia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.0,
+    "odds_draw": 3.5,
+    "odds_away": 1.8,
+    "captured_at": "2022-09-25"
+  },
+  {
+    "match_id": "45531_2022-09-24_ivory_coast_togo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45530_2022-09-24_indonesia_curacao",
+    "bookmaker": "Bet365",
+    "odds_home": 3.75,
+    "odds_draw": 3.4,
+    "odds_away": 1.8,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45536_2022-09-24_south_africa_sierra_leone",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 3.75,
+    "odds_away": 6.0,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45528_2022-09-24_hong_kong_myanmar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.0,
+    "odds_away": 7.5,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45529_2022-09-24_india_singapore",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.25,
+    "odds_away": 4.33,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45548_2022-09-24_cyprus_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 3.75,
+    "odds_away": 1.6,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45544_2022-09-24_israel_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 2.05,
+    "odds_draw": 3.5,
+    "odds_away": 3.75,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45547_2022-09-24_northern_ireland_kosovo",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.2,
+    "odds_away": 3.4,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45545_2022-09-24_slovenia_norway",
+    "bookmaker": "Bet365",
+    "odds_home": 4.5,
+    "odds_draw": 3.6,
+    "odds_away": 1.8,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45542_2022-09-24_armenia_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.57,
+    "captured_at": "2022-09-24"
+  },
+  {
+    "match_id": "45500_2022-09-23_algeria_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.6,
+    "odds_away": 4.75,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45510_2022-09-23_jordan_syria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.3,
+    "odds_away": 5.0,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45507_2022-09-23_egypt_niger",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 7.5,
+    "odds_away": 15.0,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45514_2022-09-23_paraguay_united_arab_emirates",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.5,
+    "odds_away": 4.5,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45502_2022-09-23_bahrain_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.0,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45509_2022-09-23_iraq_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.2,
+    "odds_away": 2.5,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45522_2022-09-23_bulgaria_gibraltar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.08,
+    "odds_draw": 10.0,
+    "odds_away": 21.0,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45520_2022-09-23_finland_romania",
+    "bookmaker": "Bet365",
+    "odds_home": 2.05,
+    "odds_draw": 3.3,
+    "odds_away": 3.75,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45523_2022-09-23_estonia_malta",
+    "bookmaker": "Bet365",
+    "odds_home": 1.65,
+    "odds_draw": 3.5,
+    "odds_away": 5.5,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45521_2022-09-23_georgia_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.25,
+    "odds_away": 3.8,
+    "captured_at": "2022-09-23"
+  },
+  {
+    "match_id": "45486_2022-09-22_suriname_nicaragua",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.4,
+    "odds_away": 2.5,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45485_2022-09-22_iceland_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.4,
+    "odds_away": 2.1,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45483_2022-09-22_cambodia_bangladesh",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.2,
+    "odds_away": 2.63,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45498_2022-09-22_liechtenstein_andorra",
+    "bookmaker": "Bet365",
+    "odds_home": 3.5,
+    "odds_draw": 3.0,
+    "odds_away": 2.15,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45496_2022-09-22_slovakia_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.5,
+    "odds_away": 7.5,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45493_2022-09-22_lithuania_faroe_islands",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.1,
+    "odds_away": 3.8,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45497_2022-09-22_latvia_moldova",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.6,
+    "odds_away": 4.75,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45495_2022-09-22_kazakhstan_belarus",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.0,
+    "odds_away": 3.4,
+    "captured_at": "2022-09-22"
+  },
+  {
+    "match_id": "45479_2022-09-21_san_marino_seychelles",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.2,
+    "odds_away": 7.0,
+    "captured_at": "2022-09-21"
+  },
+  {
+    "match_id": "45480_2022-09-21_vietnam_singapore",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.33,
+    "odds_away": 8.0,
+    "captured_at": "2022-09-21"
+  },
+  {
+    "match_id": "45481_2022-09-21_scotland_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.3,
+    "odds_away": 2.8,
+    "captured_at": "2022-09-21"
+  },
+  {
+    "match_id": "45431_2022-06-14_romania_montenegro",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 3.4,
+    "odds_away": 4.5,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45432_2022-06-14_luxembourg_faroe_islands",
+    "bookmaker": "Bet365",
+    "odds_home": 1.55,
+    "odds_draw": 4.0,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45435_2022-06-14_liechtenstein_latvia",
+    "bookmaker": "Bet365",
+    "odds_home": 12.0,
+    "odds_draw": 5.75,
+    "odds_away": 1.29,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45434_2022-06-14_moldova_andorra",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.5,
+    "odds_away": 7.5,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45428_2022-06-14_armenia_scotland",
+    "bookmaker": "Bet365",
+    "odds_home": 5.25,
+    "odds_draw": 3.6,
+    "odds_away": 1.7,
+    "captured_at": "2022-06-14"
+  },
+  {
+    "match_id": "45393_2022-06-13_sierra_leone_guinea_bissau",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.0,
+    "odds_away": 3.75,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45392_2022-06-13_sao_tome_and_principe_nigeria",
+    "bookmaker": "Bet365",
+    "odds_home": 15.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.1,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45397_2022-06-13_trinidad_and_tobago_saint_vincent_and_the_grenadines",
+    "bookmaker": "Bet365",
+    "odds_home": 1.14,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45404_2022-06-13_albania_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 3.5,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45401_2022-06-13_iceland_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 2.9,
+    "odds_draw": 3.4,
+    "odds_away": 2.45,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45402_2022-06-13_azerbaijan_belarus",
+    "bookmaker": "Bet365",
+    "odds_home": 2.4,
+    "odds_draw": 3.0,
+    "odds_away": 3.4,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45403_2022-06-13_kazakhstan_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.25,
+    "odds_away": 1.83,
+    "captured_at": "2022-06-13"
+  },
+  {
+    "match_id": "45379_2022-06-12_saint_lucia_anguilla",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 8.0,
+    "odds_away": 21.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45375_2022-06-12_martinique_panama",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 4.5,
+    "odds_away": 1.33,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45376_2022-06-12_cuba_antigua_and_barbuda",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 5.0,
+    "odds_away": 10.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45386_2022-06-12_greece_kosovo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.7,
+    "odds_draw": 3.75,
+    "odds_away": 4.75,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45389_2022-06-12_malta_san_marino",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 8.0,
+    "odds_away": 19.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45388_2022-06-12_georgia_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 4.0,
+    "odds_away": 5.75,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45383_2022-06-12_norway_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 1.95,
+    "odds_draw": 3.5,
+    "odds_away": 3.6,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45387_2022-06-12_macedonia_gibraltar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.09,
+    "odds_draw": 9.0,
+    "odds_away": 29.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45385_2022-06-12_northern_ireland_cyprus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.8,
+    "odds_away": 7.0,
+    "captured_at": "2022-06-12"
+  },
+  {
+    "match_id": "45370_2022-06-11_romania_finland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.7,
+    "odds_draw": 3.2,
+    "odds_away": 2.63,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45371_2022-06-11_faroe_islands_lithuania",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.0,
+    "odds_away": 3.2,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45367_2022-06-11_ukraine_armenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.17,
+    "odds_draw": 7.0,
+    "odds_away": 15.0,
+    "captured_at": "2022-06-11"
+  },
+  {
+    "match_id": "45335_2022-06-10_dominican_republic_guatemala",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.25,
+    "odds_away": 1.91,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45334_2022-06-10_bahamas_nicaragua",
+    "bookmaker": "Bet365",
+    "odds_home": 21.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.1,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45333_2022-06-10_saint_vincent_and_the_grenadines_trinidad_and_tobago",
+    "bookmaker": "Bet365",
+    "odds_home": 10.0,
+    "odds_draw": 6.0,
+    "odds_away": 1.18,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45340_2022-06-10_belarus_kazakhstan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 2.88,
+    "odds_away": 3.2,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45342_2022-06-10_andorra_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.5,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45338_2022-06-10_albania_israel",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.5,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45341_2022-06-10_moldova_latvia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.4,
+    "odds_draw": 3.0,
+    "odds_away": 2.3,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45339_2022-06-10_azerbaijan_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 3.8,
+    "odds_draw": 3.1,
+    "odds_away": 1.95,
+    "captured_at": "2022-06-10"
+  },
+  {
+    "match_id": "45310_2022-06-09_lesotho_ivory_coast",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.2,
+    "odds_away": 1.3,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45304_2022-06-09_guinea_bissau_sao_tome_and_principe",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 3.9,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45307_2022-06-09_ethiopia_egypt",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 4.33,
+    "odds_away": 2.25,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45305_2022-06-09_nigeria_sierra_leone",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 5.0,
+    "odds_away": 9.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45308_2022-06-09_guinea_malawi",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.2,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45309_2022-06-09_south_sudan_mali",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 5.0,
+    "odds_away": 1.25,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45315_2022-06-09_antigua_and_barbuda_cuba",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.6,
+    "odds_away": 1.67,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45318_2022-06-09_dominica_saint_lucia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.63,
+    "odds_draw": 3.1,
+    "odds_away": 2.4,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45330_2022-06-09_san_marino_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 29.0,
+    "odds_draw": 13.0,
+    "odds_away": 1.06,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45328_2022-06-09_malta_estonia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.55,
+    "odds_draw": 2.88,
+    "odds_away": 3.1,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45325_2022-06-09_greece_cyprus",
+    "bookmaker": "Bet365",
+    "odds_home": 1.22,
+    "odds_draw": 6.0,
+    "odds_away": 11.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45322_2022-06-09_norway_slovenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.5,
+    "odds_away": 10.0,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45324_2022-06-09_kosovo_northern_ireland",
+    "bookmaker": "Bet365",
+    "odds_home": 2.05,
+    "odds_draw": 3.2,
+    "odds_away": 3.8,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45326_2022-06-09_gibraltar_bulgaria",
+    "bookmaker": "Bet365",
+    "odds_home": 12.0,
+    "odds_draw": 5.0,
+    "odds_away": 1.29,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45327_2022-06-09_macedonia_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.25,
+    "odds_draw": 3.1,
+    "odds_away": 3.4,
+    "captured_at": "2022-06-09"
+  },
+  {
+    "match_id": "45298_2022-06-08_sudan_dr_congo",
+    "bookmaker": "Bet365",
+    "odds_home": 2.55,
+    "odds_draw": 3.1,
+    "odds_away": 2.55,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45299_2022-06-08_benin_mozambique",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.5,
+    "odds_away": 6.5,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45295_2022-06-08_tanzania_algeria",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 3.8,
+    "odds_away": 1.44,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45297_2022-06-08_gabon_mauritania",
+    "bookmaker": "Bet365",
+    "odds_home": 1.62,
+    "odds_draw": 3.4,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45294_2022-06-08_uganda_niger",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.7,
+    "odds_away": 5.5,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45303_2022-06-08_scotland_armenia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.3,
+    "odds_draw": 5.75,
+    "odds_away": 9.0,
+    "captured_at": "2022-06-08"
+  },
+  {
+    "match_id": "45268_2022-06-07_cape_verde_togo",
+    "bookmaker": "Bet365",
+    "odds_home": 1.85,
+    "odds_draw": 3.2,
+    "odds_away": 4.0,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45269_2022-06-07_zambia_comoros",
+    "bookmaker": "Bet365",
+    "odds_home": 1.6,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45267_2022-06-07_eswatini_burkina_faso",
+    "bookmaker": "Bet365",
+    "odds_home": 6.5,
+    "odds_draw": 4.2,
+    "odds_away": 1.4,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45272_2022-06-07_grenada_el_salvador",
+    "bookmaker": "Bet365",
+    "odds_home": 6.0,
+    "odds_draw": 4.33,
+    "odds_away": 1.4,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45276_2022-06-07_italy_hungary",
+    "bookmaker": "Bet365",
+    "odds_home": 1.45,
+    "odds_draw": 4.33,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45279_2022-06-07_faroe_islands_luxembourg",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.4,
+    "odds_away": 1.91,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45277_2022-06-07_finland_montenegro",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.2,
+    "odds_away": 5.25,
+    "captured_at": "2022-06-07"
+  },
+  {
+    "match_id": "45250_2022-06-06_equatorial_guinea_libya",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 3.1,
+    "odds_away": 3.1,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45252_2022-06-06_saint_vincent_and_the_grenadines_nicaragua",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 4.75,
+    "odds_away": 1.33,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45262_2022-06-06_slovakia_kazakhstan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.25,
+    "odds_draw": 4.33,
+    "odds_away": 11.0,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45264_2022-06-06_andorra_moldova",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 2.8,
+    "odds_away": 2.25,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45261_2022-06-06_belarus_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 2.6,
+    "odds_draw": 2.6,
+    "odds_away": 2.9,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45260_2022-06-06_iceland_albania",
+    "bookmaker": "Bet365",
+    "odds_home": 2.88,
+    "odds_draw": 3.0,
+    "odds_away": 2.38,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45263_2022-06-06_latvia_liechtenstein",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 8.0,
+    "odds_away": 21.0,
+    "captured_at": "2022-06-06"
+  },
+  {
+    "match_id": "45226_2022-06-05_egypt_guinea",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.4,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45228_2022-06-05_madagascar_angola",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 3.0,
+    "odds_away": 2.63,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45225_2022-06-05_malawi_ethiopia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.2,
+    "odds_draw": 2.9,
+    "odds_away": 3.2,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45234_2022-06-05_dominican_republic_french_guiana",
+    "bookmaker": "Bet365",
+    "odds_home": 2.0,
+    "odds_draw": 3.2,
+    "odds_away": 3.4,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45231_2022-06-05_cuba_barbados",
+    "bookmaker": "Bet365",
+    "odds_home": 1.13,
+    "odds_draw": 8.5,
+    "odds_away": 15.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45233_2022-06-05_guatemala_belize",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 7.5,
+    "odds_away": 23.0,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45247_2022-06-05_peru_new_zealand",
+    "bookmaker": "Bet365",
+    "odds_home": 1.36,
+    "odds_draw": 4.33,
+    "odds_away": 7.5,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45241_2022-06-05_kosovo_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 3.2,
+    "odds_draw": 2.7,
+    "odds_away": 2.38,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45243_2022-06-05_bulgaria_georgia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.63,
+    "odds_draw": 2.9,
+    "odds_away": 2.6,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45239_2022-06-05_sweden_norway",
+    "bookmaker": "Bet365",
+    "odds_home": 2.6,
+    "odds_draw": 3.0,
+    "odds_away": 2.45,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45240_2022-06-05_cyprus_northern_ireland",
+    "bookmaker": "Bet365",
+    "odds_home": 3.2,
+    "odds_draw": 3.1,
+    "odds_away": 2.1,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45242_2022-06-05_gibraltar_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 17.0,
+    "odds_draw": 8.0,
+    "odds_away": 1.11,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45244_2022-06-05_san_marino_malta",
+    "bookmaker": "Bet365",
+    "odds_home": 9.0,
+    "odds_draw": 4.75,
+    "odds_away": 1.29,
+    "captured_at": "2022-06-05"
+  },
+  {
+    "match_id": "45211_2022-06-04_dr_congo_gabon",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.0,
+    "odds_away": 3.3,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45207_2022-06-04_algeria_uganda",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.2,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45210_2022-06-04_mauritania_sudan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.91,
+    "odds_draw": 2.8,
+    "odds_away": 4.2,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45206_2022-06-04_niger_tanzania",
+    "bookmaker": "Bet365",
+    "odds_home": 2.5,
+    "odds_draw": 2.9,
+    "odds_away": 2.7,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45205_2022-06-04_namibia_burundi",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 2.9,
+    "odds_away": 3.4,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45213_2022-06-04_suriname_jamaica",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.3,
+    "odds_away": 1.91,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45221_2022-06-04_montenegro_romania",
+    "bookmaker": "Bet365",
+    "odds_home": 3.0,
+    "odds_draw": 3.1,
+    "odds_away": 2.45,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45222_2022-06-04_lithuania_luxembourg",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.1,
+    "odds_away": 2.38,
+    "captured_at": "2022-06-04"
+  },
+  {
+    "match_id": "45189_2022-06-03_ivory_coast_zambia",
+    "bookmaker": "Bet365",
+    "odds_home": 1.4,
+    "odds_draw": 3.6,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45187_2022-06-03_burkina_faso_cape_verde",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.0,
+    "odds_away": 4.5,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45186_2022-06-03_togo_eswatini",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.0,
+    "odds_away": 5.5,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45188_2022-06-03_comoros_lesotho",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.25,
+    "odds_away": 4.0,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45191_2022-06-03_bahamas_saint_vincent_and_the_grenadines",
+    "bookmaker": "Bet365",
+    "odds_home": 5.75,
+    "odds_draw": 3.6,
+    "odds_away": 1.5,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45204_2022-06-03_nepal_oman",
+    "bookmaker": "Bet365",
+    "odds_home": 26.0,
+    "odds_draw": 19.0,
+    "odds_away": 1.02,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45202_2022-06-03_liechtenstein_moldova",
+    "bookmaker": "Bet365",
+    "odds_home": 5.5,
+    "odds_draw": 3.5,
+    "odds_away": 1.6,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45201_2022-06-03_belarus_slovakia",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 3.4,
+    "odds_away": 1.55,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45203_2022-06-03_latvia_andorra",
+    "bookmaker": "Bet365",
+    "odds_home": 1.44,
+    "odds_draw": 4.0,
+    "odds_away": 8.0,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45200_2022-06-03_kazakhstan_azerbaijan",
+    "bookmaker": "Bet365",
+    "odds_home": 3.1,
+    "odds_draw": 3.0,
+    "odds_away": 2.38,
+    "captured_at": "2022-06-03"
+  },
+  {
+    "match_id": "45164_2022-06-02_mozambique_rwanda",
+    "bookmaker": "Bet365",
+    "odds_home": 2.1,
+    "odds_draw": 3.1,
+    "odds_away": 3.1,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45169_2022-06-02_french_guiana_guatemala",
+    "bookmaker": "Bet365",
+    "odds_home": 5.25,
+    "odds_draw": 3.5,
+    "odds_away": 1.62,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45168_2022-06-02_belize_dominican_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.5,
+    "odds_away": 1.8,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45176_2022-06-02_northern_ireland_greece",
+    "bookmaker": "Bet365",
+    "odds_home": 3.3,
+    "odds_draw": 2.75,
+    "odds_away": 2.55,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45175_2022-06-02_slovenia_sweden",
+    "bookmaker": "Bet365",
+    "odds_home": 3.6,
+    "odds_draw": 3.0,
+    "odds_away": 2.25,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45173_2022-06-02_israel_iceland",
+    "bookmaker": "Bet365",
+    "odds_home": 1.8,
+    "odds_draw": 3.75,
+    "odds_away": 4.33,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45180_2022-06-02_estonia_san_marino",
+    "bookmaker": "Bet365",
+    "odds_home": 1.11,
+    "odds_draw": 7.0,
+    "odds_away": 21.0,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45177_2022-06-02_cyprus_kosovo",
+    "bookmaker": "Bet365",
+    "odds_home": 4.2,
+    "odds_draw": 3.4,
+    "odds_away": 1.91,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45179_2022-06-02_bulgaria_macedonia",
+    "bookmaker": "Bet365",
+    "odds_home": 2.8,
+    "odds_draw": 3.1,
+    "odds_away": 2.55,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45178_2022-06-02_georgia_gibraltar",
+    "bookmaker": "Bet365",
+    "odds_home": 1.1,
+    "odds_draw": 9.5,
+    "odds_away": 26.0,
+    "captured_at": "2022-06-02"
+  },
+  {
+    "match_id": "45151_2022-06-01_angola_central_african_republic",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.25,
+    "odds_away": 7.0,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45153_2022-06-01_libya_botswana",
+    "bookmaker": "Bet365",
+    "odds_home": 1.57,
+    "odds_draw": 3.2,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45157_2022-06-01_malta_venezuela",
+    "bookmaker": "Bet365",
+    "odds_home": 7.0,
+    "odds_draw": 4.0,
+    "odds_away": 1.45,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45158_2022-06-01_kuwait_singapore",
+    "bookmaker": "Bet365",
+    "odds_home": 1.73,
+    "odds_draw": 3.2,
+    "odds_away": 4.5,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45156_2022-06-01_indonesia_bangladesh",
+    "bookmaker": "Bet365",
+    "odds_home": 1.33,
+    "odds_draw": 4.75,
+    "odds_away": 8.5,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45159_2022-06-01_malaysia_hong_kong",
+    "bookmaker": "Bet365",
+    "odds_home": 1.5,
+    "odds_draw": 3.6,
+    "odds_away": 6.0,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45162_2022-06-01_vietnam_afghanistan",
+    "bookmaker": "Bet365",
+    "odds_home": 1.67,
+    "odds_draw": 3.5,
+    "odds_away": 5.0,
+    "captured_at": "2022-06-01"
+  },
+  {
+    "match_id": "45150_2022-06-01_scotland_ukraine",
+    "bookmaker": "Bet365",
+    "odds_home": 2.45,
+    "odds_draw": 3.1,
+    "odds_away": 3.1,
+    "captured_at": "2022-06-01"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "_comment": "Hand-maintained stub (SPEC §6/§7) — NOT fetched. Every field below must be confirmed against the official FIFA source for the 2026 World Cup (48 teams, 12 groups of 4; top 2 per group + 8 best thirds -> 32-team knockout). See config/README.md.",
+  "groups": {},
+  "schedule": [],
+  "host_cities": ["USA", "CAN", "MEX"],
+  "tiebreak_rules": {},
+  "best_thirds_rule": {}
+}

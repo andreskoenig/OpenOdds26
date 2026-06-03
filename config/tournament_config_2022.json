@@ -1,0 +1,62 @@
+{
+  "_comment": "FIFA World Cup 2022 (Qatar) structure, in the schema simulate_tournament / run_prediction consume. 32 teams, 8 groups of 4; top 2 advance; best_thirds = 0; knockout R16 -> QF -> SF -> 3rd place + Final. This is the 2022 format, NOT 2026. Team values are the canonical slug team_ids from data/teams.json (e.g. qatar, united_states, south_korea). simulate_tournament seeds the first knockout round from 'knockout_bracket' (the official 2022 crossing) when present.",
+  "edition": "2022",
+  "host_team_ids": ["qatar"],
+  "host_cities": ["qatar"],
+  "advance_per_group": 2,
+  "best_thirds": 0,
+  "best_thirds_rule": {
+    "count": 0,
+    "note": "2022 format has no best third-placed qualifiers (that is the 2026 format)."
+  },
+  "groups": {
+    "A": ["qatar", "ecuador", "senegal", "netherlands"],
+    "B": ["england", "iran", "united_states", "wales"],
+    "C": ["argentina", "saudi_arabia", "mexico", "poland"],
+    "D": ["france", "australia", "denmark", "tunisia"],
+    "E": ["spain", "costa_rica", "germany", "japan"],
+    "F": ["belgium", "canada", "morocco", "croatia"],
+    "G": ["brazil", "serbia", "switzerland", "cameroon"],
+    "H": ["portugal", "ghana", "uruguay", "south_korea"]
+  },
+  "tiebreak_rules": {
+    "_comment": "Official FIFA 2022 group ranking order. The current simulator approximates this with points -> goal_difference -> goals_scored, then a seeded-deterministic order for remaining ties; head-to-head and fair-play are recorded here but not yet applied in code.",
+    "order": [
+      "points",
+      "goal_difference",
+      "goals_scored",
+      "head_to_head_points",
+      "head_to_head_goal_difference",
+      "head_to_head_goals_scored",
+      "fair_play_points",
+      "drawing_of_lots"
+    ],
+    "unsimulatable_resolution": "seeded_random"
+  },
+  "schedule": [],
+  "knockout_bracket": {
+    "_comment": "Standard FIFA 2022 layout. R16 pairings ordered so adjacent winners form the quarter-finals. Upper half: R16-1..R16-4 -> QF-1/QF-2 -> SF-1; lower half: R16-5..R16-8 -> QF-3/QF-4 -> SF-2.",
+    "round_of_16": [
+      {"match": "R16-1", "home": "1A", "away": "2B"},
+      {"match": "R16-2", "home": "1C", "away": "2D"},
+      {"match": "R16-3", "home": "1E", "away": "2F"},
+      {"match": "R16-4", "home": "1G", "away": "2H"},
+      {"match": "R16-5", "home": "1B", "away": "2A"},
+      {"match": "R16-6", "home": "1D", "away": "2C"},
+      {"match": "R16-7", "home": "1F", "away": "2E"},
+      {"match": "R16-8", "home": "1H", "away": "2G"}
+    ],
+    "quarter_finals": [
+      {"match": "QF-1", "home": "W R16-1", "away": "W R16-2"},
+      {"match": "QF-2", "home": "W R16-3", "away": "W R16-4"},
+      {"match": "QF-3", "home": "W R16-5", "away": "W R16-6"},
+      {"match": "QF-4", "home": "W R16-7", "away": "W R16-8"}
+    ],
+    "semi_finals": [
+      {"match": "SF-1", "home": "W QF-1", "away": "W QF-2"},
+      {"match": "SF-2", "home": "W QF-3", "away": "W QF-4"}
+    ],
+    "third_place": {"match": "3P", "home": "L SF-1", "away": "L SF-2"},
+    "final": {"match": "F", "home": "W SF-1", "away": "W SF-2"}
+  }
+}

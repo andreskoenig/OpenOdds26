@@ -1,0 +1,46 @@
+SQUAD-VALUE COVERAGE + SANITY REPORT
+============================================================
+
+Unmatched citizenships (top 25 of 9):
+  Chinese Taipei               38
+  Hongkong                     36
+  St. Kitts & Nevis            4
+  St. Lucia                    4
+  Neukaledonien                2
+  Southern Sudan               2
+  Macao                        1
+  Brunei Darussalam            1
+  St. Vincent & Grenadinen     1
+
+Teams covered at 2022-11-19, by confederation:
+  UEFA       54
+  CAF        47
+  AFC        30
+  CONCACAF   23
+  CONMEBOL   10
+  none       8
+  OFC        4
+
+Top 20 teams by 2022-11-19 squad value (top-26 talent pool):
+   1. england              EUR   1538.0m  (n=26)
+   2. france               EUR   1355.0m  (n=26)
+   3. brazil               EUR   1332.0m  (n=26)
+   4. spain                EUR   1138.0m  (n=26)
+   5. portugal             EUR   1088.0m  (n=26)
+   6. germany              EUR   1001.0m  (n=26)
+   7. italy                EUR    845.0m  (n=26)
+   8. argentina            EUR    754.5m  (n=26)
+   9. netherlands          EUR    723.0m  (n=26)
+  10. belgium              EUR    633.0m  (n=26)
+  11. uruguay              EUR    483.5m  (n=26)
+  12. ivory_coast          EUR    442.0m  (n=26)
+  13. croatia              EUR    410.5m  (n=26)
+  14. norway               EUR    408.9m  (n=26)
+  15. denmark              EUR    402.0m  (n=26)
+  16. nigeria              EUR    402.0m  (n=26)
+  17. serbia               EUR    370.5m  (n=26)
+  18. colombia             EUR    359.5m  (n=26)
+  19. austria              EUR    356.0m  (n=26)
+  20. turkey               EUR    345.6m  (n=26)
+
+SANITY OK: {'france': 2, 'brazil': 3, 'england': 1, 'spain': 4, 'portugal': 5} all in top 20.

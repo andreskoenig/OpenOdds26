@@ -1,0 +1,3170 @@
+[
+  {
+    "team_id": "togo",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 38775000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "france",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1278000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "romania",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 88200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "germany",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 972000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bulgaria",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 24200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "brazil",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1170000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "czech_republic",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 219500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "paraguay",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 109300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "hungary",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 95000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "denmark",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 368500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "georgia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 56400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "macedonia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 59175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "peru",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 46875000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "austria",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 343500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belarus",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 16500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "croatia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 408500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "turkey",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 370800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ukraine",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 235200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "canada",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 166500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "argentina",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 732000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "united_states",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 302000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ivory_coast",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 440000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "england",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1491000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belgium",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 645000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "morocco",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 329500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "switzerland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 294900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "montenegro",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 61150000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_korea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 146250000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bosnia_and_herzegovina",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 90900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cameroon",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 182900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "angola",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 66175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tunisia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 70700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mexico",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 191500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "scotland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 318000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "sweden",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 243000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "republic_of_ireland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 106600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "italy",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 876000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "spain",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1126000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "iceland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 39100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "greece",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 148500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "norway",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 362600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dr_congo",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 166200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "nigeria",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 378500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "wales",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 169400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "australia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 46075000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "chile",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 84800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "serbia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 376500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "portugal",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1057000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "israel",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 63100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "netherlands",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 741000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovakia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 146400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "northern_ireland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 44950000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "grenada",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4300000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "finland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 42550000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "senegal",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 353000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 113850000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tahiti",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 400000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "russia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 210000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_africa",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 21700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ghana",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 225500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mali",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 227200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "colombia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 384000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "saint_martin",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 600000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "martinique",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 22700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "algeria",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 309200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "french_guiana",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4750000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "uruguay",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 437500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "lithuania",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 7675000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "albania",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 121000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "eritrea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1400000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "egypt",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 149550000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cape_verde",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 45625000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "equatorial_guinea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 11375000.0,
+    "n_players": 19
+  },
+  {
+    "team_id": "uzbekistan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 24750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "jamaica",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 155850000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "poland",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 309000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "trinidad_and_tobago",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 6500000.0,
+    "n_players": 10
+  },
+  {
+    "team_id": "guadeloupe",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 34900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "qatar",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 16550000.0,
+    "n_players": 11
+  },
+  {
+    "team_id": "rwanda",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 725000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "iran",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 75850000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "antigua_and_barbuda",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1650000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gambia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 46300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovenia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 114000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "latvia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 9625000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "burkina_faso",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 79825000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "armenia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 29525000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "estonia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 5975000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "mozambique",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 26975000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "burundi",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 7900000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "barbados",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 700000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "philippines",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 8100000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "sierra_leone",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 11510000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "curacao",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 28625000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "pakistan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 175000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "zambia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 51100000.0,
+    "n_players": 19
+  },
+  {
+    "team_id": "venezuela",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 64925000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "new_zealand",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 25175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea_bissau",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 48200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "congo",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 18200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "haiti",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 31775000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cyprus",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 18400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "oman",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 250000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "suriname",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 43425000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "kenya",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 21325000.0,
+    "n_players": 11
+  },
+  {
+    "team_id": "syria",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 23950000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "seychelles",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 200000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "luxembourg",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 27700000.0,
+    "n_players": 25
+  },
+  {
+    "team_id": "costa_rica",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 25475000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dominican_republic",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 32350000.0,
+    "n_players": 15
+  },
+  {
+    "team_id": "japan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 150400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "central_african_republic",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 25650000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "ecuador",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 96600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "benin",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 22225000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "ethiopia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 775000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "moldova",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 12350000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "madagascar",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 19575000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "faroe_islands",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2910000.0,
+    "n_players": 16
+  },
+  {
+    "team_id": "zimbabwe",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 27300000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "kosovo",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 92100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "honduras",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 19725000.0,
+    "n_players": 24
+  },
+  {
+    "team_id": "kazakhstan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 12775000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "guyana",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1100000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "malta",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 8225000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "comoros",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 28825000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "malaysia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4450000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "aruba",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1600000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gabon",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 52300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "azerbaijan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 9375000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "r_union",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tajikistan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2025000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "iraq",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 8275000.0,
+    "n_players": 18
+  },
+  {
+    "team_id": "thailand",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2650000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "mauritania",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 13450000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "niger",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 3450000.0,
+    "n_players": 10
+  },
+  {
+    "team_id": "bolivia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4650000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "palestine",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1300000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "liberia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4000000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "lebanon",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1600000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "saudi_arabia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 8125000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "liechtenstein",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 575000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "uganda",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 6400000.0,
+    "n_players": 15
+  },
+  {
+    "team_id": "libya",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 14600000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "chad",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2000000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "el_salvador",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1825000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "guatemala",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2900000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "malawi",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 250000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "sao_tome_and_principe",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 750000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "panama",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 9650000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "indonesia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 21700000.0,
+    "n_players": 19
+  },
+  {
+    "team_id": "china",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 7975000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "mauritius",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "jordan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1625000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "montserrat",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1650000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "india",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "united_arab_emirates",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 100000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "cuba",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 2500000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "bermuda",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 1650000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "laos",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 350000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "afghanistan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 625000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "turkmenistan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tanzania",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 3450000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "papua_new_guinea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 250000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "kyrgyzstan",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 750000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "somalia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bonaire",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 600000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "new_caledonia",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 12000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "san_marino",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "monaco",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 50000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "vietnam",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 550000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "nicaragua",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 75000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bangladesh",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 4000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "sint_maarten",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 125000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "north_korea",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 900000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bahrain",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "andorra",
+    "as_of_date": "2022-08-01",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "togo",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 32375000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "france",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1355000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "romania",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 85900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "germany",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1001000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bulgaria",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 27900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "brazil",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1332000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "czech_republic",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 182800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "paraguay",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 111400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "hungary",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 112400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "denmark",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 402000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "georgia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 116950000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "macedonia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 57800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "peru",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 43375000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "austria",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 356000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belarus",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 15750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "croatia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 410500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "turkey",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 345600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ukraine",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 236500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "canada",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 174800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "argentina",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 754500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "united_states",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 333000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ivory_coast",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 442000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "england",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1538000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belgium",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 633000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "morocco",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 324100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "switzerland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 298000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "montenegro",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 55250000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_korea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 164900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bosnia_and_herzegovina",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 100300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cameroon",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 204800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "angola",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 66750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tunisia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 72050000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mexico",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 184400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "scotland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 319800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "sweden",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 262700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "republic_of_ireland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 127100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "italy",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 845000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "spain",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1138000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "iceland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 38300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "greece",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 150300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "norway",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 408900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dr_congo",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 155600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "nigeria",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 402000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "wales",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 183700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "australia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 43200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "chile",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 87100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "serbia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 370500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "portugal",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1088000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "israel",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 61600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "netherlands",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 723000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovakia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 154700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "northern_ireland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 39100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "grenada",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 4450000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "finland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 37950000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "senegal",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 320500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 102850000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tahiti",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 400000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "russia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 206500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_africa",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 20675000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ghana",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 249300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mali",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 228800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "colombia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 359500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "saint_martin",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 600000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "martinique",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 18300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "algeria",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 298500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "french_guiana",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 4150000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "uruguay",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 483500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "lithuania",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7325000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "albania",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 122300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "eritrea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1300000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "egypt",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 139050000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cape_verde",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 44775000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "equatorial_guinea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 10375000.0,
+    "n_players": 19
+  },
+  {
+    "team_id": "uzbekistan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 21650000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "jamaica",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 145200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "poland",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 288800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "trinidad_and_tobago",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7400000.0,
+    "n_players": 10
+  },
+  {
+    "team_id": "guadeloupe",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 31400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "qatar",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 14675000.0,
+    "n_players": 11
+  },
+  {
+    "team_id": "rwanda",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 625000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "iran",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 63125000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "antigua_and_barbuda",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1650000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gambia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 42100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovenia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 125700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "latvia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 10525000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "burkina_faso",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 82325000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "armenia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 29825000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "estonia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 6450000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "mozambique",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 29500000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "burundi",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 10850000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "barbados",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 700000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "philippines",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7625000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "sierra_leone",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 10910000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "curacao",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 31025000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "pakistan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 175000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "zambia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 54200000.0,
+    "n_players": 19
+  },
+  {
+    "team_id": "venezuela",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 49550000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "new_zealand",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 26175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea_bissau",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 48700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "congo",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 19750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "haiti",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 32575000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cyprus",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 19150000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "oman",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 250000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "suriname",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 51700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "kenya",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 21575000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "syria",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 23650000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "seychelles",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 200000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "luxembourg",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 27925000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "costa_rica",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 23075000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dominican_republic",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 26175000.0,
+    "n_players": 16
+  },
+  {
+    "team_id": "japan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 176400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "central_african_republic",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 25450000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "ecuador",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 145200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "benin",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 20275000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "ethiopia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 775000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "moldova",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 12350000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "madagascar",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 17275000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "faroe_islands",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2700000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "zimbabwe",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 25750000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "kosovo",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 93750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "honduras",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 16525000.0,
+    "n_players": 24
+  },
+  {
+    "team_id": "kazakhstan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 12825000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "guyana",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 950000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "malta",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7725000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "comoros",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 24225000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "malaysia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 4575000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "aruba",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1600000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gabon",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 45450000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "azerbaijan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 9325000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "r_union",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tajikistan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2025000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "iraq",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7750000.0,
+    "n_players": 18
+  },
+  {
+    "team_id": "thailand",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2575000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "mauritania",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 11800000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "niger",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 3050000.0,
+    "n_players": 10
+  },
+  {
+    "team_id": "bolivia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 4650000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "palestine",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1675000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "liberia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 4075000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "lebanon",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2175000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "saudi_arabia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 6825000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "liechtenstein",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 575000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "uganda",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 5950000.0,
+    "n_players": 16
+  },
+  {
+    "team_id": "libya",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 16600000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "chad",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2550000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "el_salvador",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1625000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "guatemala",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2600000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "malawi",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 275000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "sao_tome_and_principe",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 750000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "panama",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 9350000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "indonesia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 25650000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "china",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 7975000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "mauritius",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 500000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "jordan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2225000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "montserrat",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1500000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "india",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "united_arab_emirates",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 100000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "cuba",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 2200000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "bermuda",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1350000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "laos",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 350000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "afghanistan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 625000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "turkmenistan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 100000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tanzania",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 3400000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "papua_new_guinea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 350000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "kyrgyzstan",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 1250000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "somalia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bonaire",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 600000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "new_caledonia",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 9000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "san_marino",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "monaco",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 50000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "vietnam",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 550000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "nicaragua",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 75000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bangladesh",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 5000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "sint_maarten",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 125000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "north_korea",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 400000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bahrain",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "andorra",
+    "as_of_date": "2022-11-19",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "togo",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 31925000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "france",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1750000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "romania",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 104300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "germany",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1166000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bulgaria",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 40400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "brazil",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1333000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "czech_republic",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 176600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "paraguay",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 148200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "hungary",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 175300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "denmark",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 527000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "georgia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 181400000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "macedonia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 47800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "peru",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 34050000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "austria",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 330000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belarus",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 14300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "croatia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 379000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "turkey",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 465500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ukraine",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 399500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "canada",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 176950000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "argentina",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1007000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "united_states",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 441500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ivory_coast",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 487000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "england",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1785000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "belgium",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 674000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "morocco",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 546000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "switzerland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 333200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "montenegro",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 52950000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_korea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 117675000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "bosnia_and_herzegovina",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 120300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cameroon",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 249200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "angola",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 65700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tunisia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 71100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mexico",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 184500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "scotland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 292300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "sweden",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 590000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "republic_of_ireland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 218000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "italy",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 973000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "spain",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1255000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "iceland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 112900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "greece",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 275800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "norway",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 561500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dr_congo",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 155700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "nigeria",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 421500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "wales",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 198450000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "australia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 54150000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "chile",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 68600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "serbia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 369000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "portugal",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1186000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "israel",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 66250000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "netherlands",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1099000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovakia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 129800000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "northern_ireland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 82700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "grenada",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 4250000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "finland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 41750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "senegal",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 452500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 102200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "tahiti",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 400000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "russia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 263500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "south_africa",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 32275000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "ghana",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 317700000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "mali",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 169600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "colombia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 330500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "saint_martin",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 550000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "martinique",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 16200000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "algeria",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 262600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "french_guiana",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 3850000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "uruguay",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 535000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "lithuania",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 14250000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "albania",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 135500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "eritrea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1450000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "egypt",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 134350000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cape_verde",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 65000000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "equatorial_guinea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 16525000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "uzbekistan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 61625000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "jamaica",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 81500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "poland",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 241500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "trinidad_and_tobago",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 12750000.0,
+    "n_players": 12
+  },
+  {
+    "team_id": "guadeloupe",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 16125000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "qatar",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 12075000.0,
+    "n_players": 11
+  },
+  {
+    "team_id": "rwanda",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2875000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "iran",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 43750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "antigua_and_barbuda",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1375000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gambia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 77125000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "slovenia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 139900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "latvia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 10825000.0,
+    "n_players": 22
+  },
+  {
+    "team_id": "burkina_faso",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 108650000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "armenia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 47275000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "estonia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 8525000.0,
+    "n_players": 24
+  },
+  {
+    "team_id": "mozambique",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 24775000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "burundi",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 10700000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "barbados",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 625000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "philippines",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 4000000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "sierra_leone",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 8810000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "curacao",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 32175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "pakistan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 150000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "zambia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 50200000.0,
+    "n_players": 20
+  },
+  {
+    "team_id": "venezuela",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 59300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "new_zealand",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 29300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "guinea_bissau",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 74325000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "congo",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 22350000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "haiti",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 56600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "cyprus",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 19600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "oman",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 250000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "suriname",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 50600000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "kenya",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 25675000.0,
+    "n_players": 13
+  },
+  {
+    "team_id": "syria",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 8050000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "seychelles",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 75000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "luxembourg",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 33100000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "costa_rica",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 38975000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "dominican_republic",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 21000000.0,
+    "n_players": 18
+  },
+  {
+    "team_id": "japan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 319500000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "central_african_republic",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 13300000.0,
+    "n_players": 22
+  },
+  {
+    "team_id": "ecuador",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 341900000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "benin",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 16600000.0,
+    "n_players": 23
+  },
+  {
+    "team_id": "ethiopia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 775000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "moldova",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 12475000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "madagascar",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 12725000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "faroe_islands",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2200000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "zimbabwe",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 30600000.0,
+    "n_players": 24
+  },
+  {
+    "team_id": "kosovo",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 81550000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "honduras",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 15425000.0,
+    "n_players": 24
+  },
+  {
+    "team_id": "kazakhstan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 11475000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "guyana",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1250000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "malta",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 6350000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "comoros",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 19750000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "malaysia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2350000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "aruba",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1575000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "gabon",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 41175000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "azerbaijan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 11300000.0,
+    "n_players": 26
+  },
+  {
+    "team_id": "r_union",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tajikistan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1950000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "iraq",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 10600000.0,
+    "n_players": 18
+  },
+  {
+    "team_id": "thailand",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2650000.0,
+    "n_players": 9
+  },
+  {
+    "team_id": "mauritania",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 14675000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "niger",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 4750000.0,
+    "n_players": 10
+  },
+  {
+    "team_id": "bolivia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 5800000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "palestine",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2900000.0,
+    "n_players": 8
+  },
+  {
+    "team_id": "liberia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 3825000.0,
+    "n_players": 14
+  },
+  {
+    "team_id": "lebanon",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1400000.0,
+    "n_players": 5
+  },
+  {
+    "team_id": "saudi_arabia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 9075000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "liechtenstein",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 475000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "uganda",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 4225000.0,
+    "n_players": 17
+  },
+  {
+    "team_id": "libya",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 9400000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "chad",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2450000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "el_salvador",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1300000.0,
+    "n_players": 7
+  },
+  {
+    "team_id": "guatemala",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1700000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "malawi",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 375000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "sao_tome_and_principe",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 700000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "panama",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 19875000.0,
+    "n_players": 15
+  },
+  {
+    "team_id": "indonesia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 27825000.0,
+    "n_players": 22
+  },
+  {
+    "team_id": "china",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 6910000.0,
+    "n_players": 21
+  },
+  {
+    "team_id": "mauritius",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "jordan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 6600000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "montserrat",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 1600000.0,
+    "n_players": 6
+  },
+  {
+    "team_id": "india",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "united_arab_emirates",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 300000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "cuba",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 2100000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "bermuda",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 900000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "laos",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 200000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "afghanistan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 625000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "turkmenistan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 100000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "tanzania",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 4600000.0,
+    "n_players": 4
+  },
+  {
+    "team_id": "papua_new_guinea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "kyrgyzstan",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 800000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "somalia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 25000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bonaire",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 500000.0,
+    "n_players": 3
+  },
+  {
+    "team_id": "new_caledonia",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 5000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "san_marino",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 50000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "monaco",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 50000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "vietnam",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 550000.0,
+    "n_players": 2
+  },
+  {
+    "team_id": "nicaragua",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 150000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bangladesh",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 5000000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "sint_maarten",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 350000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "north_korea",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 400000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "bahrain",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 300000.0,
+    "n_players": 1
+  },
+  {
+    "team_id": "andorra",
+    "as_of_date": "2026-06-02",
+    "total_value_eur": 800000.0,
+    "n_players": 1
+  }
+]

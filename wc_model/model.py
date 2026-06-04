@@ -51,6 +51,7 @@ def fit_model(
     c_y: float,
     theta: float = 0.0,
     c_v: float = 0.0,
+    c_m: float = 0.0,
 ) -> ModelParams:
     """Fit μ, γ, ρ and per-team atk/def by ridge-penalized weighted MLE (SPEC §4).
 
@@ -88,9 +89,11 @@ def fit_model(
         r = feat_by.get(t)
         if r is not None:
             z_sv = r.get("z_squad_value", 0.0)
+            z_mkt = r.get("z_market", 0.0)
             atk_prior[i] = (c_a * r["z_fifa"] + c_x * r["attack_index"]
-                            + theta * r["market_adj_perf"] + c_v * z_sv)
-            def_prior[i] = c_d * r["z_fifa"] + c_y * r["defense_index"] + c_v * z_sv
+                            + theta * r["market_adj_perf"] + c_v * z_sv + c_m * z_mkt)
+            def_prior[i] = (c_d * r["z_fifa"] + c_y * r["defense_index"]
+                            + c_v * z_sv + c_m * z_mkt)
             u_vec[i] = r["upset_propensity"]
 
     # --- Assemble training matches (strictly before as_of) -----------------

@@ -97,6 +97,7 @@ def run_prediction(
     *,
     hyperparams: Hyperparams,
     squad_values: Optional[Sequence[dict]] = None,
+    market_probs: Optional[dict] = None,
     n_sims: int = 10000,
     seed: int = 0,
     collect_extras: bool = False,
@@ -117,6 +118,7 @@ def run_prediction(
         team_xg,
         match_odds,
         squad_values=squad_values,
+        market_probs=market_probs,
         **hp.feature_kwargs(),
     )
     params = fit_model(as_of_date, teams, match_results, features, **hp.fit_kwargs())
@@ -162,6 +164,7 @@ def backtest(
     *,
     hyperparams: Hyperparams,
     squad_values: Optional[Sequence[dict]] = None,
+    market_probs: Optional[dict] = None,
     n_sims: int = 10000,
     seed: int = 0,
 ) -> BacktestReport:
@@ -184,6 +187,7 @@ def backtest(
         match_odds,
         hyperparams=hyperparams,
         squad_values=squad_values,
+        market_probs=market_probs,
         n_sims=n_sims,
         seed=seed,
     )

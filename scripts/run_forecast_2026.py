@@ -35,7 +35,7 @@ SEED = 20260610
 MIN_MATCHES = 50
 
 HP = Hyperparams(xi=0.0008, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10,
-                 theta=0.0, kappa=0.0, c_v=0.1, blend_weight=0.7, n_recent=10)
+                 theta=0.0, kappa=0.0, c_v=0.1, c_m=0.35, blend_weight=0.7, n_recent=10)
 
 
 def _load(rel):
@@ -48,6 +48,7 @@ def main():
     matches = _load("data/match_results.json")
     fifa = _load("data/fifa_ratings.json")
     squad = _load("data/squad_values.json")
+    market = _load("data/polymarket_winner_2026.json")["p_market"]  # Polymarket prior
     config = _load("config/tournament_config_2026.json")
     name = {t["team_id"]: t["canonical_name"] for t in teams_all}
 
@@ -68,12 +69,13 @@ def main():
           f"| sims {N_SIMS} (seed {SEED})")
     print(f"hyperparams: xi={HP.xi} lambda_reg={HP.lambda_reg} "
           f"c_a/c_x/c_d/c_y={HP.c_a}/{HP.c_x}/{HP.c_d}/{HP.c_y} "
-          f"theta={HP.theta} kappa={HP.kappa} c_v={HP.c_v}")
+          f"theta={HP.theta} kappa={HP.kappa} c_v={HP.c_v} c_m={HP.c_m} (market prior ON)")
     print("\nfitting + simulating 20,000 tournaments (several minutes) ...\n", flush=True)
 
     pred = run_prediction(
         AS_OF, teams, config, matches, fifa, team_xg=[], match_odds=[],
-        hyperparams=HP, squad_values=squad, n_sims=N_SIMS, seed=SEED, collect_extras=True,
+        hyperparams=HP, squad_values=squad, market_probs=market,
+        n_sims=N_SIMS, seed=SEED, collect_extras=True,
     )
     p = pred.params
     extras = pred.extras

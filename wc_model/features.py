@@ -76,6 +76,7 @@ def build_features(
     blend_weight: float = 0.7,
     n_recent: int = 10,
     squad_values: Optional[Sequence[dict]] = None,
+    market_probs: Optional[dict] = None,
 ) -> List[FeatureRecord]:
     """Build one raw feature record per team (SPEC §4, §5).
 
@@ -144,6 +145,16 @@ def build_features(
         if t in latest_sv and latest_sv[t][2] >= 10 and latest_sv[t][1] > 0
     }
     z_squad_value = _standardize_map(sv_log, team_ids)
+
+    # --- Market (Polymarket winner) prior ---------------------------------
+    # Standardize log(market P(win)) across priced teams; unpriced -> z=0.
+    # (Outcome-level market info folded into the team strength prior.)
+    mkt_log = {
+        t: math.log(market_probs[t])
+        for t in team_ids
+        if market_probs and t in market_probs and market_probs[t] > 0
+    }
+    z_market = _standardize_map(mkt_log, team_ids)
 
     # --- §4: attack / defense indices --------------------------------------
     gf: Dict[str, list] = {t: [] for t in team_ids}
@@ -228,6 +239,7 @@ def build_features(
             upset_propensity=upset_propensity[t],
             market_adj_perf=market_adj_perf[t],
             z_squad_value=z_squad_value[t],
+            z_market=z_market[t],
         )
         for t in team_ids
     ]

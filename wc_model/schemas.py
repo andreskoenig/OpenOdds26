@@ -81,6 +81,7 @@ class FeatureRecord(TypedDict):
     upset_propensity: float  # U_T  (>= 0, direction-agnostic)
     market_adj_perf: float  # M_T  (signed)
     z_squad_value: float  # standardized log squad/talent-pool value (0 = neutral/thin)
+    z_market: float  # standardized log market (Polymarket winner) prob (0 = neutral/unpriced)
 
 
 class TournamentConfig(TypedDict):
@@ -143,6 +144,7 @@ class Hyperparams:
     theta: float = 0.0
     kappa: float = 0.0
     c_v: float = 0.0   # squad-value prior weight (atk_prior/def_prior += c_v * z_squad_value)
+    c_m: float = 0.0   # market (Polymarket winner) prior weight (+= c_m * z_market)
     blend_weight: float = 0.7
     n_recent: int = 10
 
@@ -161,4 +163,5 @@ class Hyperparams:
             "c_y": self.c_y,
             "theta": self.theta,
             "c_v": self.c_v,
+            "c_m": self.c_m,
         }

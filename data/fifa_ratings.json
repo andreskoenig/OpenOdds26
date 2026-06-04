@@ -52804,5 +52804,1229 @@
     "as_of_date": "2024-09-19",
     "fifa_points": 746.05,
     "fifa_rank": 205
+  },
+  {
+    "team_id": "france",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1877.32,
+    "fifa_rank": 1
+  },
+  {
+    "team_id": "spain",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1876.4,
+    "fifa_rank": 2
+  },
+  {
+    "team_id": "argentina",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1874.81,
+    "fifa_rank": 3
+  },
+  {
+    "team_id": "england",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1825.97,
+    "fifa_rank": 4
+  },
+  {
+    "team_id": "portugal",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1763.83,
+    "fifa_rank": 5
+  },
+  {
+    "team_id": "brazil",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1762.66,
+    "fifa_rank": 6
+  },
+  {
+    "team_id": "morocco",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1756.94,
+    "fifa_rank": 7
+  },
+  {
+    "team_id": "netherlands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1751.1,
+    "fifa_rank": 8
+  },
+  {
+    "team_id": "belgium",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1739.55,
+    "fifa_rank": 9
+  },
+  {
+    "team_id": "germany",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1731.3,
+    "fifa_rank": 10
+  },
+  {
+    "team_id": "croatia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1712.24,
+    "fifa_rank": 11
+  },
+  {
+    "team_id": "italy",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1701.77,
+    "fifa_rank": 12
+  },
+  {
+    "team_id": "colombia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1695.99,
+    "fifa_rank": 13
+  },
+  {
+    "team_id": "senegal",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1686.41,
+    "fifa_rank": 14
+  },
+  {
+    "team_id": "mexico",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1684.13,
+    "fifa_rank": 15
+  },
+  {
+    "team_id": "united_states",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1675.7,
+    "fifa_rank": 16
+  },
+  {
+    "team_id": "uruguay",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1673.07,
+    "fifa_rank": 17
+  },
+  {
+    "team_id": "japan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1661.58,
+    "fifa_rank": 18
+  },
+  {
+    "team_id": "switzerland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1650.75,
+    "fifa_rank": 19
+  },
+  {
+    "team_id": "denmark",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1619.47,
+    "fifa_rank": 20
+  },
+  {
+    "team_id": "iran",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1616.04,
+    "fifa_rank": 21
+  },
+  {
+    "team_id": "turkey",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1601.99,
+    "fifa_rank": 22
+  },
+  {
+    "team_id": "austria",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1597.4,
+    "fifa_rank": 23
+  },
+  {
+    "team_id": "ecuador",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1596.48,
+    "fifa_rank": 24
+  },
+  {
+    "team_id": "south_korea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1591.63,
+    "fifa_rank": 25
+  },
+  {
+    "team_id": "nigeria",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1586.69,
+    "fifa_rank": 26
+  },
+  {
+    "team_id": "australia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1578.66,
+    "fifa_rank": 27
+  },
+  {
+    "team_id": "algeria",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1571.03,
+    "fifa_rank": 28
+  },
+  {
+    "team_id": "egypt",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1565.56,
+    "fifa_rank": 29
+  },
+  {
+    "team_id": "canada",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1560.62,
+    "fifa_rank": 30
+  },
+  {
+    "team_id": "norway",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1555.6,
+    "fifa_rank": 31
+  },
+  {
+    "team_id": "ukraine",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1549.29,
+    "fifa_rank": 32
+  },
+  {
+    "team_id": "panama",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1540.6,
+    "fifa_rank": 33
+  },
+  {
+    "team_id": "ivory_coast",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1532.98,
+    "fifa_rank": 34
+  },
+  {
+    "team_id": "poland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1526.18,
+    "fifa_rank": 35
+  },
+  {
+    "team_id": "russia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1523.28,
+    "fifa_rank": 36
+  },
+  {
+    "team_id": "wales",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1522.64,
+    "fifa_rank": 37
+  },
+  {
+    "team_id": "sweden",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1510.11,
+    "fifa_rank": 38
+  },
+  {
+    "team_id": "serbia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1505.48,
+    "fifa_rank": 39
+  },
+  {
+    "team_id": "paraguay",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1503.5,
+    "fifa_rank": 40
+  },
+  {
+    "team_id": "czech_republic",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1503.04,
+    "fifa_rank": 41
+  },
+  {
+    "team_id": "hungary",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1500.58,
+    "fifa_rank": 42
+  },
+  {
+    "team_id": "scotland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1499.92,
+    "fifa_rank": 43
+  },
+  {
+    "team_id": "cameroon",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1481.24,
+    "fifa_rank": 44
+  },
+  {
+    "team_id": "dr_congo",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1479.68,
+    "fifa_rank": 45
+  },
+  {
+    "team_id": "tunisia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1479.1,
+    "fifa_rank": 46
+  },
+  {
+    "team_id": "greece",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1475.82,
+    "fifa_rank": 47
+  },
+  {
+    "team_id": "slovakia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1475.28,
+    "fifa_rank": 48
+  },
+  {
+    "team_id": "venezuela",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1468.05,
+    "fifa_rank": 49
+  },
+  {
+    "team_id": "uzbekistan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1461.21,
+    "fifa_rank": 50
+  },
+  {
+    "team_id": "mali",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1459.13,
+    "fifa_rank": 51
+  },
+  {
+    "team_id": "costa_rica",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1457.0,
+    "fifa_rank": 52
+  },
+  {
+    "team_id": "peru",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1455.87,
+    "fifa_rank": 53
+  },
+  {
+    "team_id": "chile",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1455.28,
+    "fifa_rank": 54
+  },
+  {
+    "team_id": "qatar",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1452.37,
+    "fifa_rank": 55
+  },
+  {
+    "team_id": "romania",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1450.2,
+    "fifa_rank": 56
+  },
+  {
+    "team_id": "iraq",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1447.77,
+    "fifa_rank": 57
+  },
+  {
+    "team_id": "slovenia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1446.44,
+    "fifa_rank": 58
+  },
+  {
+    "team_id": "republic_of_ireland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1439.96,
+    "fifa_rank": 59
+  },
+  {
+    "team_id": "south_africa",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1428.38,
+    "fifa_rank": 60
+  },
+  {
+    "team_id": "saudi_arabia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1419.73,
+    "fifa_rank": 61
+  },
+  {
+    "team_id": "burkina_faso",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1412.49,
+    "fifa_rank": 62
+  },
+  {
+    "team_id": "jordan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1390.1,
+    "fifa_rank": 63
+  },
+  {
+    "team_id": "bosnia_and_herzegovina",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1385.77,
+    "fifa_rank": 64
+  },
+  {
+    "team_id": "albania",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1382.49,
+    "fifa_rank": 65
+  },
+  {
+    "team_id": "honduras",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1380.27,
+    "fifa_rank": 66
+  },
+  {
+    "team_id": "united_arab_emirates",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1370.47,
+    "fifa_rank": 67
+  },
+  {
+    "team_id": "cape_verde",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1369.29,
+    "fifa_rank": 68
+  },
+  {
+    "team_id": "macedonia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1369.16,
+    "fifa_rank": 69
+  },
+  {
+    "team_id": "northern_ireland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1362.16,
+    "fifa_rank": 70
+  },
+  {
+    "team_id": "jamaica",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1357.84,
+    "fifa_rank": 71
+  },
+  {
+    "team_id": "georgia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1351.14,
+    "fifa_rank": 72
+  },
+  {
+    "team_id": "ghana",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1346.88,
+    "fifa_rank": 73
+  },
+  {
+    "team_id": "finland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1345.48,
+    "fifa_rank": 74
+  },
+  {
+    "team_id": "iceland",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1343.92,
+    "fifa_rank": 75
+  },
+  {
+    "team_id": "israel",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1333.9,
+    "fifa_rank": 76
+  },
+  {
+    "team_id": "bolivia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1329.42,
+    "fifa_rank": 77
+  },
+  {
+    "team_id": "kosovo",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1317.17,
+    "fifa_rank": 78
+  },
+  {
+    "team_id": "oman",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1313.46,
+    "fifa_rank": 79
+  },
+  {
+    "team_id": "montenegro",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1300.36,
+    "fifa_rank": 80
+  },
+  {
+    "team_id": "guinea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1300.01,
+    "fifa_rank": 81
+  },
+  {
+    "team_id": "haiti",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1296.61,
+    "fifa_rank": 82
+  },
+  {
+    "team_id": "curacao",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1293.08,
+    "fifa_rank": 83
+  },
+  {
+    "team_id": "syria",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1288.56,
+    "fifa_rank": 84
+  },
+  {
+    "team_id": "new_zealand",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1276.66,
+    "fifa_rank": 85
+  },
+  {
+    "team_id": "bulgaria",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1274.06,
+    "fifa_rank": 86
+  },
+  {
+    "team_id": "gabon",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1272.51,
+    "fifa_rank": 87
+  },
+  {
+    "team_id": "uganda",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1264.09,
+    "fifa_rank": 88
+  },
+  {
+    "team_id": "angola",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1263.1,
+    "fifa_rank": 89
+  },
+  {
+    "team_id": "benin",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1258.98,
+    "fifa_rank": 90
+  },
+  {
+    "team_id": "bahrain",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1258.53,
+    "fifa_rank": 91
+  },
+  {
+    "team_id": "zambia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1255.82,
+    "fifa_rank": 92
+  },
+  {
+    "team_id": "thailand",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1252.14,
+    "fifa_rank": 93
+  },
+  {
+    "team_id": "china",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1251.6,
+    "fifa_rank": 94
+  },
+  {
+    "team_id": "palestine",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1244.73,
+    "fifa_rank": 95
+  },
+  {
+    "team_id": "guatemala",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1243.47,
+    "fifa_rank": 96
+  },
+  {
+    "team_id": "belarus",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1235.82,
+    "fifa_rank": 97
+  },
+  {
+    "team_id": "luxembourg",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1226.36,
+    "fifa_rank": 98
+  },
+  {
+    "team_id": "vietnam",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1225.68,
+    "fifa_rank": 99
+  },
+  {
+    "team_id": "mozambique",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1224.31,
+    "fifa_rank": 100
+  },
+  {
+    "team_id": "el_salvador",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1223.28,
+    "fifa_rank": 101
+  },
+  {
+    "team_id": "trinidad_and_tobago",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1221.95,
+    "fifa_rank": 102
+  },
+  {
+    "team_id": "tajikistan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1221.78,
+    "fifa_rank": 103
+  },
+  {
+    "team_id": "madagascar",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1202.69,
+    "fifa_rank": 104
+  },
+  {
+    "team_id": "equatorial_guinea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1195.2,
+    "fifa_rank": 105
+  },
+  {
+    "team_id": "armenia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1191.42,
+    "fifa_rank": 106
+  },
+  {
+    "team_id": "lebanon",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1187.96,
+    "fifa_rank": 108
+  },
+  {
+    "team_id": "comoros",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1187.91,
+    "fifa_rank": 109
+  },
+  {
+    "team_id": "kazakhstan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1182.96,
+    "fifa_rank": 110
+  },
+  {
+    "team_id": "kenya",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1182.23,
+    "fifa_rank": 111
+  },
+  {
+    "team_id": "libya",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1182.08,
+    "fifa_rank": 112
+  },
+  {
+    "team_id": "tanzania",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1180.27,
+    "fifa_rank": 113
+  },
+  {
+    "team_id": "niger",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1179.66,
+    "fifa_rank": 114
+  },
+  {
+    "team_id": "mauritania",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1170.72,
+    "fifa_rank": 115
+  },
+  {
+    "team_id": "gambia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1159.64,
+    "fifa_rank": 116
+  },
+  {
+    "team_id": "sudan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1157.22,
+    "fifa_rank": 117
+  },
+  {
+    "team_id": "north_korea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1151.05,
+    "fifa_rank": 118
+  },
+  {
+    "team_id": "sierra_leone",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1148.98,
+    "fifa_rank": 119
+  },
+  {
+    "team_id": "namibia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1148.84,
+    "fifa_rank": 120
+  },
+  {
+    "team_id": "togo",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1147.31,
+    "fifa_rank": 121
+  },
+  {
+    "team_id": "indonesia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1144.88,
+    "fifa_rank": 122
+  },
+  {
+    "team_id": "faroe_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1137.14,
+    "fifa_rank": 123
+  },
+  {
+    "team_id": "azerbaijan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1136.67,
+    "fifa_rank": 124
+  },
+  {
+    "team_id": "suriname",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1132.43,
+    "fifa_rank": 125
+  },
+  {
+    "team_id": "cyprus",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1128.33,
+    "fifa_rank": 126
+  },
+  {
+    "team_id": "malawi",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1128.03,
+    "fifa_rank": 127
+  },
+  {
+    "team_id": "rwanda",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1126.62,
+    "fifa_rank": 128
+  },
+  {
+    "team_id": "estonia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1121.1,
+    "fifa_rank": 129
+  },
+  {
+    "team_id": "zimbabwe",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1119.78,
+    "fifa_rank": 130
+  },
+  {
+    "team_id": "nicaragua",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1116.48,
+    "fifa_rank": 131
+  },
+  {
+    "team_id": "guinea_bissau",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1108.38,
+    "fifa_rank": 132
+  },
+  {
+    "team_id": "congo",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1105.96,
+    "fifa_rank": 133
+  },
+  {
+    "team_id": "kuwait",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1105.1,
+    "fifa_rank": 134
+  },
+  {
+    "team_id": "philippines",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1096.73,
+    "fifa_rank": 135
+  },
+  {
+    "team_id": "latvia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1090.57,
+    "fifa_rank": 136
+  },
+  {
+    "team_id": "india",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1087.34,
+    "fifa_rank": 137
+  },
+  {
+    "team_id": "malaysia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1086.22,
+    "fifa_rank": 138
+  },
+  {
+    "team_id": "central_african_republic",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1083.57,
+    "fifa_rank": 139
+  },
+  {
+    "team_id": "liberia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1079.02,
+    "fifa_rank": 140
+  },
+  {
+    "team_id": "turkmenistan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1078.65,
+    "fifa_rank": 141
+  },
+  {
+    "team_id": "burundi",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1078.01,
+    "fifa_rank": 142
+  },
+  {
+    "team_id": "dominican_republic",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1076.5,
+    "fifa_rank": 143
+  },
+  {
+    "team_id": "ethiopia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1071.55,
+    "fifa_rank": 144
+  },
+  {
+    "team_id": "lesotho",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1067.13,
+    "fifa_rank": 145
+  },
+  {
+    "team_id": "botswana",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1063.63,
+    "fifa_rank": 146
+  },
+  {
+    "team_id": "singapore",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1061.2,
+    "fifa_rank": 147
+  },
+  {
+    "team_id": "lithuania",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1058.42,
+    "fifa_rank": 148
+  },
+  {
+    "team_id": "yemen",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1049.49,
+    "fifa_rank": 149
+  },
+  {
+    "team_id": "guyana",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1049.32,
+    "fifa_rank": 150
+  },
+  {
+    "team_id": "new_caledonia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1036.95,
+    "fifa_rank": 151
+  },
+  {
+    "team_id": "solomon_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1031.89,
+    "fifa_rank": 153
+  },
+  {
+    "team_id": "fiji",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1029.7,
+    "fifa_rank": 154
+  },
+  {
+    "team_id": "puerto_rico",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1026.11,
+    "fifa_rank": 156
+  },
+  {
+    "team_id": "tahiti",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1019.04,
+    "fifa_rank": 157
+  },
+  {
+    "team_id": "myanmar",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1011.88,
+    "fifa_rank": 158
+  },
+  {
+    "team_id": "moldova",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 1004.16,
+    "fifa_rank": 159
+  },
+  {
+    "team_id": "vanuatu",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 997.01,
+    "fifa_rank": 160
+  },
+  {
+    "team_id": "antigua_and_barbuda",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 986.58,
+    "fifa_rank": 161
+  },
+  {
+    "team_id": "malta",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 986.39,
+    "fifa_rank": 162
+  },
+  {
+    "team_id": "grenada",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 981.82,
+    "fifa_rank": 163
+  },
+  {
+    "team_id": "cuba",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 981.42,
+    "fifa_rank": 164
+  },
+  {
+    "team_id": "eswatini",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 979.01,
+    "fifa_rank": 165
+  },
+  {
+    "team_id": "afghanistan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 977.57,
+    "fifa_rank": 166
+  },
+  {
+    "team_id": "bermuda",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 976.87,
+    "fifa_rank": 167
+  },
+  {
+    "team_id": "papua_new_guinea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 974.9,
+    "fifa_rank": 169
+  },
+  {
+    "team_id": "south_sudan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 970.94,
+    "fifa_rank": 170
+  },
+  {
+    "team_id": "maldives",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 950.1,
+    "fifa_rank": 172
+  },
+  {
+    "team_id": "andorra",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 944.71,
+    "fifa_rank": 173
+  },
+  {
+    "team_id": "montserrat",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 916.75,
+    "fifa_rank": 175
+  },
+  {
+    "team_id": "nepal",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 914.54,
+    "fifa_rank": 176
+  },
+  {
+    "team_id": "cambodia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 911.54,
+    "fifa_rank": 177
+  },
+  {
+    "team_id": "mauritius",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 911.49,
+    "fifa_rank": 178
+  },
+  {
+    "team_id": "barbados",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 909.89,
+    "fifa_rank": 179
+  },
+  {
+    "team_id": "belize",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 907.0,
+    "fifa_rank": 180
+  },
+  {
+    "team_id": "bangladesh",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 899.53,
+    "fifa_rank": 181
+  },
+  {
+    "team_id": "dominica",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 897.69,
+    "fifa_rank": 182
+  },
+  {
+    "team_id": "chad",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 896.85,
+    "fifa_rank": 183
+  },
+  {
+    "team_id": "eritrea",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 887.06,
+    "fifa_rank": 184
+  },
+  {
+    "team_id": "laos",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 885.03,
+    "fifa_rank": 185
+  },
+  {
+    "team_id": "bhutan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 880.55,
+    "fifa_rank": 186
+  },
+  {
+    "team_id": "mongolia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 878.08,
+    "fifa_rank": 187
+  },
+  {
+    "team_id": "cook_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 877.53,
+    "fifa_rank": 188
+  },
+  {
+    "team_id": "aruba",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 877.3,
+    "fifa_rank": 189
+  },
+  {
+    "team_id": "samoa",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 876.41,
+    "fifa_rank": 190
+  },
+  {
+    "team_id": "sri_lanka",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 871.82,
+    "fifa_rank": 191
+  },
+  {
+    "team_id": "american_samoa",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 871.61,
+    "fifa_rank": 192
+  },
+  {
+    "team_id": "macau",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 858.03,
+    "fifa_rank": 194
+  },
+  {
+    "team_id": "cayman_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 855.45,
+    "fifa_rank": 195
+  },
+  {
+    "team_id": "sao_tome_and_principe",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 855.44,
+    "fifa_rank": 196
+  },
+  {
+    "team_id": "djibouti",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 853.58,
+    "fifa_rank": 197
+  },
+  {
+    "team_id": "somalia",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 839.17,
+    "fifa_rank": 198
+  },
+  {
+    "team_id": "tonga",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 835.64,
+    "fifa_rank": 199
+  },
+  {
+    "team_id": "timor_leste",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 825.64,
+    "fifa_rank": 200
+  },
+  {
+    "team_id": "pakistan",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 824.6,
+    "fifa_rank": 201
+  },
+  {
+    "team_id": "guam",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 822.8,
+    "fifa_rank": 202
+  },
+  {
+    "team_id": "gibraltar",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 814.87,
+    "fifa_rank": 203
+  },
+  {
+    "team_id": "seychelles",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 804.16,
+    "fifa_rank": 204
+  },
+  {
+    "team_id": "turks_and_caicos_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 803.98,
+    "fifa_rank": 205
+  },
+  {
+    "team_id": "liechtenstein",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 803.57,
+    "fifa_rank": 206
+  },
+  {
+    "team_id": "bahamas",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 786.82,
+    "fifa_rank": 207
+  },
+  {
+    "team_id": "us_virgin_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 779.76,
+    "fifa_rank": 208
+  },
+  {
+    "team_id": "british_virgin_islands",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 777.41,
+    "fifa_rank": 209
+  },
+  {
+    "team_id": "anguilla",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 760.25,
+    "fifa_rank": 210
+  },
+  {
+    "team_id": "san_marino",
+    "as_of_date": "2026-06-04",
+    "fifa_points": 726.33,
+    "fifa_rank": 211
   }
 ]

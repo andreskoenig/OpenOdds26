@@ -40,6 +40,7 @@ HP = Hyperparams(
     lambda_reg=8.0,   # stronger ridge pull toward priors (compresses spread)
     c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10,   # FIFA-prior heavy vs goals index
     theta=0.0, kappa=0.0, c_v=0.1, blend_weight=0.7, n_recent=10,   # squad-value prior ON
+    opponent_adjust=False, max_history_years=0.0,   # off by default (old shipped config)
 )
 
 
@@ -66,6 +67,12 @@ def main():
         HP.theta = float(sys.argv[sys.argv.index("--theta") + 1])
     if "--cv" in sys.argv:
         HP.c_v = float(sys.argv[sys.argv.index("--cv") + 1])
+    if "--xi" in sys.argv:
+        HP.xi = float(sys.argv[sys.argv.index("--xi") + 1])
+    if "--trunc" in sys.argv:
+        HP.max_history_years = float(sys.argv[sys.argv.index("--trunc") + 1])
+    if "--oppadj" in sys.argv:
+        HP.opponent_adjust = True
     surprise_on = HP.kappa != 0.0 or HP.theta != 0.0
 
     # Config now carries canonical slug team_ids directly (no remap needed).
@@ -115,7 +122,8 @@ def main():
     print(f"squad-value snaps    : {len(squad_values)} rows -> z_squad_value (c_v prior)")
     print(f"hyperparams          : xi={HP.xi} lambda_reg={HP.lambda_reg} "
           f"c_a/c_x/c_d/c_y={HP.c_a}/{HP.c_x}/{HP.c_d}/{HP.c_y} "
-          f"theta={HP.theta} kappa={HP.kappa} c_v={HP.c_v}")
+          f"theta={HP.theta} kappa={HP.kappa} c_v={HP.c_v} "
+          f"opp_adj={HP.opponent_adjust} trunc={HP.max_history_years}y")
     print(f"sims                 : {N_SIMS} (seed {SEED})")
     print("\nfitting + simulating (this takes a few minutes) ...\n")
 

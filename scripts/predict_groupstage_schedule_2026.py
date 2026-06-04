@@ -27,7 +27,8 @@ from wc_model.model import btts, fit_model, matchup_matrix, over_under, result_p
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-HP = dict(xi=0.0008, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10, theta=0.0, c_v=0.1)
+HP = dict(xi=0.0012651, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10, theta=0.0,
+          c_v=0.1, c_m=0.35, opponent_adjust=True, max_history_years=10.0)
 AS_OF = "2026-06-10"
 
 # Published group-stage calendar (home, away as listed). Source: ESPN schedule.
@@ -86,6 +87,7 @@ def main():
     matches = _load("data/match_results.json")
     fifa = _load("data/fifa_ratings.json")
     squad = _load("data/squad_values.json")
+    market = _load("data/polymarket_winner_2026_depathed.json")["p_market"]
     cfg = _load("config/tournament_config_2026.json")
     name = {t["team_id"]: t["canonical_name"] for t in teams}
     nm = lambda t: name.get(t, t)
@@ -125,10 +127,13 @@ def main():
     eligible = {t for t, c in cnt.items() if c >= 50} | set(group_of)
     tlist = [t for t in teams if t["team_id"] in eligible]
     feats = build_features(AS_OF, tlist, matches, fifa, [], [], squad_values=squad,
-                           xi=HP["xi"], blend_weight=0.7, n_recent=10)
+                           market_probs=market, xi=HP["xi"], blend_weight=0.7, n_recent=10,
+                           opponent_adjust=HP["opponent_adjust"],
+                           max_history_years=HP["max_history_years"])
     params = fit_model(AS_OF, tlist, matches, feats, xi=HP["xi"], lambda_reg=HP["lambda_reg"],
                        c_a=HP["c_a"], c_x=HP["c_x"], c_d=HP["c_d"], c_y=HP["c_y"],
-                       theta=HP["theta"], c_v=HP["c_v"])
+                       theta=HP["theta"], c_v=HP["c_v"], c_m=HP["c_m"],
+                       max_history_years=HP["max_history_years"])
 
     def predict(home, away):
         """1X2 + modal score in (home, away) display order; host gets advantage."""

@@ -148,6 +148,7 @@ class Hyperparams:
     blend_weight: float = 0.7
     n_recent: int = 10
     opponent_adjust: bool = False  # opponent-adjust the atk/def prior (point-in-time FIFA)
+    max_history_years: float = 0.0  # hard truncation: drop matches older than this (0 = off)
 
     def feature_kwargs(self) -> Dict[str, object]:
         """Keyword args for ``build_features`` (xi shared with the fit)."""
@@ -156,6 +157,7 @@ class Hyperparams:
             "blend_weight": self.blend_weight,
             "n_recent": self.n_recent,
             "opponent_adjust": self.opponent_adjust,
+            "max_history_years": self.max_history_years,
         }
 
     def fit_kwargs(self) -> Dict[str, float]:
@@ -170,4 +172,5 @@ class Hyperparams:
             "theta": self.theta,
             "c_v": self.c_v,
             "c_m": self.c_m,
+            "max_history_years": self.max_history_years,
         }

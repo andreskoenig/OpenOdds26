@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import bisect
 import math
-from datetime import date
+from datetime import date, timedelta
 from typing import Dict, List, Optional, Sequence
 
 import numpy as np
@@ -79,6 +79,7 @@ def build_features(
     squad_values: Optional[Sequence[dict]] = None,
     market_probs: Optional[dict] = None,
     opponent_adjust: bool = False,
+    max_history_years: float = 0.0,
 ) -> List[FeatureRecord]:
     """Build one raw feature record per team (SPEC §4, §5).
 
@@ -103,7 +104,15 @@ def build_features(
         return _as_date(m["date"]) if m is not None else None
 
     # --- As-of cutoff filtering (strictly before as_of) --------------------
-    pre_matches = [m for m in match_results if _as_date(m["date"]) < as_of]
+    # Optional hard truncation: also drop matches older than max_history_years
+    # (a clean backstop on top of the time decay).
+    lo = (as_of - timedelta(days=max_history_years * 365.25)
+          if max_history_years and max_history_years > 0 else None)
+    pre_matches = [
+        m for m in match_results
+        if _as_date(m["date"]) < as_of
+        and (lo is None or _as_date(m["date"]) >= lo)
+    ]
 
     xg_by_key: Dict[tuple, TeamXg] = {}
     for r in team_xg:

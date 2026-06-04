@@ -10,7 +10,7 @@ mapping) into the callable ``simulate_tournament`` expects.
 from __future__ import annotations
 
 import math
-from datetime import date
+from datetime import date, timedelta
 from typing import Dict, Optional, Sequence, Tuple
 
 import numpy as np
@@ -52,6 +52,7 @@ def fit_model(
     theta: float = 0.0,
     c_v: float = 0.0,
     c_m: float = 0.0,
+    max_history_years: float = 0.0,
 ) -> ModelParams:
     """Fit μ, γ, ρ and per-team atk/def by ridge-penalized weighted MLE (SPEC §4).
 
@@ -97,9 +98,17 @@ def fit_model(
             u_vec[i] = r["upset_propensity"]
 
     # --- Assemble training matches (strictly before as_of) -----------------
+    # Optional hard truncation: drop matches older than max_history_years (a clean
+    # backstop on top of the time decay; at the shipped half-life such matches
+    # already carry <~1% weight).
+    lo = (as_of - timedelta(days=max_history_years * 365.25)
+          if max_history_years and max_history_years > 0 else None)
     hi, ai, xx, yy, ww, hh = [], [], [], [], [], []
     for m in match_results:
-        if _as_date(m["date"]) >= as_of:
+        md = _as_date(m["date"])
+        if md >= as_of:
+            continue
+        if lo is not None and md < lo:
             continue
         if m["home_team_id"] not in idx or m["away_team_id"] not in idx:
             continue
@@ -107,7 +116,7 @@ def fit_model(
         ai.append(idx[m["away_team_id"]])
         xx.append(m["home_goals"])
         yy.append(m["away_goals"])
-        days = (as_of - _as_date(m["date"])).days
+        days = (as_of - md).days
         ww.append(math.exp(-xi * days))
         hh.append(0.0 if m.get("neutral", False) else 1.0)
 

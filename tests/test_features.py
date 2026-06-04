@@ -237,6 +237,25 @@ def test_opponent_adjust_credits_beating_stronger_sides():
     assert _rec(on, "SA")["attack_index"] > _rec(on, "SB")["attack_index"]
 
 
+# --- §4 hard truncation ----------------------------------------------------
+
+def test_max_history_years_drops_old_matches():
+    # A beats B 5-0 long ago, then loses 0-1 recently. With no truncation A's
+    # attack prior (incl. the old rout) exceeds B's; truncating to 5y keeps only
+    # the recent loss, flipping the order.
+    teams = [team("A"), team("B")]
+    results = [
+        match("old", "2005-01-01", "A", "B", 5, 0),   # 15y old
+        match("new", "2019-01-01", "A", "B", 0, 1),   # within 5y of cutoff
+    ]
+    as_of = "2020-01-01"
+    full = build_features(as_of, teams, results, [], [], [], xi=0.0)
+    trunc = build_features(as_of, teams, results, [], [], [], xi=0.0,
+                           max_history_years=5.0)
+    assert _rec(full, "A")["attack_index"] > _rec(full, "B")["attack_index"]
+    assert _rec(trunc, "A")["attack_index"] < _rec(trunc, "B")["attack_index"]
+
+
 # --- look-ahead guard ------------------------------------------------------
 
 def test_lookahead_guard_post_cutoff_data_is_ignored():

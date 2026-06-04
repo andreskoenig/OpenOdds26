@@ -206,6 +206,37 @@ def test_missing_xg_falls_back_to_goals():
     assert _rec(recs, "B")["defense_index"] > _rec(recs, "A")["defense_index"]
 
 
+# --- §4 opponent-adjusted prior --------------------------------------------
+
+def test_opponent_adjust_credits_beating_stronger_sides():
+    # SA and SB both win 2-0, so their RAW attack is identical. But SA beat the
+    # STRONG side and SB beat the WEAK one. The field (F1, F2) establishes that
+    # scoring is suppressed vs STRONG (0) and easy vs WEAK (2), so the fitted
+    # opponent slope is negative -> SA's 2 vs STRONG should be credited above
+    # SB's 2 vs WEAK once opponent_adjust is on (and only then).
+    teams = [team("SA"), team("SB"), team("F1"), team("F2")]
+    results = [
+        match("f1s", "2020-01-01", "F1", "STRONG", 0, 0),
+        match("f1w", "2020-01-02", "F1", "WEAK", 2, 0),
+        match("f2s", "2020-01-03", "F2", "STRONG", 0, 0),
+        match("f2w", "2020-01-04", "F2", "WEAK", 2, 0),
+        match("sas", "2020-02-01", "SA", "STRONG", 2, 0),
+        match("sbw", "2020-02-01", "SB", "WEAK", 2, 0),
+    ]
+    ratings = [
+        fifa("STRONG", "2019-01-01", 2000.0),
+        fifa("WEAK", "2019-01-01", 1000.0),
+    ]
+    off = build_features("2020-06-01", teams, results, ratings, [], [], xi=0.0)
+    on = build_features("2020-06-01", teams, results, ratings, [], [], xi=0.0,
+                        opponent_adjust=True)
+    # raw (no adjustment): identical 2-0 wins -> identical attack_index
+    assert math.isclose(_rec(off, "SA")["attack_index"],
+                        _rec(off, "SB")["attack_index"], rel_tol=1e-9)
+    # opponent-adjusted: SA (beat STRONG) rated above SB (beat WEAK)
+    assert _rec(on, "SA")["attack_index"] > _rec(on, "SB")["attack_index"]
+
+
 # --- look-ahead guard ------------------------------------------------------
 
 def test_lookahead_guard_post_cutoff_data_is_ignored():

@@ -147,10 +147,16 @@ class Hyperparams:
     c_m: float = 0.0   # market (Polymarket winner) prior weight (+= c_m * z_market)
     blend_weight: float = 0.7
     n_recent: int = 10
+    opponent_adjust: bool = False  # opponent-adjust the atk/def prior (point-in-time FIFA)
 
-    def feature_kwargs(self) -> Dict[str, float]:
+    def feature_kwargs(self) -> Dict[str, object]:
         """Keyword args for ``build_features`` (xi shared with the fit)."""
-        return {"xi": self.xi, "blend_weight": self.blend_weight, "n_recent": self.n_recent}
+        return {
+            "xi": self.xi,
+            "blend_weight": self.blend_weight,
+            "n_recent": self.n_recent,
+            "opponent_adjust": self.opponent_adjust,
+        }
 
     def fit_kwargs(self) -> Dict[str, float]:
         """Keyword args for ``fit_model`` (xi shared with the feature step)."""

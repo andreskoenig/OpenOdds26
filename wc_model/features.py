@@ -13,6 +13,7 @@ step.
 
 from __future__ import annotations
 
+import bisect
 import math
 from datetime import date
 from typing import Dict, List, Optional, Sequence
@@ -77,6 +78,7 @@ def build_features(
     n_recent: int = 10,
     squad_values: Optional[Sequence[dict]] = None,
     market_probs: Optional[dict] = None,
+    opponent_adjust: bool = False,
 ) -> List[FeatureRecord]:
     """Build one raw feature record per team (SPEC §4, §5).
 
@@ -156,18 +158,57 @@ def build_features(
     }
     z_market = _standardize_map(mkt_log, team_ids)
 
+    # --- Opponent-strength yardstick (point-in-time FIFA points) -----------
+    # Used only when opponent_adjust is on. For each historical match we look up
+    # the OPPONENT's FIFA points as of the match date (latest snapshot <= date,
+    # same point-in-time rule as z_fifa) and standardize against the cutoff field
+    # so a goal vs a strong side is not equated with one vs a weak side.
+    fifa_series: Dict[str, tuple] = {}  # team_id -> (sorted_dates, points_aligned)
+    z_ref_mean = 0.0
+    z_ref_sd = 0.0
+    if opponent_adjust:
+        tmp: Dict[str, list] = {}
+        for r in fifa_ratings:
+            snap = _as_date(r["as_of_date"])
+            if snap <= as_of:
+                tmp.setdefault(r["team_id"], []).append((snap, r["fifa_points"]))
+        for tid, rows in tmp.items():
+            rows.sort(key=lambda x: x[0])
+            fifa_series[tid] = ([d for d, _ in rows], [p for _, p in rows])
+        latest_pts = [pts[-1] for (_, pts) in fifa_series.values() if pts]
+        if latest_pts:
+            arr = np.array(latest_pts, dtype=float)
+            z_ref_mean = float(arr.mean())
+            z_ref_sd = float(arr.std())
+
+    def opp_z(opp_id: str, md: date) -> Optional[float]:
+        """Standardized FIFA strength of ``opp_id`` as of ``md`` (None if N/A)."""
+        if not opponent_adjust or z_ref_sd <= 0:
+            return None
+        ser = fifa_series.get(opp_id)
+        if ser is None:
+            return None
+        dates, pts = ser
+        i = bisect.bisect_right(dates, md) - 1
+        if i < 0:
+            return None
+        return (pts[i] - z_ref_mean) / z_ref_sd
+
     # --- §4: attack / defense indices --------------------------------------
     gf: Dict[str, list] = {t: [] for t in team_ids}
     ga: Dict[str, list] = {t: [] for t in team_ids}
     xgf: Dict[str, list] = {t: [] for t in team_ids}
     xga: Dict[str, list] = {t: [] for t in team_ids}
+    oz: Dict[str, list] = {t: [] for t in team_ids}  # opponent z, aligned (None if N/A)
 
     for m in pre_matches:
         mid = m["match_id"]
+        md = _as_date(m["date"])
         for side in ("home", "away"):
             tid = m["home_team_id"] if side == "home" else m["away_team_id"]
             if tid not in team_set:
                 continue
+            opp = m["away_team_id"] if side == "home" else m["home_team_id"]
             goals_for = m["home_goals"] if side == "home" else m["away_goals"]
             goals_against = m["away_goals"] if side == "home" else m["home_goals"]
             gf[tid].append(goals_for)
@@ -176,11 +217,54 @@ def build_features(
             # Fall back to actual goals when xG is missing for this match.
             xgf[tid].append(xr["xg_for"] if xr is not None else goals_for)
             xga[tid].append(xr["xg_against"] if xr is not None else goals_against)
+            oz[tid].append(opp_z(opp, md))
+
+    # Opponent-strength slopes: pooled OLS of blended goals on opponent z over
+    # all observations with a valid opponent z. slope_a < 0 (score fewer vs strong
+    # sides), slope_d > 0 (concede more vs strong sides). Subtracting slope*z from
+    # each match normalizes every result to a neutral (z=0) opponent.
+    slope_a = 0.0
+    slope_d = 0.0
+    if opponent_adjust:
+        n = sz = szz = so_a = sza = so_d = szd = 0.0
+        for t in team_ids:
+            for i in range(len(gf[t])):
+                z = oz[t][i]
+                if z is None:
+                    continue
+                o_off = blend_weight * xgf[t][i] + (1 - blend_weight) * gf[t][i]
+                o_def = blend_weight * xga[t][i] + (1 - blend_weight) * ga[t][i]
+                n += 1.0
+                sz += z
+                szz += z * z
+                so_a += o_off
+                sza += z * o_off
+                so_d += o_def
+                szd += z * o_def
+        denom = n * szz - sz * sz
+        if n >= 2 and denom > 0:
+            slope_a = (n * sza - sz * so_a) / denom
+            slope_d = (n * szd - sz * so_d) / denom
 
     a_raw: Dict[str, float] = {}
     d_raw: Dict[str, float] = {}
     for t in team_ids:
-        if gf[t]:
+        if not gf[t]:
+            continue
+        if opponent_adjust:
+            offs = [
+                blend_weight * xgf[t][i] + (1 - blend_weight) * gf[t][i]
+                - slope_a * (oz[t][i] or 0.0)
+                for i in range(len(gf[t]))
+            ]
+            defs = [
+                blend_weight * xga[t][i] + (1 - blend_weight) * ga[t][i]
+                - slope_d * (oz[t][i] or 0.0)
+                for i in range(len(gf[t]))
+            ]
+            a_raw[t] = float(np.mean(offs))
+            d_raw[t] = float(np.mean(defs))
+        else:
             a_raw[t] = blend_weight * float(np.mean(xgf[t])) + (1 - blend_weight) * float(np.mean(gf[t]))
             d_raw[t] = blend_weight * float(np.mean(xga[t])) + (1 - blend_weight) * float(np.mean(ga[t]))
 

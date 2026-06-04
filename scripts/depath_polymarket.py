@@ -48,7 +48,7 @@ SEED = 20260610
 # Baseline hyperparams: market prior OFF (c_m=0) so path geometry is independent
 # of the market signal we are about to correct. Everything else as shipped.
 HP = dict(xi=0.0008, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10,
-          theta=0.0, c_v=0.1, c_m=0.0)
+          theta=0.0, c_v=0.1, c_m=0.0, opponent_adjust=True)
 
 
 def _load(rel):
@@ -79,13 +79,15 @@ def main():
     print("=" * 70)
     print("DE-PATH POLYMARKET — strip fixed-bracket schedule from winner odds")
     print("=" * 70)
-    print(f"as-of {AS_OF} | fitted {len(teams)} teams | baseline c_m=0, host OFF")
+    print(f"as-of {AS_OF} | fitted {len(teams)} teams | baseline c_m=0, "
+          f"opponent_adjust={HP['opponent_adjust']}, host OFF")
     print(f"actual draw: {N_ACTUAL} sims | neutral: {K_DRAWS} random draws x "
           f"{N_DRAW} sims\n", flush=True)
 
     # --- Baseline ratings (market prior OFF) -------------------------------
     feats = build_features(AS_OF, teams, matches, fifa, [], [], squad_values=squad,
-                           market_probs=None, xi=HP["xi"], blend_weight=0.7, n_recent=10)
+                           market_probs=None, xi=HP["xi"], blend_weight=0.7, n_recent=10,
+                           opponent_adjust=HP["opponent_adjust"])
     params = fit_model(AS_OF, teams, matches, feats, xi=HP["xi"],
                        lambda_reg=HP["lambda_reg"], c_a=HP["c_a"], c_x=HP["c_x"],
                        c_d=HP["c_d"], c_y=HP["c_y"], theta=HP["theta"],
@@ -125,11 +127,24 @@ def main():
     p_neutral = {t: p_neutral_sum[t] / K_DRAWS for t in wc48}
 
     # --- path factor + de-pathed market ------------------------------------
+    # A path factor is a ratio of two simulated win probs; for the long tail
+    # (teams that ~never win) that ratio is pure noise and explodes when divided
+    # out. So we only de-path teams with a meaningful neutral win prob (>= FLOOR)
+    # and clip the factor to a sane band; everyone else keeps the raw market.
     EPS = 1e-9
-    path_factor = {t: (p_actual[t] + EPS) / (p_neutral[t] + EPS) for t in wc48}
+    FLOOR = 0.005          # 0.5% neutral win prob: below this the factor is noise
+    CLIP = (0.5, 2.0)
+
+    def pf(t):
+        if p_neutral[t] < FLOOR:
+            return 1.0
+        f = (p_actual[t] + EPS) / (p_neutral[t] + EPS)
+        return min(max(f, CLIP[0]), CLIP[1])
+
+    path_factor = {t: pf(t) for t in wc48}
 
     priced = [t for t in market]
-    depathed_raw = {t: market[t] / max(path_factor.get(t, 1.0), EPS) for t in priced}
+    depathed_raw = {t: market[t] / path_factor.get(t, 1.0) for t in priced}
     tot = sum(depathed_raw.values())
     depathed = {t: v / tot for t, v in depathed_raw.items()}
 

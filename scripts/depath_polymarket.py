@@ -47,8 +47,8 @@ SEED = 20260610
 
 # Baseline hyperparams: market prior OFF (c_m=0) so path geometry is independent
 # of the market signal we are about to correct. Everything else as shipped.
-HP = dict(xi=0.0008, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10,
-          theta=0.0, c_v=0.1, c_m=0.0, opponent_adjust=True)
+HP = dict(xi=0.0012651, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10,
+          theta=0.0, c_v=0.1, c_m=0.0, opponent_adjust=True, max_history_years=10.0)
 
 
 def _load(rel):
@@ -87,11 +87,13 @@ def main():
     # --- Baseline ratings (market prior OFF) -------------------------------
     feats = build_features(AS_OF, teams, matches, fifa, [], [], squad_values=squad,
                            market_probs=None, xi=HP["xi"], blend_weight=0.7, n_recent=10,
-                           opponent_adjust=HP["opponent_adjust"])
+                           opponent_adjust=HP["opponent_adjust"],
+                           max_history_years=HP["max_history_years"])
     params = fit_model(AS_OF, teams, matches, feats, xi=HP["xi"],
                        lambda_reg=HP["lambda_reg"], c_a=HP["c_a"], c_x=HP["c_x"],
                        c_d=HP["c_d"], c_y=HP["c_y"], theta=HP["theta"],
-                       c_v=HP["c_v"], c_m=HP["c_m"])
+                       c_v=HP["c_v"], c_m=HP["c_m"],
+                       max_history_years=HP["max_history_years"])
 
     def matrix_fn(home, away, home_flag):
         return matchup_matrix(params, home, away, home_flag, kappa=0.0)

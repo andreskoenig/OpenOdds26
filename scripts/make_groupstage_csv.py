@@ -17,15 +17,16 @@ for i, g in enumerate(d["games"], 1):
     ml = g["most_likely_result"]
     res = {"home": f"{nm[g['home']]} win", "away": f"{nm[g['away']]} win", "draw": "Draw"}[ml]
     exg = f"{g['exp_goals_home']:.2f}-{g['exp_goals_away']:.2f}"
+    rounded = f"{round(g['exp_goals_home'])}-{round(g['exp_goals_away'])}"  # headline score
     top3 = ", ".join(f"{h}-{a} {round(pr * 100)}%" for h, a, pr in g["top3_scores"])
     rows.append([i, g["date"], g["group"], nm[g["home"]], nm[g["away"]],
                  round(g["p_home"] * 100), round(g["p_draw"] * 100), round(g["p_away"] * 100),
-                 res, exg, top3])
+                 res, exg, rounded, top3])
 
 out = os.path.join(ROOT, "data", "predict_groupstage_2026.csv")
 with open(out, "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     w.writerow(["game", "date", "group", "home", "away", "p_home", "p_draw", "p_away",
-                "predicted_result", "exp_goals", "top3_scores"])
+                "predicted_result", "exp_goals", "rounded_score", "top3_scores"])
     w.writerows(rows)
 print(f"wrote {out} ({len(rows)} games)")

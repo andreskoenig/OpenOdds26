@@ -136,7 +136,12 @@ def main():
                        max_history_years=HP["max_history_years"])
 
     def predict(home, away):
-        """1X2 + modal score in (home, away) display order; host gets advantage."""
+        """1X2, expected goals + top-3 scorelines in (home, away) display order.
+
+        Expected goals = marginal means of the score matrix (E[home], E[away]);
+        top-3 = the three most-likely exact scorelines with their probabilities.
+        Host gets the home advantage regardless of nominal listing.
+        """
         if home in hosts:
             P = matchup_matrix(params, home, away, True, kappa=0.0)
         elif away in hosts:
@@ -146,7 +151,13 @@ def main():
         ph, pd, pa = result_probs(P)
         sx, sy = divmod(int(np.argmax(P)), P.shape[1])
         ov, _ = over_under(P, 2.5)
-        return ph, pd, pa, sx, sy, ov, btts(P)
+        n, m = P.shape
+        exh = float(sum(i * P[i, :].sum() for i in range(n)))   # E[home goals]
+        exa = float(sum(j * P[:, j].sum() for j in range(m)))   # E[away goals]
+        cells = sorted(((float(P[i, j]), i, j) for i in range(n) for j in range(m)),
+                       reverse=True)[:3]
+        top3 = [[i, j, pr] for pr, i, j in cells]               # [home, away, prob]
+        return ph, pd, pa, sx, sy, ov, btts(P), exh, exa, top3
 
     print("=" * 92)
     print("2026 WORLD CUP — GROUP STAGE BY MATCH DATE — MODEL prediction (NOT market)")
@@ -161,15 +172,18 @@ def main():
         if d != cur:
             cur = d
             print(f"\n--- {d} ---")
-        ph, pd, pa, sx, sy, ov, bt = predict(h, a)
+        ph, pd, pa, sx, sy, ov, bt, exh, exa, top3 = predict(h, a)
         ml = max((("home", ph), ("draw", pd), ("away", pa)), key=lambda kv: kv[1])[0]
         res = {"home": nm(h), "draw": "Draw", "away": nm(a)}[ml]
         hostmark = " (host)" if (h in hosts or a in hosts) else ""
+        t3 = ", ".join(f"{i}-{j} {pr*100:.0f}%" for i, j, pr in top3)
         print(f"   [{group_of[h]}] {nm(h)} vs {nm(a)}{hostmark}:  {ph*100:.0f}/{pd*100:.0f}/{pa*100:.0f}  "
-              f"-> {res} {sx}-{sy}  (O2.5 {ov*100:.0f}%, BTTS {bt*100:.0f}%)")
+              f"-> {res}, E[goals] {exh:.2f}-{exa:.2f}  [{t3}]  (O2.5 {ov*100:.0f}%, BTTS {bt*100:.0f}%)")
         out.append({"date": d, "group": group_of[h], "home": h, "away": a,
                     "p_home": ph, "p_draw": pd, "p_away": pa, "most_likely_result": ml,
-                    "most_likely_score": [int(sx), int(sy)], "over_2_5": float(ov), "btts": float(bt)})
+                    "most_likely_score": [int(sx), int(sy)],
+                    "exp_goals_home": exh, "exp_goals_away": exa, "top3_scores": top3,
+                    "over_2_5": float(ov), "btts": float(bt)})
 
     pj = os.path.join(ROOT, "data", "predict_groupstage_by_date_2026.json")
     json.dump({"as_of": AS_OF, "rho": params.rho, "source": "model (no market odds); calendar=published schedule",

@@ -1,73 +1,73 @@
-game,date,group,home,away,p_home,p_draw,p_away,predicted_result
-1,2026-06-11,A,Mexico,South Africa,67,22,11,Mexico win
-2,2026-06-11,A,South Korea,Czech Republic,45,28,27,Draw
-3,2026-06-12,B,Canada,Bosnia and Herzegovina,67,21,12,Canada win
-4,2026-06-12,D,United States,Paraguay,51,27,22,United States win
-5,2026-06-13,B,Qatar,Switzerland,12,20,68,Switzerland win
-6,2026-06-13,C,Brazil,Morocco,44,31,25,Brazil win
-7,2026-06-13,C,Haiti,Scotland,27,26,47,Draw
-8,2026-06-13,D,Australia,Turkey,41,28,31,Draw
-9,2026-06-14,E,Germany,Curacao,83,12,6,Germany win
-10,2026-06-14,F,Netherlands,Japan,38,28,35,Draw
-11,2026-06-14,E,Ivory Coast,Ecuador,26,35,39,Draw
-12,2026-06-14,F,Sweden,Tunisia,38,30,32,Draw
-13,2026-06-15,H,Spain,Cape Verde,82,13,5,Spain win
-14,2026-06-15,G,Belgium,Egypt,51,29,21,Belgium win
-15,2026-06-15,H,Saudi Arabia,Uruguay,14,28,59,Uruguay win
-16,2026-06-15,G,Iran,New Zealand,54,26,20,Iran win
-17,2026-06-16,I,France,Senegal,51,28,21,France win
-18,2026-06-16,I,Iraq,Norway,18,26,56,Norway win
-19,2026-06-16,J,Argentina,Algeria,63,23,13,Argentina win
-20,2026-06-16,J,Austria,Jordan,54,26,20,Austria win
-21,2026-06-17,K,Portugal,DR Congo,65,24,12,Portugal win
-22,2026-06-17,L,England,Croatia,48,29,23,England win
-23,2026-06-17,L,Ghana,Panama,31,29,40,Draw
-24,2026-06-17,K,Uzbekistan,Colombia,16,26,57,Colombia win
-25,2026-06-18,A,Czech Republic,South Africa,45,30,25,Czech Republic win
-26,2026-06-18,B,Switzerland,Bosnia and Herzegovina,64,23,13,Switzerland win
-27,2026-06-18,B,Canada,Qatar,71,18,11,Canada win
-28,2026-06-18,A,Mexico,South Korea,48,27,25,Draw
-29,2026-06-19,D,United States,Australia,42,27,31,Draw
-30,2026-06-19,C,Scotland,Morocco,17,29,53,Morocco win
-31,2026-06-19,C,Brazil,Haiti,82,12,6,Brazil win
-32,2026-06-19,D,Turkey,Paraguay,40,30,30,Draw
-33,2026-06-20,F,Netherlands,Sweden,60,22,18,Draw
-34,2026-06-20,E,Germany,Ivory Coast,54,26,20,Germany win
-35,2026-06-20,E,Ecuador,Curacao,66,23,11,Ecuador win
-36,2026-06-20,F,Tunisia,Japan,17,28,55,Japan win
-37,2026-06-21,H,Spain,Saudi Arabia,79,15,6,Spain win
-38,2026-06-21,G,Belgium,Iran,44,28,28,Draw
-39,2026-06-21,H,Uruguay,Cape Verde,62,26,12,Uruguay win
-40,2026-06-21,G,New Zealand,Egypt,27,31,42,Egypt win
-41,2026-06-22,J,Argentina,Austria,61,25,14,Argentina win
-42,2026-06-22,I,France,Iraq,71,20,9,France win
-43,2026-06-22,I,Norway,Senegal,34,29,37,Draw
-44,2026-06-22,J,Jordan,Algeria,21,25,55,Draw
-45,2026-06-23,K,Portugal,Uzbekistan,62,24,14,Portugal win
-46,2026-06-23,L,England,Ghana,73,19,8,England win
-47,2026-06-23,L,Panama,Croatia,17,24,59,Croatia win
-48,2026-06-23,K,Colombia,DR Congo,60,26,14,Colombia win
-49,2026-06-24,B,Switzerland,Canada,33,27,39,Draw
-50,2026-06-24,B,Bosnia and Herzegovina,Qatar,36,29,35,Draw
-51,2026-06-24,C,Scotland,Brazil,10,19,70,Brazil win
-52,2026-06-24,C,Morocco,Haiti,66,22,12,Morocco win
-53,2026-06-24,A,Czech Republic,Mexico,18,24,58,Mexico win
-54,2026-06-24,A,South Africa,South Korea,18,27,54,South Korea win
-55,2026-06-25,E,Ecuador,Germany,26,30,44,Draw
-56,2026-06-25,E,Curacao,Ivory Coast,15,25,60,Ivory Coast win
-57,2026-06-25,F,Japan,Sweden,57,24,19,Draw
-58,2026-06-25,F,Tunisia,Netherlands,16,26,58,Netherlands win
-59,2026-06-25,D,Turkey,United States,26,24,49,Draw
-60,2026-06-25,D,Paraguay,Australia,25,32,43,Australia win
-61,2026-06-26,I,Norway,France,20,25,55,Draw
-62,2026-06-26,I,Senegal,Iraq,54,29,17,Senegal win
-63,2026-06-26,H,Cape Verde,Saudi Arabia,31,33,36,Draw
-64,2026-06-26,H,Uruguay,Spain,20,28,52,Spain win
-65,2026-06-26,G,Egypt,Iran,26,32,42,Iran win
-66,2026-06-26,G,New Zealand,Belgium,15,22,63,Belgium win
-67,2026-06-27,L,Panama,England,9,19,72,England win
-68,2026-06-27,L,Croatia,Ghana,62,24,14,Croatia win
-69,2026-06-27,K,Colombia,Portugal,32,28,40,Draw
-70,2026-06-27,K,DR Congo,Uzbekistan,29,35,37,Draw
-71,2026-06-27,J,Algeria,Austria,35,29,36,Draw
-72,2026-06-27,J,Jordan,Argentina,6,15,79,Argentina win
+game,date,group,home,away,p_home,p_draw,p_away,predicted_result,exp_goals,top3_scores
+1,2026-06-11,A,Mexico,South Africa,78,16,6,Mexico win,2.33-0.51,"2-0 16%, 1-0 13%, 3-0 12%"
+2,2026-06-11,A,South Korea,Czech Republic,42,28,30,South Korea win,1.38-1.12,"1-1 13%, 1-0 11%, 0-0 9%"
+3,2026-06-12,B,Canada,Bosnia and Herzegovina,66,22,12,Canada win,1.91-0.69,"1-0 14%, 2-0 14%, 1-1 10%"
+4,2026-06-12,D,United States,Paraguay,55,26,19,United States win,1.61-0.86,"1-0 13%, 1-1 12%, 2-0 11%"
+5,2026-06-13,B,Qatar,Switzerland,4,10,85,Switzerland win,0.59-3.04,"0-3 12%, 0-2 12%, 0-4 9%"
+6,2026-06-13,C,Brazil,Morocco,48,31,20,Brazil win,1.21-0.69,"1-0 18%, 0-0 16%, 1-1 13%"
+7,2026-06-13,C,Haiti,Scotland,18,23,60,Scotland win,0.97-1.94,"1-1 11%, 0-2 10%, 0-1 10%"
+8,2026-06-13,D,Australia,Turkey,25,28,48,Turkey win,0.99-1.47,"1-1 13%, 0-1 12%, 0-2 9%"
+9,2026-06-14,E,Germany,Curacao,95,4,1,Germany win,4.19-0.44,"4-0 13%, 3-0 12%, 5-0 11%"
+10,2026-06-14,F,Netherlands,Japan,42,29,29,Netherlands win,1.29-1.03,"1-1 14%, 1-0 12%, 0-0 11%"
+11,2026-06-14,E,Ivory Coast,Ecuador,22,34,44,Ecuador win,0.64-1.04,"0-0 19%, 0-1 19%, 1-1 13%"
+12,2026-06-14,F,Sweden,Tunisia,50,28,22,Sweden win,1.46-0.88,"1-0 13%, 1-1 13%, 2-0 10%"
+13,2026-06-15,H,Spain,Cape Verde,96,4,1,Spain win,3.98-0.29,"4-0 15%, 3-0 15%, 5-0 12%"
+14,2026-06-15,G,Belgium,Egypt,62,25,13,Belgium win,1.67-0.62,"1-0 16%, 2-0 14%, 1-1 11%"
+15,2026-06-15,H,Saudi Arabia,Uruguay,8,22,71,Uruguay win,0.42-1.80,"0-1 19%, 0-2 18%, 0-0 11%"
+16,2026-06-15,G,Iran,New Zealand,56,25,19,Iran win,1.72-0.90,"1-0 12%, 1-1 12%, 2-0 11%"
+17,2026-06-16,I,France,Senegal,65,23,12,France win,1.75-0.59,"1-0 16%, 2-0 15%, 1-1 10%"
+18,2026-06-16,I,Iraq,Norway,6,15,79,Norway win,0.49-2.36,"0-2 16%, 0-1 13%, 0-3 13%"
+19,2026-06-16,J,Argentina,Algeria,77,17,6,Argentina win,2.18-0.46,"2-0 17%, 1-0 15%, 3-0 12%"
+20,2026-06-16,J,Austria,Jordan,69,20,11,Austria win,2.11-0.74,"2-0 13%, 1-0 12%, 2-1 10%"
+21,2026-06-17,K,Portugal,DR Congo,84,13,4,Portugal win,2.48-0.37,"2-0 18%, 3-0 15%, 1-0 14%"
+22,2026-06-17,L,England,Croatia,56,28,16,England win,1.44-0.64,"1-0 17%, 0-0 13%, 2-0 13%"
+23,2026-06-17,L,Ghana,Panama,34,29,37,Panama win,1.14-1.19,"1-1 14%, 0-1 11%, 1-0 10%"
+24,2026-06-17,K,Uzbekistan,Colombia,7,17,76,Colombia win,0.52-2.23,"0-2 16%, 0-1 14%, 0-3 12%"
+25,2026-06-18,A,Czech Republic,South Africa,55,26,18,Czech Republic win,1.58-0.79,"1-0 14%, 1-1 12%, 2-0 12%"
+26,2026-06-18,B,Switzerland,Bosnia and Herzegovina,71,19,9,Switzerland win,2.12-0.63,"2-0 14%, 1-0 13%, 3-0 10%"
+27,2026-06-18,B,Canada,Qatar,81,13,6,Canada win,2.75-0.64,"2-0 13%, 3-0 12%, 1-0 9%"
+28,2026-06-18,A,Mexico,South Korea,55,26,19,Mexico win,1.65-0.88,"1-0 13%, 1-1 12%, 2-0 11%"
+29,2026-06-19,D,United States,Australia,53,25,22,United States win,1.69-1.01,"1-1 12%, 1-0 11%, 2-1 10%"
+30,2026-06-19,C,Scotland,Morocco,14,28,57,Morocco win,0.58-1.42,"0-1 19%, 0-0 14%, 0-2 14%"
+31,2026-06-19,C,Brazil,Haiti,94,4,1,Brazil win,4.06-0.47,"4-0 12%, 3-0 12%, 5-0 10%"
+32,2026-06-19,D,Turkey,Paraguay,50,29,22,Turkey win,1.40-0.83,"1-0 14%, 1-1 13%, 0-0 11%"
+33,2026-06-20,F,Netherlands,Sweden,72,18,10,Netherlands win,2.36-0.80,"2-0 12%, 1-0 10%, 2-1 9%"
+34,2026-06-20,E,Germany,Ivory Coast,68,21,11,Germany win,1.97-0.66,"2-0 14%, 1-0 14%, 1-1 10%"
+35,2026-06-20,E,Ecuador,Curacao,79,16,5,Ecuador win,2.23-0.43,"2-0 17%, 1-0 15%, 3-0 13%"
+36,2026-06-20,F,Tunisia,Japan,8,21,71,Japan win,0.48-1.88,"0-1 17%, 0-2 17%, 0-3 10%"
+37,2026-06-21,H,Spain,Saudi Arabia,94,5,1,Spain win,3.65-0.28,"3-0 16%, 4-0 15%, 2-0 13%"
+38,2026-06-21,G,Belgium,Iran,63,22,15,Belgium win,1.91-0.81,"1-0 12%, 2-0 12%, 1-1 11%"
+39,2026-06-21,H,Uruguay,Cape Verde,74,19,7,Uruguay win,1.96-0.44,"2-0 17%, 1-0 17%, 3-0 11%"
+40,2026-06-21,G,New Zealand,Egypt,22,30,49,Egypt win,0.79-1.32,"0-1 15%, 1-1 13%, 0-0 13%"
+41,2026-06-22,J,Argentina,Austria,67,23,10,Argentina win,1.73-0.49,"1-0 18%, 2-0 16%, 0-0 11%"
+42,2026-06-22,I,France,Iraq,91,7,2,France win,3.14-0.29,"3-0 17%, 2-0 16%, 4-0 13%"
+43,2026-06-22,I,Norway,Senegal,43,29,28,Norway win,1.32-1.00,"1-1 14%, 1-0 12%, 0-0 11%"
+44,2026-06-22,J,Jordan,Algeria,16,22,62,Algeria win,0.93-1.99,"0-2 11%, 1-1 10%, 0-1 10%"
+45,2026-06-23,K,Portugal,Uzbekistan,85,12,4,Portugal win,2.63-0.40,"2-0 17%, 3-0 15%, 1-0 12%"
+46,2026-06-23,L,England,Ghana,86,12,3,England win,2.58-0.33,"2-0 18%, 3-0 16%, 1-0 14%"
+47,2026-06-23,L,Panama,Croatia,9,18,72,Croatia win,0.66-2.20,"0-2 14%, 0-1 12%, 0-3 10%"
+48,2026-06-23,K,Colombia,DR Congo,75,18,7,Colombia win,2.10-0.47,"2-0 17%, 1-0 16%, 3-0 12%"
+49,2026-06-24,B,Switzerland,Canada,42,27,31,Switzerland win,1.41-1.17,"1-1 13%, 1-0 10%, 2-1 9%"
+50,2026-06-24,B,Bosnia and Herzegovina,Qatar,49,27,24,Bosnia and Herzegovina win,1.49-0.96,"1-1 13%, 1-0 12%, 2-0 10%"
+51,2026-06-24,C,Scotland,Brazil,6,15,79,Brazil win,0.57-2.48,"0-2 15%, 0-3 12%, 0-1 11%"
+52,2026-06-24,C,Morocco,Haiti,79,15,6,Morocco win,2.35-0.47,"2-0 16%, 1-0 14%, 3-0 13%"
+53,2026-06-24,A,Czech Republic,Mexico,15,23,61,Mexico win,0.79-1.82,"0-1 13%, 0-2 12%, 1-1 11%"
+54,2026-06-24,A,South Africa,South Korea,14,24,62,South Korea win,0.72-1.77,"0-1 14%, 0-2 13%, 1-1 11%"
+55,2026-06-25,E,Ecuador,Germany,20,29,51,Germany win,0.75-1.37,"0-1 16%, 1-1 13%, 0-0 13%"
+56,2026-06-25,E,Curacao,Ivory Coast,10,21,69,Ivory Coast win,0.62-1.98,"0-2 15%, 0-1 14%, 0-3 10%"
+57,2026-06-25,F,Japan,Sweden,63,22,15,Japan win,1.91-0.81,"1-0 12%, 2-0 12%, 1-1 11%"
+58,2026-06-25,F,Tunisia,Netherlands,6,16,79,Netherlands win,0.47-2.32,"0-2 16%, 0-1 14%, 0-3 13%"
+59,2026-06-25,D,Turkey,United States,34,25,41,United States win,1.42-1.59,"1-1 12%, 1-2 9%, 2-1 8%"
+60,2026-06-25,D,Paraguay,Australia,30,33,36,Australia win,0.88-1.00,"0-0 16%, 0-1 15%, 1-1 14%"
+61,2026-06-26,I,Norway,France,16,25,59,France win,0.76-1.70,"0-1 14%, 0-2 12%, 1-1 12%"
+62,2026-06-26,I,Senegal,Iraq,69,22,9,Senegal win,1.85-0.51,"1-0 17%, 2-0 16%, 3-0 10%"
+63,2026-06-26,H,Cape Verde,Saudi Arabia,32,32,35,Saudi Arabia win,0.96-1.01,"0-0 15%, 1-1 14%, 0-1 13%"
+64,2026-06-26,H,Uruguay,Spain,11,24,65,Spain win,0.54-1.68,"0-1 18%, 0-2 15%, 0-0 11%"
+65,2026-06-26,G,Egypt,Iran,31,32,37,Iran win,0.95-1.08,"1-1 14%, 0-0 14%, 0-1 14%"
+66,2026-06-26,G,New Zealand,Belgium,6,13,81,Belgium win,0.59-2.67,"0-2 14%, 0-3 12%, 0-1 10%"
+67,2026-06-27,L,Panama,England,3,10,87,England win,0.38-2.83,"0-2 16%, 0-3 15%, 0-1 11%"
+68,2026-06-27,L,Croatia,Ghana,71,20,9,Croatia win,2.02-0.58,"2-0 15%, 1-0 15%, 3-0 10%"
+69,2026-06-27,K,Colombia,Portugal,24,28,48,Portugal win,0.95-1.45,"1-1 13%, 0-1 12%, 0-0 10%"
+70,2026-06-27,K,DR Congo,Uzbekistan,32,35,34,Draw,0.86-0.89,"0-0 18%, 0-1 15%, 1-0 14%"
+71,2026-06-27,J,Algeria,Austria,28,29,44,Austria win,1.02-1.36,"1-1 13%, 0-1 12%, 0-0 10%"
+72,2026-06-27,J,Jordan,Argentina,1,6,92,Argentina win,0.33-3.37,"0-3 16%, 0-2 14%, 0-4 13%"

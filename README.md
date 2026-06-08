@@ -9,6 +9,27 @@ round-reach odds, and group-stage predictions.
 Validated on the 2022 World Cup against Bet365's closing odds. Honest headline:
 **it gets close to the world's sharpest book but does not beat the closing line.**
 
+## Current 2026 prediction
+
+<!-- PREDICTIONS:START -->
+**Model v1.0** · last run **2026-06-08 17:09** · 20000 simulations, as-of 2026-06-10
+
+| # | Team | Model P(win) | Market (Polymarket) |
+|---|------|-------------:|--------------------:|
+| 1 | Spain | 19.0% | 15.6% |
+| 2 | Argentina | 16.2% | 8.6% |
+| 3 | France | 11.9% | 15.6% |
+| 4 | England | 10.4% | 10.6% |
+| 5 | Portugal | 9.0% | 9.6% |
+| 6 | Brazil | 8.3% | 8.1% |
+| 7 | Germany | 4.7% | 5.2% |
+| 8 | Netherlands | 4.0% | 3.8% |
+| 9 | Belgium | 3.0% | 2.1% |
+| 10 | Colombia | 2.7% | 1.9% |
+
+_Auto-generated from `data/forecast_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
+<!-- PREDICTIONS:END -->
+
 > Design rule (SPEC §2): **agents fetch and clean; code computes and predicts.**
 > No probability or prediction comes from free-form LLM reasoning — every number
 > is produced by the deterministic, unit-tested Python core.
@@ -82,3 +103,13 @@ The API key for one (now-unused) odds provider is read from a gitignored `.env`
 Locked hyperparameters: `xi=0.0012651` (t½ 1.5y), `max_history_years=10`,
 `lambda_reg=8.0`, `c_a=c_d=0.30`, `c_x=c_y=0.10`, `c_v=0.1` (squad),
 `c_m=0.35` (market), `opponent_adjust=True`.
+
+## Versioning
+
+Current version lives in `VERSION`. The prediction table and version stamp above
+are refreshed on every substantial change via `python scripts/update_readme.py`
+(run it after each forecast). Git tags mark releases.
+
+- **v1.0** — Dixon–Coles + de-pathed Polymarket prior + opponent-adjusted prior,
+  1.5y half-life / 10y truncation, squad-value prior. Friendlies **kept**
+  (dropping them worsened 2022 log-loss 1.024 → 1.041).

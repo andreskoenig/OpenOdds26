@@ -73,6 +73,12 @@ def main():
         HP.max_history_years = float(sys.argv[sys.argv.index("--trunc") + 1])
     if "--oppadj" in sys.argv:
         HP.opponent_adjust = True
+    drop_friendlies = "--no-friendlies" in sys.argv
+    if drop_friendlies:
+        before = len(matches)
+        matches = [m for m in matches if m["competition"] != "Friendly"]
+        print(f"--no-friendlies: dropped {before - len(matches)} friendlies "
+              f"(fit uses {len(matches)} matches; WC2022 labels unaffected)")
     team_xg = []
     if "--xg" in sys.argv:
         team_xg = _load("data/team_xg.json")["rows"]   # StatsBomb xG joined to our match_ids

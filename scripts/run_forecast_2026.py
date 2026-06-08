@@ -16,7 +16,7 @@ import json
 import os
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, datetime
 
 import numpy as np
 
@@ -158,9 +158,12 @@ def main():
     # ---- save JSON ----
     forecast = {
         "as_of": AS_OF, "n_sims": N_SIMS, "seed": SEED,
+        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "hyperparams": {"xi": HP.xi, "lambda_reg": HP.lambda_reg, "c_a": HP.c_a,
                         "c_x": HP.c_x, "c_d": HP.c_d, "c_y": HP.c_y, "theta": HP.theta,
-                        "kappa": HP.kappa, "c_v": HP.c_v},
+                        "kappa": HP.kappa, "c_v": HP.c_v, "c_m": HP.c_m,
+                        "opponent_adjust": HP.opponent_adjust,
+                        "max_history_years": HP.max_history_years},
         "fitted_globals": {"mu": p.mu, "gamma": p.gamma, "rho": p.rho},
         "p_win": {tid: pred.p_win[tid] for tid, _ in p_win},
         "progression": pred.progression,

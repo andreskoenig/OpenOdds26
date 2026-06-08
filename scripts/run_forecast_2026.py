@@ -30,7 +30,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 AS_OF = "2026-06-10"
-N_SIMS = 20000
+N_SIMS = int(os.environ.get("WC_NSIMS", "20000"))  # pipeline --quick lowers this
 SEED = 20260610
 MIN_MATCHES = 50
 
@@ -54,6 +54,14 @@ def main():
     market = _load("data/polymarket_winner_2026_depathed.json")["p_market"]  # de-pathed prior
     config = _load("config/tournament_config_2026.json")
     name = {t["team_id"]: t["canonical_name"] for t in teams_all}
+
+    # Optional overrides: --cm V (market prior weight; 0 = ablate Polymarket),
+    # --out PATH (alternate output file so the canonical forecast is not clobbered).
+    if "--cm" in sys.argv:
+        HP.c_m = float(sys.argv[sys.argv.index("--cm") + 1])
+    out_rel = "data/forecast_2026.json"
+    if "--out" in sys.argv:
+        out_rel = sys.argv[sys.argv.index("--out") + 1]
 
     cfg_ids = {t for g in config["groups"].values() for t in g}
     cut = date.fromisoformat(AS_OF)
@@ -164,7 +172,7 @@ def main():
                                           "prob": float(matrix[mx, my])},
         "team_names": {tid: nm(tid) for tid in pred.p_win},
     }
-    out = os.path.join(ROOT, "data", "forecast_2026.json")
+    out = os.path.join(ROOT, out_rel)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(forecast, f, ensure_ascii=False, indent=2)
 

@@ -109,10 +109,34 @@ def main():
 
     merged = existing + new_rows
 
-    # Byte-for-byte guard: confirm the <= baseline-cutoff slice is unchanged.
-    pre_before = [r for r in existing if r["date"] <= BASELINE_CUTOFF]
-    pre_after = [r for r in merged if r["date"] <= BASELINE_CUTOFF]
-    assert pre_before == pre_after, "FATAL: baseline-cutoff rows changed!"
+    # Baseline guard (protects 2022-backtest reproducibility). The merge is
+    # append-only, so existing rows are never modified; the only way the <=cutoff
+    # slice can differ is NEW matches dated <= cutoff (upstream added old games).
+    #   - Modifying/removing an existing baseline row is ALWAYS fatal.
+    #   - Adding new baseline rows is fatal too, UNLESS --allow-baseline-additions
+    #     (used by the on-demand 2026 pipeline, which wants the freshest data;
+    #     such additions shift 2022-backtest inputs only negligibly).
+    def _ckey(r):
+        return (r["date"], r["home_team_id"], r["away_team_id"], r["home_goals"], r["away_goals"])
+
+    before = set(map(_ckey, (r for r in existing if r["date"] <= BASELINE_CUTOFF)))
+    after = set(map(_ckey, (r for r in merged if r["date"] <= BASELINE_CUTOFF)))
+    removed_or_changed = before - after
+    added_pre = after - before
+    assert not removed_or_changed, (
+        f"FATAL: {len(removed_or_changed)} existing baseline row(s) changed/removed: "
+        f"{sorted(removed_or_changed)[:5]}")
+    if added_pre:
+        if "--allow-baseline-additions" not in sys.argv:
+            raise SystemExit(
+                f"FATAL: {len(added_pre)} new match(es) dated <= {BASELINE_CUTOFF} would "
+                f"alter the 2022 baseline. Re-run with --allow-baseline-additions to "
+                f"ingest them (appended only; existing rows untouched). "
+                f"Examples: {sorted(added_pre)[:5]}")
+        print(f"WARNING: ingesting {len(added_pre)} new match(es) dated <= {BASELINE_CUTOFF} "
+              f"(--allow-baseline-additions); existing baseline rows unchanged.")
+        for r in sorted(added_pre)[:10]:
+            print(f"  + {r[0]} {r[1]} {r[3]}-{r[4]} {r[2]}")
 
     out = os.path.join(ROOT, "data", "match_results.json")
     with open(out, "w", encoding="utf-8") as f:
@@ -127,7 +151,8 @@ def main():
             print(f"  {r['date']}  {r['home_team_id']} {r['home_goals']}-{r['away_goals']} {r['away_team_id']}  ({r['competition']})")
     if new_teams:
         print(f"unresolved/new team names (made fresh slug ids): {sorted(new_teams)}")
-    print(f"baseline rows (<= {BASELINE_CUTOFF}) preserved byte-for-byte: {len(pre_after)}")
+    print(f"baseline rows (<= {BASELINE_CUTOFF}) preserved: {len(after)} "
+          f"({len(added_pre)} newly added)")
     print(f"wrote {out}")
 
 

@@ -40,9 +40,10 @@ if hasattr(sys.stdout, "reconfigure"):
 
 AS_OF = "2026-06-10"
 MIN_MATCHES = 50
-N_ACTUAL = 6000      # sims for the real-draw P(win)
-N_DRAW = 1500        # sims per random draw
-K_DRAWS = 40         # number of random draws averaged for the neutral reference
+_FAST = bool(os.environ.get("WC_FAST"))  # pipeline --quick: cheap smoke-test sims
+N_ACTUAL = 1500 if _FAST else 6000   # sims for the real-draw P(win)
+N_DRAW = 400 if _FAST else 1500      # sims per random draw
+K_DRAWS = 12 if _FAST else 40        # random draws averaged for the neutral reference
 SEED = 20260610
 
 # Baseline hyperparams: market prior OFF (c_m=0) so path geometry is independent

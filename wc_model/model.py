@@ -53,6 +53,7 @@ def fit_model(
     c_v: float = 0.0,
     c_m: float = 0.0,
     max_history_years: float = 0.0,
+    friendly_weight: float = 1.0,
 ) -> ModelParams:
     """Fit μ, γ, ρ and per-team atk/def by ridge-penalized weighted MLE (SPEC §4).
 
@@ -117,7 +118,10 @@ def fit_model(
         xx.append(m["home_goals"])
         yy.append(m["away_goals"])
         days = (as_of - md).days
-        ww.append(math.exp(-xi * days))
+        w = math.exp(-xi * days)
+        if friendly_weight != 1.0 and m.get("competition") == "Friendly":
+            w *= friendly_weight
+        ww.append(w)
         hh.append(0.0 if m.get("neutral", False) else 1.0)
 
     hi = np.asarray(hi, dtype=int)

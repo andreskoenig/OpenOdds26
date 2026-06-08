@@ -73,6 +73,8 @@ def main():
         HP.max_history_years = float(sys.argv[sys.argv.index("--trunc") + 1])
     if "--oppadj" in sys.argv:
         HP.opponent_adjust = True
+    if "--friendly-weight" in sys.argv:
+        HP.friendly_weight = float(sys.argv[sys.argv.index("--friendly-weight") + 1])
     drop_friendlies = "--no-friendlies" in sys.argv
     if drop_friendlies:
         before = len(matches)

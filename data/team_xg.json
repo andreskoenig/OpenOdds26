@@ -1,0 +1,3784 @@
+{
+  "source": "StatsBomb open-data (statsbomb/open-data)",
+  "competitions": [
+    "WC 2018",
+    "WC 2022",
+    "Euro 2020",
+    "Euro 2024",
+    "Copa America 2024",
+    "AFCON 2023"
+  ],
+  "n_rows": 628,
+  "n_matched_matches": 314,
+  "n_unmatched_matches": 0,
+  "rows": [
+    {
+      "match_id": "41638_2018-06-14_russia_saudi_arabia",
+      "team_id": "russia",
+      "xg_for": 1.282,
+      "xg_against": 0.249
+    },
+    {
+      "match_id": "41638_2018-06-14_russia_saudi_arabia",
+      "team_id": "saudi_arabia",
+      "xg_for": 0.249,
+      "xg_against": 1.282
+    },
+    {
+      "match_id": "41639_2018-06-15_egypt_uruguay",
+      "team_id": "egypt",
+      "xg_for": 0.364,
+      "xg_against": 1.941
+    },
+    {
+      "match_id": "41639_2018-06-15_egypt_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 1.941,
+      "xg_against": 0.364
+    },
+    {
+      "match_id": "41641_2018-06-15_portugal_spain",
+      "team_id": "portugal",
+      "xg_for": 1.435,
+      "xg_against": 1.661
+    },
+    {
+      "match_id": "41641_2018-06-15_portugal_spain",
+      "team_id": "spain",
+      "xg_for": 1.661,
+      "xg_against": 1.435
+    },
+    {
+      "match_id": "41640_2018-06-15_morocco_iran",
+      "team_id": "morocco",
+      "xg_for": 1.059,
+      "xg_against": 0.698
+    },
+    {
+      "match_id": "41640_2018-06-15_morocco_iran",
+      "team_id": "iran",
+      "xg_for": 0.698,
+      "xg_against": 1.059
+    },
+    {
+      "match_id": "41643_2018-06-16_argentina_iceland",
+      "team_id": "argentina",
+      "xg_for": 2.081,
+      "xg_against": 1.032
+    },
+    {
+      "match_id": "41643_2018-06-16_argentina_iceland",
+      "team_id": "iceland",
+      "xg_for": 1.032,
+      "xg_against": 2.081
+    },
+    {
+      "match_id": "41645_2018-06-16_croatia_nigeria",
+      "team_id": "croatia",
+      "xg_for": 1.694,
+      "xg_against": 0.762
+    },
+    {
+      "match_id": "41645_2018-06-16_croatia_nigeria",
+      "team_id": "nigeria",
+      "xg_for": 0.762,
+      "xg_against": 1.694
+    },
+    {
+      "match_id": "41642_2018-06-16_france_australia",
+      "team_id": "france",
+      "xg_for": 1.562,
+      "xg_against": 0.98
+    },
+    {
+      "match_id": "41642_2018-06-16_france_australia",
+      "team_id": "australia",
+      "xg_for": 0.98,
+      "xg_against": 1.562
+    },
+    {
+      "match_id": "41644_2018-06-16_peru_denmark",
+      "team_id": "peru",
+      "xg_for": 1.926,
+      "xg_against": 1.122
+    },
+    {
+      "match_id": "41644_2018-06-16_peru_denmark",
+      "team_id": "denmark",
+      "xg_for": 1.122,
+      "xg_against": 1.926
+    },
+    {
+      "match_id": "41647_2018-06-17_germany_mexico",
+      "team_id": "germany",
+      "xg_for": 2.299,
+      "xg_against": 0.993
+    },
+    {
+      "match_id": "41647_2018-06-17_germany_mexico",
+      "team_id": "mexico",
+      "xg_for": 0.993,
+      "xg_against": 2.299
+    },
+    {
+      "match_id": "41646_2018-06-17_costa_rica_serbia",
+      "team_id": "costa_rica",
+      "xg_for": 0.596,
+      "xg_against": 1.993
+    },
+    {
+      "match_id": "41646_2018-06-17_costa_rica_serbia",
+      "team_id": "serbia",
+      "xg_for": 1.993,
+      "xg_against": 0.596
+    },
+    {
+      "match_id": "41648_2018-06-17_brazil_switzerland",
+      "team_id": "brazil",
+      "xg_for": 1.867,
+      "xg_against": 0.472
+    },
+    {
+      "match_id": "41648_2018-06-17_brazil_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.472,
+      "xg_against": 1.867
+    },
+    {
+      "match_id": "41649_2018-06-18_sweden_south_korea",
+      "team_id": "sweden",
+      "xg_for": 2.015,
+      "xg_against": 0.414
+    },
+    {
+      "match_id": "41649_2018-06-18_sweden_south_korea",
+      "team_id": "south_korea",
+      "xg_for": 0.414,
+      "xg_against": 2.015
+    },
+    {
+      "match_id": "41650_2018-06-18_belgium_panama",
+      "team_id": "belgium",
+      "xg_for": 1.212,
+      "xg_against": 0.625
+    },
+    {
+      "match_id": "41650_2018-06-18_belgium_panama",
+      "team_id": "panama",
+      "xg_for": 0.625,
+      "xg_against": 1.212
+    },
+    {
+      "match_id": "41651_2018-06-18_tunisia_england",
+      "team_id": "tunisia",
+      "xg_for": 0.946,
+      "xg_against": 2.626
+    },
+    {
+      "match_id": "41651_2018-06-18_tunisia_england",
+      "team_id": "england",
+      "xg_for": 2.626,
+      "xg_against": 0.946
+    },
+    {
+      "match_id": "41653_2018-06-19_poland_senegal",
+      "team_id": "poland",
+      "xg_for": 1.042,
+      "xg_against": 1.428
+    },
+    {
+      "match_id": "41653_2018-06-19_poland_senegal",
+      "team_id": "senegal",
+      "xg_for": 1.428,
+      "xg_against": 1.042
+    },
+    {
+      "match_id": "41654_2018-06-19_russia_egypt",
+      "team_id": "russia",
+      "xg_for": 0.981,
+      "xg_against": 1.698
+    },
+    {
+      "match_id": "41654_2018-06-19_russia_egypt",
+      "team_id": "egypt",
+      "xg_for": 1.698,
+      "xg_against": 0.981
+    },
+    {
+      "match_id": "41652_2018-06-19_colombia_japan",
+      "team_id": "colombia",
+      "xg_for": 0.806,
+      "xg_against": 2.321
+    },
+    {
+      "match_id": "41652_2018-06-19_colombia_japan",
+      "team_id": "japan",
+      "xg_for": 2.321,
+      "xg_against": 0.806
+    },
+    {
+      "match_id": "41657_2018-06-20_iran_spain",
+      "team_id": "iran",
+      "xg_for": 0.426,
+      "xg_against": 2.197
+    },
+    {
+      "match_id": "41657_2018-06-20_iran_spain",
+      "team_id": "spain",
+      "xg_for": 2.197,
+      "xg_against": 0.426
+    },
+    {
+      "match_id": "41656_2018-06-20_uruguay_saudi_arabia",
+      "team_id": "uruguay",
+      "xg_for": 1.807,
+      "xg_against": 0.273
+    },
+    {
+      "match_id": "41656_2018-06-20_uruguay_saudi_arabia",
+      "team_id": "saudi_arabia",
+      "xg_for": 0.273,
+      "xg_against": 1.807
+    },
+    {
+      "match_id": "41655_2018-06-20_portugal_morocco",
+      "team_id": "portugal",
+      "xg_for": 0.885,
+      "xg_against": 1.455
+    },
+    {
+      "match_id": "41655_2018-06-20_portugal_morocco",
+      "team_id": "morocco",
+      "xg_for": 1.455,
+      "xg_against": 0.885
+    },
+    {
+      "match_id": "41659_2018-06-21_france_peru",
+      "team_id": "france",
+      "xg_for": 1.862,
+      "xg_against": 0.625
+    },
+    {
+      "match_id": "41659_2018-06-21_france_peru",
+      "team_id": "peru",
+      "xg_for": 0.625,
+      "xg_against": 1.862
+    },
+    {
+      "match_id": "41660_2018-06-21_argentina_croatia",
+      "team_id": "argentina",
+      "xg_for": 1.218,
+      "xg_against": 1.832
+    },
+    {
+      "match_id": "41660_2018-06-21_argentina_croatia",
+      "team_id": "croatia",
+      "xg_for": 1.832,
+      "xg_against": 1.218
+    },
+    {
+      "match_id": "41658_2018-06-21_denmark_australia",
+      "team_id": "denmark",
+      "xg_for": 1.014,
+      "xg_against": 1.412
+    },
+    {
+      "match_id": "41658_2018-06-21_denmark_australia",
+      "team_id": "australia",
+      "xg_for": 1.412,
+      "xg_against": 1.014
+    },
+    {
+      "match_id": "41663_2018-06-22_serbia_switzerland",
+      "team_id": "serbia",
+      "xg_for": 1.153,
+      "xg_against": 1.557
+    },
+    {
+      "match_id": "41663_2018-06-22_serbia_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 1.557,
+      "xg_against": 1.153
+    },
+    {
+      "match_id": "41661_2018-06-22_brazil_costa_rica",
+      "team_id": "brazil",
+      "xg_for": 3.096,
+      "xg_against": 0.159
+    },
+    {
+      "match_id": "41661_2018-06-22_brazil_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 0.159,
+      "xg_against": 3.096
+    },
+    {
+      "match_id": "41662_2018-06-22_nigeria_iceland",
+      "team_id": "nigeria",
+      "xg_for": 1.312,
+      "xg_against": 1.552
+    },
+    {
+      "match_id": "41662_2018-06-22_nigeria_iceland",
+      "team_id": "iceland",
+      "xg_for": 1.552,
+      "xg_against": 1.312
+    },
+    {
+      "match_id": "41665_2018-06-23_south_korea_mexico",
+      "team_id": "south_korea",
+      "xg_for": 0.822,
+      "xg_against": 1.878
+    },
+    {
+      "match_id": "41665_2018-06-23_south_korea_mexico",
+      "team_id": "mexico",
+      "xg_for": 1.878,
+      "xg_against": 0.822
+    },
+    {
+      "match_id": "41666_2018-06-23_germany_sweden",
+      "team_id": "germany",
+      "xg_for": 1.318,
+      "xg_against": 0.815
+    },
+    {
+      "match_id": "41666_2018-06-23_germany_sweden",
+      "team_id": "sweden",
+      "xg_for": 0.815,
+      "xg_against": 1.318
+    },
+    {
+      "match_id": "41664_2018-06-23_belgium_tunisia",
+      "team_id": "belgium",
+      "xg_for": 5.336,
+      "xg_against": 1.188
+    },
+    {
+      "match_id": "41664_2018-06-23_belgium_tunisia",
+      "team_id": "tunisia",
+      "xg_for": 1.188,
+      "xg_against": 5.336
+    },
+    {
+      "match_id": "41667_2018-06-24_england_panama",
+      "team_id": "england",
+      "xg_for": 3.168,
+      "xg_against": 1.08
+    },
+    {
+      "match_id": "41667_2018-06-24_england_panama",
+      "team_id": "panama",
+      "xg_for": 1.08,
+      "xg_against": 3.168
+    },
+    {
+      "match_id": "41669_2018-06-24_poland_colombia",
+      "team_id": "poland",
+      "xg_for": 1.114,
+      "xg_against": 1.387
+    },
+    {
+      "match_id": "41669_2018-06-24_poland_colombia",
+      "team_id": "colombia",
+      "xg_for": 1.387,
+      "xg_against": 1.114
+    },
+    {
+      "match_id": "41668_2018-06-24_japan_senegal",
+      "team_id": "japan",
+      "xg_for": 0.982,
+      "xg_against": 1.878
+    },
+    {
+      "match_id": "41668_2018-06-24_japan_senegal",
+      "team_id": "senegal",
+      "xg_for": 1.878,
+      "xg_against": 0.982
+    },
+    {
+      "match_id": "41673_2018-06-25_iran_portugal",
+      "team_id": "iran",
+      "xg_for": 1.577,
+      "xg_against": 1.522
+    },
+    {
+      "match_id": "41673_2018-06-25_iran_portugal",
+      "team_id": "portugal",
+      "xg_for": 1.522,
+      "xg_against": 1.577
+    },
+    {
+      "match_id": "41670_2018-06-25_russia_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 2.483,
+      "xg_against": 0.18
+    },
+    {
+      "match_id": "41670_2018-06-25_russia_uruguay",
+      "team_id": "russia",
+      "xg_for": 0.18,
+      "xg_against": 2.483
+    },
+    {
+      "match_id": "41672_2018-06-25_spain_morocco",
+      "team_id": "spain",
+      "xg_for": 2.604,
+      "xg_against": 1.072
+    },
+    {
+      "match_id": "41672_2018-06-25_spain_morocco",
+      "team_id": "morocco",
+      "xg_for": 1.072,
+      "xg_against": 2.604
+    },
+    {
+      "match_id": "41671_2018-06-25_saudi_arabia_egypt",
+      "team_id": "saudi_arabia",
+      "xg_for": 2.546,
+      "xg_against": 0.924
+    },
+    {
+      "match_id": "41671_2018-06-25_saudi_arabia_egypt",
+      "team_id": "egypt",
+      "xg_for": 0.924,
+      "xg_against": 2.546
+    },
+    {
+      "match_id": "41677_2018-06-26_iceland_croatia",
+      "team_id": "iceland",
+      "xg_for": 2.133,
+      "xg_against": 0.674
+    },
+    {
+      "match_id": "41677_2018-06-26_iceland_croatia",
+      "team_id": "croatia",
+      "xg_for": 0.674,
+      "xg_against": 2.133
+    },
+    {
+      "match_id": "41674_2018-06-26_australia_peru",
+      "team_id": "australia",
+      "xg_for": 1.629,
+      "xg_against": 0.336
+    },
+    {
+      "match_id": "41674_2018-06-26_australia_peru",
+      "team_id": "peru",
+      "xg_for": 0.336,
+      "xg_against": 1.629
+    },
+    {
+      "match_id": "41676_2018-06-26_nigeria_argentina",
+      "team_id": "nigeria",
+      "xg_for": 1.305,
+      "xg_against": 0.851
+    },
+    {
+      "match_id": "41676_2018-06-26_nigeria_argentina",
+      "team_id": "argentina",
+      "xg_for": 0.851,
+      "xg_against": 1.305
+    },
+    {
+      "match_id": "41675_2018-06-26_denmark_france",
+      "team_id": "denmark",
+      "xg_for": 0.139,
+      "xg_against": 0.418
+    },
+    {
+      "match_id": "41675_2018-06-26_denmark_france",
+      "team_id": "france",
+      "xg_for": 0.418,
+      "xg_against": 0.139
+    },
+    {
+      "match_id": "41680_2018-06-27_serbia_brazil",
+      "team_id": "serbia",
+      "xg_for": 0.948,
+      "xg_against": 1.42
+    },
+    {
+      "match_id": "41680_2018-06-27_serbia_brazil",
+      "team_id": "brazil",
+      "xg_for": 1.42,
+      "xg_against": 0.948
+    },
+    {
+      "match_id": "41681_2018-06-27_switzerland_costa_rica",
+      "team_id": "switzerland",
+      "xg_for": 1.22,
+      "xg_against": 1.576
+    },
+    {
+      "match_id": "41681_2018-06-27_switzerland_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 1.576,
+      "xg_against": 1.22
+    },
+    {
+      "match_id": "41679_2018-06-27_mexico_sweden",
+      "team_id": "mexico",
+      "xg_for": 1.611,
+      "xg_against": 2.79
+    },
+    {
+      "match_id": "41679_2018-06-27_mexico_sweden",
+      "team_id": "sweden",
+      "xg_for": 2.79,
+      "xg_against": 1.611
+    },
+    {
+      "match_id": "41678_2018-06-27_south_korea_germany",
+      "team_id": "south_korea",
+      "xg_for": 1.775,
+      "xg_against": 2.706
+    },
+    {
+      "match_id": "41678_2018-06-27_south_korea_germany",
+      "team_id": "germany",
+      "xg_for": 2.706,
+      "xg_against": 1.775
+    },
+    {
+      "match_id": "41684_2018-06-28_panama_tunisia",
+      "team_id": "panama",
+      "xg_for": 0.691,
+      "xg_against": 2.852
+    },
+    {
+      "match_id": "41684_2018-06-28_panama_tunisia",
+      "team_id": "tunisia",
+      "xg_for": 2.852,
+      "xg_against": 0.691
+    },
+    {
+      "match_id": "41682_2018-06-28_japan_poland",
+      "team_id": "japan",
+      "xg_for": 0.891,
+      "xg_against": 1.041
+    },
+    {
+      "match_id": "41682_2018-06-28_japan_poland",
+      "team_id": "poland",
+      "xg_for": 1.041,
+      "xg_against": 0.891
+    },
+    {
+      "match_id": "41685_2018-06-28_england_belgium",
+      "team_id": "england",
+      "xg_for": 1.201,
+      "xg_against": 0.965
+    },
+    {
+      "match_id": "41685_2018-06-28_england_belgium",
+      "team_id": "belgium",
+      "xg_for": 0.965,
+      "xg_against": 1.201
+    },
+    {
+      "match_id": "41683_2018-06-28_senegal_colombia",
+      "team_id": "senegal",
+      "xg_for": 0.361,
+      "xg_against": 0.285
+    },
+    {
+      "match_id": "41683_2018-06-28_senegal_colombia",
+      "team_id": "colombia",
+      "xg_for": 0.285,
+      "xg_against": 0.361
+    },
+    {
+      "match_id": "41686_2018-06-30_france_argentina",
+      "team_id": "france",
+      "xg_for": 1.638,
+      "xg_against": 1.447
+    },
+    {
+      "match_id": "41686_2018-06-30_france_argentina",
+      "team_id": "argentina",
+      "xg_for": 1.447,
+      "xg_against": 1.638
+    },
+    {
+      "match_id": "41687_2018-06-30_uruguay_portugal",
+      "team_id": "uruguay",
+      "xg_for": 0.476,
+      "xg_against": 0.996
+    },
+    {
+      "match_id": "41687_2018-06-30_uruguay_portugal",
+      "team_id": "portugal",
+      "xg_for": 0.996,
+      "xg_against": 0.476
+    },
+    {
+      "match_id": "41689_2018-07-01_croatia_denmark",
+      "team_id": "croatia",
+      "xg_for": 6.088,
+      "xg_against": 4.614
+    },
+    {
+      "match_id": "41689_2018-07-01_croatia_denmark",
+      "team_id": "denmark",
+      "xg_for": 4.614,
+      "xg_against": 6.088
+    },
+    {
+      "match_id": "41688_2018-07-01_russia_spain",
+      "team_id": "spain",
+      "xg_for": 5.359,
+      "xg_against": 4.54
+    },
+    {
+      "match_id": "41688_2018-07-01_russia_spain",
+      "team_id": "russia",
+      "xg_for": 4.54,
+      "xg_against": 5.359
+    },
+    {
+      "match_id": "41691_2018-07-02_belgium_japan",
+      "team_id": "belgium",
+      "xg_for": 2.918,
+      "xg_against": 0.694
+    },
+    {
+      "match_id": "41691_2018-07-02_belgium_japan",
+      "team_id": "japan",
+      "xg_for": 0.694,
+      "xg_against": 2.918
+    },
+    {
+      "match_id": "41690_2018-07-02_brazil_mexico",
+      "team_id": "brazil",
+      "xg_for": 3.32,
+      "xg_against": 0.583
+    },
+    {
+      "match_id": "41690_2018-07-02_brazil_mexico",
+      "team_id": "mexico",
+      "xg_for": 0.583,
+      "xg_against": 3.32
+    },
+    {
+      "match_id": "41693_2018-07-03_colombia_england",
+      "team_id": "colombia",
+      "xg_for": 4.749,
+      "xg_against": 6.162
+    },
+    {
+      "match_id": "41693_2018-07-03_colombia_england",
+      "team_id": "england",
+      "xg_for": 6.162,
+      "xg_against": 4.749
+    },
+    {
+      "match_id": "41692_2018-07-03_sweden_switzerland",
+      "team_id": "sweden",
+      "xg_for": 0.91,
+      "xg_against": 0.533
+    },
+    {
+      "match_id": "41692_2018-07-03_sweden_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.533,
+      "xg_against": 0.91
+    },
+    {
+      "match_id": "41696_2018-07-06_brazil_belgium",
+      "team_id": "brazil",
+      "xg_for": 2.609,
+      "xg_against": 0.405
+    },
+    {
+      "match_id": "41696_2018-07-06_brazil_belgium",
+      "team_id": "belgium",
+      "xg_for": 0.405,
+      "xg_against": 2.609
+    },
+    {
+      "match_id": "41695_2018-07-06_uruguay_france",
+      "team_id": "uruguay",
+      "xg_for": 0.693,
+      "xg_against": 0.539
+    },
+    {
+      "match_id": "41695_2018-07-06_uruguay_france",
+      "team_id": "france",
+      "xg_for": 0.539,
+      "xg_against": 0.693
+    },
+    {
+      "match_id": "41697_2018-07-07_sweden_england",
+      "team_id": "sweden",
+      "xg_for": 0.834,
+      "xg_against": 0.758
+    },
+    {
+      "match_id": "41697_2018-07-07_sweden_england",
+      "team_id": "england",
+      "xg_for": 0.758,
+      "xg_against": 0.834
+    },
+    {
+      "match_id": "41698_2018-07-07_russia_croatia",
+      "team_id": "russia",
+      "xg_for": 4.988,
+      "xg_against": 5.568
+    },
+    {
+      "match_id": "41698_2018-07-07_russia_croatia",
+      "team_id": "croatia",
+      "xg_for": 5.568,
+      "xg_against": 4.988
+    },
+    {
+      "match_id": "41699_2018-07-10_france_belgium",
+      "team_id": "france",
+      "xg_for": 1.682,
+      "xg_against": 0.567
+    },
+    {
+      "match_id": "41699_2018-07-10_france_belgium",
+      "team_id": "belgium",
+      "xg_for": 0.567,
+      "xg_against": 1.682
+    },
+    {
+      "match_id": "41700_2018-07-11_croatia_england",
+      "team_id": "croatia",
+      "xg_for": 2.141,
+      "xg_against": 0.547
+    },
+    {
+      "match_id": "41700_2018-07-11_croatia_england",
+      "team_id": "england",
+      "xg_for": 0.547,
+      "xg_against": 2.141
+    },
+    {
+      "match_id": "41701_2018-07-14_belgium_england",
+      "team_id": "belgium",
+      "xg_for": 1.321,
+      "xg_against": 1.335
+    },
+    {
+      "match_id": "41701_2018-07-14_belgium_england",
+      "team_id": "england",
+      "xg_for": 1.335,
+      "xg_against": 1.321
+    },
+    {
+      "match_id": "41702_2018-07-15_france_croatia",
+      "team_id": "france",
+      "xg_for": 1.098,
+      "xg_against": 1.48
+    },
+    {
+      "match_id": "41702_2018-07-15_france_croatia",
+      "team_id": "croatia",
+      "xg_for": 1.48,
+      "xg_against": 1.098
+    },
+    {
+      "match_id": "45715_2022-11-20_qatar_ecuador",
+      "team_id": "qatar",
+      "xg_for": 0.304,
+      "xg_against": 1.154
+    },
+    {
+      "match_id": "45715_2022-11-20_qatar_ecuador",
+      "team_id": "ecuador",
+      "xg_for": 1.154,
+      "xg_against": 0.304
+    },
+    {
+      "match_id": "45717_2022-11-21_england_iran",
+      "team_id": "england",
+      "xg_for": 1.987,
+      "xg_against": 1.456
+    },
+    {
+      "match_id": "45717_2022-11-21_england_iran",
+      "team_id": "iran",
+      "xg_for": 1.456,
+      "xg_against": 1.987
+    },
+    {
+      "match_id": "45716_2022-11-21_senegal_netherlands",
+      "team_id": "senegal",
+      "xg_for": 0.691,
+      "xg_against": 1.124
+    },
+    {
+      "match_id": "45716_2022-11-21_senegal_netherlands",
+      "team_id": "netherlands",
+      "xg_for": 1.124,
+      "xg_against": 0.691
+    },
+    {
+      "match_id": "45718_2022-11-21_united_states_wales",
+      "team_id": "united_states",
+      "xg_for": 0.602,
+      "xg_against": 1.395
+    },
+    {
+      "match_id": "45718_2022-11-21_united_states_wales",
+      "team_id": "wales",
+      "xg_for": 1.395,
+      "xg_against": 0.602
+    },
+    {
+      "match_id": "45721_2022-11-22_denmark_tunisia",
+      "team_id": "denmark",
+      "xg_for": 1.567,
+      "xg_against": 1.06
+    },
+    {
+      "match_id": "45721_2022-11-22_denmark_tunisia",
+      "team_id": "tunisia",
+      "xg_for": 1.06,
+      "xg_against": 1.567
+    },
+    {
+      "match_id": "45720_2022-11-22_mexico_poland",
+      "team_id": "mexico",
+      "xg_for": 0.529,
+      "xg_against": 1.138
+    },
+    {
+      "match_id": "45720_2022-11-22_mexico_poland",
+      "team_id": "poland",
+      "xg_for": 1.138,
+      "xg_against": 0.529
+    },
+    {
+      "match_id": "45719_2022-11-22_argentina_saudi_arabia",
+      "team_id": "argentina",
+      "xg_for": 2.492,
+      "xg_against": 0.153
+    },
+    {
+      "match_id": "45719_2022-11-22_argentina_saudi_arabia",
+      "team_id": "saudi_arabia",
+      "xg_for": 0.153,
+      "xg_against": 2.492
+    },
+    {
+      "match_id": "45722_2022-11-22_france_australia",
+      "team_id": "france",
+      "xg_for": 3.17,
+      "xg_against": 0.323
+    },
+    {
+      "match_id": "45722_2022-11-22_france_australia",
+      "team_id": "australia",
+      "xg_for": 0.323,
+      "xg_against": 3.17
+    },
+    {
+      "match_id": "45725_2022-11-23_morocco_croatia",
+      "team_id": "morocco",
+      "xg_for": 0.363,
+      "xg_against": 0.85
+    },
+    {
+      "match_id": "45725_2022-11-23_morocco_croatia",
+      "team_id": "croatia",
+      "xg_for": 0.85,
+      "xg_against": 0.363
+    },
+    {
+      "match_id": "45723_2022-11-23_germany_japan",
+      "team_id": "germany",
+      "xg_for": 2.768,
+      "xg_against": 1.249
+    },
+    {
+      "match_id": "45723_2022-11-23_germany_japan",
+      "team_id": "japan",
+      "xg_for": 1.249,
+      "xg_against": 2.768
+    },
+    {
+      "match_id": "45726_2022-11-23_belgium_canada",
+      "team_id": "belgium",
+      "xg_for": 0.67,
+      "xg_against": 2.546
+    },
+    {
+      "match_id": "45726_2022-11-23_belgium_canada",
+      "team_id": "canada",
+      "xg_for": 2.546,
+      "xg_against": 0.67
+    },
+    {
+      "match_id": "45724_2022-11-23_spain_costa_rica",
+      "team_id": "spain",
+      "xg_for": 2.762,
+      "xg_against": 0.0
+    },
+    {
+      "match_id": "45724_2022-11-23_spain_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 0.0,
+      "xg_against": 2.762
+    },
+    {
+      "match_id": "45727_2022-11-24_switzerland_cameroon",
+      "team_id": "switzerland",
+      "xg_for": 1.427,
+      "xg_against": 0.613
+    },
+    {
+      "match_id": "45727_2022-11-24_switzerland_cameroon",
+      "team_id": "cameroon",
+      "xg_for": 0.613,
+      "xg_against": 1.427
+    },
+    {
+      "match_id": "45730_2022-11-24_portugal_ghana",
+      "team_id": "portugal",
+      "xg_for": 2.097,
+      "xg_against": 0.78
+    },
+    {
+      "match_id": "45730_2022-11-24_portugal_ghana",
+      "team_id": "ghana",
+      "xg_for": 0.78,
+      "xg_against": 2.097
+    },
+    {
+      "match_id": "45728_2022-11-24_brazil_serbia",
+      "team_id": "brazil",
+      "xg_for": 2.124,
+      "xg_against": 0.163
+    },
+    {
+      "match_id": "45728_2022-11-24_brazil_serbia",
+      "team_id": "serbia",
+      "xg_for": 0.163,
+      "xg_against": 2.124
+    },
+    {
+      "match_id": "45729_2022-11-24_uruguay_south_korea",
+      "team_id": "uruguay",
+      "xg_for": 0.417,
+      "xg_against": 0.493
+    },
+    {
+      "match_id": "45729_2022-11-24_uruguay_south_korea",
+      "team_id": "south_korea",
+      "xg_for": 0.493,
+      "xg_against": 0.417
+    },
+    {
+      "match_id": "45732_2022-11-25_netherlands_ecuador",
+      "team_id": "netherlands",
+      "xg_for": 0.104,
+      "xg_against": 1.651
+    },
+    {
+      "match_id": "45732_2022-11-25_netherlands_ecuador",
+      "team_id": "ecuador",
+      "xg_for": 1.651,
+      "xg_against": 0.104
+    },
+    {
+      "match_id": "45734_2022-11-25_england_united_states",
+      "team_id": "england",
+      "xg_for": 0.461,
+      "xg_against": 0.514
+    },
+    {
+      "match_id": "45734_2022-11-25_england_united_states",
+      "team_id": "united_states",
+      "xg_for": 0.514,
+      "xg_against": 0.461
+    },
+    {
+      "match_id": "45733_2022-11-25_wales_iran",
+      "team_id": "wales",
+      "xg_for": 0.616,
+      "xg_against": 1.454
+    },
+    {
+      "match_id": "45733_2022-11-25_wales_iran",
+      "team_id": "iran",
+      "xg_for": 1.454,
+      "xg_against": 0.616
+    },
+    {
+      "match_id": "45731_2022-11-25_qatar_senegal",
+      "team_id": "qatar",
+      "xg_for": 0.96,
+      "xg_against": 0.903
+    },
+    {
+      "match_id": "45731_2022-11-25_qatar_senegal",
+      "team_id": "senegal",
+      "xg_for": 0.903,
+      "xg_against": 0.96
+    },
+    {
+      "match_id": "45735_2022-11-26_poland_saudi_arabia",
+      "team_id": "poland",
+      "xg_for": 1.734,
+      "xg_against": 1.972
+    },
+    {
+      "match_id": "45735_2022-11-26_poland_saudi_arabia",
+      "team_id": "saudi_arabia",
+      "xg_for": 1.972,
+      "xg_against": 1.734
+    },
+    {
+      "match_id": "45738_2022-11-26_france_denmark",
+      "team_id": "france",
+      "xg_for": 1.934,
+      "xg_against": 0.889
+    },
+    {
+      "match_id": "45738_2022-11-26_france_denmark",
+      "team_id": "denmark",
+      "xg_for": 0.889,
+      "xg_against": 1.934
+    },
+    {
+      "match_id": "45737_2022-11-26_tunisia_australia",
+      "team_id": "tunisia",
+      "xg_for": 1.052,
+      "xg_against": 0.359
+    },
+    {
+      "match_id": "45737_2022-11-26_tunisia_australia",
+      "team_id": "australia",
+      "xg_for": 0.359,
+      "xg_against": 1.052
+    },
+    {
+      "match_id": "45736_2022-11-26_argentina_mexico",
+      "team_id": "argentina",
+      "xg_for": 0.325,
+      "xg_against": 0.206
+    },
+    {
+      "match_id": "45736_2022-11-26_argentina_mexico",
+      "team_id": "mexico",
+      "xg_for": 0.206,
+      "xg_against": 0.325
+    },
+    {
+      "match_id": "45739_2022-11-27_japan_costa_rica",
+      "team_id": "japan",
+      "xg_for": 0.774,
+      "xg_against": 0.199
+    },
+    {
+      "match_id": "45739_2022-11-27_japan_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 0.199,
+      "xg_against": 0.774
+    },
+    {
+      "match_id": "45740_2022-11-27_spain_germany",
+      "team_id": "spain",
+      "xg_for": 0.64,
+      "xg_against": 1.147
+    },
+    {
+      "match_id": "45740_2022-11-27_spain_germany",
+      "team_id": "germany",
+      "xg_for": 1.147,
+      "xg_against": 0.64
+    },
+    {
+      "match_id": "45741_2022-11-27_belgium_morocco",
+      "team_id": "belgium",
+      "xg_for": 0.643,
+      "xg_against": 0.991
+    },
+    {
+      "match_id": "45741_2022-11-27_belgium_morocco",
+      "team_id": "morocco",
+      "xg_for": 0.991,
+      "xg_against": 0.643
+    },
+    {
+      "match_id": "45742_2022-11-27_croatia_canada",
+      "team_id": "croatia",
+      "xg_for": 2.61,
+      "xg_against": 0.287
+    },
+    {
+      "match_id": "45742_2022-11-27_croatia_canada",
+      "team_id": "canada",
+      "xg_for": 0.287,
+      "xg_against": 2.61
+    },
+    {
+      "match_id": "45744_2022-11-28_brazil_switzerland",
+      "team_id": "brazil",
+      "xg_for": 0.923,
+      "xg_against": 0.289
+    },
+    {
+      "match_id": "45744_2022-11-28_brazil_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.289,
+      "xg_against": 0.923
+    },
+    {
+      "match_id": "45746_2022-11-28_portugal_uruguay",
+      "team_id": "portugal",
+      "xg_for": 1.214,
+      "xg_against": 1.217
+    },
+    {
+      "match_id": "45746_2022-11-28_portugal_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 1.217,
+      "xg_against": 1.214
+    },
+    {
+      "match_id": "45743_2022-11-28_cameroon_serbia",
+      "team_id": "cameroon",
+      "xg_for": 2.07,
+      "xg_against": 1.738
+    },
+    {
+      "match_id": "45743_2022-11-28_cameroon_serbia",
+      "team_id": "serbia",
+      "xg_for": 1.738,
+      "xg_against": 2.07
+    },
+    {
+      "match_id": "45745_2022-11-28_south_korea_ghana",
+      "team_id": "south_korea",
+      "xg_for": 1.368,
+      "xg_against": 1.181
+    },
+    {
+      "match_id": "45745_2022-11-28_south_korea_ghana",
+      "team_id": "ghana",
+      "xg_for": 1.181,
+      "xg_against": 1.368
+    },
+    {
+      "match_id": "45750_2022-11-29_iran_united_states",
+      "team_id": "iran",
+      "xg_for": 0.921,
+      "xg_against": 1.17
+    },
+    {
+      "match_id": "45750_2022-11-29_iran_united_states",
+      "team_id": "united_states",
+      "xg_for": 1.17,
+      "xg_against": 0.921
+    },
+    {
+      "match_id": "45749_2022-11-29_wales_england",
+      "team_id": "wales",
+      "xg_for": 0.208,
+      "xg_against": 2.915
+    },
+    {
+      "match_id": "45749_2022-11-29_wales_england",
+      "team_id": "england",
+      "xg_for": 2.915,
+      "xg_against": 0.208
+    },
+    {
+      "match_id": "45748_2022-11-29_qatar_netherlands",
+      "team_id": "netherlands",
+      "xg_for": 1.714,
+      "xg_against": 0.144
+    },
+    {
+      "match_id": "45748_2022-11-29_qatar_netherlands",
+      "team_id": "qatar",
+      "xg_for": 0.144,
+      "xg_against": 1.714
+    },
+    {
+      "match_id": "45747_2022-11-29_ecuador_senegal",
+      "team_id": "ecuador",
+      "xg_for": 1.002,
+      "xg_against": 1.707
+    },
+    {
+      "match_id": "45747_2022-11-29_ecuador_senegal",
+      "team_id": "senegal",
+      "xg_for": 1.707,
+      "xg_against": 1.002
+    },
+    {
+      "match_id": "45754_2022-11-30_tunisia_france",
+      "team_id": "tunisia",
+      "xg_for": 0.298,
+      "xg_against": 0.477
+    },
+    {
+      "match_id": "45754_2022-11-30_tunisia_france",
+      "team_id": "france",
+      "xg_for": 0.477,
+      "xg_against": 0.298
+    },
+    {
+      "match_id": "45753_2022-11-30_australia_denmark",
+      "team_id": "australia",
+      "xg_for": 0.47,
+      "xg_against": 0.737
+    },
+    {
+      "match_id": "45753_2022-11-30_australia_denmark",
+      "team_id": "denmark",
+      "xg_for": 0.737,
+      "xg_against": 0.47
+    },
+    {
+      "match_id": "45752_2022-11-30_saudi_arabia_mexico",
+      "team_id": "saudi_arabia",
+      "xg_for": 1.076,
+      "xg_against": 2.322
+    },
+    {
+      "match_id": "45752_2022-11-30_saudi_arabia_mexico",
+      "team_id": "mexico",
+      "xg_for": 2.322,
+      "xg_against": 1.076
+    },
+    {
+      "match_id": "45751_2022-11-30_poland_argentina",
+      "team_id": "poland",
+      "xg_for": 0.198,
+      "xg_against": 3.077
+    },
+    {
+      "match_id": "45751_2022-11-30_poland_argentina",
+      "team_id": "argentina",
+      "xg_for": 3.077,
+      "xg_against": 0.198
+    },
+    {
+      "match_id": "45758_2022-12-01_canada_morocco",
+      "team_id": "canada",
+      "xg_for": 1.096,
+      "xg_against": 0.426
+    },
+    {
+      "match_id": "45758_2022-12-01_canada_morocco",
+      "team_id": "morocco",
+      "xg_for": 0.426,
+      "xg_against": 1.096
+    },
+    {
+      "match_id": "45757_2022-12-01_croatia_belgium",
+      "team_id": "croatia",
+      "xg_for": 0.695,
+      "xg_against": 2.382
+    },
+    {
+      "match_id": "45757_2022-12-01_croatia_belgium",
+      "team_id": "belgium",
+      "xg_for": 2.382,
+      "xg_against": 0.695
+    },
+    {
+      "match_id": "45755_2022-12-01_japan_spain",
+      "team_id": "japan",
+      "xg_for": 1.158,
+      "xg_against": 0.858
+    },
+    {
+      "match_id": "45755_2022-12-01_japan_spain",
+      "team_id": "spain",
+      "xg_for": 0.858,
+      "xg_against": 1.158
+    },
+    {
+      "match_id": "45756_2022-12-01_costa_rica_germany",
+      "team_id": "costa_rica",
+      "xg_for": 1.035,
+      "xg_against": 4.316
+    },
+    {
+      "match_id": "45756_2022-12-01_costa_rica_germany",
+      "team_id": "germany",
+      "xg_for": 4.316,
+      "xg_against": 1.035
+    },
+    {
+      "match_id": "45759_2022-12-02_serbia_switzerland",
+      "team_id": "serbia",
+      "xg_for": 1.189,
+      "xg_against": 3.104
+    },
+    {
+      "match_id": "45759_2022-12-02_serbia_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 3.104,
+      "xg_against": 1.189
+    },
+    {
+      "match_id": "45761_2022-12-02_ghana_uruguay",
+      "team_id": "ghana",
+      "xg_for": 1.393,
+      "xg_against": 1.637
+    },
+    {
+      "match_id": "45761_2022-12-02_ghana_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 1.637,
+      "xg_against": 1.393
+    },
+    {
+      "match_id": "45760_2022-12-02_cameroon_brazil",
+      "team_id": "cameroon",
+      "xg_for": 0.383,
+      "xg_against": 2.378
+    },
+    {
+      "match_id": "45760_2022-12-02_cameroon_brazil",
+      "team_id": "brazil",
+      "xg_for": 2.378,
+      "xg_against": 0.383
+    },
+    {
+      "match_id": "45762_2022-12-02_south_korea_portugal",
+      "team_id": "south_korea",
+      "xg_for": 1.399,
+      "xg_against": 0.974
+    },
+    {
+      "match_id": "45762_2022-12-02_south_korea_portugal",
+      "team_id": "portugal",
+      "xg_for": 0.974,
+      "xg_against": 1.399
+    },
+    {
+      "match_id": "45764_2022-12-03_argentina_australia",
+      "team_id": "argentina",
+      "xg_for": 1.482,
+      "xg_against": 0.426
+    },
+    {
+      "match_id": "45764_2022-12-03_argentina_australia",
+      "team_id": "australia",
+      "xg_for": 0.426,
+      "xg_against": 1.482
+    },
+    {
+      "match_id": "45763_2022-12-03_netherlands_united_states",
+      "team_id": "netherlands",
+      "xg_for": 1.482,
+      "xg_against": 1.652
+    },
+    {
+      "match_id": "45763_2022-12-03_netherlands_united_states",
+      "team_id": "united_states",
+      "xg_for": 1.652,
+      "xg_against": 1.482
+    },
+    {
+      "match_id": "45766_2022-12-04_england_senegal",
+      "team_id": "england",
+      "xg_for": 1.02,
+      "xg_against": 0.973
+    },
+    {
+      "match_id": "45766_2022-12-04_england_senegal",
+      "team_id": "senegal",
+      "xg_for": 0.973,
+      "xg_against": 1.02
+    },
+    {
+      "match_id": "45765_2022-12-04_france_poland",
+      "team_id": "france",
+      "xg_for": 1.126,
+      "xg_against": 1.594
+    },
+    {
+      "match_id": "45765_2022-12-04_france_poland",
+      "team_id": "poland",
+      "xg_for": 1.594,
+      "xg_against": 1.126
+    },
+    {
+      "match_id": "45767_2022-12-05_japan_croatia",
+      "team_id": "japan",
+      "xg_for": 4.203,
+      "xg_against": 3.988
+    },
+    {
+      "match_id": "45767_2022-12-05_japan_croatia",
+      "team_id": "croatia",
+      "xg_for": 3.988,
+      "xg_against": 4.203
+    },
+    {
+      "match_id": "45768_2022-12-05_brazil_south_korea",
+      "team_id": "brazil",
+      "xg_for": 3.261,
+      "xg_against": 0.345
+    },
+    {
+      "match_id": "45768_2022-12-05_brazil_south_korea",
+      "team_id": "south_korea",
+      "xg_for": 0.345,
+      "xg_against": 3.261
+    },
+    {
+      "match_id": "45770_2022-12-06_portugal_switzerland",
+      "team_id": "portugal",
+      "xg_for": 2.284,
+      "xg_against": 1.272
+    },
+    {
+      "match_id": "45770_2022-12-06_portugal_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 1.272,
+      "xg_against": 2.284
+    },
+    {
+      "match_id": "45769_2022-12-06_morocco_spain",
+      "team_id": "morocco",
+      "xg_for": 3.704,
+      "xg_against": 2.845
+    },
+    {
+      "match_id": "45769_2022-12-06_morocco_spain",
+      "team_id": "spain",
+      "xg_for": 2.845,
+      "xg_against": 3.704
+    },
+    {
+      "match_id": "45772_2022-12-09_netherlands_argentina",
+      "team_id": "netherlands",
+      "xg_for": 4.487,
+      "xg_against": 5.857
+    },
+    {
+      "match_id": "45772_2022-12-09_netherlands_argentina",
+      "team_id": "argentina",
+      "xg_for": 5.857,
+      "xg_against": 4.487
+    },
+    {
+      "match_id": "45771_2022-12-09_croatia_brazil",
+      "team_id": "croatia",
+      "xg_for": 3.767,
+      "xg_against": 4.95
+    },
+    {
+      "match_id": "45771_2022-12-09_croatia_brazil",
+      "team_id": "brazil",
+      "xg_for": 4.95,
+      "xg_against": 3.767
+    },
+    {
+      "match_id": "45774_2022-12-10_morocco_portugal",
+      "team_id": "morocco",
+      "xg_for": 0.972,
+      "xg_against": 0.744
+    },
+    {
+      "match_id": "45774_2022-12-10_morocco_portugal",
+      "team_id": "portugal",
+      "xg_for": 0.744,
+      "xg_against": 0.972
+    },
+    {
+      "match_id": "45775_2022-12-10_england_france",
+      "team_id": "england",
+      "xg_for": 2.353,
+      "xg_against": 0.839
+    },
+    {
+      "match_id": "45775_2022-12-10_england_france",
+      "team_id": "france",
+      "xg_for": 0.839,
+      "xg_against": 2.353
+    },
+    {
+      "match_id": "45777_2022-12-13_argentina_croatia",
+      "team_id": "argentina",
+      "xg_for": 1.864,
+      "xg_against": 0.41
+    },
+    {
+      "match_id": "45777_2022-12-13_argentina_croatia",
+      "team_id": "croatia",
+      "xg_for": 0.41,
+      "xg_against": 1.864
+    },
+    {
+      "match_id": "45778_2022-12-14_france_morocco",
+      "team_id": "france",
+      "xg_for": 2.002,
+      "xg_against": 1.23
+    },
+    {
+      "match_id": "45778_2022-12-14_france_morocco",
+      "team_id": "morocco",
+      "xg_for": 1.23,
+      "xg_against": 2.002
+    },
+    {
+      "match_id": "45782_2022-12-17_croatia_morocco",
+      "team_id": "croatia",
+      "xg_for": 0.849,
+      "xg_against": 0.991
+    },
+    {
+      "match_id": "45782_2022-12-17_croatia_morocco",
+      "team_id": "morocco",
+      "xg_for": 0.991,
+      "xg_against": 0.849
+    },
+    {
+      "match_id": "45784_2022-12-18_argentina_france",
+      "team_id": "argentina",
+      "xg_for": 5.892,
+      "xg_against": 5.407
+    },
+    {
+      "match_id": "45784_2022-12-18_argentina_france",
+      "team_id": "france",
+      "xg_for": 5.407,
+      "xg_against": 5.892
+    },
+    {
+      "match_id": "44096_2021-06-11_italy_turkey",
+      "team_id": "turkey",
+      "xg_for": 0.151,
+      "xg_against": 1.591
+    },
+    {
+      "match_id": "44096_2021-06-11_italy_turkey",
+      "team_id": "italy",
+      "xg_for": 1.591,
+      "xg_against": 0.151
+    },
+    {
+      "match_id": "44106_2021-06-12_denmark_finland",
+      "team_id": "denmark",
+      "xg_for": 1.953,
+      "xg_against": 0.288
+    },
+    {
+      "match_id": "44106_2021-06-12_denmark_finland",
+      "team_id": "finland",
+      "xg_for": 0.288,
+      "xg_against": 1.953
+    },
+    {
+      "match_id": "44107_2021-06-12_russia_belgium",
+      "team_id": "belgium",
+      "xg_for": 1.393,
+      "xg_against": 0.257
+    },
+    {
+      "match_id": "44107_2021-06-12_russia_belgium",
+      "team_id": "russia",
+      "xg_for": 0.257,
+      "xg_against": 1.393
+    },
+    {
+      "match_id": "44105_2021-06-12_wales_switzerland",
+      "team_id": "wales",
+      "xg_for": 0.576,
+      "xg_against": 1.56
+    },
+    {
+      "match_id": "44105_2021-06-12_wales_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 1.56,
+      "xg_against": 0.576
+    },
+    {
+      "match_id": "44111_2021-06-13_austria_macedonia",
+      "team_id": "austria",
+      "xg_for": 1.441,
+      "xg_against": 0.84
+    },
+    {
+      "match_id": "44111_2021-06-13_austria_macedonia",
+      "team_id": "macedonia",
+      "xg_for": 0.84,
+      "xg_against": 1.441
+    },
+    {
+      "match_id": "44113_2021-06-13_england_croatia",
+      "team_id": "england",
+      "xg_for": 0.707,
+      "xg_against": 0.34
+    },
+    {
+      "match_id": "44113_2021-06-13_england_croatia",
+      "team_id": "croatia",
+      "xg_for": 0.34,
+      "xg_against": 0.707
+    },
+    {
+      "match_id": "44112_2021-06-13_netherlands_ukraine",
+      "team_id": "netherlands",
+      "xg_for": 1.43,
+      "xg_against": 0.594
+    },
+    {
+      "match_id": "44112_2021-06-13_netherlands_ukraine",
+      "team_id": "ukraine",
+      "xg_for": 0.594,
+      "xg_against": 1.43
+    },
+    {
+      "match_id": "44118_2021-06-14_poland_slovakia",
+      "team_id": "poland",
+      "xg_for": 1.389,
+      "xg_against": 0.354
+    },
+    {
+      "match_id": "44118_2021-06-14_poland_slovakia",
+      "team_id": "slovakia",
+      "xg_for": 0.354,
+      "xg_against": 1.389
+    },
+    {
+      "match_id": "44119_2021-06-14_spain_sweden",
+      "team_id": "spain",
+      "xg_for": 1.928,
+      "xg_against": 0.816
+    },
+    {
+      "match_id": "44119_2021-06-14_spain_sweden",
+      "team_id": "sweden",
+      "xg_for": 0.816,
+      "xg_against": 1.928
+    },
+    {
+      "match_id": "44117_2021-06-14_scotland_czech_republic",
+      "team_id": "scotland",
+      "xg_for": 1.733,
+      "xg_against": 0.811
+    },
+    {
+      "match_id": "44117_2021-06-14_scotland_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 0.811,
+      "xg_against": 1.733
+    },
+    {
+      "match_id": "44141_2021-06-15_germany_france",
+      "team_id": "france",
+      "xg_for": 0.446,
+      "xg_against": 0.825
+    },
+    {
+      "match_id": "44141_2021-06-15_germany_france",
+      "team_id": "germany",
+      "xg_for": 0.825,
+      "xg_against": 0.446
+    },
+    {
+      "match_id": "44140_2021-06-15_hungary_portugal",
+      "team_id": "hungary",
+      "xg_for": 0.198,
+      "xg_against": 2.681
+    },
+    {
+      "match_id": "44140_2021-06-15_hungary_portugal",
+      "team_id": "portugal",
+      "xg_for": 2.681,
+      "xg_against": 0.198
+    },
+    {
+      "match_id": "44144_2021-06-16_turkey_wales",
+      "team_id": "turkey",
+      "xg_for": 1.31,
+      "xg_against": 2.874
+    },
+    {
+      "match_id": "44144_2021-06-16_turkey_wales",
+      "team_id": "wales",
+      "xg_for": 2.874,
+      "xg_against": 1.31
+    },
+    {
+      "match_id": "44145_2021-06-16_italy_switzerland",
+      "team_id": "italy",
+      "xg_for": 1.706,
+      "xg_against": 0.334
+    },
+    {
+      "match_id": "44145_2021-06-16_italy_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.334,
+      "xg_against": 1.706
+    },
+    {
+      "match_id": "44146_2021-06-16_russia_finland",
+      "team_id": "finland",
+      "xg_for": 0.965,
+      "xg_against": 1.259
+    },
+    {
+      "match_id": "44146_2021-06-16_russia_finland",
+      "team_id": "russia",
+      "xg_for": 1.259,
+      "xg_against": 0.965
+    },
+    {
+      "match_id": "44148_2021-06-17_ukraine_macedonia",
+      "team_id": "ukraine",
+      "xg_for": 3.241,
+      "xg_against": 1.985
+    },
+    {
+      "match_id": "44148_2021-06-17_ukraine_macedonia",
+      "team_id": "macedonia",
+      "xg_for": 1.985,
+      "xg_against": 3.241
+    },
+    {
+      "match_id": "44147_2021-06-17_denmark_belgium",
+      "team_id": "denmark",
+      "xg_for": 1.623,
+      "xg_against": 1.052
+    },
+    {
+      "match_id": "44147_2021-06-17_denmark_belgium",
+      "team_id": "belgium",
+      "xg_for": 1.052,
+      "xg_against": 1.623
+    },
+    {
+      "match_id": "44149_2021-06-17_netherlands_austria",
+      "team_id": "netherlands",
+      "xg_for": 3.338,
+      "xg_against": 0.398
+    },
+    {
+      "match_id": "44149_2021-06-17_netherlands_austria",
+      "team_id": "austria",
+      "xg_for": 0.398,
+      "xg_against": 3.338
+    },
+    {
+      "match_id": "44155_2021-06-18_sweden_slovakia",
+      "team_id": "sweden",
+      "xg_for": 1.584,
+      "xg_against": 0.553
+    },
+    {
+      "match_id": "44155_2021-06-18_sweden_slovakia",
+      "team_id": "slovakia",
+      "xg_for": 0.553,
+      "xg_against": 1.584
+    },
+    {
+      "match_id": "44153_2021-06-18_croatia_czech_republic",
+      "team_id": "croatia",
+      "xg_for": 0.99,
+      "xg_against": 1.913
+    },
+    {
+      "match_id": "44153_2021-06-18_croatia_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 1.913,
+      "xg_against": 0.99
+    },
+    {
+      "match_id": "44154_2021-06-18_england_scotland",
+      "team_id": "england",
+      "xg_for": 0.854,
+      "xg_against": 0.735
+    },
+    {
+      "match_id": "44154_2021-06-18_england_scotland",
+      "team_id": "scotland",
+      "xg_for": 0.735,
+      "xg_against": 0.854
+    },
+    {
+      "match_id": "44159_2021-06-19_hungary_france",
+      "team_id": "hungary",
+      "xg_for": 0.473,
+      "xg_against": 1.69
+    },
+    {
+      "match_id": "44159_2021-06-19_hungary_france",
+      "team_id": "france",
+      "xg_for": 1.69,
+      "xg_against": 0.473
+    },
+    {
+      "match_id": "44160_2021-06-19_germany_portugal",
+      "team_id": "portugal",
+      "xg_for": 1.936,
+      "xg_against": 2.131
+    },
+    {
+      "match_id": "44160_2021-06-19_germany_portugal",
+      "team_id": "germany",
+      "xg_for": 2.131,
+      "xg_against": 1.936
+    },
+    {
+      "match_id": "44158_2021-06-19_spain_poland",
+      "team_id": "spain",
+      "xg_for": 2.615,
+      "xg_against": 0.552
+    },
+    {
+      "match_id": "44158_2021-06-19_spain_poland",
+      "team_id": "poland",
+      "xg_for": 0.552,
+      "xg_against": 2.615
+    },
+    {
+      "match_id": "44163_2021-06-20_switzerland_turkey",
+      "team_id": "switzerland",
+      "xg_for": 1.984,
+      "xg_against": 1.245
+    },
+    {
+      "match_id": "44163_2021-06-20_switzerland_turkey",
+      "team_id": "turkey",
+      "xg_for": 1.245,
+      "xg_against": 1.984
+    },
+    {
+      "match_id": "44162_2021-06-20_italy_wales",
+      "team_id": "italy",
+      "xg_for": 1.669,
+      "xg_against": 0.241
+    },
+    {
+      "match_id": "44162_2021-06-20_italy_wales",
+      "team_id": "wales",
+      "xg_for": 0.241,
+      "xg_against": 1.669
+    },
+    {
+      "match_id": "44167_2021-06-21_denmark_russia",
+      "team_id": "russia",
+      "xg_for": 1.091,
+      "xg_against": 2.33
+    },
+    {
+      "match_id": "44167_2021-06-21_denmark_russia",
+      "team_id": "denmark",
+      "xg_for": 2.33,
+      "xg_against": 1.091
+    },
+    {
+      "match_id": "44169_2021-06-21_netherlands_macedonia",
+      "team_id": "macedonia",
+      "xg_for": 0.744,
+      "xg_against": 3.22
+    },
+    {
+      "match_id": "44169_2021-06-21_netherlands_macedonia",
+      "team_id": "netherlands",
+      "xg_for": 3.22,
+      "xg_against": 0.744
+    },
+    {
+      "match_id": "44168_2021-06-21_finland_belgium",
+      "team_id": "finland",
+      "xg_for": 0.24,
+      "xg_against": 1.14
+    },
+    {
+      "match_id": "44168_2021-06-21_finland_belgium",
+      "team_id": "belgium",
+      "xg_for": 1.14,
+      "xg_against": 0.24
+    },
+    {
+      "match_id": "44170_2021-06-21_ukraine_austria",
+      "team_id": "ukraine",
+      "xg_for": 0.41,
+      "xg_against": 1.494
+    },
+    {
+      "match_id": "44170_2021-06-21_ukraine_austria",
+      "team_id": "austria",
+      "xg_for": 1.494,
+      "xg_against": 0.41
+    },
+    {
+      "match_id": "44173_2021-06-22_scotland_croatia",
+      "team_id": "croatia",
+      "xg_for": 0.781,
+      "xg_against": 1.111
+    },
+    {
+      "match_id": "44173_2021-06-22_scotland_croatia",
+      "team_id": "scotland",
+      "xg_for": 1.111,
+      "xg_against": 0.781
+    },
+    {
+      "match_id": "44174_2021-06-22_england_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 0.393,
+      "xg_against": 0.642
+    },
+    {
+      "match_id": "44174_2021-06-22_england_czech_republic",
+      "team_id": "england",
+      "xg_for": 0.642,
+      "xg_against": 0.393
+    },
+    {
+      "match_id": "44179_2021-06-23_portugal_france",
+      "team_id": "portugal",
+      "xg_for": 2.042,
+      "xg_against": 1.507
+    },
+    {
+      "match_id": "44179_2021-06-23_portugal_france",
+      "team_id": "france",
+      "xg_for": 1.507,
+      "xg_against": 2.042
+    },
+    {
+      "match_id": "44178_2021-06-23_germany_hungary",
+      "team_id": "germany",
+      "xg_for": 2.098,
+      "xg_against": 0.737
+    },
+    {
+      "match_id": "44178_2021-06-23_germany_hungary",
+      "team_id": "hungary",
+      "xg_for": 0.737,
+      "xg_against": 2.098
+    },
+    {
+      "match_id": "44176_2021-06-23_spain_slovakia",
+      "team_id": "slovakia",
+      "xg_for": 0.093,
+      "xg_against": 3.223
+    },
+    {
+      "match_id": "44176_2021-06-23_spain_slovakia",
+      "team_id": "spain",
+      "xg_for": 3.223,
+      "xg_against": 0.093
+    },
+    {
+      "match_id": "44177_2021-06-23_sweden_poland",
+      "team_id": "sweden",
+      "xg_for": 1.042,
+      "xg_against": 1.661
+    },
+    {
+      "match_id": "44177_2021-06-23_sweden_poland",
+      "team_id": "poland",
+      "xg_for": 1.661,
+      "xg_against": 1.042
+    },
+    {
+      "match_id": "44187_2021-06-26_italy_austria",
+      "team_id": "italy",
+      "xg_for": 1.517,
+      "xg_against": 1.039
+    },
+    {
+      "match_id": "44187_2021-06-26_italy_austria",
+      "team_id": "austria",
+      "xg_for": 1.039,
+      "xg_against": 1.517
+    },
+    {
+      "match_id": "44188_2021-06-26_wales_denmark",
+      "team_id": "wales",
+      "xg_for": 0.598,
+      "xg_against": 2.155
+    },
+    {
+      "match_id": "44188_2021-06-26_wales_denmark",
+      "team_id": "denmark",
+      "xg_for": 2.155,
+      "xg_against": 0.598
+    },
+    {
+      "match_id": "44190_2021-06-27_belgium_portugal",
+      "team_id": "belgium",
+      "xg_for": 0.224,
+      "xg_against": 1.215
+    },
+    {
+      "match_id": "44190_2021-06-27_belgium_portugal",
+      "team_id": "portugal",
+      "xg_for": 1.215,
+      "xg_against": 0.224
+    },
+    {
+      "match_id": "44189_2021-06-27_netherlands_czech_republic",
+      "team_id": "netherlands",
+      "xg_for": 0.838,
+      "xg_against": 1.273
+    },
+    {
+      "match_id": "44189_2021-06-27_netherlands_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 1.273,
+      "xg_against": 0.838
+    },
+    {
+      "match_id": "44194_2021-06-28_croatia_spain",
+      "team_id": "croatia",
+      "xg_for": 2.788,
+      "xg_against": 2.78
+    },
+    {
+      "match_id": "44194_2021-06-28_croatia_spain",
+      "team_id": "spain",
+      "xg_for": 2.78,
+      "xg_against": 2.788
+    },
+    {
+      "match_id": "44195_2021-06-28_france_switzerland",
+      "team_id": "france",
+      "xg_for": 6.563,
+      "xg_against": 5.772
+    },
+    {
+      "match_id": "44195_2021-06-28_france_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 5.772,
+      "xg_against": 6.563
+    },
+    {
+      "match_id": "44199_2021-06-29_sweden_ukraine",
+      "team_id": "sweden",
+      "xg_for": 0.912,
+      "xg_against": 1.344
+    },
+    {
+      "match_id": "44199_2021-06-29_sweden_ukraine",
+      "team_id": "ukraine",
+      "xg_for": 1.344,
+      "xg_against": 0.912
+    },
+    {
+      "match_id": "44198_2021-06-29_england_germany",
+      "team_id": "england",
+      "xg_for": 1.164,
+      "xg_against": 1.059
+    },
+    {
+      "match_id": "44198_2021-06-29_england_germany",
+      "team_id": "germany",
+      "xg_for": 1.059,
+      "xg_against": 1.164
+    },
+    {
+      "match_id": "44201_2021-07-02_switzerland_spain",
+      "team_id": "switzerland",
+      "xg_for": 3.958,
+      "xg_against": 6.928
+    },
+    {
+      "match_id": "44201_2021-07-02_switzerland_spain",
+      "team_id": "spain",
+      "xg_for": 6.928,
+      "xg_against": 3.958
+    },
+    {
+      "match_id": "44202_2021-07-02_belgium_italy",
+      "team_id": "belgium",
+      "xg_for": 1.803,
+      "xg_against": 1.143
+    },
+    {
+      "match_id": "44202_2021-07-02_belgium_italy",
+      "team_id": "italy",
+      "xg_for": 1.143,
+      "xg_against": 1.803
+    },
+    {
+      "match_id": "44209_2021-07-03_ukraine_england",
+      "team_id": "ukraine",
+      "xg_for": 0.338,
+      "xg_against": 1.216
+    },
+    {
+      "match_id": "44209_2021-07-03_ukraine_england",
+      "team_id": "england",
+      "xg_for": 1.216,
+      "xg_against": 0.338
+    },
+    {
+      "match_id": "44208_2021-07-03_czech_republic_denmark",
+      "team_id": "czech_republic",
+      "xg_for": 1.162,
+      "xg_against": 1.212
+    },
+    {
+      "match_id": "44208_2021-07-03_czech_republic_denmark",
+      "team_id": "denmark",
+      "xg_for": 1.212,
+      "xg_against": 1.162
+    },
+    {
+      "match_id": "44219_2021-07-06_italy_spain",
+      "team_id": "italy",
+      "xg_for": 4.316,
+      "xg_against": 4.536
+    },
+    {
+      "match_id": "44219_2021-07-06_italy_spain",
+      "team_id": "spain",
+      "xg_for": 4.536,
+      "xg_against": 4.316
+    },
+    {
+      "match_id": "44225_2021-07-07_england_denmark",
+      "team_id": "england",
+      "xg_for": 3.05,
+      "xg_against": 0.376
+    },
+    {
+      "match_id": "44225_2021-07-07_england_denmark",
+      "team_id": "denmark",
+      "xg_for": 0.376,
+      "xg_against": 3.05
+    },
+    {
+      "match_id": "44237_2021-07-11_england_italy",
+      "team_id": "italy",
+      "xg_for": 5.999,
+      "xg_against": 4.344
+    },
+    {
+      "match_id": "44237_2021-07-11_england_italy",
+      "team_id": "england",
+      "xg_for": 4.344,
+      "xg_against": 5.999
+    },
+    {
+      "match_id": "47369_2024-06-14_germany_scotland",
+      "team_id": "germany",
+      "xg_for": 1.845,
+      "xg_against": 0.061
+    },
+    {
+      "match_id": "47369_2024-06-14_germany_scotland",
+      "team_id": "scotland",
+      "xg_for": 0.061,
+      "xg_against": 1.845
+    },
+    {
+      "match_id": "47372_2024-06-15_hungary_switzerland",
+      "team_id": "hungary",
+      "xg_for": 1.103,
+      "xg_against": 2.096
+    },
+    {
+      "match_id": "47372_2024-06-15_hungary_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 2.096,
+      "xg_against": 1.103
+    },
+    {
+      "match_id": "47373_2024-06-15_spain_croatia",
+      "team_id": "spain",
+      "xg_for": 1.567,
+      "xg_against": 2.482
+    },
+    {
+      "match_id": "47373_2024-06-15_spain_croatia",
+      "team_id": "croatia",
+      "xg_for": 2.482,
+      "xg_against": 1.567
+    },
+    {
+      "match_id": "47374_2024-06-15_italy_albania",
+      "team_id": "italy",
+      "xg_for": 1.45,
+      "xg_against": 0.355
+    },
+    {
+      "match_id": "47374_2024-06-15_italy_albania",
+      "team_id": "albania",
+      "xg_for": 0.355,
+      "xg_against": 1.45
+    },
+    {
+      "match_id": "47379_2024-06-16_serbia_england",
+      "team_id": "serbia",
+      "xg_for": 0.249,
+      "xg_against": 0.559
+    },
+    {
+      "match_id": "47379_2024-06-16_serbia_england",
+      "team_id": "england",
+      "xg_for": 0.559,
+      "xg_against": 0.249
+    },
+    {
+      "match_id": "47380_2024-06-16_poland_netherlands",
+      "team_id": "poland",
+      "xg_for": 0.909,
+      "xg_against": 1.313
+    },
+    {
+      "match_id": "47380_2024-06-16_poland_netherlands",
+      "team_id": "netherlands",
+      "xg_for": 1.313,
+      "xg_against": 0.909
+    },
+    {
+      "match_id": "47378_2024-06-16_slovenia_denmark",
+      "team_id": "slovenia",
+      "xg_for": 0.966,
+      "xg_against": 1.511
+    },
+    {
+      "match_id": "47378_2024-06-16_slovenia_denmark",
+      "team_id": "denmark",
+      "xg_for": 1.511,
+      "xg_against": 0.966
+    },
+    {
+      "match_id": "47385_2024-06-17_romania_ukraine",
+      "team_id": "romania",
+      "xg_for": 1.121,
+      "xg_against": 0.543
+    },
+    {
+      "match_id": "47385_2024-06-17_romania_ukraine",
+      "team_id": "ukraine",
+      "xg_for": 0.543,
+      "xg_against": 1.121
+    },
+    {
+      "match_id": "47384_2024-06-17_austria_france",
+      "team_id": "austria",
+      "xg_for": 0.748,
+      "xg_against": 1.905
+    },
+    {
+      "match_id": "47384_2024-06-17_austria_france",
+      "team_id": "france",
+      "xg_for": 1.905,
+      "xg_against": 0.748
+    },
+    {
+      "match_id": "47386_2024-06-17_belgium_slovakia",
+      "team_id": "belgium",
+      "xg_for": 1.75,
+      "xg_against": 0.711
+    },
+    {
+      "match_id": "47386_2024-06-17_belgium_slovakia",
+      "team_id": "slovakia",
+      "xg_for": 0.711,
+      "xg_against": 1.75
+    },
+    {
+      "match_id": "47388_2024-06-18_portugal_czech_republic",
+      "team_id": "portugal",
+      "xg_for": 1.838,
+      "xg_against": 0.315
+    },
+    {
+      "match_id": "47388_2024-06-18_portugal_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 0.315,
+      "xg_against": 1.838
+    },
+    {
+      "match_id": "47387_2024-06-18_turkey_georgia",
+      "team_id": "turkey",
+      "xg_for": 2.403,
+      "xg_against": 1.579
+    },
+    {
+      "match_id": "47387_2024-06-18_turkey_georgia",
+      "team_id": "georgia",
+      "xg_for": 1.579,
+      "xg_against": 2.403
+    },
+    {
+      "match_id": "47391_2024-06-19_scotland_switzerland",
+      "team_id": "scotland",
+      "xg_for": 0.772,
+      "xg_against": 0.99
+    },
+    {
+      "match_id": "47391_2024-06-19_scotland_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.99,
+      "xg_against": 0.772
+    },
+    {
+      "match_id": "47392_2024-06-19_croatia_albania",
+      "team_id": "croatia",
+      "xg_for": 1.859,
+      "xg_against": 1.326
+    },
+    {
+      "match_id": "47392_2024-06-19_croatia_albania",
+      "team_id": "albania",
+      "xg_for": 1.326,
+      "xg_against": 1.859
+    },
+    {
+      "match_id": "47390_2024-06-19_germany_hungary",
+      "team_id": "germany",
+      "xg_for": 1.484,
+      "xg_against": 1.228
+    },
+    {
+      "match_id": "47390_2024-06-19_germany_hungary",
+      "team_id": "hungary",
+      "xg_for": 1.228,
+      "xg_against": 1.484
+    },
+    {
+      "match_id": "47396_2024-06-20_slovenia_serbia",
+      "team_id": "slovenia",
+      "xg_for": 1.552,
+      "xg_against": 1.461
+    },
+    {
+      "match_id": "47396_2024-06-20_slovenia_serbia",
+      "team_id": "serbia",
+      "xg_for": 1.461,
+      "xg_against": 1.552
+    },
+    {
+      "match_id": "47397_2024-06-20_denmark_england",
+      "team_id": "denmark",
+      "xg_for": 0.733,
+      "xg_against": 1.173
+    },
+    {
+      "match_id": "47397_2024-06-20_denmark_england",
+      "team_id": "england",
+      "xg_for": 1.173,
+      "xg_against": 0.733
+    },
+    {
+      "match_id": "47395_2024-06-20_spain_italy",
+      "team_id": "spain",
+      "xg_for": 1.534,
+      "xg_against": 0.143
+    },
+    {
+      "match_id": "47395_2024-06-20_spain_italy",
+      "team_id": "italy",
+      "xg_for": 0.143,
+      "xg_against": 1.534
+    },
+    {
+      "match_id": "47399_2024-06-21_poland_austria",
+      "team_id": "poland",
+      "xg_for": 1.438,
+      "xg_against": 1.822
+    },
+    {
+      "match_id": "47399_2024-06-21_poland_austria",
+      "team_id": "austria",
+      "xg_for": 1.822,
+      "xg_against": 1.438
+    },
+    {
+      "match_id": "47401_2024-06-21_slovakia_ukraine",
+      "team_id": "slovakia",
+      "xg_for": 0.746,
+      "xg_against": 1.732
+    },
+    {
+      "match_id": "47401_2024-06-21_slovakia_ukraine",
+      "team_id": "ukraine",
+      "xg_for": 1.732,
+      "xg_against": 0.746
+    },
+    {
+      "match_id": "47400_2024-06-21_netherlands_france",
+      "team_id": "netherlands",
+      "xg_for": 0.738,
+      "xg_against": 1.218
+    },
+    {
+      "match_id": "47400_2024-06-21_netherlands_france",
+      "team_id": "france",
+      "xg_for": 1.218,
+      "xg_against": 0.738
+    },
+    {
+      "match_id": "47405_2024-06-22_georgia_czech_republic",
+      "team_id": "georgia",
+      "xg_for": 1.18,
+      "xg_against": 2.865
+    },
+    {
+      "match_id": "47405_2024-06-22_georgia_czech_republic",
+      "team_id": "czech_republic",
+      "xg_for": 2.865,
+      "xg_against": 1.18
+    },
+    {
+      "match_id": "47406_2024-06-22_turkey_portugal",
+      "team_id": "turkey",
+      "xg_for": 0.779,
+      "xg_against": 1.901
+    },
+    {
+      "match_id": "47406_2024-06-22_turkey_portugal",
+      "team_id": "portugal",
+      "xg_for": 1.901,
+      "xg_against": 0.779
+    },
+    {
+      "match_id": "47404_2024-06-22_belgium_romania",
+      "team_id": "belgium",
+      "xg_for": 1.646,
+      "xg_against": 1.246
+    },
+    {
+      "match_id": "47404_2024-06-22_belgium_romania",
+      "team_id": "romania",
+      "xg_for": 1.246,
+      "xg_against": 1.646
+    },
+    {
+      "match_id": "47411_2024-06-23_germany_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 0.28,
+      "xg_against": 1.542
+    },
+    {
+      "match_id": "47411_2024-06-23_germany_switzerland",
+      "team_id": "germany",
+      "xg_for": 1.542,
+      "xg_against": 0.28
+    },
+    {
+      "match_id": "47412_2024-06-23_scotland_hungary",
+      "team_id": "scotland",
+      "xg_for": 0.184,
+      "xg_against": 1.001
+    },
+    {
+      "match_id": "47412_2024-06-23_scotland_hungary",
+      "team_id": "hungary",
+      "xg_for": 1.001,
+      "xg_against": 0.184
+    },
+    {
+      "match_id": "47416_2024-06-24_croatia_italy",
+      "team_id": "croatia",
+      "xg_for": 1.483,
+      "xg_against": 0.985
+    },
+    {
+      "match_id": "47416_2024-06-24_croatia_italy",
+      "team_id": "italy",
+      "xg_for": 0.985,
+      "xg_against": 1.483
+    },
+    {
+      "match_id": "47415_2024-06-24_albania_spain",
+      "team_id": "albania",
+      "xg_for": 0.503,
+      "xg_against": 0.952
+    },
+    {
+      "match_id": "47415_2024-06-24_albania_spain",
+      "team_id": "spain",
+      "xg_for": 0.952,
+      "xg_against": 0.503
+    },
+    {
+      "match_id": "47419_2024-06-25_england_slovenia",
+      "team_id": "england",
+      "xg_for": 0.756,
+      "xg_against": 0.165
+    },
+    {
+      "match_id": "47419_2024-06-25_england_slovenia",
+      "team_id": "slovenia",
+      "xg_for": 0.165,
+      "xg_against": 0.756
+    },
+    {
+      "match_id": "47422_2024-06-25_france_poland",
+      "team_id": "france",
+      "xg_for": 1.891,
+      "xg_against": 1.179
+    },
+    {
+      "match_id": "47422_2024-06-25_france_poland",
+      "team_id": "poland",
+      "xg_for": 1.179,
+      "xg_against": 1.891
+    },
+    {
+      "match_id": "47421_2024-06-25_netherlands_austria",
+      "team_id": "netherlands",
+      "xg_for": 1.51,
+      "xg_against": 1.058
+    },
+    {
+      "match_id": "47421_2024-06-25_netherlands_austria",
+      "team_id": "austria",
+      "xg_for": 1.058,
+      "xg_against": 1.51
+    },
+    {
+      "match_id": "47420_2024-06-25_denmark_serbia",
+      "team_id": "denmark",
+      "xg_for": 0.552,
+      "xg_against": 0.324
+    },
+    {
+      "match_id": "47420_2024-06-25_denmark_serbia",
+      "team_id": "serbia",
+      "xg_for": 0.324,
+      "xg_against": 0.552
+    },
+    {
+      "match_id": "47427_2024-06-26_georgia_portugal",
+      "team_id": "georgia",
+      "xg_for": 1.345,
+      "xg_against": 2.356
+    },
+    {
+      "match_id": "47427_2024-06-26_georgia_portugal",
+      "team_id": "portugal",
+      "xg_for": 2.356,
+      "xg_against": 1.345
+    },
+    {
+      "match_id": "47426_2024-06-26_ukraine_belgium",
+      "team_id": "ukraine",
+      "xg_for": 0.709,
+      "xg_against": 0.634
+    },
+    {
+      "match_id": "47426_2024-06-26_ukraine_belgium",
+      "team_id": "belgium",
+      "xg_for": 0.634,
+      "xg_against": 0.709
+    },
+    {
+      "match_id": "47428_2024-06-26_czech_republic_turkey",
+      "team_id": "czech_republic",
+      "xg_for": 1.41,
+      "xg_against": 1.218
+    },
+    {
+      "match_id": "47428_2024-06-26_czech_republic_turkey",
+      "team_id": "turkey",
+      "xg_for": 1.218,
+      "xg_against": 1.41
+    },
+    {
+      "match_id": "47425_2024-06-26_slovakia_romania",
+      "team_id": "slovakia",
+      "xg_for": 0.845,
+      "xg_against": 1.122
+    },
+    {
+      "match_id": "47425_2024-06-26_slovakia_romania",
+      "team_id": "romania",
+      "xg_for": 1.122,
+      "xg_against": 0.845
+    },
+    {
+      "match_id": "47438_2024-06-29_germany_denmark",
+      "team_id": "germany",
+      "xg_for": 2.227,
+      "xg_against": 1.073
+    },
+    {
+      "match_id": "47438_2024-06-29_germany_denmark",
+      "team_id": "denmark",
+      "xg_for": 1.073,
+      "xg_against": 2.227
+    },
+    {
+      "match_id": "47437_2024-06-29_switzerland_italy",
+      "team_id": "switzerland",
+      "xg_for": 0.782,
+      "xg_against": 0.726
+    },
+    {
+      "match_id": "47437_2024-06-29_switzerland_italy",
+      "team_id": "italy",
+      "xg_for": 0.726,
+      "xg_against": 0.782
+    },
+    {
+      "match_id": "47442_2024-06-30_spain_georgia",
+      "team_id": "spain",
+      "xg_for": 2.765,
+      "xg_against": 0.113
+    },
+    {
+      "match_id": "47442_2024-06-30_spain_georgia",
+      "team_id": "georgia",
+      "xg_for": 0.113,
+      "xg_against": 2.765
+    },
+    {
+      "match_id": "47441_2024-06-30_england_slovakia",
+      "team_id": "england",
+      "xg_for": 1.587,
+      "xg_against": 1.548
+    },
+    {
+      "match_id": "47441_2024-06-30_england_slovakia",
+      "team_id": "slovakia",
+      "xg_for": 1.548,
+      "xg_against": 1.587
+    },
+    {
+      "match_id": "47447_2024-07-01_france_belgium",
+      "team_id": "france",
+      "xg_for": 1.262,
+      "xg_against": 0.363
+    },
+    {
+      "match_id": "47447_2024-07-01_france_belgium",
+      "team_id": "belgium",
+      "xg_for": 0.363,
+      "xg_against": 1.262
+    },
+    {
+      "match_id": "47448_2024-07-01_portugal_slovenia",
+      "team_id": "portugal",
+      "xg_for": 4.072,
+      "xg_against": 3.066
+    },
+    {
+      "match_id": "47448_2024-07-01_portugal_slovenia",
+      "team_id": "slovenia",
+      "xg_for": 3.066,
+      "xg_against": 4.072
+    },
+    {
+      "match_id": "47452_2024-07-02_austria_turkey",
+      "team_id": "austria",
+      "xg_for": 2.487,
+      "xg_against": 0.883
+    },
+    {
+      "match_id": "47452_2024-07-02_austria_turkey",
+      "team_id": "turkey",
+      "xg_for": 0.883,
+      "xg_against": 2.487
+    },
+    {
+      "match_id": "47451_2024-07-02_romania_netherlands",
+      "team_id": "romania",
+      "xg_for": 0.268,
+      "xg_against": 2.626
+    },
+    {
+      "match_id": "47451_2024-07-02_romania_netherlands",
+      "team_id": "netherlands",
+      "xg_for": 2.626,
+      "xg_against": 0.268
+    },
+    {
+      "match_id": "47457_2024-07-05_portugal_france",
+      "team_id": "portugal",
+      "xg_for": 4.543,
+      "xg_against": 4.985
+    },
+    {
+      "match_id": "47457_2024-07-05_portugal_france",
+      "team_id": "france",
+      "xg_for": 4.985,
+      "xg_against": 4.543
+    },
+    {
+      "match_id": "47456_2024-07-05_germany_spain",
+      "team_id": "spain",
+      "xg_for": 1.534,
+      "xg_against": 1.629
+    },
+    {
+      "match_id": "47456_2024-07-05_germany_spain",
+      "team_id": "germany",
+      "xg_for": 1.629,
+      "xg_against": 1.534
+    },
+    {
+      "match_id": "47459_2024-07-06_england_switzerland",
+      "team_id": "england",
+      "xg_for": 4.455,
+      "xg_against": 4.335
+    },
+    {
+      "match_id": "47459_2024-07-06_england_switzerland",
+      "team_id": "switzerland",
+      "xg_for": 4.335,
+      "xg_against": 4.455
+    },
+    {
+      "match_id": "47460_2024-07-06_netherlands_turkey",
+      "team_id": "netherlands",
+      "xg_for": 0.719,
+      "xg_against": 1.182
+    },
+    {
+      "match_id": "47460_2024-07-06_netherlands_turkey",
+      "team_id": "turkey",
+      "xg_for": 1.182,
+      "xg_against": 0.719
+    },
+    {
+      "match_id": "47463_2024-07-09_spain_france",
+      "team_id": "spain",
+      "xg_for": 0.422,
+      "xg_against": 0.851
+    },
+    {
+      "match_id": "47463_2024-07-09_spain_france",
+      "team_id": "france",
+      "xg_for": 0.851,
+      "xg_against": 0.422
+    },
+    {
+      "match_id": "47465_2024-07-10_netherlands_england",
+      "team_id": "netherlands",
+      "xg_for": 0.412,
+      "xg_against": 1.237
+    },
+    {
+      "match_id": "47465_2024-07-10_netherlands_england",
+      "team_id": "england",
+      "xg_for": 1.237,
+      "xg_against": 0.412
+    },
+    {
+      "match_id": "47468_2024-07-14_spain_england",
+      "team_id": "spain",
+      "xg_for": 1.792,
+      "xg_against": 0.726
+    },
+    {
+      "match_id": "47468_2024-07-14_spain_england",
+      "team_id": "england",
+      "xg_for": 0.726,
+      "xg_against": 1.792
+    },
+    {
+      "match_id": "47398_2024-06-20_argentina_canada",
+      "team_id": "argentina",
+      "xg_for": 3.538,
+      "xg_against": 0.977
+    },
+    {
+      "match_id": "47398_2024-06-20_argentina_canada",
+      "team_id": "canada",
+      "xg_for": 0.977,
+      "xg_against": 3.538
+    },
+    {
+      "match_id": "47403_2024-06-21_peru_chile",
+      "team_id": "peru",
+      "xg_for": 0.677,
+      "xg_against": 1.025
+    },
+    {
+      "match_id": "47403_2024-06-21_peru_chile",
+      "team_id": "chile",
+      "xg_for": 1.025,
+      "xg_against": 0.677
+    },
+    {
+      "match_id": "47409_2024-06-22_ecuador_venezuela",
+      "team_id": "ecuador",
+      "xg_for": 0.736,
+      "xg_against": 1.585
+    },
+    {
+      "match_id": "47409_2024-06-22_ecuador_venezuela",
+      "team_id": "venezuela",
+      "xg_for": 1.585,
+      "xg_against": 0.736
+    },
+    {
+      "match_id": "47413_2024-06-23_united_states_bolivia",
+      "team_id": "united_states",
+      "xg_for": 2.405,
+      "xg_against": 0.15
+    },
+    {
+      "match_id": "47413_2024-06-23_united_states_bolivia",
+      "team_id": "bolivia",
+      "xg_for": 0.15,
+      "xg_against": 2.405
+    },
+    {
+      "match_id": "47410_2024-06-22_mexico_jamaica",
+      "team_id": "mexico",
+      "xg_for": 1.136,
+      "xg_against": 0.506
+    },
+    {
+      "match_id": "47410_2024-06-22_mexico_jamaica",
+      "team_id": "jamaica",
+      "xg_for": 0.506,
+      "xg_against": 1.136
+    },
+    {
+      "match_id": "47417_2024-06-24_colombia_paraguay",
+      "team_id": "colombia",
+      "xg_for": 0.622,
+      "xg_against": 0.828
+    },
+    {
+      "match_id": "47417_2024-06-24_colombia_paraguay",
+      "team_id": "paraguay",
+      "xg_for": 0.828,
+      "xg_against": 0.622
+    },
+    {
+      "match_id": "47414_2024-06-23_uruguay_panama",
+      "team_id": "uruguay",
+      "xg_for": 1.361,
+      "xg_against": 0.541
+    },
+    {
+      "match_id": "47414_2024-06-23_uruguay_panama",
+      "team_id": "panama",
+      "xg_for": 0.541,
+      "xg_against": 1.361
+    },
+    {
+      "match_id": "47423_2024-06-25_peru_canada",
+      "team_id": "peru",
+      "xg_for": 0.576,
+      "xg_against": 0.909
+    },
+    {
+      "match_id": "47423_2024-06-25_peru_canada",
+      "team_id": "canada",
+      "xg_for": 0.909,
+      "xg_against": 0.576
+    },
+    {
+      "match_id": "47418_2024-06-24_brazil_costa_rica",
+      "team_id": "brazil",
+      "xg_for": 1.621,
+      "xg_against": 0.037
+    },
+    {
+      "match_id": "47418_2024-06-24_brazil_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 0.037,
+      "xg_against": 1.621
+    },
+    {
+      "match_id": "47429_2024-06-26_ecuador_jamaica",
+      "team_id": "ecuador",
+      "xg_for": 2.366,
+      "xg_against": 0.935
+    },
+    {
+      "match_id": "47429_2024-06-26_ecuador_jamaica",
+      "team_id": "jamaica",
+      "xg_for": 0.935,
+      "xg_against": 2.366
+    },
+    {
+      "match_id": "47424_2024-06-25_chile_argentina",
+      "team_id": "chile",
+      "xg_for": 0.131,
+      "xg_against": 2.784
+    },
+    {
+      "match_id": "47424_2024-06-25_chile_argentina",
+      "team_id": "argentina",
+      "xg_for": 2.784,
+      "xg_against": 0.131
+    },
+    {
+      "match_id": "47430_2024-06-26_venezuela_mexico",
+      "team_id": "venezuela",
+      "xg_for": 1.139,
+      "xg_against": 2.384
+    },
+    {
+      "match_id": "47430_2024-06-26_venezuela_mexico",
+      "team_id": "mexico",
+      "xg_for": 2.384,
+      "xg_against": 1.139
+    },
+    {
+      "match_id": "47433_2024-06-27_united_states_panama",
+      "team_id": "panama",
+      "xg_for": 0.731,
+      "xg_against": 0.914
+    },
+    {
+      "match_id": "47433_2024-06-27_united_states_panama",
+      "team_id": "united_states",
+      "xg_for": 0.914,
+      "xg_against": 0.731
+    },
+    {
+      "match_id": "47434_2024-06-27_uruguay_bolivia",
+      "team_id": "uruguay",
+      "xg_for": 2.321,
+      "xg_against": 0.051
+    },
+    {
+      "match_id": "47434_2024-06-27_uruguay_bolivia",
+      "team_id": "bolivia",
+      "xg_for": 0.051,
+      "xg_against": 2.321
+    },
+    {
+      "match_id": "47435_2024-06-28_colombia_costa_rica",
+      "team_id": "colombia",
+      "xg_for": 2.902,
+      "xg_against": 0.165
+    },
+    {
+      "match_id": "47435_2024-06-28_colombia_costa_rica",
+      "team_id": "costa_rica",
+      "xg_for": 0.165,
+      "xg_against": 2.902
+    },
+    {
+      "match_id": "47436_2024-06-28_paraguay_brazil",
+      "team_id": "paraguay",
+      "xg_for": 0.692,
+      "xg_against": 3.748
+    },
+    {
+      "match_id": "47436_2024-06-28_paraguay_brazil",
+      "team_id": "brazil",
+      "xg_for": 3.748,
+      "xg_against": 0.692
+    },
+    {
+      "match_id": "47439_2024-06-29_argentina_peru",
+      "team_id": "argentina",
+      "xg_for": 2.106,
+      "xg_against": 0.167
+    },
+    {
+      "match_id": "47439_2024-06-29_argentina_peru",
+      "team_id": "peru",
+      "xg_for": 0.167,
+      "xg_against": 2.106
+    },
+    {
+      "match_id": "47440_2024-06-29_canada_chile",
+      "team_id": "canada",
+      "xg_for": 0.699,
+      "xg_against": 0.454
+    },
+    {
+      "match_id": "47440_2024-06-29_canada_chile",
+      "team_id": "chile",
+      "xg_for": 0.454,
+      "xg_against": 0.699
+    },
+    {
+      "match_id": "47446_2024-06-30_jamaica_venezuela",
+      "team_id": "jamaica",
+      "xg_for": 0.668,
+      "xg_against": 1.714
+    },
+    {
+      "match_id": "47446_2024-06-30_jamaica_venezuela",
+      "team_id": "venezuela",
+      "xg_for": 1.714,
+      "xg_against": 0.668
+    },
+    {
+      "match_id": "47445_2024-06-30_mexico_ecuador",
+      "team_id": "mexico",
+      "xg_for": 0.938,
+      "xg_against": 0.306
+    },
+    {
+      "match_id": "47445_2024-06-30_mexico_ecuador",
+      "team_id": "ecuador",
+      "xg_for": 0.306,
+      "xg_against": 0.938
+    },
+    {
+      "match_id": "47449_2024-07-01_united_states_uruguay",
+      "team_id": "united_states",
+      "xg_for": 0.471,
+      "xg_against": 1.272
+    },
+    {
+      "match_id": "47449_2024-07-01_united_states_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 1.272,
+      "xg_against": 0.471
+    },
+    {
+      "match_id": "47450_2024-07-01_bolivia_panama",
+      "team_id": "bolivia",
+      "xg_for": 0.793,
+      "xg_against": 1.341
+    },
+    {
+      "match_id": "47450_2024-07-01_bolivia_panama",
+      "team_id": "panama",
+      "xg_for": 1.341,
+      "xg_against": 0.793
+    },
+    {
+      "match_id": "47453_2024-07-02_brazil_colombia",
+      "team_id": "brazil",
+      "xg_for": 0.306,
+      "xg_against": 1.503
+    },
+    {
+      "match_id": "47453_2024-07-02_brazil_colombia",
+      "team_id": "colombia",
+      "xg_for": 1.503,
+      "xg_against": 0.306
+    },
+    {
+      "match_id": "47454_2024-07-02_costa_rica_paraguay",
+      "team_id": "costa_rica",
+      "xg_for": 0.272,
+      "xg_against": 1.44
+    },
+    {
+      "match_id": "47454_2024-07-02_costa_rica_paraguay",
+      "team_id": "paraguay",
+      "xg_for": 1.44,
+      "xg_against": 0.272
+    },
+    {
+      "match_id": "47455_2024-07-04_argentina_ecuador",
+      "team_id": "argentina",
+      "xg_for": 4.776,
+      "xg_against": 4.523
+    },
+    {
+      "match_id": "47455_2024-07-04_argentina_ecuador",
+      "team_id": "ecuador",
+      "xg_for": 4.523,
+      "xg_against": 4.776
+    },
+    {
+      "match_id": "47462_2024-07-06_colombia_panama",
+      "team_id": "colombia",
+      "xg_for": 2.18,
+      "xg_against": 0.61
+    },
+    {
+      "match_id": "47462_2024-07-06_colombia_panama",
+      "team_id": "panama",
+      "xg_for": 0.61,
+      "xg_against": 2.18
+    },
+    {
+      "match_id": "47458_2024-07-05_venezuela_canada",
+      "team_id": "venezuela",
+      "xg_for": 5.623,
+      "xg_against": 6.052
+    },
+    {
+      "match_id": "47458_2024-07-05_venezuela_canada",
+      "team_id": "canada",
+      "xg_for": 6.052,
+      "xg_against": 5.623
+    },
+    {
+      "match_id": "47461_2024-07-06_uruguay_brazil",
+      "team_id": "uruguay",
+      "xg_for": 4.547,
+      "xg_against": 3.81
+    },
+    {
+      "match_id": "47461_2024-07-06_uruguay_brazil",
+      "team_id": "brazil",
+      "xg_for": 3.81,
+      "xg_against": 4.547
+    },
+    {
+      "match_id": "47464_2024-07-09_argentina_canada",
+      "team_id": "argentina",
+      "xg_for": 1.754,
+      "xg_against": 0.718
+    },
+    {
+      "match_id": "47464_2024-07-09_argentina_canada",
+      "team_id": "canada",
+      "xg_for": 0.718,
+      "xg_against": 1.754
+    },
+    {
+      "match_id": "47466_2024-07-10_uruguay_colombia",
+      "team_id": "uruguay",
+      "xg_for": 0.755,
+      "xg_against": 1.172
+    },
+    {
+      "match_id": "47466_2024-07-10_uruguay_colombia",
+      "team_id": "colombia",
+      "xg_for": 1.172,
+      "xg_against": 0.755
+    },
+    {
+      "match_id": "47467_2024-07-13_canada_uruguay",
+      "team_id": "canada",
+      "xg_for": 6.205,
+      "xg_against": 4.65
+    },
+    {
+      "match_id": "47467_2024-07-13_canada_uruguay",
+      "team_id": "uruguay",
+      "xg_for": 4.65,
+      "xg_against": 6.205
+    },
+    {
+      "match_id": "47469_2024-07-14_argentina_colombia",
+      "team_id": "argentina",
+      "xg_for": 1.083,
+      "xg_against": 0.972
+    },
+    {
+      "match_id": "47469_2024-07-14_argentina_colombia",
+      "team_id": "colombia",
+      "xg_for": 0.972,
+      "xg_against": 1.083
+    },
+    {
+      "match_id": "46903_2024-01-13_ivory_coast_guinea_bissau",
+      "team_id": "ivory_coast",
+      "xg_for": 0.707,
+      "xg_against": 0.53
+    },
+    {
+      "match_id": "46903_2024-01-13_ivory_coast_guinea_bissau",
+      "team_id": "guinea_bissau",
+      "xg_for": 0.53,
+      "xg_against": 0.707
+    },
+    {
+      "match_id": "46908_2024-01-14_nigeria_equatorial_guinea",
+      "team_id": "nigeria",
+      "xg_for": 2.687,
+      "xg_against": 0.332
+    },
+    {
+      "match_id": "46908_2024-01-14_nigeria_equatorial_guinea",
+      "team_id": "equatorial_guinea",
+      "xg_for": 0.332,
+      "xg_against": 2.687
+    },
+    {
+      "match_id": "46909_2024-01-14_egypt_mozambique",
+      "team_id": "egypt",
+      "xg_for": 1.929,
+      "xg_against": 0.728
+    },
+    {
+      "match_id": "46909_2024-01-14_egypt_mozambique",
+      "team_id": "mozambique",
+      "xg_for": 0.728,
+      "xg_against": 1.929
+    },
+    {
+      "match_id": "46910_2024-01-14_ghana_cape_verde",
+      "team_id": "ghana",
+      "xg_for": 1.438,
+      "xg_against": 2.72
+    },
+    {
+      "match_id": "46910_2024-01-14_ghana_cape_verde",
+      "team_id": "cape_verde",
+      "xg_for": 2.72,
+      "xg_against": 1.438
+    },
+    {
+      "match_id": "46915_2024-01-15_cameroon_guinea",
+      "team_id": "cameroon",
+      "xg_for": 0.879,
+      "xg_against": 0.71
+    },
+    {
+      "match_id": "46915_2024-01-15_cameroon_guinea",
+      "team_id": "guinea",
+      "xg_for": 0.71,
+      "xg_against": 0.879
+    },
+    {
+      "match_id": "46916_2024-01-15_algeria_angola",
+      "team_id": "algeria",
+      "xg_for": 0.697,
+      "xg_against": 1.197
+    },
+    {
+      "match_id": "46916_2024-01-15_algeria_angola",
+      "team_id": "angola",
+      "xg_for": 1.197,
+      "xg_against": 0.697
+    },
+    {
+      "match_id": "46914_2024-01-15_senegal_gambia",
+      "team_id": "senegal",
+      "xg_for": 1.721,
+      "xg_against": 1.008
+    },
+    {
+      "match_id": "46914_2024-01-15_senegal_gambia",
+      "team_id": "gambia",
+      "xg_for": 1.008,
+      "xg_against": 1.721
+    },
+    {
+      "match_id": "46920_2024-01-16_tunisia_namibia",
+      "team_id": "tunisia",
+      "xg_for": 0.871,
+      "xg_against": 1.61
+    },
+    {
+      "match_id": "46920_2024-01-16_tunisia_namibia",
+      "team_id": "namibia",
+      "xg_for": 1.61,
+      "xg_against": 0.871
+    },
+    {
+      "match_id": "46919_2024-01-16_burkina_faso_mauritania",
+      "team_id": "burkina_faso",
+      "xg_for": 1.137,
+      "xg_against": 0.516
+    },
+    {
+      "match_id": "46919_2024-01-16_burkina_faso_mauritania",
+      "team_id": "mauritania",
+      "xg_for": 0.516,
+      "xg_against": 1.137
+    },
+    {
+      "match_id": "46921_2024-01-16_mali_south_africa",
+      "team_id": "mali",
+      "xg_for": 2.342,
+      "xg_against": 1.39
+    },
+    {
+      "match_id": "46921_2024-01-16_mali_south_africa",
+      "team_id": "south_africa",
+      "xg_for": 1.39,
+      "xg_against": 2.342
+    },
+    {
+      "match_id": "46925_2024-01-17_dr_congo_zambia",
+      "team_id": "dr_congo",
+      "xg_for": 2.682,
+      "xg_against": 0.096
+    },
+    {
+      "match_id": "46925_2024-01-17_dr_congo_zambia",
+      "team_id": "zambia",
+      "xg_for": 0.096,
+      "xg_against": 2.682
+    },
+    {
+      "match_id": "46924_2024-01-17_morocco_tanzania",
+      "team_id": "morocco",
+      "xg_for": 2.3,
+      "xg_against": 0.012
+    },
+    {
+      "match_id": "46924_2024-01-17_morocco_tanzania",
+      "team_id": "tanzania",
+      "xg_for": 0.012,
+      "xg_against": 2.3
+    },
+    {
+      "match_id": "46930_2024-01-18_equatorial_guinea_guinea_bissau",
+      "team_id": "equatorial_guinea",
+      "xg_for": 1.777,
+      "xg_against": 1.034
+    },
+    {
+      "match_id": "46930_2024-01-18_equatorial_guinea_guinea_bissau",
+      "team_id": "guinea_bissau",
+      "xg_for": 1.034,
+      "xg_against": 1.777
+    },
+    {
+      "match_id": "46932_2024-01-18_egypt_ghana",
+      "team_id": "egypt",
+      "xg_for": 1.204,
+      "xg_against": 0.426
+    },
+    {
+      "match_id": "46932_2024-01-18_egypt_ghana",
+      "team_id": "ghana",
+      "xg_for": 0.426,
+      "xg_against": 1.204
+    },
+    {
+      "match_id": "46931_2024-01-18_ivory_coast_nigeria",
+      "team_id": "ivory_coast",
+      "xg_for": 0.607,
+      "xg_against": 1.576
+    },
+    {
+      "match_id": "46931_2024-01-18_ivory_coast_nigeria",
+      "team_id": "nigeria",
+      "xg_for": 1.576,
+      "xg_against": 0.607
+    },
+    {
+      "match_id": "46936_2024-01-19_cape_verde_mozambique",
+      "team_id": "cape_verde",
+      "xg_for": 0.599,
+      "xg_against": 0.331
+    },
+    {
+      "match_id": "46936_2024-01-19_cape_verde_mozambique",
+      "team_id": "mozambique",
+      "xg_for": 0.331,
+      "xg_against": 0.599
+    },
+    {
+      "match_id": "46937_2024-01-19_senegal_cameroon",
+      "team_id": "senegal",
+      "xg_for": 1.231,
+      "xg_against": 0.249
+    },
+    {
+      "match_id": "46937_2024-01-19_senegal_cameroon",
+      "team_id": "cameroon",
+      "xg_for": 0.249,
+      "xg_against": 1.231
+    },
+    {
+      "match_id": "46938_2024-01-19_guinea_gambia",
+      "team_id": "guinea",
+      "xg_for": 2.439,
+      "xg_against": 0.254
+    },
+    {
+      "match_id": "46938_2024-01-19_guinea_gambia",
+      "team_id": "gambia",
+      "xg_for": 0.254,
+      "xg_against": 2.439
+    },
+    {
+      "match_id": "46944_2024-01-20_tunisia_mali",
+      "team_id": "tunisia",
+      "xg_for": 0.53,
+      "xg_against": 0.846
+    },
+    {
+      "match_id": "46944_2024-01-20_tunisia_mali",
+      "team_id": "mali",
+      "xg_for": 0.846,
+      "xg_against": 0.53
+    },
+    {
+      "match_id": "46943_2024-01-20_mauritania_angola",
+      "team_id": "mauritania",
+      "xg_for": 1.111,
+      "xg_against": 2.044
+    },
+    {
+      "match_id": "46943_2024-01-20_mauritania_angola",
+      "team_id": "angola",
+      "xg_for": 2.044,
+      "xg_against": 1.111
+    },
+    {
+      "match_id": "46942_2024-01-20_algeria_burkina_faso",
+      "team_id": "algeria",
+      "xg_for": 1.998,
+      "xg_against": 1.259
+    },
+    {
+      "match_id": "46942_2024-01-20_algeria_burkina_faso",
+      "team_id": "burkina_faso",
+      "xg_for": 1.259,
+      "xg_against": 1.998
+    },
+    {
+      "match_id": "46948_2024-01-21_south_africa_namibia",
+      "team_id": "south_africa",
+      "xg_for": 2.216,
+      "xg_against": 0.569
+    },
+    {
+      "match_id": "46948_2024-01-21_south_africa_namibia",
+      "team_id": "namibia",
+      "xg_for": 0.569,
+      "xg_against": 2.216
+    },
+    {
+      "match_id": "46949_2024-01-21_morocco_dr_congo",
+      "team_id": "morocco",
+      "xg_for": 1.055,
+      "xg_against": 2.31
+    },
+    {
+      "match_id": "46949_2024-01-21_morocco_dr_congo",
+      "team_id": "dr_congo",
+      "xg_for": 2.31,
+      "xg_against": 1.055
+    },
+    {
+      "match_id": "46950_2024-01-21_zambia_tanzania",
+      "team_id": "zambia",
+      "xg_for": 0.797,
+      "xg_against": 0.39
+    },
+    {
+      "match_id": "46950_2024-01-21_zambia_tanzania",
+      "team_id": "tanzania",
+      "xg_for": 0.39,
+      "xg_against": 0.797
+    },
+    {
+      "match_id": "46953_2024-01-22_guinea_bissau_nigeria",
+      "team_id": "guinea_bissau",
+      "xg_for": 0.351,
+      "xg_against": 0.971
+    },
+    {
+      "match_id": "46953_2024-01-22_guinea_bissau_nigeria",
+      "team_id": "nigeria",
+      "xg_for": 0.971,
+      "xg_against": 0.351
+    },
+    {
+      "match_id": "46954_2024-01-22_ivory_coast_equatorial_guinea",
+      "team_id": "equatorial_guinea",
+      "xg_for": 1.093,
+      "xg_against": 2.069
+    },
+    {
+      "match_id": "46954_2024-01-22_ivory_coast_equatorial_guinea",
+      "team_id": "ivory_coast",
+      "xg_for": 2.069,
+      "xg_against": 1.093
+    },
+    {
+      "match_id": "46956_2024-01-22_mozambique_ghana",
+      "team_id": "mozambique",
+      "xg_for": 1.54,
+      "xg_against": 1.843
+    },
+    {
+      "match_id": "46956_2024-01-22_mozambique_ghana",
+      "team_id": "ghana",
+      "xg_for": 1.843,
+      "xg_against": 1.54
+    },
+    {
+      "match_id": "46955_2024-01-22_cape_verde_egypt",
+      "team_id": "cape_verde",
+      "xg_for": 0.407,
+      "xg_against": 1.764
+    },
+    {
+      "match_id": "46955_2024-01-22_cape_verde_egypt",
+      "team_id": "egypt",
+      "xg_for": 1.764,
+      "xg_against": 0.407
+    },
+    {
+      "match_id": "46961_2024-01-23_gambia_cameroon",
+      "team_id": "gambia",
+      "xg_for": 1.296,
+      "xg_against": 1.367
+    },
+    {
+      "match_id": "46961_2024-01-23_gambia_cameroon",
+      "team_id": "cameroon",
+      "xg_for": 1.367,
+      "xg_against": 1.296
+    },
+    {
+      "match_id": "46962_2024-01-23_guinea_senegal",
+      "team_id": "guinea",
+      "xg_for": 0.553,
+      "xg_against": 0.943
+    },
+    {
+      "match_id": "46962_2024-01-23_guinea_senegal",
+      "team_id": "senegal",
+      "xg_for": 0.943,
+      "xg_against": 0.553
+    },
+    {
+      "match_id": "46964_2024-01-23_mauritania_algeria",
+      "team_id": "mauritania",
+      "xg_for": 1.328,
+      "xg_against": 1.186
+    },
+    {
+      "match_id": "46964_2024-01-23_mauritania_algeria",
+      "team_id": "algeria",
+      "xg_for": 1.186,
+      "xg_against": 1.328
+    },
+    {
+      "match_id": "46963_2024-01-23_angola_burkina_faso",
+      "team_id": "angola",
+      "xg_for": 0.884,
+      "xg_against": 0.995
+    },
+    {
+      "match_id": "46963_2024-01-23_angola_burkina_faso",
+      "team_id": "burkina_faso",
+      "xg_for": 0.995,
+      "xg_against": 0.884
+    },
+    {
+      "match_id": "46967_2024-01-24_namibia_mali",
+      "team_id": "namibia",
+      "xg_for": 0.656,
+      "xg_against": 0.681
+    },
+    {
+      "match_id": "46967_2024-01-24_namibia_mali",
+      "team_id": "mali",
+      "xg_for": 0.681,
+      "xg_against": 0.656
+    },
+    {
+      "match_id": "46968_2024-01-24_south_africa_tunisia",
+      "team_id": "south_africa",
+      "xg_for": 0.52,
+      "xg_against": 1.018
+    },
+    {
+      "match_id": "46968_2024-01-24_south_africa_tunisia",
+      "team_id": "tunisia",
+      "xg_for": 1.018,
+      "xg_against": 0.52
+    },
+    {
+      "match_id": "46970_2024-01-24_zambia_morocco",
+      "team_id": "zambia",
+      "xg_for": 0.44,
+      "xg_against": 2.421
+    },
+    {
+      "match_id": "46970_2024-01-24_zambia_morocco",
+      "team_id": "morocco",
+      "xg_for": 2.421,
+      "xg_against": 0.44
+    },
+    {
+      "match_id": "46969_2024-01-24_tanzania_dr_congo",
+      "team_id": "tanzania",
+      "xg_for": 0.059,
+      "xg_against": 0.659
+    },
+    {
+      "match_id": "46969_2024-01-24_tanzania_dr_congo",
+      "team_id": "dr_congo",
+      "xg_for": 0.659,
+      "xg_against": 0.059
+    },
+    {
+      "match_id": "46975_2024-01-27_angola_namibia",
+      "team_id": "angola",
+      "xg_for": 1.585,
+      "xg_against": 0.871
+    },
+    {
+      "match_id": "46975_2024-01-27_angola_namibia",
+      "team_id": "namibia",
+      "xg_for": 0.871,
+      "xg_against": 1.585
+    },
+    {
+      "match_id": "46976_2024-01-27_nigeria_cameroon",
+      "team_id": "nigeria",
+      "xg_for": 1.31,
+      "xg_against": 0.301
+    },
+    {
+      "match_id": "46976_2024-01-27_nigeria_cameroon",
+      "team_id": "cameroon",
+      "xg_for": 0.301,
+      "xg_against": 1.31
+    },
+    {
+      "match_id": "46979_2024-01-28_egypt_dr_congo",
+      "team_id": "egypt",
+      "xg_for": 8.424,
+      "xg_against": 8.627
+    },
+    {
+      "match_id": "46979_2024-01-28_egypt_dr_congo",
+      "team_id": "dr_congo",
+      "xg_for": 8.627,
+      "xg_against": 8.424
+    },
+    {
+      "match_id": "46980_2024-01-28_equatorial_guinea_guinea",
+      "team_id": "equatorial_guinea",
+      "xg_for": 0.956,
+      "xg_against": 0.557
+    },
+    {
+      "match_id": "46980_2024-01-28_equatorial_guinea_guinea",
+      "team_id": "guinea",
+      "xg_for": 0.557,
+      "xg_against": 0.956
+    },
+    {
+      "match_id": "46984_2024-01-29_ivory_coast_senegal",
+      "team_id": "senegal",
+      "xg_for": 5.235,
+      "xg_against": 5.038
+    },
+    {
+      "match_id": "46984_2024-01-29_ivory_coast_senegal",
+      "team_id": "ivory_coast",
+      "xg_for": 5.038,
+      "xg_against": 5.235
+    },
+    {
+      "match_id": "46983_2024-01-29_cape_verde_mauritania",
+      "team_id": "cape_verde",
+      "xg_for": 1.572,
+      "xg_against": 0.777
+    },
+    {
+      "match_id": "46983_2024-01-29_cape_verde_mauritania",
+      "team_id": "mauritania",
+      "xg_for": 0.777,
+      "xg_against": 1.572
+    },
+    {
+      "match_id": "46987_2024-01-30_mali_burkina_faso",
+      "team_id": "mali",
+      "xg_for": 0.666,
+      "xg_against": 1.46
+    },
+    {
+      "match_id": "46987_2024-01-30_mali_burkina_faso",
+      "team_id": "burkina_faso",
+      "xg_for": 1.46,
+      "xg_against": 0.666
+    },
+    {
+      "match_id": "46988_2024-01-30_morocco_south_africa",
+      "team_id": "morocco",
+      "xg_for": 2.09,
+      "xg_against": 0.241
+    },
+    {
+      "match_id": "46988_2024-01-30_morocco_south_africa",
+      "team_id": "south_africa",
+      "xg_for": 0.241,
+      "xg_against": 2.09
+    },
+    {
+      "match_id": "46993_2024-02-02_dr_congo_guinea",
+      "team_id": "dr_congo",
+      "xg_for": 1.653,
+      "xg_against": 1.135
+    },
+    {
+      "match_id": "46993_2024-02-02_dr_congo_guinea",
+      "team_id": "guinea",
+      "xg_for": 1.135,
+      "xg_against": 1.653
+    },
+    {
+      "match_id": "46994_2024-02-02_nigeria_angola",
+      "team_id": "nigeria",
+      "xg_for": 1.462,
+      "xg_against": 0.955
+    },
+    {
+      "match_id": "46994_2024-02-02_nigeria_angola",
+      "team_id": "angola",
+      "xg_for": 0.955,
+      "xg_against": 1.462
+    },
+    {
+      "match_id": "46997_2024-02-03_cape_verde_south_africa",
+      "team_id": "cape_verde",
+      "xg_for": 5.427,
+      "xg_against": 4.231
+    },
+    {
+      "match_id": "46997_2024-02-03_cape_verde_south_africa",
+      "team_id": "south_africa",
+      "xg_for": 4.231,
+      "xg_against": 5.427
+    },
+    {
+      "match_id": "46998_2024-02-03_ivory_coast_mali",
+      "team_id": "mali",
+      "xg_for": 1.317,
+      "xg_against": 0.837
+    },
+    {
+      "match_id": "46998_2024-02-03_ivory_coast_mali",
+      "team_id": "ivory_coast",
+      "xg_for": 0.837,
+      "xg_against": 1.317
+    },
+    {
+      "match_id": "47002_2024-02-07_ivory_coast_dr_congo",
+      "team_id": "ivory_coast",
+      "xg_for": 0.85,
+      "xg_against": 0.826
+    },
+    {
+      "match_id": "47002_2024-02-07_ivory_coast_dr_congo",
+      "team_id": "dr_congo",
+      "xg_for": 0.826,
+      "xg_against": 0.85
+    },
+    {
+      "match_id": "47003_2024-02-07_nigeria_south_africa",
+      "team_id": "nigeria",
+      "xg_for": 5.409,
+      "xg_against": 4.892
+    },
+    {
+      "match_id": "47003_2024-02-07_nigeria_south_africa",
+      "team_id": "south_africa",
+      "xg_for": 4.892,
+      "xg_against": 5.409
+    },
+    {
+      "match_id": "47005_2024-02-10_south_africa_dr_congo",
+      "team_id": "south_africa",
+      "xg_for": 5.751,
+      "xg_against": 7.166
+    },
+    {
+      "match_id": "47005_2024-02-10_south_africa_dr_congo",
+      "team_id": "dr_congo",
+      "xg_for": 7.166,
+      "xg_against": 5.751
+    },
+    {
+      "match_id": "47006_2024-02-11_ivory_coast_nigeria",
+      "team_id": "nigeria",
+      "xg_for": 0.258,
+      "xg_against": 1.414
+    },
+    {
+      "match_id": "47006_2024-02-11_ivory_coast_nigeria",
+      "team_id": "ivory_coast",
+      "xg_for": 1.414,
+      "xg_against": 0.258
+    }
+  ]
+}

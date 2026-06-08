@@ -31,3 +31,6 @@ Thumbs.db
 .env
 # Re-downloadable raw dataset cache
 data/raw/
+
+# Transient run logs (scratch; UTF-16 console dumps)
+data/_*.log

@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-06-08T12:24:35+00:00",
+  "finished_utc": "2026-06-08T12:30:23+00:00",
+  "quick": true,
+  "args": {
+    "no_fetch": false,
+    "skip_results": false,
+    "fetch_fifa": false,
+    "quick": true,
+    "dry_run": false
+  },
+  "stages": [
+    {
+      "stage": "fetch: Polymarket winner odds",
+      "script": "fetch_polymarket_winner.py",
+      "seconds": 0.5
+    },
+    {
+      "stage": "fetch: match results (martj42)",
+      "script": "refresh_match_results.py",
+      "seconds": 5.0
+    },
+    {
+      "stage": "compute: de-path Polymarket",
+      "script": "depath_polymarket.py",
+      "seconds": 195.5
+    },
+    {
+      "stage": "compute: 20k forecast",
+      "script": "run_forecast_2026.py",
+      "seconds": 116.0
+    },
+    {
+      "stage": "compute: group-stage by-date",
+      "script": "predict_groupstage_schedule_2026.py",
+      "seconds": 30.9
+    },
+    {
+      "stage": "compute: group-stage CSV",
+      "script": "make_groupstage_csv.py",
+      "seconds": 0.2
+    }
+  ],
+  "provenance": {
+    "match_results": {
+      "mtime": "2026-06-08T15:24:41",
+      "rows": 49372,
+      "latest": "2026-06-07"
+    },
+    "fifa_ratings": {
+      "mtime": "2026-06-04T18:17:01",
+      "rows": 9005,
+      "latest_snapshot": "2026-06-04"
+    },
+    "squad_values_CACHED": {
+      "mtime": "2026-06-02T21:45:49",
+      "rows": 528,
+      "note": "never re-fetched (Transfermarkt)"
+    },
+    "polymarket": {
+      "mtime": "2026-06-08T15:24:36",
+      "as_of": "2026-06-04",
+      "n_priced": 48,
+      "overround": 0.032
+    }
+  },
+  "forecast_top8": [
+    [
+      "Spain",
+      20.6
+    ],
+    [
+      "Argentina",
+      17.1
+    ],
+    [
+      "France",
+      11.5
+    ],
+    [
+      "England",
+      11.1
+    ],
+    [
+      "Portugal",
+      8.2
+    ],
+    [
+      "Brazil",
+      7.5
+    ],
+    [
+      "Germany",
+      4.4
+    ],
+    [
+      "Netherlands",
+      3.5
+    ]
+  ]
+}

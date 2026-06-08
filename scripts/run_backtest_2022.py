@@ -73,6 +73,12 @@ def main():
         HP.max_history_years = float(sys.argv[sys.argv.index("--trunc") + 1])
     if "--oppadj" in sys.argv:
         HP.opponent_adjust = True
+    team_xg = []
+    if "--xg" in sys.argv:
+        team_xg = _load("data/team_xg.json")["rows"]   # StatsBomb xG joined to our match_ids
+    n_sims = N_SIMS
+    if "--sims" in sys.argv:
+        n_sims = int(sys.argv[sys.argv.index("--sims") + 1])
     surprise_on = HP.kappa != 0.0 or HP.theta != 0.0
 
     # Config now carries canonical slug team_ids directly (no remap needed).
@@ -120,6 +126,7 @@ def main():
     print(f"form-window odds     : {len(form_odds)} rows -> build_features U/M input (Bet365, pre-cutoff)")
     print(f"benchmark odds       : {len(wc_odds)} rows -> WC closing (de-vigged in backtest)")
     print(f"squad-value snaps    : {len(squad_values)} rows -> z_squad_value (c_v prior)")
+    print(f"team_xg rows         : {len(team_xg)} ({'StatsBomb xG ON' if team_xg else 'OFF -> pure goals'})")
     print(f"hyperparams          : xi={HP.xi} lambda_reg={HP.lambda_reg} "
           f"c_a/c_x/c_d/c_y={HP.c_a}/{HP.c_x}/{HP.c_d}/{HP.c_y} "
           f"theta={HP.theta} kappa={HP.kappa} c_v={HP.c_v} "
@@ -129,11 +136,11 @@ def main():
 
     report = backtest(
         AS_OF, teams, config, matches, fifa,
-        team_xg=[],
+        team_xg=team_xg,
         match_odds=all_odds,   # U/M input; build_features filters to pre-cutoff (form only)
         actual_results=actual,
         tournament_market_odds=wc_odds,   # de-vigged Bet365 closing = benchmark
-        hyperparams=HP, squad_values=squad_values, n_sims=N_SIMS, seed=SEED,
+        hyperparams=HP, squad_values=squad_values, n_sims=n_sims, seed=SEED,
     )
 
     p = report.prediction.params

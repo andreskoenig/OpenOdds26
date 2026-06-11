@@ -6,8 +6,8 @@ from datetime import date, timedelta
 import numpy as np
 
 from wc_model.model import result_probs, score_matrix
-from wc_model.pipeline import backtest, run_prediction
-from wc_model.schemas import Hyperparams
+from wc_model.pipeline import backtest, run_prediction, team_strength
+from wc_model.schemas import Hyperparams, ModelParams
 
 
 # --- known generating model (t0 clearly strongest) -------------------------
@@ -38,6 +38,17 @@ def _true_matrix(home, away, home_flag):
 
 def _true_probs(home, away, home_flag):
     return result_probs(_true_matrix(home, away, home_flag))
+
+
+def test_team_strength_good_defense_adds():
+    # Higher def_ means conceding fewer (lam_away = exp(mu + atk_j - def_i)),
+    # so it must INCREASE composite strength (regression: was atk - def_).
+    params = ModelParams(mu=0.0, gamma=0.0, rho=0.0,
+                         atk={"wall": 0.2, "sieve": 0.2},
+                         def_={"wall": 0.8, "sieve": -0.8}, xi=0.0)
+    assert team_strength(params, "wall") > team_strength(params, "sieve")
+    assert team_strength(params, "wall") == 0.2 + 0.8
+    assert team_strength(params, "missing") == 0.0
 
 
 def _sample(p, rng):

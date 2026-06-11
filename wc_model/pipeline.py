@@ -35,6 +35,16 @@ def _team_id(team) -> str:
     return team["team_id"] if isinstance(team, dict) else team
 
 
+def team_strength(params: ModelParams, tid: str) -> float:
+    """Composite team strength = atk + def_ (SPEC §3 parameterization).
+
+    Higher ``def_`` REDUCES goals conceded (``lam_away = exp(mu + atk_j - def_i)``),
+    so good defense ADDS to strength. Used for the simulator's penalty-shootout
+    tilt. (A previous version subtracted def_, penalizing strong defenses.)
+    """
+    return params.atk.get(tid, 0.0) + params.def_.get(tid, 0.0)
+
+
 def _outcome(home_goals: int, away_goals: int) -> str:
     if home_goals > away_goals:
         return "home"
@@ -132,7 +142,7 @@ def run_prediction(
     )
     sim_teams = {
         tid: {
-            "rating": params.atk.get(tid, 0.0) - params.def_.get(tid, 0.0),
+            "rating": team_strength(params, tid),
             "host": tid in host_ids,
         }
         for tid in team_ids

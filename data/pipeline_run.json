@@ -1,51 +1,41 @@
 {
-  "started_utc": "2026-06-08T12:24:35+00:00",
-  "finished_utc": "2026-06-08T12:30:23+00:00",
-  "quick": true,
+  "started_utc": "2026-06-11T08:17:38+00:00",
+  "finished_utc": "2026-06-11T09:00:06+00:00",
+  "quick": false,
   "args": {
-    "no_fetch": false,
+    "no_fetch": true,
     "skip_results": false,
     "fetch_fifa": false,
-    "quick": true,
+    "quick": false,
     "dry_run": false
   },
   "stages": [
     {
-      "stage": "fetch: Polymarket winner odds",
-      "script": "fetch_polymarket_winner.py",
-      "seconds": 0.5
-    },
-    {
-      "stage": "fetch: match results (martj42)",
-      "script": "refresh_match_results.py",
-      "seconds": 5.0
-    },
-    {
       "stage": "compute: de-path Polymarket",
       "script": "depath_polymarket.py",
-      "seconds": 195.5
+      "seconds": 2060.5
     },
     {
       "stage": "compute: 20k forecast",
       "script": "run_forecast_2026.py",
-      "seconds": 116.0
+      "seconds": 472.5
     },
     {
       "stage": "compute: group-stage by-date",
       "script": "predict_groupstage_schedule_2026.py",
-      "seconds": 30.9
+      "seconds": 15.3
     },
     {
       "stage": "compute: group-stage CSV",
       "script": "make_groupstage_csv.py",
-      "seconds": 0.2
+      "seconds": 0.1
     }
   ],
   "provenance": {
     "match_results": {
-      "mtime": "2026-06-08T15:24:41",
-      "rows": 49372,
-      "latest": "2026-06-07"
+      "mtime": "2026-06-11T09:50:00",
+      "rows": 49407,
+      "latest": "2026-06-10"
     },
     "fifa_ratings": {
       "mtime": "2026-06-04T18:17:01",
@@ -58,36 +48,36 @@
       "note": "never re-fetched (Transfermarkt)"
     },
     "polymarket": {
-      "mtime": "2026-06-08T15:24:36",
+      "mtime": "2026-06-11T09:49:52",
       "as_of": "2026-06-04",
       "n_priced": 48,
-      "overround": 0.032
+      "overround": 0.043
     }
   },
   "forecast_top8": [
     [
       "Spain",
-      20.6
+      19.3
     ],
     [
       "Argentina",
-      17.1
+      18.1
     ],
     [
       "France",
-      11.5
+      11.7
     ],
     [
       "England",
-      11.1
+      10.6
     ],
     [
       "Portugal",
-      8.2
+      9.1
     ],
     [
       "Brazil",
-      7.5
+      7.9
     ],
     [
       "Germany",
@@ -95,7 +85,7 @@
     ],
     [
       "Netherlands",
-      3.5
+      3.4
     ]
   ]
 }

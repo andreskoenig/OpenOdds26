@@ -16,6 +16,8 @@ from datetime import datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 START = "<!-- PREDICTIONS:START -->"
 END = "<!-- PREDICTIONS:END -->"
+S_START = "<!-- SENSITIVITY:START -->"
+S_END = "<!-- SENSITIVITY:END -->"
 
 
 def _load(rel):
@@ -66,6 +68,34 @@ def main():
     pre = text.split(START)[0]
     post = text.split(END)[1]
     new = f"{pre}{START}\n{block}\n{END}{post}"
+
+    # ---- sensitivity band (optional; rendered when the file exists) -------
+    sens_path = os.path.join(ROOT, "data", "forecast_sensitivity_2026.json")
+    if os.path.exists(sens_path) and S_START in new and S_END in new:
+        with open(sens_path, encoding="utf-8") as f:
+            sens = json.load(f)
+        band, snames = sens["band"], sens["team_names"]
+        grid = sens["grid"]
+        stop = sorted(band, key=lambda t: -band[t]["headline"])[:10]
+        sl = [
+            f"How robust is the forecast to its two judgment knobs? Re-run over "
+            f"market-prior weight c_m ∈ {grid['c_m']} × recency half-life ∈ "
+            f"{grid['half_lives_y']}y ({sens['n_sims_per_cell']} sims/cell, "
+            f"{sens['generated_at']}). Narrow band = config-robust; wide band = "
+            f"the number is an opinion of the knob settings.",
+            "",
+            "| Team | Headline | Range across configs |",
+            "|------|---------:|---------------------:|",
+        ]
+        for t in stop:
+            b = band[t]
+            sl.append(f"| {snames.get(t, t)} | {b['headline']*100:.1f}% "
+                      f"| {b['min']*100:.1f}% – {b['max']*100:.1f}% |")
+        s_block = "\n".join(sl)
+        s_pre = new.split(S_START)[0]
+        s_post = new.split(S_END)[1]
+        new = f"{s_pre}{S_START}\n{s_block}\n{S_END}{s_post}"
+
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(new)
     print(f"README updated: top-10 table, v{version}, run {ts}")

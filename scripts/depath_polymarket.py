@@ -102,7 +102,8 @@ def main():
     # host OFF on both sides so the ratio isolates DRAW difficulty, not the
     # hosts' always-home bonus.
     wc48 = [t for g in config["groups"].values() for t in g]
-    sim_teams = {t: {"rating": params.atk.get(t, 0.0) - params.def_.get(t, 0.0),
+    # strength = atk + def_ (higher def_ = better defense in this parameterization)
+    sim_teams = {t: {"rating": params.atk.get(t, 0.0) + params.def_.get(t, 0.0),
                      "host": False} for t in wc48}
 
     # --- P(win) under the ACTUAL draw --------------------------------------

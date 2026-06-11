@@ -121,7 +121,7 @@ def main():
                        c_a=HP["c_a"], c_x=HP["c_x"], c_d=HP["c_d"], c_y=HP["c_y"],
                        theta=HP["theta"], c_v=HP["c_v"])
 
-    teams_dict = {t: {"rating": params.atk.get(t, 0.0) - params.def_.get(t, 0.0),
+    teams_dict = {t: {"rating": params.atk.get(t, 0.0) + params.def_.get(t, 0.0),
                       "host": t in hosts} for t in all_teams}
 
     # market matrices per pairing (none here); fallback = model matchup_matrix.

@@ -65,11 +65,16 @@
     .forecast { display: grid; grid-template-columns: 1fr; gap: 0; }
     .frow { display: flex; align-items: center; gap: 10px; padding: 7px 12px; border-bottom: 1px solid var(--border); font-size: 14px; }
     .frow:last-child { border-bottom: none; }
-    .frow .rank { color: var(--muted); width: 20px; }
-    .frow .fname { flex: 1; }
+    .frow .rank { color: var(--muted); width: 18px; text-align: right; }
+    .frow .rankmove { width: 26px; font-size: 11px; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+    .frow .fname { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .frow .fbar { flex: 2; height: 7px; background: var(--border); border-radius: 4px; overflow: hidden; }
     .frow .fbar .ffill { height: 100%; background: var(--accent); }
-    .frow .fpct { width: 56px; text-align: right; font-variant-numeric: tabular-nums; }
+    .frow .fpct { width: 52px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+    .frow .move { width: 50px; text-align: right; font-size: 12px; font-variant-numeric: tabular-nums; }
+    .mv-up { color: var(--good); }
+    .mv-down { color: var(--bad); }
+    .mv-flat { color: var(--muted); opacity: 0.45; }
     .err { color: var(--bad); text-align: center; padding: 40px; }
     .scroll { overflow: auto; max-height: 65vh; }
     @media (max-width: 600px) {
@@ -107,6 +112,22 @@
     function Badge({ val }) {
       if (val == null) return <span className="badge" style={{ color: "var(--muted)" }}>—</span>;
       return <span className={"badge " + (val ? "ok" : "no")}>{val ? "✓" : "✗"}</span>;
+    }
+
+    // Probability movement vs the pre-tournament baseline (percentage points).
+    function ProbMove({ delta }) {
+      if (delta == null) return <span className="mv-flat">·</span>;
+      if (Math.abs(delta) < 0.1) return <span className="mv-flat">–</span>;
+      const up = delta > 0;
+      return <span className={up ? "mv-up" : "mv-down"}>{(up ? "▲" : "▼") + Math.abs(delta).toFixed(1)}</span>;
+    }
+
+    // Rank movement vs the baseline (positive = climbed the table).
+    function RankMove({ d }) {
+      if (d == null) return <span className="mv-flat"></span>;
+      if (d === 0) return <span className="mv-flat">–</span>;
+      const up = d > 0;
+      return <span className={up ? "mv-up" : "mv-down"}>{(up ? "▲" : "▼") + Math.abs(d)}</span>;
     }
 
     function Calibration({ cal }) {
@@ -173,8 +194,9 @@
         ? "Forecast — title P(win) top 10 · LIVE"
         : "Forecast — title P(win) top 10";
       const note = isLive
-        ? "live: re-simulated with " + conditioned + " played group games pinned"
-          + (through ? " (through " + through + ")" : "") + " · strengths frozen at June 10"
+        ? "live · conditioned on " + conditioned + " played group games"
+          + (through ? " (through " + through + ")" : "")
+          + " · ▲▼ vs pre-tournament forecast"
           + (genAt ? " · updated " + genAt : "")
         : (genAt ? "forecast frozen at " + genAt : null);
       return (
@@ -184,9 +206,11 @@
             {top10.map((t, i) => (
               <div className="frow" key={i}>
                 <span className="rank">{i + 1}</span>
+                <span className="rankmove"><RankMove d={t.rank_delta} /></span>
                 <span className="fname">{t.team}</span>
                 <span className="fbar"><span className="ffill" style={{ width: (t.pct / max * 100) + "%" }}></span></span>
                 <span className="fpct">{t.pct.toFixed(1)}%</span>
+                <span className="move"><ProbMove delta={t.delta_pct} /></span>
               </div>
             ))}
           </div>

@@ -347,14 +347,33 @@ def build():
             "realized": round(n_corr / n, 4) if n else None,
         })
 
-    # Forecast top-10 P(win)
+    # Forecast top-10 P(win), with movement vs the FROZEN pre-tournament forecast
+    # (the baseline): per team we expose the probability delta (percentage points)
+    # and the rank delta (positive = moved up the table). When the displayed
+    # forecast IS the frozen one, baseline == current so all deltas are 0.
+    baseline_pw = {}
+    if os.path.exists(FORECAST_PATH):
+        try:
+            baseline_pw = load_json(FORECAST_PATH).get("p_win", {})
+        except Exception:
+            baseline_pw = {}
+    baseline_rank = {
+        tid: r for r, (tid, _) in enumerate(
+            sorted(baseline_pw.items(), key=lambda kv: kv[1], reverse=True), start=1)
+    }
+
     forecast_top10 = []
     p_win = forecast.get("p_win", {})
-    for tid, p in sorted(p_win.items(), key=lambda kv: kv[1], reverse=True)[:10]:
-        forecast_top10.append({
-            "team": f_team_names.get(tid, tid),
-            "pct": round(p * 100, 2),
-        })
+    cur_sorted = sorted(p_win.items(), key=lambda kv: kv[1], reverse=True)
+    for rank, (tid, p) in enumerate(cur_sorted[:10], start=1):
+        entry = {"team": f_team_names.get(tid, tid), "pct": round(p * 100, 2)}
+        if tid in baseline_pw:
+            entry["delta_pct"] = round((p - baseline_pw[tid]) * 100, 2)
+            entry["rank_delta"] = baseline_rank.get(tid, rank) - rank  # + = up
+        else:
+            entry["delta_pct"] = None   # not in the baseline field (new entrant)
+            entry["rank_delta"] = None
+        forecast_top10.append(entry)
 
     payload = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),

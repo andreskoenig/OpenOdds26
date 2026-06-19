@@ -82,6 +82,29 @@ def _slug(s):
     return re.sub(r"_+", "_", re.sub(r"[^a-z0-9]+", "_", s.lower())).strip("_")
 
 
+def _played_pairs():
+    """Set of frozenset({home_id, away_id}) for WC2026 group games already played.
+
+    Sourced from the model's results (martj42) plus the dashboard ESPN layer, so a
+    game counts as played the moment either source has a final score. Group pairs
+    are unique (each pair meets once), so the unordered pair identifies the game.
+    """
+    pairs = set()
+    for rel in ("data/match_results.json", "dashboard/live_results.json"):
+        p = os.path.join(ROOT, rel)
+        if not os.path.exists(p):
+            continue
+        data = json.load(open(p, encoding="utf-8"))
+        recs = data if isinstance(data, list) else data.get("results", [])
+        for r in recs:
+            if r.get("competition") != "FIFA World Cup" or r.get("date", "") < "2026-06-11":
+                continue
+            h, a = r.get("home_team_id"), r.get("away_team_id")
+            if h and a and r.get("home_goals") is not None:
+                pairs.add(frozenset((h, a)))
+    return pairs
+
+
 def main():
     teams = _load("data/teams.json")
     matches = _load("data/match_results.json")
@@ -93,6 +116,12 @@ def main():
     nm = lambda t: name.get(t, t)
     hosts = set(cfg["host_team_ids"])
     group_of = {t: g for g, ms in cfg["groups"].items() for t in ms}
+
+    # --live: walk-forward update. Advance the cutoff to today so UNPLAYED games
+    # get post-MD1 predictions; already-played games are kept frozen (no
+    # look-ahead, their scoring is untouched). Default: full pre-tournament regen.
+    live = "--live" in sys.argv
+    as_of = date.today().isoformat() if live else AS_OF
 
     lookup = {}
     for t in teams:
@@ -118,7 +147,7 @@ def main():
         sys.exit(f"FATAL: unresolved schedule teams: {bad}")
     assert len(sched) == 72, f"expected 72 games, got {len(sched)}"
 
-    cut = date.fromisoformat(AS_OF)
+    cut = date.fromisoformat(as_of)
     cnt = Counter()
     for mm in matches:
         if date.fromisoformat(mm["date"]) < cut:
@@ -126,11 +155,11 @@ def main():
             cnt[mm["away_team_id"]] += 1
     eligible = {t for t, c in cnt.items() if c >= 50} | set(group_of)
     tlist = [t for t in teams if t["team_id"] in eligible]
-    feats = build_features(AS_OF, tlist, matches, fifa, [], [], squad_values=squad,
+    feats = build_features(as_of, tlist, matches, fifa, [], [], squad_values=squad,
                            market_probs=market, xi=HP["xi"], blend_weight=0.7, n_recent=10,
                            opponent_adjust=HP["opponent_adjust"],
                            max_history_years=HP["max_history_years"])
-    params = fit_model(AS_OF, tlist, matches, feats, xi=HP["xi"], lambda_reg=HP["lambda_reg"],
+    params = fit_model(as_of, tlist, matches, feats, xi=HP["xi"], lambda_reg=HP["lambda_reg"],
                        c_a=HP["c_a"], c_x=HP["c_x"], c_d=HP["c_d"], c_y=HP["c_y"],
                        theta=HP["theta"], c_v=HP["c_v"], c_m=HP["c_m"],
                        max_history_years=HP["max_history_years"])
@@ -162,7 +191,8 @@ def main():
     print("=" * 92)
     print("2026 WORLD CUP — GROUP STAGE BY MATCH DATE — MODEL prediction (NOT market)")
     print("=" * 92)
-    print(f"as-of {AS_OF}, rho={params.rho:.4f}. No free 2026 odds (0/72) -> Dixon-Coles model.")
+    print(f"as-of {as_of}{' [LIVE walk-forward]' if live else ''}, rho={params.rho:.4f}. "
+          f"No free 2026 odds (0/72) -> Dixon-Coles model.")
     print("Calendar from published schedule; host advantage = Mexico/Canada/USA in all their games.")
     print("Format: [Grp] Home vs Away  H/D/A%  -> result, modal score (O2.5, BTTS).\n")
 
@@ -183,10 +213,36 @@ def main():
                     "p_home": ph, "p_draw": pd, "p_away": pa, "most_likely_result": ml,
                     "most_likely_score": [int(sx), int(sy)],
                     "exp_goals_home": exh, "exp_goals_away": exa, "top3_scores": top3,
-                    "over_2_5": float(ov), "btts": float(bt)})
+                    "over_2_5": float(ov), "btts": float(bt), "pred_as_of": as_of})
 
     pj = os.path.join(ROOT, "data", "predict_groupstage_by_date_2026.json")
-    json.dump({"as_of": AS_OF, "rho": params.rho, "source": "model (no market odds); calendar=published schedule",
+
+    # --live: keep already-played games frozen at their original prediction; only
+    # the upcoming games carry the fresh as_of. Each game records its own
+    # pred_as_of so the dashboard can show when each matchday was last predicted.
+    if live and os.path.exists(pj):
+        played = _played_pairs()
+        oldj = json.load(open(pj, encoding="utf-8"))
+        old_as_of = oldj.get("as_of", AS_OF)
+        old = {frozenset((g["home"], g["away"])): g for g in oldj.get("games", [])}
+        merged, n_frozen, n_updated = [], 0, 0
+        for g in out:
+            key = frozenset((g["home"], g["away"]))
+            if key in played and key in old:
+                e = dict(old[key])
+                e.setdefault("pred_as_of", old_as_of)
+                merged.append(e)
+                n_frozen += 1
+            else:
+                merged.append(g)
+                n_updated += 1
+        out = merged
+        print(f"\nLIVE merge: {n_frozen} played games kept frozen, "
+              f"{n_updated} upcoming games re-predicted as-of {as_of}")
+
+    json.dump({"as_of": as_of, "rho": params.rho,
+               "source": "model (no market odds); calendar=published schedule"
+                         + ("; LIVE walk-forward (played games frozen)" if live else ""),
                "games": out, "team_names": {t: nm(t) for t in group_of}},
               open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"\nwrote {pj}  ({len(out)} games, by date)")

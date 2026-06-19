@@ -354,12 +354,22 @@ def build():
     # (the baseline): per team we expose the probability delta (percentage points)
     # and the rank delta (positive = moved up the table). When the displayed
     # forecast IS the frozen one, baseline == current so all deltas are 0.
-    baseline_pw = {}
+    baseline_pw, pretournament_gen = {}, None
     if os.path.exists(FORECAST_PATH):
         try:
-            baseline_pw = load_json(FORECAST_PATH).get("p_win", {})
+            _frozen = load_json(FORECAST_PATH)
+            baseline_pw = _frozen.get("p_win", {})
+            pretournament_gen = _frozen.get("generated_at")
         except Exception:
-            baseline_pw = {}
+            pass
+
+    # Per-matchday prediction generation dates (distinct pred_as_of per matchday).
+    def _md(d):
+        return 1 if d <= "2026-06-17" else (2 if d <= "2026-06-23" else 3)
+    _mdsets = {1: set(), 2: set(), 3: set()}
+    for g in games:
+        _mdsets[_md(g["date"])].add(g.get("pred_as_of") or pred.get("as_of"))
+    matchday_pred_dates = {k: sorted(v) for k, v in _mdsets.items()}
     baseline_rank = {
         tid: r for r, (tid, _) in enumerate(
             sorted(baseline_pw.items(), key=lambda kv: kv[1], reverse=True), start=1)
@@ -389,6 +399,8 @@ def build():
         "calibration": calibration,
         "matches": matches,
         "predictions_as_of": pred.get("as_of"),
+        "matchday_pred_dates": matchday_pred_dates,
+        "pretournament_forecast_generated_at": pretournament_gen,
         "forecast_generated_at": forecast.get("generated_at"),
         "forecast_is_live": forecast.get("is_live", False),
         "forecast_games_conditioned": forecast.get("games_conditioned", 0),

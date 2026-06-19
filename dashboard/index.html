@@ -90,7 +90,10 @@
     .prov-row .k em { font-style: normal; color: var(--text); opacity: 0.55; margin-left: 6px; }
     .prov-row .v { font-variant-numeric: tabular-nums; color: var(--text); }
     .prov-row .v small { color: var(--muted); margin-left: 8px; }
-    .disclaimer { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 14px;
+    .repo-link { text-align: center; margin-top: 22px; font-size: 13px; }
+    .repo-link a { color: var(--accent); text-decoration: none; }
+    .repo-link a:hover { text-decoration: underline; }
+    .disclaimer { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px;
                   color: var(--muted); font-size: 12px; line-height: 1.55; }
     .disclaimer p { margin: 0 0 8px; }
     .disclaimer p[dir="rtl"] { text-align: right; }
@@ -253,11 +256,16 @@
     }
 
     function Provenance({ data }) {
-      const pa = data.predictions_as_of;
+      const md = data.matchday_pred_dates || {};
+      const fmtDates = (n) => {
+        const arr = md[n];
+        if (!arr || !arr.length) return data.predictions_as_of || "—";
+        return arr.join(" + ");
+      };
       const windows = [
-        { md: "Matchday 1 predictions", range: "Jun 11–17" },
-        { md: "Matchday 2 predictions", range: "Jun 18–23" },
-        { md: "Matchday 3 predictions", range: "Jun 24–27" },
+        { n: 1, md: "Matchday 1 predictions", range: "Jun 11–17" },
+        { n: 2, md: "Matchday 2 predictions", range: "Jun 18–23" },
+        { n: 3, md: "Matchday 3 predictions", range: "Jun 24–27" },
       ];
       return (
         <div className="prov">
@@ -268,7 +276,11 @@
               <span className="v">{data.forecast_is_live ? "LIVE" : "frozen"}</span>
             </div>
             <div className="prov-row">
-              <span className="k">Title forecast — P(win)</span>
+              <span className="k">Title forecast — pre-tournament</span>
+              <span className="v">{data.pretournament_forecast_generated_at || "—"}</span>
+            </div>
+            <div className="prov-row">
+              <span className="k">Title forecast — live</span>
               <span className="v">{data.forecast_generated_at || "—"}
                 {data.forecast_conditioned_through
                   ? <small>conditioned through {data.forecast_conditioned_through}</small> : null}</span>
@@ -276,7 +288,7 @@
             {windows.map((w, i) => (
               <div className="prov-row" key={i}>
                 <span className="k">{w.md}<em>{w.range}</em></span>
-                <span className="v">{pa ? "frozen " + pa : "—"}</span>
+                <span className="v">{fmtDates(w.n)}</span>
               </div>
             ))}
           </div>
@@ -367,6 +379,12 @@
 
           <div className="subline" style={{ marginTop: 24, justifyContent: "center" }}>
             Scoring only — the model is frozen and never re-run here.
+          </div>
+
+          <div className="repo-link">
+            <a href="https://github.com/andreskoenig/OpenOdds26" target="_blank" rel="noopener noreferrer">
+              OpenOdds26 — a Dixon-Coles + Monte-Carlo World Cup model · code &amp; methodology on GitHub ↗
+            </a>
           </div>
 
           <Disclaimer />

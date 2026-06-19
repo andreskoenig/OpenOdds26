@@ -1,0 +1,66 @@
+name: Refresh dashboard (ESPN → score)
+
+# Pulls finished WC2026 results from ESPN's public scoreboard (no API key),
+# re-scores the FROZEN per-match predictions, and commits dashboard/performance.json.
+# Vercel auto-deploys on the push, so the live site updates. The forecast itself
+# (heavy 20k-sim model) is NOT run here — it stays local and is published by
+# committing data/forecast_live_2026.json.
+#
+# ESPN reports only STATUS_FULL_TIME games, so polling every 30 min effectively
+# scores each match shortly after the final whistle (well within the ~1h target)
+# without needing exact per-fixture kickoff times.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 min (UTC); date-guarded to the tournament below
+  workflow_dispatch: {}       # allow manual "Run workflow"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Only run during the WC2026 window
+        id: window
+        run: |
+          today=$(date -u +%Y-%m-%d)
+          if [[ "$today" < "2026-06-11" || "$today" > "2026-07-20" ]]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Outside WC2026 window ($today) — skipping."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.window.outputs.run == 'true'
+        with:
+          python-version: "3.12"   # scoring scripts are stdlib-only; no pip install
+
+      - name: Fetch ESPN results + rebuild scoreboard
+        if: steps.window.outputs.run == 'true'
+        run: |
+          python dashboard/fetch_live_results.py
+          python dashboard/build_performance.py
+
+      - name: Commit & push if results changed
+        if: steps.window.outputs.run == 'true'
+        run: |
+          git config user.name "openodds-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # Ignore timestamp-only churn: -I skips hunks whose changes are just the
+          # *generated_at fields, so we commit only when actual scoring changes.
+          if git diff --quiet -I 'generated_at' -- dashboard/performance.json dashboard/live_results.json; then
+            echo "No scoring change — nothing to commit."
+          else
+            git add dashboard/performance.json dashboard/live_results.json
+            git commit -m "Auto-refresh scoreboard from ESPN [skip ci]"
+            git push
+          fi

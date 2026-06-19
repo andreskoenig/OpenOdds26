@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenOdds26 — Live Performance</title>
+  <!-- React + ReactDOM + Babel via CDN (no build step, works offline-free on a Pi LAN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js" crossorigin></script>
+  <style>
+    :root {
+      --bg: #0c1018;
+      --panel: #151b27;
+      --panel2: #1c2433;
+      --border: #2a3447;
+      --text: #e6ebf2;
+      --muted: #8b97ab;
+      --accent: #4fd1c5;
+      --good: #3ecf8e;
+      --bad: #f06262;
+      --warn: #f0b429;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.45;
+    }
+    #root { max-width: 1080px; margin: 0 auto; padding: 16px; }
+    .header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 4px; }
+    .header h1 { font-size: 22px; margin: 0; letter-spacing: 0.3px; }
+    .header h1 .accent { color: var(--accent); }
+    .subline { color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 18px; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--good); margin-right: 5px; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .banner { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--warn);
+              padding: 12px 14px; border-radius: 8px; color: var(--text); margin-bottom: 18px; font-size: 14px; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 22px; }
+    .kpi { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+    .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; }
+    .kpi .value { font-size: 26px; font-weight: 600; margin-top: 4px; }
+    .kpi .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin: 26px 0 10px; }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; position: sticky; top: 0; background: var(--panel); z-index: 2; box-shadow: inset 0 -1px 0 var(--border); }
+    tr.upcoming td { color: var(--muted); }
+    tr.played { background: rgba(79,209,197,0.04); }
+    .badge { display: inline-block; min-width: 18px; text-align: center; border-radius: 4px; padding: 1px 5px; font-weight: 700; font-size: 12px; }
+    .badge.ok { background: rgba(62,207,142,0.16); color: var(--good); }
+    .badge.no { background: rgba(240,98,98,0.16); color: var(--bad); }
+    .pts { font-weight: 700; }
+    .p1x2 { font-size: 11px; color: var(--muted); }
+    .matchname { font-weight: 600; color: var(--text); }
+    .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 12px; }
+    .cal-cell { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+    .cal-cell .bk { font-size: 12px; color: var(--muted); }
+    .cal-bar { height: 6px; border-radius: 3px; background: var(--border); margin-top: 8px; position: relative; overflow: hidden; }
+    .cal-bar .fill { position: absolute; left: 0; top: 0; bottom: 0; }
+    .forecast { display: grid; grid-template-columns: 1fr; gap: 0; }
+    .frow { display: flex; align-items: center; gap: 10px; padding: 7px 12px; border-bottom: 1px solid var(--border); font-size: 14px; }
+    .frow:last-child { border-bottom: none; }
+    .frow .rank { color: var(--muted); width: 20px; }
+    .frow .fname { flex: 1; }
+    .frow .fbar { flex: 2; height: 7px; background: var(--border); border-radius: 4px; overflow: hidden; }
+    .frow .fbar .ffill { height: 100%; background: var(--accent); }
+    .frow .fpct { width: 56px; text-align: right; font-variant-numeric: tabular-nums; }
+    .err { color: var(--bad); text-align: center; padding: 40px; }
+    .scroll { overflow: auto; max-height: 65vh; }
+    @media (max-width: 600px) {
+      .kpi .value { font-size: 22px; }
+      th, td { padding: 7px 7px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    const REFRESH_MS = 60000;
+
+    function pct(x) { return x == null ? "—" : (x * 100).toFixed(0) + "%"; }
+    function num(x, d) { return x == null ? "—" : Number(x).toFixed(d == null ? 3 : d); }
+    function scoreStr(s) { return (s && s[0] != null) ? (s[0] + "-" + s[1]) : "—"; }
+    function predWinner(m) {
+      if (m.pred_outcome === "home") return m.home;
+      if (m.pred_outcome === "away") return m.away;
+      return "Draw";
+    }
+
+    function Kpi({ label, value, sub }) {
+      return (
+        <div className="kpi">
+          <div className="label">{label}</div>
+          <div className="value">{value}</div>
+          {sub ? <div className="sub">{sub}</div> : null}
+        </div>
+      );
+    }
+
+    function Badge({ val }) {
+      if (val == null) return <span className="badge" style={{ color: "var(--muted)" }}>—</span>;
+      return <span className={"badge " + (val ? "ok" : "no")}>{val ? "✓" : "✗"}</span>;
+    }
+
+    function Calibration({ cal }) {
+      const has = cal && cal.some(c => c.n > 0);
+      if (!has) return null;
+      return (
+        <div>
+          <h2>Calibration — favorite prob vs realized</h2>
+          <div className="cal-grid">
+            {cal.map((c, i) => (
+              <div className="cal-cell" key={i}>
+                <div className="bk">{c.bucket} &nbsp;·&nbsp; n={c.n}</div>
+                <div style={{ marginTop: 6, fontSize: 14 }}>
+                  pred <b>{pct(c.predicted)}</b> · real <b>{pct(c.realized)}</b>
+                </div>
+                <div className="cal-bar">
+                  <div className="fill" style={{ width: pct(c.predicted), background: "var(--muted)" }}></div>
+                </div>
+                <div className="cal-bar">
+                  <div className="fill" style={{ width: pct(c.realized), background: "var(--accent)" }}></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    function MatchTable({ matches }) {
+      return (
+        <div className="panel scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th><th>Grp</th><th>Match</th><th>Pred</th><th>Score</th>
+                <th>1X2</th><th>xG</th><th>Actual</th><th>Out</th><th>Exact</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matches.map((m, i) => (
+                <tr key={i} className={m.played ? "played" : "upcoming"}>
+                  <td>{m.date}</td>
+                  <td>{m.group}</td>
+                  <td className="matchname">{m.home} v {m.away}</td>
+                  <td className="matchname">{predWinner(m)}</td>
+                  <td>{scoreStr(m.pred_score)}</td>
+                  <td className="p1x2">{pct(m.pred_1x2.h)}/{pct(m.pred_1x2.d)}/{pct(m.pred_1x2.a)}</td>
+                  <td>{m.exp_goals ? m.exp_goals[0].toFixed(1) + "-" + m.exp_goals[1].toFixed(1) : "—"}</td>
+                  <td>{scoreStr(m.actual_score)}</td>
+                  <td><Badge val={m.outcome_correct} /></td>
+                  <td><Badge val={m.exact_correct} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+    function Forecast({ top10, genAt, isLive, conditioned, through }) {
+      if (!top10 || !top10.length) return null;
+      const max = top10[0].pct || 1;
+      const heading = isLive
+        ? "Forecast — title P(win) top 10 · LIVE"
+        : "Forecast — title P(win) top 10";
+      const note = isLive
+        ? "live: re-simulated with " + conditioned + " played group games pinned"
+          + (through ? " (through " + through + ")" : "") + " · strengths frozen at June 10"
+          + (genAt ? " · updated " + genAt : "")
+        : (genAt ? "forecast frozen at " + genAt : null);
+      return (
+        <div>
+          <h2>{heading}</h2>
+          <div className="panel forecast">
+            {top10.map((t, i) => (
+              <div className="frow" key={i}>
+                <span className="rank">{i + 1}</span>
+                <span className="fname">{t.team}</span>
+                <span className="fbar"><span className="ffill" style={{ width: (t.pct / max * 100) + "%" }}></span></span>
+                <span className="fpct">{t.pct.toFixed(1)}%</span>
+              </div>
+            ))}
+          </div>
+          {note ? <div className="subline" style={{ marginTop: 8 }}>{note}</div> : null}
+        </div>
+      );
+    }
+
+    function App() {
+      const [data, setData] = useState(null);
+      const [error, setError] = useState(null);
+      const [lastFetch, setLastFetch] = useState(null);
+
+      function load() {
+        fetch("./performance.json?t=" + Date.now())
+          .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+          .then(d => { setData(d); setError(null); setLastFetch(new Date()); })
+          .catch(e => setError(e.message));
+      }
+
+      useEffect(() => {
+        load();
+        const id = setInterval(load, REFRESH_MS);
+        return () => clearInterval(id);
+      }, []);
+
+      if (error && !data) {
+        return <div className="err">Waiting for data… ({error})</div>;
+      }
+      if (!data) {
+        return <div className="err">Loading…</div>;
+      }
+
+      const t = data.tournament || {};
+      const k = data.kpis || {};
+      const n = k.n_played || 0;
+
+      return (
+        <div>
+          <div className="header">
+            <h1><span className="accent">OpenOdds26</span> — Live Performance</h1>
+          </div>
+          <div className="subline">
+            <span>Games played <b>{t.games_played}</b> / {t.games_total}</span>
+            <span>last updated {data.generated_at}</span>
+            <span><span className="dot"></span>auto-refresh 60s{lastFetch ? " · polled " + lastFetch.toLocaleTimeString() : ""}</span>
+          </div>
+
+          {n === 0 ? (
+            <div className="banner">Tournament starts June 11 — awaiting first result. Predictions below are frozen and will be scored as results arrive.</div>
+          ) : null}
+
+          <div className="kpis">
+            <Kpi label="1X2 Accuracy" value={n ? pct(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"} />
+            <Kpi label="Model Exact Score" value={n ? pct(k.model_exact_rate) : "—"} sub="modal score hit rate" />
+            <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better" />
+            <Kpi label="Mean Brier" value={n ? num(k.mean_brier) : "—"} sub="lower is better" />
+          </div>
+
+          <Calibration cal={data.calibration} />
+
+          <h2>Matches</h2>
+          <MatchTable matches={data.matches || []} />
+
+          <Forecast top10={data.forecast_top10} genAt={data.forecast_generated_at}
+                    isLive={data.forecast_is_live}
+                    conditioned={data.forecast_games_conditioned}
+                    through={data.forecast_conditioned_through} />
+
+          <div className="subline" style={{ marginTop: 24, justifyContent: "center" }}>
+            Scoring only — the model is frozen and never re-run here.
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,2125 @@
+{
+  "generated_at": "2026-06-19 14:26:40",
+  "tournament": {
+    "games_played": 28,
+    "games_total": 72,
+    "start_date": "2026-06-11"
+  },
+  "kpis": {
+    "n_played": 28,
+    "accuracy_1x2": 0.5357,
+    "model_exact_rate": 0.0714,
+    "mean_log_loss": 0.9722,
+    "mean_brier": 0.59
+  },
+  "calibration": [
+    {
+      "bucket": "0.33-0.45",
+      "lo": 0.33,
+      "hi": 0.45,
+      "n": 4,
+      "predicted": 0.4095,
+      "realized": 0.25
+    },
+    {
+      "bucket": "0.45-0.55",
+      "lo": 0.45,
+      "hi": 0.55,
+      "n": 4,
+      "predicted": 0.496,
+      "realized": 0.25
+    },
+    {
+      "bucket": "0.55-0.70",
+      "lo": 0.55,
+      "hi": 0.7,
+      "n": 10,
+      "predicted": 0.6195,
+      "realized": 0.6
+    },
+    {
+      "bucket": "0.70-1.00",
+      "lo": 0.7,
+      "hi": 1.0,
+      "n": 10,
+      "predicted": 0.814,
+      "realized": 0.7
+    }
+  ],
+  "matches": [
+    {
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Africa",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7925,
+        "d": 0.1511,
+        "a": 0.0564
+      },
+      "exp_goals": [
+        2.4,
+        0.51
+      ],
+      "played": true,
+      "actual_score": [
+        2,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": true,
+      "log_loss": 0.2326,
+      "brier": 0.0691
+    },
+    {
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.4284,
+        "d": 0.2771,
+        "a": 0.2945
+      },
+      "exp_goals": [
+        1.42,
+        1.14
+      ],
+      "played": true,
+      "actual_score": [
+        2,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.8478,
+      "brier": 0.4903
+    },
+    {
+      "date": "2026-06-12",
+      "group": "B",
+      "home": "Canada",
+      "away": "Bosnia and Herzegovina",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6856,
+        "d": 0.2078,
+        "a": 0.1066
+      },
+      "exp_goals": [
+        2.0,
+        0.65
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.5712,
+      "brier": 1.109
+    },
+    {
+      "date": "2026-06-12",
+      "group": "D",
+      "home": "United States",
+      "away": "Paraguay",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.5503,
+        "d": 0.2588,
+        "a": 0.1909
+      },
+      "exp_goals": [
+        1.64,
+        0.86
+      ],
+      "played": true,
+      "actual_score": [
+        4,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.5973,
+      "brier": 0.3057
+    },
+    {
+      "date": "2026-06-13",
+      "group": "B",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0414,
+        "d": 0.1078,
+        "a": 0.8508
+      },
+      "exp_goals": [
+        0.57,
+        2.98
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 2.2276,
+      "brier": 1.5216
+    },
+    {
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Brazil",
+      "away": "Morocco",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.4684,
+        "d": 0.3204,
+        "a": 0.2111
+      },
+      "exp_goals": [
+        1.18,
+        0.7
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.1381,
+      "brier": 0.7258
+    },
+    {
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Haiti",
+      "away": "Scotland",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.1788,
+        "d": 0.2234,
+        "a": 0.5978
+      },
+      "exp_goals": [
+        1.0,
+        1.99
+      ],
+      "played": true,
+      "actual_score": [
+        0,
+        1
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.5144,
+      "brier": 0.2436
+    },
+    {
+      "date": "2026-06-13",
+      "group": "D",
+      "home": "Australia",
+      "away": "Turkey",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.255,
+        "d": 0.2791,
+        "a": 0.4658
+      },
+      "exp_goals": [
+        1.0,
+        1.44
+      ],
+      "played": true,
+      "actual_score": [
+        2,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.3665,
+      "brier": 0.8499
+    },
+    {
+      "date": "2026-06-14",
+      "group": "E",
+      "home": "Germany",
+      "away": "Curacao",
+      "pred_outcome": "home",
+      "pred_score": [
+        4,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.942,
+        "d": 0.0452,
+        "a": 0.0127
+      },
+      "exp_goals": [
+        4.04,
+        0.46
+      ],
+      "played": true,
+      "actual_score": [
+        7,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.0597,
+      "brier": 0.0056
+    },
+    {
+      "date": "2026-06-14",
+      "group": "E",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.2259,
+        "d": 0.3519,
+        "a": 0.4222
+      },
+      "exp_goals": [
+        0.65,
+        1.0
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.4878,
+      "brier": 0.9014
+    },
+    {
+      "date": "2026-06-14",
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Japan",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.4038,
+        "d": 0.297,
+        "a": 0.2992
+      },
+      "exp_goals": [
+        1.25,
+        1.04
+      ],
+      "played": true,
+      "actual_score": [
+        2,
+        2
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.2142,
+      "brier": 0.7469
+    },
+    {
+      "date": "2026-06-14",
+      "group": "F",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.503,
+        "d": 0.2747,
+        "a": 0.2222
+      },
+      "exp_goals": [
+        1.5,
+        0.91
+      ],
+      "played": true,
+      "actual_score": [
+        5,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.6871,
+      "brier": 0.3718
+    },
+    {
+      "date": "2026-06-15",
+      "group": "G",
+      "home": "Belgium",
+      "away": "Egypt",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6417,
+        "d": 0.2399,
+        "a": 0.1184
+      },
+      "exp_goals": [
+        1.72,
+        0.6
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.4275,
+      "brier": 1.0035
+    },
+    {
+      "date": "2026-06-15",
+      "group": "G",
+      "home": "Iran",
+      "away": "New Zealand",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.5939,
+        "d": 0.2407,
+        "a": 0.1654
+      },
+      "exp_goals": [
+        1.79,
+        0.83
+      ],
+      "played": true,
+      "actual_score": [
+        2,
+        2
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.4242,
+      "brier": 0.9566
+    },
+    {
+      "date": "2026-06-15",
+      "group": "H",
+      "home": "Spain",
+      "away": "Cape Verde",
+      "pred_outcome": "home",
+      "pred_score": [
+        4,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.9573,
+        "d": 0.0361,
+        "a": 0.0066
+      },
+      "exp_goals": [
+        3.98,
+        0.28
+      ],
+      "played": true,
+      "actual_score": [
+        0,
+        0
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 3.3207,
+      "brier": 1.8455
+    },
+    {
+      "date": "2026-06-15",
+      "group": "H",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.0823,
+        "d": 0.2293,
+        "a": 0.6884
+      },
+      "exp_goals": [
+        0.43,
+        1.72
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.4727,
+      "brier": 1.0746
+    },
+    {
+      "date": "2026-06-16",
+      "group": "I",
+      "home": "France",
+      "away": "Senegal",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6279,
+        "d": 0.245,
+        "a": 0.1271
+      },
+      "exp_goals": [
+        1.69,
+        0.62
+      ],
+      "played": true,
+      "actual_score": [
+        3,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.4654,
+      "brier": 0.2147
+    },
+    {
+      "date": "2026-06-16",
+      "group": "I",
+      "home": "Iraq",
+      "away": "Norway",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0659,
+        "d": 0.1716,
+        "a": 0.7626
+      },
+      "exp_goals": [
+        0.5,
+        2.21
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        4
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.271,
+      "brier": 0.0901
+    },
+    {
+      "date": "2026-06-16",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Algeria",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7538,
+        "d": 0.183,
+        "a": 0.0632
+      },
+      "exp_goals": [
+        2.06,
+        0.44
+      ],
+      "played": true,
+      "actual_score": [
+        3,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.2826,
+      "brier": 0.0981
+    },
+    {
+      "date": "2026-06-16",
+      "group": "J",
+      "home": "Austria",
+      "away": "Jordan",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6792,
+        "d": 0.2049,
+        "a": 0.1159
+      },
+      "exp_goals": [
+        2.06,
+        0.73
+      ],
+      "played": true,
+      "actual_score": [
+        3,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.3869,
+      "brier": 0.1583
+    },
+    {
+      "date": "2026-06-17",
+      "group": "K",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7876,
+        "d": 0.163,
+        "a": 0.0495
+      },
+      "exp_goals": [
+        2.19,
+        0.39
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.8143,
+      "brier": 1.3233
+    },
+    {
+      "date": "2026-06-17",
+      "group": "K",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0724,
+        "d": 0.1797,
+        "a": 0.7479
+      },
+      "exp_goals": [
+        0.52,
+        2.15
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        3
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.2905,
+      "brier": 0.1011
+    },
+    {
+      "date": "2026-06-17",
+      "group": "L",
+      "home": "England",
+      "away": "Croatia",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.5608,
+        "d": 0.2838,
+        "a": 0.1554
+      },
+      "exp_goals": [
+        1.43,
+        0.62
+      ],
+      "played": true,
+      "actual_score": [
+        4,
+        2
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.5784,
+      "brier": 0.2976
+    },
+    {
+      "date": "2026-06-17",
+      "group": "L",
+      "home": "Ghana",
+      "away": "Panama",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.3217,
+        "d": 0.2946,
+        "a": 0.3837
+      },
+      "exp_goals": [
+        1.11,
+        1.23
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.1343,
+      "brier": 0.6942
+    },
+    {
+      "date": "2026-06-18",
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.5466,
+        "d": 0.2651,
+        "a": 0.1883
+      },
+      "exp_goals": [
+        1.58,
+        0.82
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.3278,
+      "brier": 0.8744
+    },
+    {
+      "date": "2026-06-18",
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Korea",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.5698,
+        "d": 0.2487,
+        "a": 0.1815
+      },
+      "exp_goals": [
+        1.73,
+        0.87
+      ],
+      "played": true,
+      "actual_score": [
+        1,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": true,
+      "log_loss": 0.5625,
+      "brier": 0.2799
+    },
+    {
+      "date": "2026-06-18",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Bosnia and Herzegovina",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7313,
+        "d": 0.1841,
+        "a": 0.0846
+      },
+      "exp_goals": [
+        2.17,
+        0.6
+      ],
+      "played": true,
+      "actual_score": [
+        4,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.3129,
+      "brier": 0.1132
+    },
+    {
+      "date": "2026-06-18",
+      "group": "B",
+      "home": "Canada",
+      "away": "Qatar",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.8141,
+        "d": 0.1301,
+        "a": 0.0558
+      },
+      "exp_goals": [
+        2.74,
+        0.62
+      ],
+      "played": true,
+      "actual_score": [
+        6,
+        0
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.2056,
+      "brier": 0.0546
+    },
+    {
+      "date": "2026-06-19",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Morocco",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.151,
+        "d": 0.2869,
+        "a": 0.5621
+      },
+      "exp_goals": [
+        0.59,
+        1.4
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-19",
+      "group": "C",
+      "home": "Brazil",
+      "away": "Haiti",
+      "pred_outcome": "home",
+      "pred_score": [
+        3,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.9337,
+        "d": 0.0508,
+        "a": 0.0155
+      },
+      "exp_goals": [
+        3.95,
+        0.5
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-19",
+      "group": "D",
+      "home": "United States",
+      "away": "Australia",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.5223,
+        "d": 0.2551,
+        "a": 0.2225
+      },
+      "exp_goals": [
+        1.68,
+        1.02
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-19",
+      "group": "D",
+      "home": "Turkey",
+      "away": "Paraguay",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.4937,
+        "d": 0.2861,
+        "a": 0.2201
+      },
+      "exp_goals": [
+        1.41,
+        0.85
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-20",
+      "group": "E",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6415,
+        "d": 0.23,
+        "a": 0.1285
+      },
+      "exp_goals": [
+        1.83,
+        0.69
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-20",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Curacao",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7816,
+        "d": 0.1635,
+        "a": 0.0549
+      },
+      "exp_goals": [
+        2.23,
+        0.44
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-20",
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.717,
+        "d": 0.1783,
+        "a": 0.1047
+      },
+      "exp_goals": [
+        2.36,
+        0.8
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-20",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Japan",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0774,
+        "d": 0.2011,
+        "a": 0.7215
+      },
+      "exp_goals": [
+        0.48,
+        1.95
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-21",
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.633,
+        "d": 0.2248,
+        "a": 0.1422
+      },
+      "exp_goals": [
+        1.91,
+        0.79
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-21",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.2014,
+        "d": 0.2954,
+        "a": 0.5033
+      },
+      "exp_goals": [
+        0.75,
+        1.35
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-21",
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "pred_outcome": "home",
+      "pred_score": [
+        3,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.9262,
+        "d": 0.0614,
+        "a": 0.0124
+      },
+      "exp_goals": [
+        3.36,
+        0.3
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-21",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.759,
+        "d": 0.182,
+        "a": 0.059
+      },
+      "exp_goals": [
+        2.05,
+        0.41
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-22",
+      "group": "I",
+      "home": "France",
+      "away": "Iraq",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.8892,
+        "d": 0.0903,
+        "a": 0.0204
+      },
+      "exp_goals": [
+        2.9,
+        0.32
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-22",
+      "group": "I",
+      "home": "Norway",
+      "away": "Senegal",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.426,
+        "d": 0.2953,
+        "a": 0.2787
+      },
+      "exp_goals": [
+        1.29,
+        0.99
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-22",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Austria",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6765,
+        "d": 0.233,
+        "a": 0.0905
+      },
+      "exp_goals": [
+        1.72,
+        0.47
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-22",
+      "group": "J",
+      "home": "Jordan",
+      "away": "Algeria",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.1579,
+        "d": 0.2252,
+        "a": 0.6169
+      },
+      "exp_goals": [
+        0.88,
+        1.94
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-23",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.8351,
+        "d": 0.1266,
+        "a": 0.0383
+      },
+      "exp_goals": [
+        2.57,
+        0.41
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-23",
+      "group": "K",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6945,
+        "d": 0.2175,
+        "a": 0.0879
+      },
+      "exp_goals": [
+        1.84,
+        0.5
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-23",
+      "group": "L",
+      "home": "England",
+      "away": "Ghana",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.8541,
+        "d": 0.1181,
+        "a": 0.0278
+      },
+      "exp_goals": [
+        2.55,
+        0.32
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-23",
+      "group": "L",
+      "home": "Panama",
+      "away": "Croatia",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0994,
+        "d": 0.1895,
+        "a": 0.7111
+      },
+      "exp_goals": [
+        0.69,
+        2.18
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "Mexico",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.1369,
+        "d": 0.2149,
+        "a": 0.6482
+      },
+      "exp_goals": [
+        0.81,
+        2.01
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "A",
+      "home": "South Africa",
+      "away": "South Korea",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.1461,
+        "d": 0.2477,
+        "a": 0.6062
+      },
+      "exp_goals": [
+        0.71,
+        1.7
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Canada",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.4103,
+        "d": 0.2783,
+        "a": 0.3114
+      },
+      "exp_goals": [
+        1.39,
+        1.18
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "B",
+      "home": "Bosnia and Herzegovina",
+      "away": "Qatar",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.4644,
+        "d": 0.2842,
+        "a": 0.2514
+      },
+      "exp_goals": [
+        1.41,
+        0.96
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Brazil",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0699,
+        "d": 0.1579,
+        "a": 0.7723
+      },
+      "exp_goals": [
+        0.61,
+        2.42
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-24",
+      "group": "C",
+      "home": "Morocco",
+      "away": "Haiti",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7807,
+        "d": 0.1602,
+        "a": 0.0591
+      },
+      "exp_goals": [
+        2.3,
+        0.49
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Turkey",
+      "away": "United States",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.3287,
+        "d": 0.2527,
+        "a": 0.4187
+      },
+      "exp_goals": [
+        1.41,
+        1.62
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Australia",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.2989,
+        "d": 0.3321,
+        "a": 0.369
+      },
+      "exp_goals": [
+        0.88,
+        1.02
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Germany",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.2092,
+        "d": 0.2971,
+        "a": 0.4936
+      },
+      "exp_goals": [
+        0.77,
+        1.33
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "E",
+      "home": "Curacao",
+      "away": "Ivory Coast",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0973,
+        "d": 0.2052,
+        "a": 0.6975
+      },
+      "exp_goals": [
+        0.6,
+        1.99
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Japan",
+      "away": "Sweden",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6428,
+        "d": 0.2181,
+        "a": 0.139
+      },
+      "exp_goals": [
+        1.98,
+        0.81
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0562,
+        "d": 0.1567,
+        "a": 0.7871
+      },
+      "exp_goals": [
+        0.48,
+        2.32
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "G",
+      "home": "Egypt",
+      "away": "Iran",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.2941,
+        "d": 0.3191,
+        "a": 0.3868
+      },
+      "exp_goals": [
+        0.92,
+        1.1
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0448,
+        "d": 0.1196,
+        "a": 0.8357
+      },
+      "exp_goals": [
+        0.54,
+        2.79
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "H",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.2802,
+        "d": 0.3258,
+        "a": 0.3941
+      },
+      "exp_goals": [
+        0.87,
+        1.08
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Spain",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.1221,
+        "d": 0.2559,
+        "a": 0.622
+      },
+      "exp_goals": [
+        0.56,
+        1.6
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "I",
+      "home": "Norway",
+      "away": "France",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.171,
+        "d": 0.2511,
+        "a": 0.578
+      },
+      "exp_goals": [
+        0.81,
+        1.7
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-26",
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraq",
+      "pred_outcome": "home",
+      "pred_score": [
+        1,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.6622,
+        "d": 0.238,
+        "a": 0.0998
+      },
+      "exp_goals": [
+        1.7,
+        0.5
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "J",
+      "home": "Algeria",
+      "away": "Austria",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.2834,
+        "d": 0.2948,
+        "a": 0.4218
+      },
+      "exp_goals": [
+        1.01,
+        1.29
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "J",
+      "home": "Jordan",
+      "away": "Argentina",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        3
+      ],
+      "pred_1x2": {
+        "h": 0.0145,
+        "d": 0.0665,
+        "a": 0.9191
+      },
+      "exp_goals": [
+        0.32,
+        3.29
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "K",
+      "home": "Colombia",
+      "away": "Portugal",
+      "pred_outcome": "away",
+      "pred_score": [
+        1,
+        1
+      ],
+      "pred_1x2": {
+        "h": 0.242,
+        "d": 0.2836,
+        "a": 0.4744
+      },
+      "exp_goals": [
+        0.94,
+        1.42
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "K",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "pred_outcome": "draw",
+      "pred_score": [
+        0,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.349,
+        "d": 0.3528,
+        "a": 0.2982
+      },
+      "exp_goals": [
+        0.9,
+        0.81
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "L",
+      "home": "Panama",
+      "away": "England",
+      "pred_outcome": "away",
+      "pred_score": [
+        0,
+        2
+      ],
+      "pred_1x2": {
+        "h": 0.0291,
+        "d": 0.1067,
+        "a": 0.8641
+      },
+      "exp_goals": [
+        0.38,
+        2.76
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    },
+    {
+      "date": "2026-06-27",
+      "group": "L",
+      "home": "Croatia",
+      "away": "Ghana",
+      "pred_outcome": "home",
+      "pred_score": [
+        2,
+        0
+      ],
+      "pred_1x2": {
+        "h": 0.7091,
+        "d": 0.2008,
+        "a": 0.09
+      },
+      "exp_goals": [
+        2.01,
+        0.57
+      ],
+      "played": false,
+      "actual_score": null,
+      "actual_outcome": null,
+      "outcome_correct": null,
+      "exact_correct": null,
+      "log_loss": null,
+      "brier": null
+    }
+  ],
+  "forecast_generated_at": "2026-06-19 14:26",
+  "forecast_is_live": true,
+  "forecast_games_conditioned": 28,
+  "forecast_conditioned_through": "2026-06-18",
+  "forecast_top10": [
+    {
+      "team": "Argentina",
+      "pct": 21.83
+    },
+    {
+      "team": "Spain",
+      "pct": 16.49
+    },
+    {
+      "team": "France",
+      "pct": 12.51
+    },
+    {
+      "team": "England",
+      "pct": 12.0
+    },
+    {
+      "team": "Brazil",
+      "pct": 6.71
+    },
+    {
+      "team": "Portugal",
+      "pct": 6.13
+    },
+    {
+      "team": "Germany",
+      "pct": 5.38
+    },
+    {
+      "team": "Netherlands",
+      "pct": 3.0
+    },
+    {
+      "team": "Colombia",
+      "pct": 2.89
+    },
+    {
+      "team": "Belgium",
+      "pct": 2.5
+    }
+  ]
+}

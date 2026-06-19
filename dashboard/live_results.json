@@ -1,0 +1,258 @@
+{
+  "generated_at": "2026-06-19 14:26",
+  "source": "ESPN public scoreboard (fifa.world), finished matches only",
+  "results": [
+    {
+      "date": "2026-06-11",
+      "home_team_id": "mexico",
+      "away_team_id": "south_africa",
+      "home_goals": 2,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-11",
+      "home_team_id": "south_korea",
+      "away_team_id": "czech_republic",
+      "home_goals": 2,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-12",
+      "home_team_id": "canada",
+      "away_team_id": "bosnia_and_herzegovina",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-12",
+      "home_team_id": "united_states",
+      "away_team_id": "paraguay",
+      "home_goals": 4,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-13",
+      "home_team_id": "qatar",
+      "away_team_id": "switzerland",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-13",
+      "home_team_id": "brazil",
+      "away_team_id": "morocco",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-13",
+      "home_team_id": "haiti",
+      "away_team_id": "scotland",
+      "home_goals": 0,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-14",
+      "home_team_id": "australia",
+      "away_team_id": "turkey",
+      "home_goals": 2,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-14",
+      "home_team_id": "germany",
+      "away_team_id": "curacao",
+      "home_goals": 7,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-14",
+      "home_team_id": "netherlands",
+      "away_team_id": "japan",
+      "home_goals": 2,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-14",
+      "home_team_id": "ivory_coast",
+      "away_team_id": "ecuador",
+      "home_goals": 1,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-14",
+      "home_team_id": "sweden",
+      "away_team_id": "tunisia",
+      "home_goals": 5,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-15",
+      "home_team_id": "spain",
+      "away_team_id": "cape_verde",
+      "home_goals": 0,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-15",
+      "home_team_id": "belgium",
+      "away_team_id": "egypt",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-15",
+      "home_team_id": "saudi_arabia",
+      "away_team_id": "uruguay",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-15",
+      "home_team_id": "iran",
+      "away_team_id": "new_zealand",
+      "home_goals": 2,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-16",
+      "home_team_id": "france",
+      "away_team_id": "senegal",
+      "home_goals": 3,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-16",
+      "home_team_id": "iraq",
+      "away_team_id": "norway",
+      "home_goals": 1,
+      "away_goals": 4,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-16",
+      "home_team_id": "argentina",
+      "away_team_id": "algeria",
+      "home_goals": 3,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-17",
+      "home_team_id": "austria",
+      "away_team_id": "jordan",
+      "home_goals": 3,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-17",
+      "home_team_id": "portugal",
+      "away_team_id": "dr_congo",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-17",
+      "home_team_id": "england",
+      "away_team_id": "croatia",
+      "home_goals": 4,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-17",
+      "home_team_id": "ghana",
+      "away_team_id": "panama",
+      "home_goals": 1,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-17",
+      "home_team_id": "uzbekistan",
+      "away_team_id": "colombia",
+      "home_goals": 1,
+      "away_goals": 3,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-18",
+      "home_team_id": "czech_republic",
+      "away_team_id": "south_africa",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-18",
+      "home_team_id": "switzerland",
+      "away_team_id": "bosnia_and_herzegovina",
+      "home_goals": 4,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-18",
+      "home_team_id": "canada",
+      "away_team_id": "qatar",
+      "home_goals": 6,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-18",
+      "home_team_id": "mexico",
+      "away_team_id": "south_korea",
+      "home_goals": 1,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    }
+  ]
+}

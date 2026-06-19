@@ -1,0 +1,8 @@
+# Keep these in the repo (the GitHub Action and local dev need them) but do NOT
+# deploy them as static assets — the public site is just index.html + the JSON.
+*.py
+serve.*
+__pycache__/
+*.log
+*.out
+README.md

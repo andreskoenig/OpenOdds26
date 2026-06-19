@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/performance.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/live_results.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}

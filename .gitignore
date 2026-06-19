@@ -34,3 +34,9 @@ data/raw/
 
 # Transient run logs (scratch; UTF-16 console dumps)
 data/_*.log
+
+# Dashboard local-server runtime artifacts (not for Vercel)
+dashboard/serve.log
+dashboard/serve.log.err
+dashboard/serve.out
+dashboard/__pycache__/

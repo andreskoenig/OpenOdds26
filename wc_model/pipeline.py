@@ -111,12 +111,18 @@ def run_prediction(
     n_sims: int = 10000,
     seed: int = 0,
     collect_extras: bool = False,
+    played_results: Optional[dict] = None,
 ) -> PredictionResult:
     """Features -> fit -> simulate, threading one ``Hyperparams`` (SPEC §4-§6).
 
     Every input table is used only for rows strictly before ``as_of_date`` (the
     cutoff is enforced inside ``build_features`` / ``fit_model``). The fitted
     params drive both the tournament simulation and ``predict_match``.
+
+    ``played_results`` (optional) pins already-decided group fixtures to their
+    real scorelines for a conditional mid-tournament forecast; it is passed
+    straight through to ``simulate_tournament`` and never affects fitting (the
+    strengths stay the frozen pre-cutoff model).
     """
     hp = hyperparams
 
@@ -150,7 +156,7 @@ def run_prediction(
 
     sim_out = simulate_tournament(
         sim_teams, matrix_fn, tournament_config, n_runs=n_sims, seed=seed,
-        collect_extras=collect_extras,
+        collect_extras=collect_extras, played=played_results,
     )
     progression, extras = sim_out if collect_extras else (sim_out, None)
     p_win = {tid: progression[tid]["winner"] for tid in progression}

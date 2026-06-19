@@ -16,11 +16,12 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
-AS_OF = "2026-06-04"
+AS_OF = date.today().isoformat()  # live snapshot: prices are fetched now
 OVERRIDES = {"usa": "united_states", "united states": "united_states",
              "korea republic": "south_korea", "south korea": "south_korea",
              "ir iran": "iran", "turkiye": "turkey", "czechia": "czech_republic",

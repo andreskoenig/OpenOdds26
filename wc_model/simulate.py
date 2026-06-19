@@ -158,13 +158,25 @@ def _play_group(
     teams: Dict[str, dict],
     matrix_fn: Callable[[str, str, bool], np.ndarray],
     rng: np.random.Generator,
+    played: Optional[Dict[frozenset, Dict[str, int]]] = None,
 ) -> Tuple[List[str], Dict[str, dict]]:
-    """Round-robin a group; award 3/1/0; return (ranked teams, stats)."""
+    """Round-robin a group; award 3/1/0; return (ranked teams, stats).
+
+    If ``played`` maps a fixture's ``frozenset({a, b})`` to ``{a: goals, b:
+    goals}``, that real result is used verbatim instead of sampling — this is how
+    a mid-tournament (conditional) forecast pins games that have already been
+    played and simulates only the remaining fixtures. No RNG draw is consumed for
+    a pinned game.
+    """
     stats = {t: {"pts": 0, "gd": 0, "gf": 0} for t in group}
     for i in range(len(group)):
         for j in range(i + 1, len(group)):
             a, b = group[i], group[j]
-            ga, gb, _ = _match_goals(a, b, teams, matrix_fn, rng)
+            fixed = played.get(frozenset((a, b))) if played else None
+            if fixed is not None:
+                ga, gb = fixed[a], fixed[b]
+            else:
+                ga, gb, _ = _match_goals(a, b, teams, matrix_fn, rng)
             stats[a]["gf"] += ga
             stats[b]["gf"] += gb
             stats[a]["gd"] += ga - gb
@@ -350,6 +362,7 @@ def simulate_tournament(
     n_runs: int = 10000,
     seed: int = 0,
     collect_extras: bool = False,
+    played: Optional[Dict[frozenset, Dict[str, int]]] = None,
 ):
     """Run N Monte Carlo tournaments and aggregate progression (SPEC §6).
 
@@ -357,6 +370,11 @@ def simulate_tournament(
     a single-elimination knockout (R32 → … → final) with extra time and
     penalties on draws and host advantage for hosts. The RNG is seeded so
     identical seed + inputs give identical output.
+
+    ``played`` (optional) pins already-decided GROUP fixtures to their real
+    scorelines (see ``_play_group``), turning this into a conditional
+    mid-tournament forecast. Knockout conditioning is not needed yet (no knockout
+    games exist) and is intentionally left unimplemented.
 
     Returns ``team_id -> {round_label: P(reach round), ..., "winner": P(win)}``,
     where round labels cover every knockout round from the first one down to
@@ -405,7 +423,7 @@ def simulate_tournament(
         group_stats: Dict[str, dict] = {}
         third_candidates: List[Tuple[str, dict, int]] = []
         for order_idx, gname in enumerate(group_names):
-            ranked, stats = _play_group(groups[gname], teams, matrix_fn, rng)
+            ranked, stats = _play_group(groups[gname], teams, matrix_fn, rng, played)
             ranked_by_group[gname] = ranked
             group_stats[gname] = stats
             if advance < len(ranked):

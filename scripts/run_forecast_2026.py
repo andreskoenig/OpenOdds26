@@ -56,15 +56,49 @@ def main():
     name = {t["team_id"]: t["canonical_name"] for t in teams_all}
 
     # Optional overrides: --cm V (market prior weight; 0 = ablate Polymarket),
-    # --out PATH (alternate output file so the canonical forecast is not clobbered).
+    # --out PATH (alternate output file so the canonical forecast is not clobbered),
+    # --live (conditional mid-tournament forecast: pin group games already played
+    #         to their real scorelines and simulate only the remainder; strengths
+    #         stay the frozen pre-cutoff model). Writes to a separate live file by
+    #         default so the frozen pre-tournament forecast is preserved.
     if "--cm" in sys.argv:
         HP.c_m = float(sys.argv[sys.argv.index("--cm") + 1])
-    out_rel = "data/forecast_2026.json"
+    live = "--live" in sys.argv
+    out_rel = "data/forecast_live_2026.json" if live else "data/forecast_2026.json"
     if "--out" in sys.argv:
         out_rel = sys.argv[sys.argv.index("--out") + 1]
 
+    # In live mode, advance the as-of cutoff to TODAY so the fit absorbs the
+    # latest results (matchday 1, ...). The frozen forecast keeps the AS_OF
+    # pre-tournament cutoff. (Recent games are weighted heavily by the 1.5y
+    # half-life — the "bigger WC weight / surprise" lever is a separate future
+    # change.)
+    as_of = date.today().isoformat() if live else AS_OF
+
+    # Build the "played" map for conditional forecasting: real group-stage results
+    # (both teams in the SAME group, competition == World Cup, on/after the opener).
+    played_results = None
+    conditioned_through = None
+    if live:
+        team_group = {t: g for g, members in config["groups"].items() for t in members}
+        played_results = {}
+        today = date.today().isoformat()
+        for m in matches:
+            if m.get("competition") != "FIFA World Cup":
+                continue
+            d = m["date"]
+            if d < "2026-06-11" or d > today:
+                continue
+            h, a = m["home_team_id"], m["away_team_id"]
+            if team_group.get(h) and team_group.get(h) == team_group.get(a):
+                played_results[frozenset((h, a))] = {h: int(m["home_goals"]),
+                                                     a: int(m["away_goals"])}
+                conditioned_through = max(conditioned_through or d, d)
+        print(f"LIVE mode: conditioning on {len(played_results)} group games "
+              f"played through {conditioned_through}\n", flush=True)
+
     cfg_ids = {t for g in config["groups"].values() for t in g}
-    cut = date.fromisoformat(AS_OF)
+    cut = date.fromisoformat(as_of)
     cnt = Counter()
     for m in matches:
         if date.fromisoformat(m["date"]) < cut:
@@ -76,7 +110,7 @@ def main():
     print("=" * 84)
     print("FIFA WORLD CUP 2026 — forward forecast (free data; surprise OFF; squad prior ON)")
     print("=" * 84)
-    print(f"as-of {AS_OF} | teams loaded {len(teams_all)} | fitted {len(teams)} "
+    print(f"as-of {as_of} | teams loaded {len(teams_all)} | fitted {len(teams)} "
           f"| sims {N_SIMS} (seed {SEED})")
     print(f"hyperparams: xi={HP.xi} lambda_reg={HP.lambda_reg} "
           f"c_a/c_x/c_d/c_y={HP.c_a}/{HP.c_x}/{HP.c_d}/{HP.c_y} "
@@ -85,9 +119,10 @@ def main():
     print("\nfitting + simulating 20,000 tournaments (several minutes) ...\n", flush=True)
 
     pred = run_prediction(
-        AS_OF, teams, config, matches, fifa, team_xg=[], match_odds=[],
+        as_of, teams, config, matches, fifa, team_xg=[], match_odds=[],
         hyperparams=HP, squad_values=squad, market_probs=market,
         n_sims=N_SIMS, seed=SEED, collect_extras=True,
+        played_results=played_results,
     )
     p = pred.params
     extras = pred.extras
@@ -157,7 +192,10 @@ def main():
 
     # ---- save JSON ----
     forecast = {
-        "as_of": AS_OF, "n_sims": N_SIMS, "seed": SEED,
+        "as_of": as_of, "n_sims": N_SIMS, "seed": SEED,
+        "is_live": live,
+        "games_conditioned": len(played_results) if played_results else 0,
+        "conditioned_through": conditioned_through,
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "hyperparams": {"xi": HP.xi, "lambda_reg": HP.lambda_reg, "c_a": HP.c_a,
                         "c_x": HP.c_x, "c_d": HP.c_d, "c_y": HP.c_y, "theta": HP.theta,

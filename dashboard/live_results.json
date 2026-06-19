@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19 14:26",
+  "generated_at": "2026-06-19 21:42",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -250,6 +250,15 @@
       "home_team_id": "mexico",
       "away_team_id": "south_korea",
       "home_goals": 1,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-19",
+      "home_team_id": "united_states",
+      "away_team_id": "australia",
+      "home_goals": 2,
       "away_goals": 0,
       "competition": "FIFA World Cup",
       "source": "espn"

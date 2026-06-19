@@ -71,12 +71,29 @@
     .frow .fbar { flex: 2; height: 7px; background: var(--border); border-radius: 4px; overflow: hidden; }
     .frow .fbar .ffill { height: 100%; background: var(--accent); }
     .frow .fpct { width: 52px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
-    .frow .move { width: 50px; text-align: right; font-size: 12px; font-variant-numeric: tabular-nums; }
+    .frow .move { width: 58px; text-align: right; font-size: 12px; font-variant-numeric: tabular-nums; }
     .mv-up { color: var(--good); }
     .mv-down { color: var(--bad); }
     .mv-flat { color: var(--muted); opacity: 0.45; }
     .err { color: var(--bad); text-align: center; padding: 40px; }
     .scroll { overflow: auto; max-height: 65vh; }
+    a.kpi-link { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    a.kpi-link:hover { opacity: 0.8; }
+    tr.mdsep td { background: var(--panel2); color: var(--accent); font-size: 11px; font-weight: 700;
+                  text-transform: uppercase; letter-spacing: 0.8px; padding: 6px 10px; }
+    .prov { margin-top: 26px; }
+    .prov-grid { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .prov-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+                padding: 9px 14px; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .prov-row:last-child { border-bottom: none; }
+    .prov-row .k { color: var(--muted); }
+    .prov-row .k em { font-style: normal; color: var(--text); opacity: 0.55; margin-left: 6px; }
+    .prov-row .v { font-variant-numeric: tabular-nums; color: var(--text); }
+    .prov-row .v small { color: var(--muted); margin-left: 8px; }
+    .disclaimer { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 14px;
+                  color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .disclaimer p { margin: 0 0 8px; }
+    .disclaimer p[dir="rtl"] { text-align: right; }
     @media (max-width: 600px) {
       .kpi .value { font-size: 22px; }
       th, td { padding: 7px 7px; }
@@ -86,9 +103,13 @@
 <body>
   <div id="root"></div>
   <script type="text/babel">
-    const { useState, useEffect } = React;
+    const { useState, useEffect, Fragment } = React;
 
     const REFRESH_MS = 60000;
+
+    // Matchday boundaries (group stage): MD1 ≤ Jun 17, MD2 Jun 18–23, MD3 ≥ Jun 24.
+    function matchdayOf(d) { return d <= "2026-06-17" ? 1 : (d <= "2026-06-23" ? 2 : 3); }
+    const MD_LABEL = { 1: "Matchday 1", 2: "Matchday 2", 3: "Matchday 3" };
 
     function pct(x) { return x == null ? "—" : (x * 100).toFixed(0) + "%"; }
     function num(x, d) { return x == null ? "—" : Number(x).toFixed(d == null ? 3 : d); }
@@ -99,10 +120,13 @@
       return "Draw";
     }
 
-    function Kpi({ label, value, sub }) {
+    function Kpi({ label, value, sub, labelHref }) {
+      const lab = labelHref
+        ? <a className="kpi-link" href={labelHref} target="_blank" rel="noopener noreferrer">{label}</a>
+        : label;
       return (
         <div className="kpi">
-          <div className="label">{label}</div>
+          <div className="label">{lab}</div>
           <div className="value">{value}</div>
           {sub ? <div className="sub">{sub}</div> : null}
         </div>
@@ -119,7 +143,7 @@
       if (delta == null) return <span className="mv-flat">·</span>;
       if (Math.abs(delta) < 0.1) return <span className="mv-flat">–</span>;
       const up = delta > 0;
-      return <span className={up ? "mv-up" : "mv-down"}>{(up ? "▲" : "▼") + Math.abs(delta).toFixed(1)}</span>;
+      return <span className={up ? "mv-up" : "mv-down"}>{(up ? "▲" : "▼") + Math.abs(delta).toFixed(1) + "%"}</span>;
     }
 
     // Rank movement vs the baseline (positive = climbed the table).
@@ -167,20 +191,29 @@
               </tr>
             </thead>
             <tbody>
-              {matches.map((m, i) => (
-                <tr key={i} className={m.played ? "played" : "upcoming"}>
-                  <td>{m.date}</td>
-                  <td>{m.group}</td>
-                  <td className="matchname">{m.home} v {m.away}</td>
-                  <td className="matchname">{predWinner(m)}</td>
-                  <td>{scoreStr(m.pred_score)}</td>
-                  <td className="p1x2">{pct(m.pred_1x2.h)}/{pct(m.pred_1x2.d)}/{pct(m.pred_1x2.a)}</td>
-                  <td>{m.exp_goals ? m.exp_goals[0].toFixed(1) + "-" + m.exp_goals[1].toFixed(1) : "—"}</td>
-                  <td>{scoreStr(m.actual_score)}</td>
-                  <td><Badge val={m.outcome_correct} /></td>
-                  <td><Badge val={m.exact_correct} /></td>
-                </tr>
-              ))}
+              {matches.map((m, i) => {
+                const md = matchdayOf(m.date);
+                const sep = i > 0 && md !== matchdayOf(matches[i - 1].date);
+                return (
+                  <Fragment key={i}>
+                    {sep ? (
+                      <tr className="mdsep"><td colSpan={10}>{MD_LABEL[md]} · from {m.date}</td></tr>
+                    ) : null}
+                    <tr className={m.played ? "played" : "upcoming"}>
+                      <td>{m.date}</td>
+                      <td>{m.group}</td>
+                      <td className="matchname">{m.home} v {m.away}</td>
+                      <td className="matchname">{predWinner(m)}</td>
+                      <td>{scoreStr(m.pred_score)}</td>
+                      <td className="p1x2">{pct(m.pred_1x2.h)}/{pct(m.pred_1x2.d)}/{pct(m.pred_1x2.a)}</td>
+                      <td>{m.exp_goals ? m.exp_goals[0].toFixed(1) + "-" + m.exp_goals[1].toFixed(1) : "—"}</td>
+                      <td>{scoreStr(m.actual_score)}</td>
+                      <td><Badge val={m.outcome_correct} /></td>
+                      <td><Badge val={m.exact_correct} /></td>
+                    </tr>
+                  </Fragment>
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -215,6 +248,54 @@
             ))}
           </div>
           {note ? <div className="subline" style={{ marginTop: 8 }}>{note}</div> : null}
+        </div>
+      );
+    }
+
+    function Provenance({ data }) {
+      const pa = data.predictions_as_of;
+      const windows = [
+        { md: "Matchday 1 predictions", range: "Jun 11–17" },
+        { md: "Matchday 2 predictions", range: "Jun 18–23" },
+        { md: "Matchday 3 predictions", range: "Jun 24–27" },
+      ];
+      return (
+        <div className="prov">
+          <h2>Data &amp; generation</h2>
+          <div className="prov-grid">
+            <div className="prov-row">
+              <span className="k"><span className="dot"></span>Status</span>
+              <span className="v">{data.forecast_is_live ? "LIVE" : "frozen"}</span>
+            </div>
+            <div className="prov-row">
+              <span className="k">Title forecast — P(win)</span>
+              <span className="v">{data.forecast_generated_at || "—"}
+                {data.forecast_conditioned_through
+                  ? <small>conditioned through {data.forecast_conditioned_through}</small> : null}</span>
+            </div>
+            {windows.map((w, i) => (
+              <div className="prov-row" key={i}>
+                <span className="k">{w.md}<em>{w.range}</em></span>
+                <span className="v">{pa ? "frozen " + pa : "—"}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    function Disclaimer() {
+      return (
+        <div className="disclaimer">
+          <p>This project is an experimental, non-commercial statistical model published for
+          research and educational purposes only. It is not betting or financial advice and does
+          not endorse, promote, or solicit gambling or wagering of any kind. Forecasts are
+          probabilistic, carry significant uncertainty, and are frequently wrong. Any use of this
+          information is entirely at your own risk.</p>
+          <p dir="rtl" lang="he">פרויקט זה הוא מודל סטטיסטי ניסיוני ולא־מסחרי, המתפרסם למטרות מחקר
+          ולימוד בלבד. אין לראות בו ייעוץ להימורים או ייעוץ פיננסי, והוא אינו מעודד, מקדם או משדל
+          לבצע הימורים מכל סוג שהוא. התחזיות הן הסתברותיות, כרוכות באי־ודאות רבה, ולעיתים קרובות
+          שגויות. כל שימוש במידע זה הוא על אחריותך בלבד.</p>
         </div>
       );
     }
@@ -266,8 +347,10 @@
           <div className="kpis">
             <Kpi label="1X2 Accuracy" value={n ? pct(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"} />
             <Kpi label="Model Exact Score" value={n ? pct(k.model_exact_rate) : "—"} sub="modal score hit rate" />
-            <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better" />
-            <Kpi label="Mean Brier" value={n ? num(k.mean_brier) : "—"} sub="lower is better" />
+            <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better"
+                 labelHref="https://en.wikipedia.org/wiki/Loss_functions_for_classification" />
+            <Kpi label="Mean Brier" value={n ? num(k.mean_brier) : "—"} sub="lower is better"
+                 labelHref="https://en.wikipedia.org/wiki/Brier_score" />
           </div>
 
           <Calibration cal={data.calibration} />
@@ -280,9 +363,13 @@
                     conditioned={data.forecast_games_conditioned}
                     through={data.forecast_conditioned_through} />
 
+          <Provenance data={data} />
+
           <div className="subline" style={{ marginTop: 24, justifyContent: "center" }}>
             Scoring only — the model is frozen and never re-run here.
           </div>
+
+          <Disclaimer />
         </div>
       );
     }

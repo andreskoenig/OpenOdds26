@@ -313,8 +313,11 @@ def build():
 
         matches.append(entry)
 
-    # Sort: played games first, then by date, then group.
-    matches.sort(key=lambda m: (not m["played"], m["date"], m["group"] or ""))
+    # Chronological order (date, then group) so the matchday separators in the
+    # table land cleanly. Played games are always earlier dates than upcoming
+    # ones, so this still shows played-first in practice; row styling
+    # (played/upcoming) distinguishes them.
+    matches.sort(key=lambda m: (m["date"], m["group"] or ""))
 
     # KPIs
     if n_played > 0:
@@ -385,6 +388,7 @@ def build():
         "kpis": kpis,
         "calibration": calibration,
         "matches": matches,
+        "predictions_as_of": pred.get("as_of"),
         "forecast_generated_at": forecast.get("generated_at"),
         "forecast_is_live": forecast.get("is_live", False),
         "forecast_games_conditioned": forecast.get("games_conditioned", 0),

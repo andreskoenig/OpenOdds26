@@ -55,12 +55,34 @@ jobs:
         run: |
           git config user.name "openodds-bot"
           git config user.email "actions@users.noreply.github.com"
-          # Ignore timestamp-only churn: -I skips hunks whose changes are just the
-          # *generated_at fields, so we commit only when actual scoring changes.
-          if git diff --quiet -I 'generated_at' -- dashboard/performance.json dashboard/live_results.json; then
-            echo "No scoring change — nothing to commit."
-          else
+          # Commit the (already-built) scoreboard and push. Ignore timestamp-only
+          # churn: -I skips hunks whose only change is the *generated_at fields, so
+          # we commit only on real scoring changes.
+          commit_and_push() {
+            if git diff --quiet -I 'generated_at' -- dashboard/performance.json dashboard/live_results.json; then
+              echo "No scoring change — nothing to commit."
+              return 0
+            fi
             git add dashboard/performance.json dashboard/live_results.json
             git commit -m "Auto-refresh scoreboard from ESPN [skip ci]"
             git push
-          fi
+          }
+          # Resilient against a concurrent push landing on master mid-run: on a
+          # rejected push, hard-sync to the latest master, REBUILD from the newest
+          # committed data + a fresh ESPN pull, and retry. Rebuilding (not just
+          # rebasing) keeps performance.json correct if the forecast/predictions
+          # changed remotely while we ran.
+          for attempt in 1 2 3 4 5; do
+            if commit_and_push; then
+              echo "done (attempt $attempt)"
+              exit 0
+            fi
+            echo "push rejected; syncing to origin/master and rebuilding (attempt $attempt)"
+            git fetch origin master
+            git reset --hard FETCH_HEAD
+            python dashboard/fetch_live_results.py || true
+            python dashboard/build_performance.py || true
+            sleep $((attempt * 5))
+          done
+          echo "ERROR: could not push after 5 attempts"
+          exit 1

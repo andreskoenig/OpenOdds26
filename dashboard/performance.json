@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-20 04:49:05",
+  "generated_at": "2026-06-20 05:10:37",
   "tournament": {
-    "games_played": 31,
+    "games_played": 32,
     "games_total": 72,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 31,
-    "accuracy_1x2": 0.5806,
-    "model_exact_rate": 0.129,
-    "mean_log_loss": 0.9212,
-    "mean_brier": 0.5546
+    "n_played": 32,
+    "accuracy_1x2": 0.5625,
+    "model_exact_rate": 0.125,
+    "mean_log_loss": 0.9358,
+    "mean_brier": 0.5642
   },
   "calibration": [
     {
@@ -25,9 +25,9 @@
       "bucket": "0.45-0.55",
       "lo": 0.45,
       "hi": 0.55,
-      "n": 5,
-      "predicted": 0.4932,
-      "realized": 0.4
+      "n": 6,
+      "predicted": 0.4881,
+      "realized": 0.3333
     },
     {
       "bucket": "0.55-0.70",
@@ -996,13 +996,16 @@
         1.38,
         0.94
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        0,
+        1
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.388,
+      "brier": 0.86
     },
     {
       "date": "2026-06-20",

@@ -48,6 +48,8 @@ FORECAST_PATH = os.path.join(DATA, "forecast_2026.json")
 # the forecast panel when present. The frozen pre-tournament forecast above is
 # kept untouched so the per-match scoring stays honest.
 LIVE_FORECAST_PATH = os.path.join(DATA, "forecast_live_2026.json")
+# Bookmaker closing odds (bet365/Pinnacle) captured by fetch_market_odds.py.
+MARKET_ARCHIVE = os.path.join(DATA, "research", "market_odds_wc2026.json")
 OUT_PATH = os.path.join(HERE, "performance.json")
 
 GAMES_TOTAL_GROUP = 72
@@ -88,6 +90,23 @@ def parse_pick(pick):
 
 def safe_div(num, den):
     return (num / den) if den else None
+
+
+def devig_1x2(oh, od, oa):
+    """De-vig one book's 1X2 decimal odds -> [p_home, p_draw, p_away] (stdlib)."""
+    q = [1.0 / oh, 1.0 / od, 1.0 / oa]
+    s = sum(q)
+    return [q[0] / s, q[1] / s, q[2] / s]
+
+
+def load_market_index():
+    """frozenset(home_id, away_id) -> archive entry (home_id + per-book 1X2 odds)."""
+    if not os.path.exists(MARKET_ARCHIVE):
+        return {}
+    idx = {}
+    for e in load_json(MARKET_ARCHIVE).get("fixtures", []):
+        idx[frozenset((e["home_id"], e["away_id"]))] = e
+    return idx
 
 
 # ----------------------------------------------------------------------------
@@ -203,6 +222,10 @@ def build():
     team_names = pred.get("team_names", {})
 
     actuals_index = index_actuals()
+    market_index = load_market_index()
+    # Per-book accumulators (book -> stats + matched-model stats on the SAME games,
+    # so the delta is a fair like-for-like comparison).
+    market_acc = {}
 
     # Prefer the conditional live forecast (pins played group games) for the
     # forecast panel; fall back to the frozen pre-tournament forecast.
@@ -311,6 +334,35 @@ def build():
                 if fav == actual_outcome:
                     cal[bi][1] += 1
 
+            # (d) bookmaker comparison: de-vig each book's closing 1X2, score it,
+            # and accumulate the model's own numbers on the SAME game for the delta.
+            me = market_index.get(frozenset((home, away)))
+            if me:
+                for bname, o in (me.get("books") or {}).items():
+                    if me.get("home_id") == home:          # reorient to this game's frame
+                        oh, od, oa = o.get("home"), o.get("draw"), o.get("away")
+                    elif me.get("away_id") == home:
+                        oh, od, oa = o.get("away"), o.get("draw"), o.get("home")
+                    else:
+                        continue
+                    try:
+                        bp = devig_1x2(oh, od, oa)
+                    except (TypeError, ZeroDivisionError):
+                        continue
+                    bprob = {"home": bp[0], "draw": bp[1], "away": bp[2]}
+                    bpick = max(bprob, key=bprob.get)
+                    pa = min(max(bprob[actual_outcome], EPS), 1.0)
+                    a = market_acc.setdefault(bname, {
+                        "n": 0, "acc": 0, "ll": 0.0, "br": 0.0,
+                        "m_acc": 0, "m_ll": 0.0, "m_br": 0.0})
+                    a["n"] += 1
+                    a["acc"] += 1 if bpick == actual_outcome else 0
+                    a["ll"] += -math.log(pa)
+                    a["br"] += sum((bprob[k] - ind[k]) ** 2 for k in ("home", "draw", "away"))
+                    a["m_acc"] += 1 if outcome_correct else 0   # model, same game
+                    a["m_ll"] += log_loss
+                    a["m_br"] += brier
+
         matches.append(entry)
 
     # Chronological order (date, then group) so the matchday separators in the
@@ -335,6 +387,23 @@ def build():
             "model_exact_rate": None,
             "mean_log_loss": None,
             "mean_brier": None,
+        }
+
+    # Bookmaker KPIs + deltas vs our model on the matched games (book - model).
+    # accuracy: positive delta = book more accurate; log-loss/brier: negative = book better.
+    kpis_market = {}
+    for bname, a in market_acc.items():
+        n = a["n"]
+        if not n:
+            continue
+        kpis_market[bname] = {
+            "n": n,
+            "accuracy_1x2": round(a["acc"] / n, 4),
+            "mean_log_loss": round(a["ll"] / n, 4),
+            "mean_brier": round(a["br"] / n, 4),
+            "d_accuracy_1x2": round((a["acc"] - a["m_acc"]) / n, 4),
+            "d_mean_log_loss": round((a["ll"] - a["m_ll"]) / n, 4),
+            "d_mean_brier": round((a["br"] - a["m_br"]) / n, 4),
         }
 
     calibration = []
@@ -396,6 +465,7 @@ def build():
             "start_date": TOURNAMENT_START,
         },
         "kpis": kpis,
+        "kpis_market": kpis_market,
         "calibration": calibration,
         "matches": matches,
         "predictions_as_of": pred.get("as_of"),

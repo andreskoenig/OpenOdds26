@@ -1,0 +1,679 @@
+{
+  "generated_at": "2026-06-20 19:12",
+  "tournament_id": 16,
+  "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
+  "fixtures": [
+    {
+      "fixture_id": "id1000001666456904",
+      "kickoff": "2026-06-11",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "mexico",
+      "away_id": "south_africa",
+      "home_name": "Mexico",
+      "away_name": "South Africa",
+      "books": {
+        "Bet365": {
+          "home": 1.46,
+          "draw": 4.55,
+          "away": 8.4
+        },
+        "Pinnacle": {
+          "home": 1.45,
+          "draw": 4.05,
+          "away": 8.79
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456906",
+      "kickoff": "2026-06-12",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "south_korea",
+      "away_id": "czech_republic",
+      "home_name": "Korea Republic",
+      "away_name": "Czechia",
+      "books": {
+        "Bet365": {
+          "home": 2.69,
+          "draw": 3.02,
+          "away": 3.1
+        },
+        "Pinnacle": {
+          "home": 2.61,
+          "draw": 3.16,
+          "away": 3.11
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456916",
+      "kickoff": "2026-06-12",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "canada",
+      "away_id": "bosnia_and_herzegovina",
+      "home_name": "Canada",
+      "away_name": "Bosnia and Herzegovina",
+      "books": {
+        "Bet365": {
+          "home": 1.83,
+          "draw": 3.62,
+          "away": 5.0
+        },
+        "Pinnacle": {
+          "home": 1.862,
+          "draw": 3.46,
+          "away": 4.45
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456940",
+      "kickoff": "2026-06-13",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "united_states",
+      "away_id": "paraguay",
+      "home_name": "USA",
+      "away_name": "Paraguay",
+      "books": {
+        "Bet365": {
+          "home": 2.08,
+          "draw": 3.26,
+          "away": 4.15
+        },
+        "Pinnacle": {
+          "home": 2.09,
+          "draw": 3.17,
+          "away": 3.98
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456918",
+      "kickoff": "2026-06-13",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "qatar",
+      "away_id": "switzerland",
+      "home_name": "Qatar",
+      "away_name": "Switzerland",
+      "books": {
+        "Pinnacle": {
+          "home": 31.66,
+          "draw": 7.02,
+          "away": 1.151
+        },
+        "Bet365": {
+          "home": 15.95,
+          "draw": 7.7,
+          "away": 1.2
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456928",
+      "kickoff": "2026-06-13",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "brazil",
+      "away_id": "morocco",
+      "home_name": "Brazil",
+      "away_name": "Morocco",
+      "books": {
+        "Pinnacle": {
+          "home": 1.699,
+          "draw": 3.52,
+          "away": 5.6
+        },
+        "Bet365": {
+          "home": 1.69,
+          "draw": 3.84,
+          "away": 5.75
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456930",
+      "kickoff": "2026-06-14",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "haiti",
+      "away_id": "scotland",
+      "home_name": "Haiti",
+      "away_name": "Scotland",
+      "books": {
+        "Bet365": {
+          "home": 6.3,
+          "draw": 4.5,
+          "away": 1.55
+        },
+        "Pinnacle": {
+          "home": 5.3,
+          "draw": 4.2,
+          "away": 1.684
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456942",
+      "kickoff": "2026-06-14",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "australia",
+      "away_id": "turkey",
+      "home_name": "Australia",
+      "away_name": "Turkiye",
+      "books": {
+        "Bet365": {
+          "home": 5.6,
+          "draw": 3.84,
+          "away": 1.7
+        },
+        "Pinnacle": {
+          "home": 5.25,
+          "draw": 3.67,
+          "away": 1.781
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457070",
+      "kickoff": "2026-06-14",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "germany",
+      "away_id": "curacao",
+      "home_name": "Germany",
+      "away_name": "Curacao",
+      "books": {
+        "Bet365": {
+          "home": 1.05,
+          "draw": 21.0,
+          "away": 36.0
+        },
+        "Pinnacle": {
+          "home": 1.057,
+          "draw": 20.0,
+          "away": 41.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456968",
+      "kickoff": "2026-06-14",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "netherlands",
+      "away_id": "japan",
+      "home_name": "Netherlands",
+      "away_name": "Japan",
+      "books": {
+        "Bet365": {
+          "home": 2.1,
+          "draw": 3.46,
+          "away": 3.88
+        },
+        "Pinnacle": {
+          "home": 1.99,
+          "draw": 3.41,
+          "away": 3.83
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457072",
+      "kickoff": "2026-06-14",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "ivory_coast",
+      "away_id": "ecuador",
+      "home_name": "Ivory Coast",
+      "away_name": "Ecuador",
+      "books": {
+        "Bet365": {
+          "home": 3.36,
+          "draw": 2.85,
+          "away": 2.67
+        },
+        "Pinnacle": {
+          "home": 3.33,
+          "draw": 2.94,
+          "away": 2.38
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456970",
+      "kickoff": "2026-06-15",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "sweden",
+      "away_id": "tunisia",
+      "home_name": "Sweden",
+      "away_name": "Tunisia",
+      "books": {
+        "Bet365": {
+          "home": 1.93,
+          "draw": 3.44,
+          "away": 4.6
+        },
+        "Pinnacle": {
+          "home": 1.892,
+          "draw": 3.26,
+          "away": 4.48
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456994",
+      "kickoff": "2026-06-15",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "spain",
+      "away_id": "cape_verde",
+      "home_name": "Spain",
+      "away_name": "Cape Verde",
+      "books": {
+        "Bet365": {
+          "home": 1.08,
+          "draw": 15.5,
+          "away": 28.0
+        },
+        "Pinnacle": {
+          "home": 1.107,
+          "draw": 11.5,
+          "away": 21.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456982",
+      "kickoff": "2026-06-15",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "belgium",
+      "away_id": "egypt",
+      "home_name": "Belgium",
+      "away_name": "Egypt",
+      "books": {
+        "Bet365": {
+          "home": 1.61,
+          "draw": 4.15,
+          "away": 6.3
+        },
+        "Pinnacle": {
+          "home": 1.512,
+          "draw": 4.16,
+          "away": 7.02
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456996",
+      "kickoff": "2026-06-15",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "saudi_arabia",
+      "away_id": "uruguay",
+      "home_name": "Saudi Arabia",
+      "away_name": "Uruguay",
+      "books": {
+        "Bet365": {
+          "home": 8.8,
+          "draw": 4.35,
+          "away": 1.46
+        },
+        "Pinnacle": {
+          "home": 7.7,
+          "draw": 3.7,
+          "away": 1.473
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456984",
+      "kickoff": "2026-06-16",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "iran",
+      "away_id": "new_zealand",
+      "home_name": "IR Iran",
+      "away_name": "New Zealand",
+      "books": {
+        "Bet365": {
+          "home": 1.79,
+          "draw": 3.56,
+          "away": 5.3
+        },
+        "Pinnacle": {
+          "home": 1.917,
+          "draw": 3.5,
+          "away": 4.47
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457006",
+      "kickoff": "2026-06-16",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "france",
+      "away_id": "senegal",
+      "home_name": "France",
+      "away_name": "Senegal",
+      "books": {
+        "Pinnacle": {
+          "home": 1.531,
+          "draw": 4.11,
+          "away": 6.42
+        },
+        "Bet365": {
+          "home": 1.48,
+          "draw": 4.6,
+          "away": 7.5
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457008",
+      "kickoff": "2026-06-16",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "iraq",
+      "away_id": "norway",
+      "home_name": "Iraq",
+      "away_name": "Norway",
+      "books": {
+        "Pinnacle": {
+          "home": 13.5,
+          "draw": 6.75,
+          "away": 1.25
+        },
+        "Bet365": {
+          "home": 14.5,
+          "draw": 7.0,
+          "away": 1.23
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457018",
+      "kickoff": "2026-06-17",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "argentina",
+      "away_id": "algeria",
+      "home_name": "Argentina",
+      "away_name": "Algeria",
+      "books": {
+        "Bet365": {
+          "home": 1.42,
+          "draw": 4.5,
+          "away": 8.0
+        },
+        "Pinnacle": {
+          "home": 1.526,
+          "draw": 3.89,
+          "away": 7.15
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457020",
+      "kickoff": "2026-06-17",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "austria",
+      "away_id": "jordan",
+      "home_name": "Austria",
+      "away_name": "Jordan",
+      "books": {
+        "Bet365": {
+          "home": 1.4,
+          "draw": 4.75,
+          "away": 8.0
+        },
+        "Pinnacle": {
+          "home": 1.4,
+          "draw": 4.9,
+          "away": 9.3
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457030",
+      "kickoff": "2026-06-17",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "portugal",
+      "away_id": "dr_congo",
+      "home_name": "Portugal",
+      "away_name": "Congo DR",
+      "books": {
+        "Pinnacle": {
+          "home": 1.303,
+          "draw": 5.75,
+          "away": 12.5
+        },
+        "Bet365": {
+          "home": 1.27,
+          "draw": 5.7,
+          "away": 15.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457042",
+      "kickoff": "2026-06-17",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "england",
+      "away_id": "croatia",
+      "home_name": "England",
+      "away_name": "Croatia",
+      "books": {
+        "Bet365": {
+          "home": 1.7,
+          "draw": 3.82,
+          "away": 5.65
+        },
+        "Pinnacle": {
+          "home": 1.671,
+          "draw": 3.93,
+          "away": 5.81
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457044",
+      "kickoff": "2026-06-17",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "ghana",
+      "away_id": "panama",
+      "home_name": "Ghana",
+      "away_name": "Panama",
+      "books": {
+        "Bet365": {
+          "home": 2.4,
+          "draw": 3.22,
+          "away": 3.36
+        },
+        "Pinnacle": {
+          "home": 2.43,
+          "draw": 3.18,
+          "away": 3.39
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457032",
+      "kickoff": "2026-06-18",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "uzbekistan",
+      "away_id": "colombia",
+      "home_name": "Uzbekistan",
+      "away_name": "Colombia",
+      "books": {
+        "Bet365": {
+          "home": 10.0,
+          "draw": 4.45,
+          "away": 1.42
+        },
+        "Pinnacle": {
+          "home": 12.5,
+          "draw": 5.6,
+          "away": 1.312
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456910",
+      "kickoff": "2026-06-18",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "czech_republic",
+      "away_id": "south_africa",
+      "home_name": "Czechia",
+      "away_name": "South Africa",
+      "books": {
+        "Pinnacle": {
+          "home": 1.952,
+          "draw": 3.43,
+          "away": 4.58
+        },
+        "Bet365": {
+          "home": 1.86,
+          "draw": 3.64,
+          "away": 4.75
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456922",
+      "kickoff": "2026-06-18",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "switzerland",
+      "away_id": "bosnia_and_herzegovina",
+      "home_name": "Switzerland",
+      "away_name": "Bosnia and Herzegovina",
+      "books": {
+        "Pinnacle": {
+          "home": 1.574,
+          "draw": 4.3,
+          "away": 6.5
+        },
+        "Bet365": {
+          "home": 1.58,
+          "draw": 4.15,
+          "away": 6.7
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456920",
+      "kickoff": "2026-06-18",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "canada",
+      "away_id": "qatar",
+      "home_name": "Canada",
+      "away_name": "Qatar",
+      "books": {
+        "Pinnacle": {
+          "home": 1.198,
+          "draw": 5.21,
+          "away": 13.36
+        },
+        "Bet365": {
+          "home": 1.32,
+          "draw": 5.75,
+          "away": 11.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456908",
+      "kickoff": "2026-06-19",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "mexico",
+      "away_id": "south_korea",
+      "home_name": "Mexico",
+      "away_name": "Korea Republic",
+      "books": {
+        "Pinnacle": {
+          "home": 2.04,
+          "draw": 3.05,
+          "away": 4.25
+        },
+        "Bet365": {
+          "home": 2.05,
+          "draw": 3.32,
+          "away": 4.25
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456944",
+      "kickoff": "2026-06-19",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "united_states",
+      "away_id": "australia",
+      "home_name": "USA",
+      "away_name": "Australia",
+      "books": {
+        "Pinnacle": {
+          "home": 1.588,
+          "draw": 4.45,
+          "away": 6.0
+        },
+        "Bet365": {
+          "home": 1.62,
+          "draw": 4.6,
+          "away": 5.25
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456934",
+      "kickoff": "2026-06-19",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "scotland",
+      "away_id": "morocco",
+      "home_name": "Scotland",
+      "away_name": "Morocco",
+      "books": {
+        "Pinnacle": {
+          "home": 6.04,
+          "draw": 3.74,
+          "away": 1.689
+        },
+        "Bet365": {
+          "home": 6.3,
+          "draw": 3.64,
+          "away": 1.68
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456932",
+      "kickoff": "2026-06-20",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "brazil",
+      "away_id": "haiti",
+      "home_name": "Brazil",
+      "away_name": "Haiti",
+      "books": {
+        "Pinnacle": {
+          "home": 1.137,
+          "draw": 11.0,
+          "away": 20.5
+        },
+        "Bet365": {
+          "home": 1.1,
+          "draw": 12.5,
+          "away": 25.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456946",
+      "kickoff": "2026-06-20",
+      "captured_at": "2026-06-20 19:12",
+      "home_id": "turkey",
+      "away_id": "paraguay",
+      "home_name": "Turkiye",
+      "away_name": "Paraguay",
+      "books": {
+        "Pinnacle": {
+          "home": 2.17,
+          "draw": 3.35,
+          "away": 3.79
+        },
+        "Bet365": {
+          "home": 2.08,
+          "draw": 3.42,
+          "away": 3.96
+        }
+      }
+    }
+  ]
+}

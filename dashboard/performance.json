@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20 05:10:37",
+  "generated_at": "2026-06-20 19:40:23",
   "tournament": {
     "games_played": 32,
     "games_total": 72,
@@ -11,6 +11,26 @@
     "model_exact_rate": 0.125,
     "mean_log_loss": 0.9358,
     "mean_brier": 0.5642
+  },
+  "kpis_market": {
+    "Bet365": {
+      "n": 32,
+      "accuracy_1x2": 0.5938,
+      "mean_log_loss": 0.9331,
+      "mean_brier": 0.5628,
+      "d_accuracy_1x2": 0.0312,
+      "d_mean_log_loss": -0.0026,
+      "d_mean_brier": -0.0014
+    },
+    "Pinnacle": {
+      "n": 32,
+      "accuracy_1x2": 0.5938,
+      "mean_log_loss": 0.9156,
+      "mean_brier": 0.5551,
+      "d_accuracy_1x2": 0.0312,
+      "d_mean_log_loss": -0.0202,
+      "d_mean_brier": -0.009
+    }
   },
   "calibration": [
     {

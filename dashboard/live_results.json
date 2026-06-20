@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20 19:14",
+  "generated_at": "2026-06-20 22:01",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -295,6 +295,15 @@
       "home_team_id": "netherlands",
       "away_team_id": "sweden",
       "home_goals": 5,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-20",
+      "home_team_id": "germany",
+      "away_team_id": "ivory_coast",
+      "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
       "source": "espn"

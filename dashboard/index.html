@@ -12,6 +12,11 @@
        @vercel/analytics package / <Analytics/> import does not apply). Vercel
        serves /_vercel/insights/script.js once Web Analytics is enabled for the
        project; it 404s (harmless) until then and on non-Vercel hosts (e.g. the Pi). -->
+  <script>
+    window.va = window.va || function () { 
+      (window.vaq = window.vaq || []).push(arguments); 
+    };
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <style>
     :root {

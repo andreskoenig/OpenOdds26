@@ -8,6 +8,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js" crossorigin></script>
+  <!-- Vercel Web Analytics: static-site method (no build step here, so the npm
+       @vercel/analytics package / <Analytics/> import does not apply). Vercel
+       serves /_vercel/insights/script.js once Web Analytics is enabled for the
+       project; it 404s (harmless) until then and on non-Vercel hosts (e.g. the Pi). -->
+  <script defer src="/_vercel/insights/script.js"></script>
   <style>
     :root {
       --bg: #0c1018;

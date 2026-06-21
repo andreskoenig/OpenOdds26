@@ -70,6 +70,17 @@ def parse_date(s):
     return datetime.date(*(int(x) for x in s.split("-")))
 
 
+def now_israel(fmt="%Y-%m-%d %H:%M:%S"):
+    """Current time in Israel (Asia/Jerusalem, DST-aware). Uses zoneinfo where the
+    tz database is present (CI/Linux); falls back to the local clock, which is
+    already Israel time on the project machine."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.datetime.now(ZoneInfo("Asia/Jerusalem")).strftime(fmt)
+    except Exception:
+        return datetime.datetime.now().strftime(fmt)
+
+
 def outcome_from_goals(hg, ag):
     """Return 'home' / 'draw' / 'away' for goals in the home/away orientation."""
     if hg > ag:
@@ -458,7 +469,7 @@ def build():
         forecast_top10.append(entry)
 
     payload = {
-        "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "generated_at": now_israel(),  # Israel time (Asia/Jerusalem)
         "tournament": {
             "games_played": n_played,
             "games_total": GAMES_TOTAL_GROUP,

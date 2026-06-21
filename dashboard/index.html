@@ -8,11 +8,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" crossorigin></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js" crossorigin></script>
-  <!-- Vercel Web Analytics: static-site method (no build step here, so the npm
-       @vercel/analytics package / <Analytics/> import does not apply). Vercel
-       serves /_vercel/insights/script.js once Web Analytics is enabled for the
-       project; it 404s (harmless) until then and on non-Vercel hosts (e.g. the Pi). -->
-  <script defer src="/_vercel/insights/script.js"></script>
   <style>
     :root {
       --bg: #0c1018;
@@ -128,6 +123,12 @@
     function pct(x) { return x == null ? "—" : (x * 100).toFixed(0) + "%"; }
     function num(x, d) { return x == null ? "—" : Number(x).toFixed(d == null ? 3 : d); }
     function scoreStr(s) { return (s && s[0] != null) ? (s[0] + "-" + s[1]) : "—"; }
+    function ilTime(d) {
+      try {
+        return d.toLocaleTimeString("en-GB", { timeZone: "Asia/Jerusalem",
+          hour: "2-digit", minute: "2-digit", second: "2-digit" });
+      } catch (e) { return d.toLocaleTimeString(); }
+    }
     function predWinner(m) {
       if (m.pred_outcome === "home") return m.home;
       if (m.pred_outcome === "away") return m.away;
@@ -391,8 +392,8 @@
           </div>
           <div className="subline">
             <span>Games played <b>{t.games_played}</b> / {t.games_total}</span>
-            <span>last updated {data.generated_at}</span>
-            <span><span className="dot"></span>auto-refresh 60s{lastFetch ? " · polled " + lastFetch.toLocaleTimeString() : ""}</span>
+            <span>last updated {data.generated_at} <span style={{ opacity: 0.7 }}>(Israel time)</span></span>
+            <span><span className="dot"></span>auto-refresh 60s{lastFetch ? " · polled " + ilTime(lastFetch) : ""}</span>
           </div>
 
           {n === 0 ? (

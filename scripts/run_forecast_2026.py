@@ -46,6 +46,15 @@ def _load(rel):
         return json.load(f)
 
 
+def _now_israel():
+    """Timestamp in Israel time (Asia/Jerusalem, DST-aware), with local fallback."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Asia/Jerusalem")).strftime("%Y-%m-%d %H:%M")
+    except Exception:
+        return datetime.now().strftime("%Y-%m-%d %H:%M")
+
+
 def main():
     teams_all = _load("data/teams.json")
     matches = _load("data/match_results.json")
@@ -196,7 +205,7 @@ def main():
         "is_live": live,
         "games_conditioned": len(played_results) if played_results else 0,
         "conditioned_through": conditioned_through,
-        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "generated_at": _now_israel(),  # Israel time (Asia/Jerusalem)
         "hyperparams": {"xi": HP.xi, "lambda_reg": HP.lambda_reg, "c_a": HP.c_a,
                         "c_x": HP.c_x, "c_d": HP.c_d, "c_y": HP.c_y, "theta": HP.theta,
                         "kappa": HP.kappa, "c_v": HP.c_v, "c_m": HP.c_m,

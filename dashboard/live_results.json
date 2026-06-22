@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 02:00",
+  "generated_at": "2026-06-22 07:08",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -350,6 +350,15 @@
       "away_team_id": "cape_verde",
       "home_goals": 2,
       "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-21",
+      "home_team_id": "new_zealand",
+      "away_team_id": "egypt",
+      "home_goals": 1,
+      "away_goals": 3,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

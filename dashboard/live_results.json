@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21 21:51",
+  "generated_at": "2026-06-22 02:00",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -341,6 +341,15 @@
       "away_team_id": "iran",
       "home_goals": 0,
       "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-21",
+      "home_team_id": "uruguay",
+      "away_team_id": "cape_verde",
+      "home_goals": 2,
+      "away_goals": 2,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

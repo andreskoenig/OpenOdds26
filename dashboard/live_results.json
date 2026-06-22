@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 07:08",
+  "generated_at": "2026-06-22 21:19",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -359,6 +359,15 @@
       "away_team_id": "egypt",
       "home_goals": 1,
       "away_goals": 3,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-22",
+      "home_team_id": "argentina",
+      "away_team_id": "austria",
+      "home_goals": 2,
+      "away_goals": 0,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

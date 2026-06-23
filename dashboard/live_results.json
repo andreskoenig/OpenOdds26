@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22 21:19",
+  "generated_at": "2026-06-23 04:38",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -368,6 +368,24 @@
       "away_team_id": "austria",
       "home_goals": 2,
       "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-22",
+      "home_team_id": "france",
+      "away_team_id": "iraq",
+      "home_goals": 3,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-22",
+      "home_team_id": "norway",
+      "away_team_id": "senegal",
+      "home_goals": 3,
+      "away_goals": 2,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

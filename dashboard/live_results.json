@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 19:23",
+  "generated_at": "2026-06-23 22:44",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -403,6 +403,15 @@
       "home_team_id": "portugal",
       "away_team_id": "uzbekistan",
       "home_goals": 5,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-23",
+      "home_team_id": "england",
+      "away_team_id": "ghana",
+      "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
       "source": "espn"

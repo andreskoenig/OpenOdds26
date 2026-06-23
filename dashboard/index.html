@@ -150,7 +150,7 @@
             <div className="mkt">
               <div className="mkt-head">vs market · {market.n} shared games</div>
               {market.rows.map((b, i) => (
-                <div key={i} className={"mkt-row " + (b.us ? "mkt-us" : b.bookBeat ? "mkt-worse" : "mkt-better")}>
+                <div key={i} className={"mkt-row " + (b.us ? "mkt-us" : b.bookBetter ? "mkt-better" : "mkt-worse")}>
                   <span className="mkt-name">{b.name}</span>
                   <span className="mkt-val">{b.text}</span>
                 </div>
@@ -386,11 +386,12 @@
         const present = BOOKS.filter(b => mkt[b]);
         if (!present.length) return null;
         const m0 = mkt[present[0]];
-        const rows = [{ name: "Us", text: fmtV(m0[modelKey], kind), us: true }];
+        const rows = [{ name: "OpenOdds26", text: fmtV(m0[modelKey], kind), us: true }];
         present.forEach(b => {
           const m = mkt[b], d = m[dKey];
-          const bookBeat = kind === "acc" ? d > 0 : d < 0;
-          rows.push({ name: b, text: fmtV(m[valKey], kind) + " (" + fmtD(d, kind) + ")", bookBeat });
+          // book better than us on this metric (acc: higher; log-loss/brier: lower)
+          const bookBetter = kind === "acc" ? d > 0 : d < 0;
+          rows.push({ name: b, text: fmtV(m[valKey], kind) + " (" + fmtD(d, kind) + ")", bookBetter });
         });
         return { n: m0.n, rows };
       }

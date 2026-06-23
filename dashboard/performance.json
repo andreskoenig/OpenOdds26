@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 07:38:33",
+  "generated_at": "2026-06-23 10:40:49",
   "tournament": {
     "games_played": 43,
     "games_total": 72,
@@ -18,6 +18,9 @@
       "accuracy_1x2": 0.5938,
       "mean_log_loss": 0.9331,
       "mean_brier": 0.5628,
+      "model_accuracy_1x2": 0.5625,
+      "model_mean_log_loss": 0.9358,
+      "model_mean_brier": 0.5642,
       "d_accuracy_1x2": 0.0312,
       "d_mean_log_loss": -0.0026,
       "d_mean_brier": -0.0014
@@ -27,6 +30,9 @@
       "accuracy_1x2": 0.5938,
       "mean_log_loss": 0.9156,
       "mean_brier": 0.5551,
+      "model_accuracy_1x2": 0.5625,
+      "model_mean_log_loss": 0.9358,
+      "model_mean_brier": 0.5642,
       "d_accuracy_1x2": 0.0312,
       "d_mean_log_loss": -0.0202,
       "d_mean_brier": -0.009

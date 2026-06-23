@@ -412,6 +412,11 @@ def build():
             "accuracy_1x2": round(a["acc"] / n, 4),
             "mean_log_loss": round(a["ll"] / n, 4),
             "mean_brier": round(a["br"] / n, 4),
+            # our model on the SAME games (so the comparison is like-for-like, not
+            # vs the headline KPI which spans all played games).
+            "model_accuracy_1x2": round(a["m_acc"] / n, 4),
+            "model_mean_log_loss": round(a["m_ll"] / n, 4),
+            "model_mean_brier": round(a["m_br"] / n, 4),
             "d_accuracy_1x2": round((a["acc"] - a["m_acc"]) / n, 4),
             "d_mean_log_loss": round((a["ll"] - a["m_ll"]) / n, 4),
             "d_mean_brier": round((a["br"] - a["m_br"]) / n, 4),

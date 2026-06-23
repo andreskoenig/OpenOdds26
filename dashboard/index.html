@@ -45,9 +45,11 @@
     .kpi .value { font-size: 26px; font-weight: 600; margin-top: 4px; }
     .kpi .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
     .kpi .mkt { margin-top: 8px; border-top: 1px solid var(--border); padding-top: 6px; }
+    .kpi .mkt-head { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); opacity: 0.7; margin-bottom: 3px; }
     .kpi .mkt-row { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; line-height: 1.6; }
     .kpi .mkt-name { color: var(--muted); }
     .kpi .mkt-val { font-variant-numeric: tabular-nums; }
+    .kpi .mkt-us .mkt-name, .kpi .mkt-us .mkt-val { color: var(--text); font-weight: 600; }
     .kpi .mkt-better .mkt-val { color: var(--good); }
     .kpi .mkt-worse .mkt-val { color: var(--bad); }
     h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin: 26px 0 10px; }
@@ -144,10 +146,11 @@
           <div className="label">{lab}</div>
           <div className="value">{value}</div>
           {sub ? <div className="sub">{sub}</div> : null}
-          {market && market.length ? (
+          {market && market.rows ? (
             <div className="mkt">
-              {market.map((b, i) => (
-                <div key={i} className={"mkt-row " + (b.bookBeat ? "mkt-worse" : "mkt-better")}>
+              <div className="mkt-head">vs market · {market.n} shared games</div>
+              {market.rows.map((b, i) => (
+                <div key={i} className={"mkt-row " + (b.us ? "mkt-us" : b.bookBeat ? "mkt-worse" : "mkt-better")}>
                   <span className="mkt-name">{b.name}</span>
                   <span className="mkt-val">{b.text}</span>
                 </div>
@@ -374,15 +377,22 @@
       // accuracy: delta in pp (book>us = book better); log-loss/brier: lower = better.
       const mkt = data.kpis_market || {};
       const BOOKS = ["Bet365", "Pinnacle"];
-      function mlines(valKey, dKey, kind) {
-        return BOOKS.filter(b => mkt[b]).map(b => {
-          const m = mkt[b], v = m[valKey], d = m[dKey];
+      const fmtV = (v, kind) => kind === "acc" ? pct(v) : v.toFixed(3);
+      const fmtD = (d, kind) => (d >= 0 ? "+" : "") + (kind === "acc" ? (d * 100).toFixed(1) + "pp" : d.toFixed(3));
+      // Returns {n, rows}: our value on the SAME games + each book's value with a
+      // delta vs us — so it's a like-for-like comparison, not vs the headline KPI
+      // (which spans all played games, including ones with no odds yet).
+      function mlines(valKey, dKey, modelKey, kind) {
+        const present = BOOKS.filter(b => mkt[b]);
+        if (!present.length) return null;
+        const m0 = mkt[present[0]];
+        const rows = [{ name: "Us", text: fmtV(m0[modelKey], kind), us: true }];
+        present.forEach(b => {
+          const m = mkt[b], d = m[dKey];
           const bookBeat = kind === "acc" ? d > 0 : d < 0;
-          const text = kind === "acc"
-            ? pct(v) + " (" + (d >= 0 ? "+" : "") + (d * 100).toFixed(1) + "pp)"
-            : v.toFixed(3) + " (" + (d >= 0 ? "+" : "") + d.toFixed(3) + ")";
-          return { name: b, text, bookBeat };
+          rows.push({ name: b, text: fmtV(m[valKey], kind) + " (" + fmtD(d, kind) + ")", bookBeat });
         });
+        return { n: m0.n, rows };
       }
 
       return (
@@ -402,14 +412,14 @@
 
           <div className="kpis">
             <Kpi label="1X2 Accuracy" value={n ? pct(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"}
-                 market={n ? mlines("accuracy_1x2", "d_accuracy_1x2", "acc") : null} />
+                 market={n ? mlines("accuracy_1x2", "d_accuracy_1x2", "model_accuracy_1x2", "acc") : null} />
             <Kpi label="Model Exact Score" value={n ? pct(k.model_exact_rate) : "—"} sub="modal score hit rate" />
             <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better"
                  labelHref="https://en.wikipedia.org/wiki/Loss_functions_for_classification"
-                 market={n ? mlines("mean_log_loss", "d_mean_log_loss", "ll") : null} />
+                 market={n ? mlines("mean_log_loss", "d_mean_log_loss", "model_mean_log_loss", "ll") : null} />
             <Kpi label="Mean Brier" value={n ? num(k.mean_brier) : "—"} sub="lower is better"
                  labelHref="https://en.wikipedia.org/wiki/Brier_score"
-                 market={n ? mlines("mean_brier", "d_mean_brier", "ll") : null} />
+                 market={n ? mlines("mean_brier", "d_mean_brier", "model_mean_brier", "ll") : null} />
           </div>
 
           <Calibration cal={data.calibration} />

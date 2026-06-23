@@ -54,10 +54,10 @@ jobs:
           # spare the OddsPapi free quota; played games are cached so each game is
           # fetched once. No-ops if the ODDSPAPI_KEY secret is not set.
           H=$(date -u +%H); M=$(date -u +%M)
-          if [ $((10#$H % 6)) -eq 0 ] && [ $((10#$M)) -lt 30 ]; then
-            python dashboard/fetch_market_odds.py || true
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || { [ $((10#$H % 6)) -eq 0 ] && [ $((10#$M)) -lt 30 ]; }; then
+            python dashboard/fetch_market_odds.py || true   # manual dispatch always captures
           else
-            echo "market odds: skipped this run (captured ~4x/day)"
+            echo "market odds: skipped this run (auto-captured ~4x/day; manual run forces it)"
           fi
           python dashboard/build_performance.py
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24 08:47",
+  "generated_at": "2026-06-24 21:10",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -431,6 +431,24 @@
       "away_team_id": "dr_congo",
       "home_goals": 1,
       "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-24",
+      "home_team_id": "bosnia_and_herzegovina",
+      "away_team_id": "qatar",
+      "home_goals": 3,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-24",
+      "home_team_id": "switzerland",
+      "away_team_id": "canada",
+      "home_goals": 2,
+      "away_goals": 1,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23 10:42",
+  "generated_at": "2026-06-24 08:48",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -924,6 +924,90 @@
           "home": 6.75,
           "draw": 4.5,
           "away": 1.53
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457034",
+      "kickoff": "2026-06-23",
+      "captured_at": "2026-06-24 08:48",
+      "home_id": "portugal",
+      "away_id": "uzbekistan",
+      "home_name": "Portugal",
+      "away_name": "Uzbekistan",
+      "books": {
+        "Pinnacle": {
+          "home": 1.165,
+          "draw": 8.75,
+          "away": 21.75
+        },
+        "Bet365": {
+          "home": 1.15,
+          "draw": 9.4,
+          "away": 21.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457046",
+      "kickoff": "2026-06-23",
+      "captured_at": "2026-06-24 08:48",
+      "home_id": "england",
+      "away_id": "ghana",
+      "home_name": "England",
+      "away_name": "Ghana",
+      "books": {
+        "Pinnacle": {
+          "home": 1.19,
+          "draw": 7.75,
+          "away": 18.5
+        },
+        "Bet365": {
+          "home": 1.19,
+          "draw": 7.6,
+          "away": 18.5
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457048",
+      "kickoff": "2026-06-23",
+      "captured_at": "2026-06-24 08:48",
+      "home_id": "panama",
+      "away_id": "croatia",
+      "home_name": "Panama",
+      "away_name": "Croatia",
+      "books": {
+        "Pinnacle": {
+          "home": 7.31,
+          "draw": 4.42,
+          "away": 1.438
+        },
+        "Bet365": {
+          "home": 8.2,
+          "draw": 4.45,
+          "away": 1.48
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666457036",
+      "kickoff": "2026-06-24",
+      "captured_at": "2026-06-24 08:48",
+      "home_id": "colombia",
+      "away_id": "dr_congo",
+      "home_name": "Colombia",
+      "away_name": "Congo DR",
+      "books": {
+        "Pinnacle": {
+          "home": 1.568,
+          "draw": 4.1,
+          "away": 7.25
+        },
+        "Bet365": {
+          "home": 1.57,
+          "draw": 3.96,
+          "away": 7.3
         }
       }
     }

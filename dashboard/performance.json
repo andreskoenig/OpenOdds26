@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24 07:11:23",
+  "generated_at": "2026-06-24 11:43:49",
   "tournament": {
     "games_played": 48,
     "games_total": 72,
@@ -14,27 +14,27 @@
   },
   "kpis_market": {
     "Bet365": {
-      "n": 44,
-      "accuracy_1x2": 0.6364,
-      "mean_log_loss": 0.8912,
-      "mean_brier": 0.5359,
-      "model_accuracy_1x2": 0.6136,
-      "model_mean_log_loss": 0.8752,
-      "model_mean_brier": 0.5285,
-      "d_accuracy_1x2": 0.0227,
-      "d_mean_log_loss": 0.016,
-      "d_mean_brier": 0.0073
+      "n": 48,
+      "accuracy_1x2": 0.6458,
+      "mean_log_loss": 0.8817,
+      "mean_brier": 0.5301,
+      "model_accuracy_1x2": 0.625,
+      "model_mean_log_loss": 0.8666,
+      "model_mean_brier": 0.5234,
+      "d_accuracy_1x2": 0.0208,
+      "d_mean_log_loss": 0.0151,
+      "d_mean_brier": 0.0068
     },
     "Pinnacle": {
-      "n": 44,
-      "accuracy_1x2": 0.6364,
-      "mean_log_loss": 0.8783,
-      "mean_brier": 0.5302,
-      "model_accuracy_1x2": 0.6136,
-      "model_mean_log_loss": 0.8752,
-      "model_mean_brier": 0.5285,
-      "d_accuracy_1x2": 0.0227,
-      "d_mean_log_loss": 0.003,
+      "n": 48,
+      "accuracy_1x2": 0.6458,
+      "mean_log_loss": 0.8703,
+      "mean_brier": 0.5251,
+      "model_accuracy_1x2": 0.625,
+      "model_mean_log_loss": 0.8666,
+      "model_mean_brier": 0.5234,
+      "d_accuracy_1x2": 0.0208,
+      "d_mean_log_loss": 0.0037,
       "d_mean_brier": 0.0017
     }
   },
@@ -1524,13 +1524,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.1069,
-        "d": 0.1941,
-        "a": 0.699
+        "h": 0.1071,
+        "d": 0.193,
+        "a": 0.6999
       },
       "exp_goals": [
         0.73,
-        2.16
+        2.18
       ],
       "played": false,
       "actual_score": null,
@@ -1551,13 +1551,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.1414,
-        "d": 0.2501,
-        "a": 0.6085
+        "h": 0.1484,
+        "d": 0.2541,
+        "a": 0.5975
       },
       "exp_goals": [
-        0.68,
-        1.68
+        0.7,
+        1.65
       ],
       "played": false,
       "actual_score": null,
@@ -1578,13 +1578,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.3843,
-        "d": 0.2773,
-        "a": 0.3384
+        "h": 0.3673,
+        "d": 0.2764,
+        "a": 0.3563
       },
       "exp_goals": [
-        1.35,
-        1.26
+        1.33,
+        1.3
       ],
       "played": false,
       "actual_score": null,
@@ -1605,13 +1605,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.4337,
-        "d": 0.2876,
-        "a": 0.2787
+        "h": 0.4295,
+        "d": 0.2885,
+        "a": 0.282
       },
       "exp_goals": [
-        1.36,
-        1.03
+        1.34,
+        1.04
       ],
       "played": false,
       "actual_score": null,
@@ -1632,13 +1632,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.0697,
-        "d": 0.1603,
-        "a": 0.77
+        "h": 0.0727,
+        "d": 0.1657,
+        "a": 0.7616
       },
       "exp_goals": [
         0.59,
-        2.39
+        2.34
       ],
       "played": false,
       "actual_score": null,
@@ -1655,17 +1655,17 @@
       "away": "Haiti",
       "pred_outcome": "home",
       "pred_score": [
-        2,
+        1,
         0
       ],
       "pred_1x2": {
-        "h": 0.7856,
-        "d": 0.1595,
-        "a": 0.0549
+        "h": 0.7043,
+        "d": 0.2085,
+        "a": 0.0872
       },
       "exp_goals": [
-        2.28,
-        0.46
+        1.92,
+        0.53
       ],
       "played": false,
       "actual_score": null,
@@ -1686,13 +1686,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.2516,
-        "d": 0.2379,
-        "a": 0.5105
+        "h": 0.2245,
+        "d": 0.2332,
+        "a": 0.5423
       },
       "exp_goals": [
-        1.26,
-        1.87
+        1.17,
+        1.92
       ],
       "played": false,
       "actual_score": null,
@@ -1710,16 +1710,16 @@
       "pred_outcome": "away",
       "pred_score": [
         0,
-        1
+        0
       ],
       "pred_1x2": {
-        "h": 0.2416,
-        "d": 0.3203,
-        "a": 0.4381
+        "h": 0.2702,
+        "d": 0.3291,
+        "a": 0.4008
       },
       "exp_goals": [
-        0.79,
-        1.16
+        0.83,
+        1.08
       ],
       "played": false,
       "actual_score": null,
@@ -1740,13 +1740,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.1788,
-        "d": 0.2798,
-        "a": 0.5413
+        "h": 0.1462,
+        "d": 0.2626,
+        "a": 0.5912
       },
       "exp_goals": [
-        0.73,
-        1.47
+        0.65,
+        1.58
       ],
       "played": false,
       "actual_score": null,
@@ -1767,13 +1767,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.087,
-        "d": 0.1904,
-        "a": 0.7225
+        "h": 0.097,
+        "d": 0.2033,
+        "a": 0.6997
       },
       "exp_goals": [
-        0.6,
-        2.11
+        0.61,
+        2.01
       ],
       "played": false,
       "actual_score": null,
@@ -1794,13 +1794,13 @@
         0
       ],
       "pred_1x2": {
-        "h": 0.6148,
-        "d": 0.2244,
-        "a": 0.1607
+        "h": 0.6854,
+        "d": 0.193,
+        "a": 0.1216
       },
       "exp_goals": [
-        1.96,
-        0.9
+        2.24,
+        0.84
       ],
       "played": false,
       "actual_score": null,
@@ -1821,13 +1821,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.0528,
-        "d": 0.1452,
-        "a": 0.8021
+        "h": 0.0649,
+        "d": 0.1609,
+        "a": 0.7742
       },
       "exp_goals": [
-        0.5,
-        2.46
+        0.54,
+        2.34
       ],
       "played": false,
       "actual_score": null,
@@ -1848,13 +1848,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.3452,
-        "d": 0.3166,
-        "a": 0.3382
+        "h": 0.3424,
+        "d": 0.3193,
+        "a": 0.3383
       },
       "exp_goals": [
-        1.05,
-        1.03
+        1.03,
+        1.02
       ],
       "played": false,
       "actual_score": null,
@@ -1875,13 +1875,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.0528,
+        "h": 0.0534,
         "d": 0.1305,
-        "a": 0.8167
+        "a": 0.8161
       },
       "exp_goals": [
-        0.58,
-        2.7
+        0.59,
+        2.71
       ],
       "played": false,
       "actual_score": null,
@@ -1896,19 +1896,19 @@
       "group": "H",
       "home": "Cape Verde",
       "away": "Saudi Arabia",
-      "pred_outcome": "away",
+      "pred_outcome": "home",
       "pred_score": [
         0,
         0
       ],
       "pred_1x2": {
-        "h": 0.2889,
-        "d": 0.3355,
-        "a": 0.3756
+        "h": 0.3386,
+        "d": 0.3323,
+        "a": 0.3291
       },
       "exp_goals": [
-        0.85,
-        1.01
+        0.97,
+        0.95
       ],
       "played": false,
       "actual_score": null,
@@ -1929,13 +1929,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.116,
-        "d": 0.2539,
-        "a": 0.6301
+        "h": 0.0942,
+        "d": 0.225,
+        "a": 0.6808
       },
       "exp_goals": [
-        0.54,
-        1.61
+        0.51,
+        1.79
       ],
       "played": false,
       "actual_score": null,
@@ -1956,13 +1956,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.1712,
-        "d": 0.2468,
-        "a": 0.582
+        "h": 0.1713,
+        "d": 0.2449,
+        "a": 0.5839
       },
       "exp_goals": [
-        0.84,
-        1.74
+        0.85,
+        1.76
       ],
       "played": false,
       "actual_score": null,
@@ -1983,13 +1983,13 @@
         0
       ],
       "pred_1x2": {
-        "h": 0.6639,
-        "d": 0.233,
-        "a": 0.1031
+        "h": 0.641,
+        "d": 0.241,
+        "a": 0.118
       },
       "exp_goals": [
-        1.75,
-        0.54
+        1.71,
+        0.59
       ],
       "played": false,
       "actual_score": null,
@@ -2010,13 +2010,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.2595,
-        "d": 0.2838,
-        "a": 0.4567
+        "h": 0.283,
+        "d": 0.2863,
+        "a": 0.4307
       },
       "exp_goals": [
-        1.0,
-        1.41
+        1.05,
+        1.36
       ],
       "played": false,
       "actual_score": null,
@@ -2037,13 +2037,13 @@
         3
       ],
       "pred_1x2": {
-        "h": 0.0133,
-        "d": 0.0633,
-        "a": 0.9234
+        "h": 0.019,
+        "d": 0.0819,
+        "a": 0.8991
       },
       "exp_goals": [
-        0.31,
-        3.35
+        0.33,
+        3.05
       ],
       "played": false,
       "actual_score": null,
@@ -2064,13 +2064,13 @@
         1
       ],
       "pred_1x2": {
-        "h": 0.2658,
-        "d": 0.2854,
-        "a": 0.4489
+        "h": 0.2532,
+        "d": 0.2838,
+        "a": 0.4631
       },
       "exp_goals": [
-        1.01,
-        1.39
+        0.98,
+        1.41
       ],
       "played": false,
       "actual_score": null,
@@ -2091,13 +2091,13 @@
         0
       ],
       "pred_1x2": {
-        "h": 0.3637,
-        "d": 0.3506,
-        "a": 0.2857
+        "h": 0.381,
+        "d": 0.347,
+        "a": 0.2719
       },
       "exp_goals": [
-        0.94,
-        0.8
+        0.97,
+        0.78
       ],
       "played": false,
       "actual_score": null,
@@ -2118,13 +2118,13 @@
         2
       ],
       "pred_1x2": {
-        "h": 0.0272,
-        "d": 0.1008,
-        "a": 0.8719
+        "h": 0.0447,
+        "d": 0.1418,
+        "a": 0.8135
       },
       "exp_goals": [
-        0.38,
-        2.85
+        0.43,
+        2.42
       ],
       "played": false,
       "actual_score": null,
@@ -2141,16 +2141,16 @@
       "away": "Ghana",
       "pred_outcome": "home",
       "pred_score": [
-        2,
+        1,
         0
       ],
       "pred_1x2": {
-        "h": 0.6779,
-        "d": 0.2147,
-        "a": 0.1074
+        "h": 0.6427,
+        "d": 0.2354,
+        "a": 0.122
       },
       "exp_goals": [
-        1.93,
+        1.77,
         0.63
       ],
       "played": false,
@@ -2162,7 +2162,7 @@
       "brier": null
     }
   ],
-  "predictions_as_of": "2026-06-19",
+  "predictions_as_of": "2026-06-24",
   "matchday_pred_dates": {
     "1": [
       "2026-06-10"
@@ -2172,74 +2172,74 @@
       "2026-06-19"
     ],
     "3": [
-      "2026-06-19"
+      "2026-06-24"
     ]
   },
   "pretournament_forecast_generated_at": "2026-06-11 11:59",
-  "forecast_generated_at": "2026-06-19 14:26",
+  "forecast_generated_at": "2026-06-24 11:41",
   "forecast_is_live": true,
-  "forecast_games_conditioned": 28,
-  "forecast_conditioned_through": "2026-06-18",
+  "forecast_games_conditioned": 48,
+  "forecast_conditioned_through": "2026-06-23",
   "forecast_top10": [
     {
       "team": "Argentina",
-      "pct": 21.83,
-      "delta_pct": 3.75,
+      "pct": 26.0,
+      "delta_pct": 7.92,
       "rank_delta": 1
     },
     {
       "team": "Spain",
-      "pct": 16.49,
-      "delta_pct": -2.84,
+      "pct": 17.85,
+      "delta_pct": -1.48,
       "rank_delta": -1
     },
     {
       "team": "France",
-      "pct": 12.51,
-      "delta_pct": 0.85,
+      "pct": 11.7,
+      "delta_pct": 0.05,
       "rank_delta": 0
     },
     {
       "team": "England",
-      "pct": 12.0,
-      "delta_pct": 1.44,
+      "pct": 9.99,
+      "delta_pct": -0.57,
+      "rank_delta": 0
+    },
+    {
+      "team": "Portugal",
+      "pct": 7.05,
+      "delta_pct": -2.02,
       "rank_delta": 0
     },
     {
       "team": "Brazil",
-      "pct": 6.71,
-      "delta_pct": -1.15,
-      "rank_delta": 1
-    },
-    {
-      "team": "Portugal",
-      "pct": 6.13,
-      "delta_pct": -2.94,
-      "rank_delta": -1
+      "pct": 5.87,
+      "delta_pct": -1.99,
+      "rank_delta": 0
     },
     {
       "team": "Germany",
-      "pct": 5.38,
-      "delta_pct": 0.99,
+      "pct": 4.78,
+      "delta_pct": 0.38,
       "rank_delta": 0
     },
     {
       "team": "Netherlands",
-      "pct": 3.0,
-      "delta_pct": -0.39,
+      "pct": 3.24,
+      "delta_pct": -0.15,
       "rank_delta": 0
     },
     {
       "team": "Colombia",
-      "pct": 2.89,
-      "delta_pct": 0.59,
+      "pct": 2.63,
+      "delta_pct": 0.33,
       "rank_delta": 1
     },
     {
-      "team": "Belgium",
-      "pct": 2.5,
-      "delta_pct": -0.58,
-      "rank_delta": -1
+      "team": "Japan",
+      "pct": 1.91,
+      "delta_pct": 0.32,
+      "rank_delta": 2
     }
   ]
 }

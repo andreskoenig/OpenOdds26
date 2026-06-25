@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-06-25 00:10:25",
+  "generated_at": "2026-06-25 03:03:07",
   "tournament": {
-    "games_played": 50,
+    "games_played": 52,
     "games_total": 72,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 50,
-    "accuracy_1x2": 0.64,
-    "model_exact_rate": 0.12,
-    "mean_log_loss": 0.8689,
-    "mean_brier": 0.5243
+    "n_played": 52,
+    "accuracy_1x2": 0.6538,
+    "model_exact_rate": 0.1154,
+    "mean_log_loss": 0.8475,
+    "mean_brier": 0.5085
   },
   "kpis_market": {
     "Bet365": {
-      "n": 48,
-      "accuracy_1x2": 0.6458,
-      "mean_log_loss": 0.8817,
-      "mean_brier": 0.5301,
-      "model_accuracy_1x2": 0.625,
-      "model_mean_log_loss": 0.8666,
-      "model_mean_brier": 0.5234,
-      "d_accuracy_1x2": 0.0208,
-      "d_mean_log_loss": 0.0151,
-      "d_mean_brier": 0.0068
+      "n": 51,
+      "accuracy_1x2": 0.6667,
+      "mean_log_loss": 0.8594,
+      "mean_brier": 0.5137,
+      "model_accuracy_1x2": 0.6471,
+      "model_mean_log_loss": 0.8587,
+      "model_mean_brier": 0.5167,
+      "d_accuracy_1x2": 0.0196,
+      "d_mean_log_loss": 0.0007,
+      "d_mean_brier": -0.003
     },
     "Pinnacle": {
-      "n": 48,
-      "accuracy_1x2": 0.6458,
-      "mean_log_loss": 0.8703,
-      "mean_brier": 0.5251,
-      "model_accuracy_1x2": 0.625,
-      "model_mean_log_loss": 0.8666,
-      "model_mean_brier": 0.5234,
-      "d_accuracy_1x2": 0.0208,
-      "d_mean_log_loss": 0.0037,
-      "d_mean_brier": 0.0017
+      "n": 51,
+      "accuracy_1x2": 0.6667,
+      "mean_log_loss": 0.8536,
+      "mean_brier": 0.5119,
+      "model_accuracy_1x2": 0.6471,
+      "model_mean_log_loss": 0.8587,
+      "model_mean_brier": 0.5167,
+      "d_accuracy_1x2": 0.0196,
+      "d_mean_log_loss": -0.0051,
+      "d_mean_brier": -0.0048
     }
   },
   "calibration": [
@@ -67,9 +67,9 @@
       "bucket": "0.70-1.00",
       "lo": 0.7,
       "hi": 1.0,
-      "n": 17,
-      "predicted": 0.8265,
-      "realized": 0.7059
+      "n": 19,
+      "predicted": 0.8167,
+      "realized": 0.7368
     }
   ],
   "matches": [
@@ -1646,13 +1646,16 @@
         0.59,
         2.34
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        0,
+        3
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.2723,
+      "brier": 0.0895
     },
     {
       "date": "2026-06-24",
@@ -1673,13 +1676,16 @@
         1.92,
         0.53
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        4,
+        2
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.3505,
+      "brier": 0.1385
     },
     {
       "date": "2026-06-25",

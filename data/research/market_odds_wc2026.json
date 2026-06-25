@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24 08:48",
+  "generated_at": "2026-06-25 00:02",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1008,6 +1008,69 @@
           "home": 1.57,
           "draw": 3.96,
           "away": 7.3
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456926",
+      "kickoff": "2026-06-24",
+      "captured_at": "2026-06-25 00:02",
+      "home_id": "bosnia_and_herzegovina",
+      "away_id": "qatar",
+      "home_name": "Bosnia and Herzegovina",
+      "away_name": "Qatar",
+      "books": {
+        "Pinnacle": {
+          "home": 1.444,
+          "draw": 4.82,
+          "away": 6.59
+        },
+        "Bet365": {
+          "home": 1.39,
+          "draw": 5.4,
+          "away": 8.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456924",
+      "kickoff": "2026-06-24",
+      "captured_at": "2026-06-25 00:02",
+      "home_id": "switzerland",
+      "away_id": "canada",
+      "home_name": "Switzerland",
+      "away_name": "Canada",
+      "books": {
+        "Pinnacle": {
+          "home": 2.56,
+          "draw": 2.98,
+          "away": 3.07
+        },
+        "Bet365": {
+          "home": 2.52,
+          "draw": 3.12,
+          "away": 3.28
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001666456938",
+      "kickoff": "2026-06-24",
+      "captured_at": "2026-06-25 00:02",
+      "home_id": "morocco",
+      "away_id": "haiti",
+      "home_name": "Morocco",
+      "away_name": "Haiti",
+      "books": {
+        "Pinnacle": {
+          "home": 1.324,
+          "draw": 5.25,
+          "away": 7.92
+        },
+        "Bet365": {
+          "home": 1.19,
+          "draw": 7.6,
+          "away": 17.0
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25 04:41",
+  "generated_at": "2026-06-25 22:17",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -485,6 +485,24 @@
       "away_team_id": "south_korea",
       "home_goals": 1,
       "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "curacao",
+      "away_team_id": "ivory_coast",
+      "home_goals": 0,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "ecuador",
+      "away_team_id": "germany",
+      "home_goals": 2,
+      "away_goals": 1,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

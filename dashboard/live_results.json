@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25 00:02",
+  "generated_at": "2026-06-25 04:41",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -467,6 +467,24 @@
       "away_team_id": "brazil",
       "home_goals": 0,
       "away_goals": 3,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-24",
+      "home_team_id": "czech_republic",
+      "away_team_id": "mexico",
+      "home_goals": 0,
+      "away_goals": 3,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-24",
+      "home_team_id": "south_africa",
+      "away_team_id": "south_korea",
+      "home_goals": 1,
+      "away_goals": 0,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

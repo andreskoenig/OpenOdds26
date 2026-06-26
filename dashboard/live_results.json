@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25 22:17",
+  "generated_at": "2026-06-26 02:42",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -503,6 +503,24 @@
       "away_team_id": "germany",
       "home_goals": 2,
       "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "japan",
+      "away_team_id": "sweden",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "tunisia",
+      "away_team_id": "netherlands",
+      "home_goals": 1,
+      "away_goals": 3,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-26 01:17:08",
+  "generated_at": "2026-06-26 05:42:11",
   "tournament": {
-    "games_played": 56,
+    "games_played": 58,
     "games_total": 72,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 56,
-    "accuracy_1x2": 0.6429,
-    "model_exact_rate": 0.125,
-    "mean_log_loss": 0.8681,
-    "mean_brier": 0.5182
+    "n_played": 58,
+    "accuracy_1x2": 0.6379,
+    "model_exact_rate": 0.1207,
+    "mean_log_loss": 0.8709,
+    "mean_brier": 0.5213
   },
   "kpis_market": {
     "Bet365": {
@@ -59,17 +59,17 @@
       "bucket": "0.55-0.70",
       "lo": 0.55,
       "hi": 0.7,
-      "n": 23,
-      "predicted": 0.6399,
-      "realized": 0.6522
+      "n": 24,
+      "predicted": 0.6418,
+      "realized": 0.625
     },
     {
       "bucket": "0.70-1.00",
       "lo": 0.7,
       "hi": 1.0,
-      "n": 19,
-      "predicted": 0.8167,
-      "realized": 0.7368
+      "n": 20,
+      "predicted": 0.8146,
+      "realized": 0.75
     }
   ],
   "matches": [
@@ -1826,13 +1826,16 @@
         2.24,
         0.84
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        1,
+        1
+      ],
+      "actual_outcome": "draw",
+      "outcome_correct": false,
+      "exact_correct": false,
+      "log_loss": 1.645,
+      "brier": 1.1358
     },
     {
       "date": "2026-06-25",
@@ -1853,13 +1856,16 @@
         0.54,
         2.34
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        1,
+        3
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.256,
+      "brier": 0.0811
     },
     {
       "date": "2026-06-26",

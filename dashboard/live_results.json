@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 12:29",
+  "generated_at": "2026-06-26 21:03",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -539,6 +539,15 @@
       "away_team_id": "united_states",
       "home_goals": 3,
       "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-26",
+      "home_team_id": "norway",
+      "away_team_id": "france",
+      "home_goals": 1,
+      "away_goals": 4,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

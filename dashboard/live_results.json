@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26 02:42",
+  "generated_at": "2026-06-26 06:48",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -521,6 +521,24 @@
       "away_team_id": "netherlands",
       "home_goals": 1,
       "away_goals": 3,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "paraguay",
+      "away_team_id": "australia",
+      "home_goals": 0,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-25",
+      "home_team_id": "turkey",
+      "away_team_id": "united_states",
+      "home_goals": 3,
+      "away_goals": 2,
       "competition": "FIFA World Cup",
       "source": "espn"
     }

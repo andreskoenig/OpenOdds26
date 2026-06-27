@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-27 09:47:55",
+  "generated_at": "2026-06-28 01:57:23",
   "tournament": {
-    "games_played": 66,
+    "games_played": 67,
     "games_total": 72,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 66,
-    "accuracy_1x2": 0.6212,
-    "model_exact_rate": 0.1667,
-    "mean_log_loss": 0.8626,
-    "mean_brier": 0.5138
+    "n_played": 67,
+    "accuracy_1x2": 0.6269,
+    "model_exact_rate": 0.1791,
+    "mean_log_loss": 0.8528,
+    "mean_brier": 0.507
   },
   "kpis_market": {
     "Bet365": {
@@ -67,9 +67,9 @@
       "bucket": "0.70-1.00",
       "lo": 0.7,
       "hi": 1.0,
-      "n": 21,
+      "n": 22,
       "predicted": 0.8146,
-      "realized": 0.7619
+      "realized": 0.7727
     }
   ],
   "matches": [
@@ -2180,13 +2180,16 @@
         0.43,
         2.42
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        0,
+        2
+      ],
+      "actual_outcome": "away",
+      "outcome_correct": true,
+      "exact_correct": true,
+      "log_loss": 0.2064,
+      "brier": 0.0569
     },
     {
       "date": "2026-06-27",

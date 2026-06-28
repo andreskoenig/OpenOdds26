@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 15:13:35",
+  "generated_at": "2026-06-28 16:38:03",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -2234,7 +2234,7 @@
       "brier": 0.1979
     }
   ],
-  "predictions_as_of": "2026-06-24",
+  "predictions_as_of": "2026-06-28",
   "matchday_pred_dates": {
     "1": [
       "2026-06-10"
@@ -2248,70 +2248,70 @@
     ]
   },
   "pretournament_forecast_generated_at": "2026-06-11 11:59",
-  "forecast_generated_at": "2026-06-24 11:41",
+  "forecast_generated_at": "2026-06-28 16:31",
   "forecast_is_live": true,
-  "forecast_games_conditioned": 48,
-  "forecast_conditioned_through": "2026-06-23",
+  "forecast_games_conditioned": 72,
+  "forecast_conditioned_through": "2026-06-27",
   "forecast_top10": [
     {
       "team": "Argentina",
-      "pct": 26.0,
-      "delta_pct": 7.92,
+      "pct": 28.89,
+      "delta_pct": 10.81,
       "rank_delta": 1
     },
     {
       "team": "Spain",
-      "pct": 17.85,
-      "delta_pct": -1.48,
+      "pct": 16.24,
+      "delta_pct": -3.09,
       "rank_delta": -1
     },
     {
       "team": "France",
-      "pct": 11.7,
-      "delta_pct": 0.05,
+      "pct": 12.55,
+      "delta_pct": 0.9,
       "rank_delta": 0
     },
     {
       "team": "England",
-      "pct": 9.99,
-      "delta_pct": -0.57,
-      "rank_delta": 0
-    },
-    {
-      "team": "Portugal",
-      "pct": 7.05,
-      "delta_pct": -2.02,
+      "pct": 10.54,
+      "delta_pct": -0.01,
       "rank_delta": 0
     },
     {
       "team": "Brazil",
+      "pct": 6.35,
+      "delta_pct": -1.51,
+      "rank_delta": 1
+    },
+    {
+      "team": "Portugal",
       "pct": 5.87,
-      "delta_pct": -1.99,
-      "rank_delta": 0
+      "delta_pct": -3.21,
+      "rank_delta": -1
     },
     {
       "team": "Germany",
-      "pct": 4.78,
-      "delta_pct": 0.38,
-      "rank_delta": 0
-    },
-    {
-      "team": "Netherlands",
-      "pct": 3.24,
-      "delta_pct": -0.15,
+      "pct": 3.84,
+      "delta_pct": -0.55,
       "rank_delta": 0
     },
     {
       "team": "Colombia",
-      "pct": 2.63,
-      "delta_pct": 0.33,
-      "rank_delta": 1
+      "pct": 3.43,
+      "delta_pct": 1.13,
+      "rank_delta": 2
     },
     {
-      "team": "Japan",
-      "pct": 1.91,
-      "delta_pct": 0.32,
-      "rank_delta": 2
+      "team": "Netherlands",
+      "pct": 3.1,
+      "delta_pct": -0.29,
+      "rank_delta": -1
+    },
+    {
+      "team": "Belgium",
+      "pct": 1.86,
+      "delta_pct": -1.22,
+      "rank_delta": -1
     }
   ]
 }

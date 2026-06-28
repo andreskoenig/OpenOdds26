@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 12:13",
+  "generated_at": "2026-06-28 16:32",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1014,7 +1014,7 @@
     {
       "fixture_id": "id1000001666456926",
       "kickoff": "2026-06-24",
-      "captured_at": "2026-06-25 00:02",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "bosnia_and_herzegovina",
       "away_id": "qatar",
       "home_name": "Bosnia and Herzegovina",
@@ -1035,7 +1035,7 @@
     {
       "fixture_id": "id1000001666456924",
       "kickoff": "2026-06-24",
-      "captured_at": "2026-06-25 00:02",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "switzerland",
       "away_id": "canada",
       "home_name": "Switzerland",
@@ -1054,30 +1054,9 @@
       }
     },
     {
-      "fixture_id": "id1000001666456938",
-      "kickoff": "2026-06-24",
-      "captured_at": "2026-06-25 00:02",
-      "home_id": "morocco",
-      "away_id": "haiti",
-      "home_name": "Morocco",
-      "away_name": "Haiti",
-      "books": {
-        "Pinnacle": {
-          "home": 1.324,
-          "draw": 5.25,
-          "away": 7.92
-        },
-        "Bet365": {
-          "home": 1.19,
-          "draw": 7.6,
-          "away": 17.0
-        }
-      }
-    },
-    {
       "fixture_id": "id1000001666456936",
       "kickoff": "2026-06-24",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "scotland",
       "away_id": "brazil",
       "home_name": "Scotland",
@@ -1096,9 +1075,30 @@
       }
     },
     {
+      "fixture_id": "id1000001666456938",
+      "kickoff": "2026-06-24",
+      "captured_at": "2026-06-28 16:32",
+      "home_id": "morocco",
+      "away_id": "haiti",
+      "home_name": "Morocco",
+      "away_name": "Haiti",
+      "books": {
+        "Pinnacle": {
+          "home": 1.324,
+          "draw": 5.25,
+          "away": 7.92
+        },
+        "Bet365": {
+          "home": 1.19,
+          "draw": 7.6,
+          "away": 17.0
+        }
+      }
+    },
+    {
       "fixture_id": "id1000001666456912",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "czech_republic",
       "away_id": "mexico",
       "home_name": "Czechia",
@@ -1119,7 +1119,7 @@
     {
       "fixture_id": "id1000001666456914",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "south_africa",
       "away_id": "south_korea",
       "home_name": "South Africa",
@@ -1140,7 +1140,7 @@
     {
       "fixture_id": "id1000001666457080",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "curacao",
       "away_id": "ivory_coast",
       "home_name": "Curacao",
@@ -1161,7 +1161,7 @@
     {
       "fixture_id": "id1000001666457078",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "ecuador",
       "away_id": "germany",
       "home_name": "Ecuador",
@@ -1182,7 +1182,7 @@
     {
       "fixture_id": "id1000001666456976",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "tunisia",
       "away_id": "netherlands",
       "home_name": "Tunisia",
@@ -1203,7 +1203,7 @@
     {
       "fixture_id": "id1000001666456978",
       "kickoff": "2026-06-25",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "japan",
       "away_id": "sweden",
       "home_name": "Japan",
@@ -1224,7 +1224,7 @@
     {
       "fixture_id": "id1000001666456950",
       "kickoff": "2026-06-26",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "paraguay",
       "away_id": "australia",
       "home_name": "Paraguay",
@@ -1245,7 +1245,7 @@
     {
       "fixture_id": "id1000001666456948",
       "kickoff": "2026-06-26",
-      "captured_at": "2026-06-26 12:30",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "turkey",
       "away_id": "united_states",
       "home_name": "Turkiye",
@@ -1266,7 +1266,7 @@
     {
       "fixture_id": "id1000001666457014",
       "kickoff": "2026-06-26",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "norway",
       "away_id": "france",
       "home_name": "Norway",
@@ -1287,7 +1287,7 @@
     {
       "fixture_id": "id1000001666457016",
       "kickoff": "2026-06-26",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "senegal",
       "away_id": "iraq",
       "home_name": "Senegal",
@@ -1308,7 +1308,7 @@
     {
       "fixture_id": "id1000001666457004",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "cape_verde",
       "away_id": "saudi_arabia",
       "home_name": "Cape Verde",
@@ -1329,7 +1329,7 @@
     {
       "fixture_id": "id1000001666457002",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "uruguay",
       "away_id": "spain",
       "home_name": "Uruguay",
@@ -1350,7 +1350,7 @@
     {
       "fixture_id": "id1000001666456990",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "new_zealand",
       "away_id": "belgium",
       "home_name": "New Zealand",
@@ -1371,7 +1371,7 @@
     {
       "fixture_id": "id1000001666456992",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "egypt",
       "away_id": "iran",
       "home_name": "Egypt",
@@ -1390,30 +1390,9 @@
       }
     },
     {
-      "fixture_id": "id1000001666457052",
-      "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
-      "home_id": "croatia",
-      "away_id": "ghana",
-      "home_name": "Croatia",
-      "away_name": "Ghana",
-      "books": {
-        "Pinnacle": {
-          "home": 1.813,
-          "draw": 3.21,
-          "away": 5.6
-        },
-        "Bet365": {
-          "home": 1.85,
-          "draw": 3.18,
-          "away": 5.9
-        }
-      }
-    },
-    {
       "fixture_id": "id1000001666457050",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 00:01",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "panama",
       "away_id": "england",
       "home_name": "Panama",
@@ -1432,9 +1411,30 @@
       }
     },
     {
+      "fixture_id": "id1000001666457052",
+      "kickoff": "2026-06-27",
+      "captured_at": "2026-06-28 16:32",
+      "home_id": "croatia",
+      "away_id": "ghana",
+      "home_name": "Croatia",
+      "away_name": "Ghana",
+      "books": {
+        "Pinnacle": {
+          "home": 1.813,
+          "draw": 3.21,
+          "away": 5.6
+        },
+        "Bet365": {
+          "home": 1.85,
+          "draw": 3.18,
+          "away": 5.9
+        }
+      }
+    },
+    {
       "fixture_id": "id1000001666457040",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 12:13",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "dr_congo",
       "away_id": "uzbekistan",
       "home_name": "Congo DR",
@@ -1455,7 +1455,7 @@
     {
       "fixture_id": "id1000001666457038",
       "kickoff": "2026-06-27",
-      "captured_at": "2026-06-28 12:13",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "colombia",
       "away_id": "portugal",
       "home_name": "Colombia",
@@ -1476,7 +1476,7 @@
     {
       "fixture_id": "id1000001666457028",
       "kickoff": "2026-06-28",
-      "captured_at": "2026-06-28 12:13",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "algeria",
       "away_id": "austria",
       "home_name": "Algeria",
@@ -1497,7 +1497,7 @@
     {
       "fixture_id": "id1000001666457026",
       "kickoff": "2026-06-28",
-      "captured_at": "2026-06-28 12:13",
+      "captured_at": "2026-06-28 16:32",
       "home_id": "jordan",
       "away_id": "argentina",
       "home_name": "Jordan",

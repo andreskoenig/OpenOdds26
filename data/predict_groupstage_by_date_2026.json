@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-06-24",
-  "rho": -0.057120082544018694,
+  "as_of": "2026-06-28",
+  "rho": -0.05864114907300462,
   "source": "model (no market odds); calendar=published schedule; LIVE walk-forward (played games frozen)",
   "games": [
     {

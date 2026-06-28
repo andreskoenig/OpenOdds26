@@ -107,13 +107,20 @@
     .disclaimer p { margin: 0 0 8px; }
     .disclaimer p[dir="rtl"] { text-align: right; }
     /* knockout bracket */
-    .bracket { display: flex; gap: 12px; overflow-x: auto; padding: 4px 2px 10px; }
-    .bk-round { display: flex; flex-direction: column; justify-content: space-around; min-width: 150px; flex: 1 1 0; gap: 8px; position: relative; }
-    .bk-rlabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); text-align: center; margin-bottom: 2px; }
-    .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; position: relative; }
-    .bk-round:not(.bk-champ-col) .bk-match::after { content: ""; position: absolute; left: 100%; top: 50%; width: 6px; height: 1px; background: var(--border); }
-    .bracket > .bk-round:not(:first-child):not(.bk-champ-col) .bk-match::before { content: ""; position: absolute; right: 100%; top: 50%; width: 6px; height: 1px; background: var(--border); }
+    /* nested bracket tree: each match is vertically centred between its two children */
+    .bracket2 { display: flex; align-items: center; overflow-x: auto; padding: 8px 2px 14px; }
+    .bout { display: flex; align-items: center; }
+    .bout-kids { display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+    .bout-self { margin-left: 22px; position: relative; }
+    .bout:has(> .bout-kids) > .bout-self::before { content: ""; position: absolute; right: 100%; top: 50%; width: 22px; height: 1px; background: var(--border); }
+    .bout-kids > .bout { position: relative; }
+    .bout-kids > .bout::after { content: ""; position: absolute; left: 100%; top: 50%; width: 11px; height: 1px; background: var(--border); }
+    .bout-kids > .bout:first-child::before { content: ""; position: absolute; left: 100%; margin-left: 11px; top: 50%; width: 1px; height: calc(50% + 4px); background: var(--border); }
+    .bout-kids > .bout:last-child::before { content: ""; position: absolute; left: 100%; margin-left: 11px; bottom: 50%; width: 1px; height: calc(50% + 4px); background: var(--border); }
+    .bk-mlabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); text-align: center; margin-bottom: 3px; }
+    .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; width: 158px; box-sizing: border-box; }
     .bk-tbd { border-left-color: var(--border); }
+    .bk-endcol { display: flex; flex-direction: column; gap: 16px; margin-left: 22px; }
     .bk-date { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
     .bk-side { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 0; }
     .bk-team { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
@@ -406,57 +413,79 @@
       );
     }
 
+    const KO_LABEL = { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-final", SF: "Semi-final", Final: "Final" };
+
+    function KoMatch({ node }) {
+      if (node.round === "R32") {
+        const ph = Math.round(node.p_home_adv * 100);
+        const x = node.p_1x2_120 || node.p_1x2_90 || [0, 0, 0];
+        const xg = node.xg || null;
+        return (
+          <div className="bk-match">
+            {node.date ? <div className="bk-date">{node.date.slice(5)}</div> : null}
+            <KoSide tid={node.home} name={node.home_name} p={ph} fav={node.p_home_adv >= node.p_away_adv} />
+            <KoSide tid={node.away} name={node.away_name} p={100 - ph} fav={node.p_away_adv > node.p_home_adv} />
+            <div className="bk-x2">
+              <span title="full-time result incl. extra time (draw = penalties)">1X2 {Math.round(x[0] * 100)}% / {Math.round(x[1] * 100)}% / {Math.round(x[2] * 100)}%</span>
+              {xg ? <span className="bk-xg">xG {xg[0]}–{xg[1]}</span> : null}
+            </div>
+          </div>
+        );
+      }
+      return (
+        <div className="bk-match bk-tbd">
+          <div className="bk-mlabel">{KO_LABEL[node.round] || node.round}</div>
+          <div className="bk-side"><span className="bk-team">TBD</span></div>
+          <div className="bk-side"><span className="bk-team">TBD</span></div>
+        </div>
+      );
+    }
+
+    function Bout({ node }) {
+      if (!node) return null;
+      const kids = node.children || [];
+      return (
+        <div className="bout">
+          {kids.length ? <div className="bout-kids">{kids.map((c, i) => <Bout node={c} key={i} />)}</div> : null}
+          <div className="bout-self"><KoMatch node={node} /></div>
+        </div>
+      );
+    }
+
     function Bracket({ ko, champ }) {
       if (!ko || !ko.rounds) return null;
-      const ORDER = ["R32", "R16", "QF", "SF", "Final"];
-      const LABEL = { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-finals", SF: "Semi-finals", Final: "Final" };
+      const idx = {};
+      ["R32", "R16", "QF", "SF", "Final"].forEach(r =>
+        (ko.rounds[r] || []).forEach(m => { idx[m.match] = Object.assign({}, m, { round: r }); }));
+      function build(id) {
+        const m = idx[id];
+        if (!m) return null;
+        const kids = [];
+        [m.home_ref, m.away_ref].forEach(ref => {
+          if (ref && ref[0] === "W") { const c = build(ref.slice(2)); if (c) kids.push(c); }
+        });
+        return Object.assign({}, m, { children: kids });
+      }
+      const finalM = (ko.rounds.Final || [])[0];
+      const tree = finalM ? build(finalM.match) : null;
       const hasThird = (ko.rounds.third_place || []).length > 0;
       return (
         <div>
           <h2>Knockout bracket — P(advance)</h2>
-          <div className="bracket">
-            {ORDER.map(r => {
-              const ms = ko.rounds[r] || [];
-              return (
-                <div className="bk-round" key={r}>
-                  <div className="bk-rlabel">{LABEL[r]} {ms.length > 1 ? "(" + ms.length + ")" : ""}</div>
-                  {ms.map((m, i) => {
-                    if (r !== "R32") {
-                      return (
-                        <div className="bk-match bk-tbd" key={i}>
-                          <div className="bk-side"><span className="bk-team">TBD</span></div>
-                          <div className="bk-side"><span className="bk-team">TBD</span></div>
-                        </div>
-                      );
-                    }
-                    const ph = Math.round(m.p_home_adv * 100);
-                    const x = m.p_1x2_120 || m.p_1x2_90 || [0, 0, 0];
-                    const xg = m.xg || null;
-                    return (
-                      <div className="bk-match" key={i}>
-                        {m.date ? <div className="bk-date">{m.date.slice(5)}</div> : null}
-                        <KoSide tid={m.home} name={m.home_name} p={ph} fav={m.p_home_adv >= m.p_away_adv} />
-                        <KoSide tid={m.away} name={m.away_name} p={100 - ph} fav={m.p_away_adv > m.p_home_adv} />
-                        <div className="bk-x2">
-                          <span title="full-time result incl. extra time (draw = penalties)">1X2 {Math.round(x[0] * 100)}% / {Math.round(x[1] * 100)}% / {Math.round(x[2] * 100)}%</span>
-                          {xg ? <span className="bk-xg">xG {xg[0]}–{xg[1]}</span> : null}
-                        </div>
-                      </div>
-                    );
-                  })}
+          <div className="bracket2">
+            {tree ? <Bout node={tree} /> : null}
+            <div className="bk-endcol">
+              <div>
+                <div className="bk-mlabel">Champion</div>
+                <div className="bk-champ">
+                  <div className="bk-champ-sub">model favourite</div>
+                  <div className="bk-champ-team">{champ ? <span><Flag id={champ.id} />{champ.team}</span> : "TBD"}</div>
+                  {champ ? <div className="bk-champ-pct">{champ.pct}% to win</div> : null}
                 </div>
-              );
-            })}
-            <div className="bk-round bk-champ-col">
-              <div className="bk-rlabel">Champion</div>
-              <div className="bk-champ">
-                <div className="bk-champ-sub">model favourite</div>
-                <div className="bk-champ-team">{champ ? <span><Flag id={champ.id} />{champ.team}</span> : "TBD"}</div>
-                {champ ? <div className="bk-champ-pct">{champ.pct}% to win</div> : null}
               </div>
               {hasThird ? (
-                <div className="bk-third">
-                  <div className="bk-rlabel">3rd place</div>
+                <div>
+                  <div className="bk-mlabel">3rd place</div>
                   <div className="bk-match bk-tbd">
                     <div className="bk-side"><span className="bk-team">TBD</span></div>
                     <div className="bk-side"><span className="bk-team">TBD</span></div>
@@ -466,7 +495,7 @@
             </div>
           </div>
           <div className="subline" style={{ marginTop: 8 }}>
-            Single elimination · P(advance) includes extra time + penalties · 90′ line = home/draw/away · later rounds fill in as R32 is played
+            Single elimination · P(advance) incl. extra time + penalties · 1X2 = full-time result (draw → penalties) · later rounds fill in as R32 is played
           </div>
         </div>
       );

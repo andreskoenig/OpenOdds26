@@ -199,7 +199,10 @@ def main():
                        c_v=HP["c_v"], c_m=HP["c_m"], max_history_years=HP["max_history_years"])
 
     def tie(a, b):
-        """One knockout tie a vs b -> P(a advances), P(b advances), 90-min 1X2."""
+        """One knockout tie a vs b. Returns P(advance), the 90' and 120' 1X2,
+        expected goals, and the modal 90' scoreline (all in a/home vs b/away order).
+        The 120' 1X2 is the single full-time result: a wins by 120 / level after
+        120 (-> penalties) / b wins by 120."""
         if a in hosts and b not in hosts:
             P = matchup_matrix(params, a, b, True, kappa=0.0)
         elif b in hosts and a not in hosts:
@@ -211,7 +214,13 @@ def main():
         et_a, et_d, et_b = et_outcome(eg_a * ET_SCALE, eg_b * ET_SCALE)
         tilt = float(np.clip(PEN_TILT * (team_strength(params, a) - team_strength(params, b)), -PEN_CLIP, PEN_CLIP))
         p_a_adv = ph + pd * (et_a + et_d * (0.5 + tilt))
-        return float(p_a_adv), float(1 - p_a_adv), (float(ph), float(pd), float(pa))
+        h120, d120, a120 = ph + pd * et_a, pd * et_d, pa + pd * et_b   # result by end of ET
+        sx, sy = divmod(int(np.argmax(P)), P.shape[1])     # modal 90' score (a-b)
+        return {"p_a_adv": float(p_a_adv), "p_b_adv": float(1 - p_a_adv),
+                "x90": [round(float(ph), 4), round(float(pd), 4), round(float(pa), 4)],
+                "x120": [round(float(h120), 4), round(float(d120), 4), round(float(a120), 4)],
+                "xg": [round(float(eg_a), 2), round(float(eg_b), 2)],
+                "modal": [int(sx), int(sy)]}
 
     # R32: resolve teams, then align to ESPN's official bracket (fixes the
     # third-place allocation, which our stand-in doesn't match exactly). Each tie
@@ -229,13 +238,14 @@ def main():
             if real_opp != other:
                 n_fixed += 1
             a, b = anchor, real_opp
-        pa_adv, pb_adv, x = tie(a, b)
+        t = tie(a, b)
+        pa_adv, pb_adv = t["p_a_adv"], t["p_b_adv"]
         r32.append({"match": m["match"], "home": a, "away": b, "date": date_str,
                     "home_name": nm(a), "away_name": nm(b),
                     "p_home_adv": round(pa_adv, 4), "p_away_adv": round(pb_adv, 4),
                     "fav": a if pa_adv >= pb_adv else b, "fav_name": nm(a if pa_adv >= pb_adv else b),
                     "fav_p": round(max(pa_adv, pb_adv), 4),
-                    "p_1x2_90": [round(x[0], 4), round(x[1], 4), round(x[2], 4)]})
+                    "p_1x2_90": t["x90"], "p_1x2_120": t["x120"], "xg": t["xg"], "modal": t["modal"]})
 
     # later rounds: TBD slots (teams unknown until R32 plays) — keep the tree refs
     later = {}

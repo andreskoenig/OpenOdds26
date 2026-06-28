@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 16:55:30",
+  "generated_at": "2026-06-28 18:23:47",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -78,6 +78,8 @@
       "group": "A",
       "home": "Mexico",
       "away": "South Africa",
+      "home_id": "mexico",
+      "away_id": "south_africa",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -108,6 +110,8 @@
       "group": "A",
       "home": "South Korea",
       "away": "Czech Republic",
+      "home_id": "south_korea",
+      "away_id": "czech_republic",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -138,6 +142,8 @@
       "group": "B",
       "home": "Canada",
       "away": "Bosnia and Herzegovina",
+      "home_id": "canada",
+      "away_id": "bosnia_and_herzegovina",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -168,6 +174,8 @@
       "group": "D",
       "home": "United States",
       "away": "Paraguay",
+      "home_id": "united_states",
+      "away_id": "paraguay",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -198,6 +206,8 @@
       "group": "B",
       "home": "Qatar",
       "away": "Switzerland",
+      "home_id": "qatar",
+      "away_id": "switzerland",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -228,6 +238,8 @@
       "group": "C",
       "home": "Brazil",
       "away": "Morocco",
+      "home_id": "brazil",
+      "away_id": "morocco",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -258,6 +270,8 @@
       "group": "C",
       "home": "Haiti",
       "away": "Scotland",
+      "home_id": "haiti",
+      "away_id": "scotland",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -288,6 +302,8 @@
       "group": "D",
       "home": "Australia",
       "away": "Turkey",
+      "home_id": "australia",
+      "away_id": "turkey",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -318,6 +334,8 @@
       "group": "E",
       "home": "Germany",
       "away": "Curacao",
+      "home_id": "germany",
+      "away_id": "curacao",
       "pred_outcome": "home",
       "pred_score": [
         4,
@@ -348,6 +366,8 @@
       "group": "E",
       "home": "Ivory Coast",
       "away": "Ecuador",
+      "home_id": "ivory_coast",
+      "away_id": "ecuador",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -378,6 +398,8 @@
       "group": "F",
       "home": "Netherlands",
       "away": "Japan",
+      "home_id": "netherlands",
+      "away_id": "japan",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -408,6 +430,8 @@
       "group": "F",
       "home": "Sweden",
       "away": "Tunisia",
+      "home_id": "sweden",
+      "away_id": "tunisia",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -438,6 +462,8 @@
       "group": "G",
       "home": "Belgium",
       "away": "Egypt",
+      "home_id": "belgium",
+      "away_id": "egypt",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -468,6 +494,8 @@
       "group": "G",
       "home": "Iran",
       "away": "New Zealand",
+      "home_id": "iran",
+      "away_id": "new_zealand",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -498,6 +526,8 @@
       "group": "H",
       "home": "Spain",
       "away": "Cape Verde",
+      "home_id": "spain",
+      "away_id": "cape_verde",
       "pred_outcome": "home",
       "pred_score": [
         4,
@@ -528,6 +558,8 @@
       "group": "H",
       "home": "Saudi Arabia",
       "away": "Uruguay",
+      "home_id": "saudi_arabia",
+      "away_id": "uruguay",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -558,6 +590,8 @@
       "group": "I",
       "home": "France",
       "away": "Senegal",
+      "home_id": "france",
+      "away_id": "senegal",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -588,6 +622,8 @@
       "group": "I",
       "home": "Iraq",
       "away": "Norway",
+      "home_id": "iraq",
+      "away_id": "norway",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -618,6 +654,8 @@
       "group": "J",
       "home": "Argentina",
       "away": "Algeria",
+      "home_id": "argentina",
+      "away_id": "algeria",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -648,6 +686,8 @@
       "group": "J",
       "home": "Austria",
       "away": "Jordan",
+      "home_id": "austria",
+      "away_id": "jordan",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -678,6 +718,8 @@
       "group": "K",
       "home": "Portugal",
       "away": "DR Congo",
+      "home_id": "portugal",
+      "away_id": "dr_congo",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -708,6 +750,8 @@
       "group": "K",
       "home": "Uzbekistan",
       "away": "Colombia",
+      "home_id": "uzbekistan",
+      "away_id": "colombia",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -738,6 +782,8 @@
       "group": "L",
       "home": "England",
       "away": "Croatia",
+      "home_id": "england",
+      "away_id": "croatia",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -768,6 +814,8 @@
       "group": "L",
       "home": "Ghana",
       "away": "Panama",
+      "home_id": "ghana",
+      "away_id": "panama",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -798,6 +846,8 @@
       "group": "A",
       "home": "Czech Republic",
       "away": "South Africa",
+      "home_id": "czech_republic",
+      "away_id": "south_africa",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -828,6 +878,8 @@
       "group": "A",
       "home": "Mexico",
       "away": "South Korea",
+      "home_id": "mexico",
+      "away_id": "south_korea",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -858,6 +910,8 @@
       "group": "B",
       "home": "Switzerland",
       "away": "Bosnia and Herzegovina",
+      "home_id": "switzerland",
+      "away_id": "bosnia_and_herzegovina",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -888,6 +942,8 @@
       "group": "B",
       "home": "Canada",
       "away": "Qatar",
+      "home_id": "canada",
+      "away_id": "qatar",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -918,6 +974,8 @@
       "group": "C",
       "home": "Scotland",
       "away": "Morocco",
+      "home_id": "scotland",
+      "away_id": "morocco",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -948,6 +1006,8 @@
       "group": "C",
       "home": "Brazil",
       "away": "Haiti",
+      "home_id": "brazil",
+      "away_id": "haiti",
       "pred_outcome": "home",
       "pred_score": [
         3,
@@ -978,6 +1038,8 @@
       "group": "D",
       "home": "United States",
       "away": "Australia",
+      "home_id": "united_states",
+      "away_id": "australia",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1008,6 +1070,8 @@
       "group": "D",
       "home": "Turkey",
       "away": "Paraguay",
+      "home_id": "turkey",
+      "away_id": "paraguay",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1038,6 +1102,8 @@
       "group": "E",
       "home": "Germany",
       "away": "Ivory Coast",
+      "home_id": "germany",
+      "away_id": "ivory_coast",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1068,6 +1134,8 @@
       "group": "E",
       "home": "Ecuador",
       "away": "Curacao",
+      "home_id": "ecuador",
+      "away_id": "curacao",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1098,6 +1166,8 @@
       "group": "F",
       "home": "Netherlands",
       "away": "Sweden",
+      "home_id": "netherlands",
+      "away_id": "sweden",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1128,6 +1198,8 @@
       "group": "F",
       "home": "Tunisia",
       "away": "Japan",
+      "home_id": "tunisia",
+      "away_id": "japan",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1158,6 +1230,8 @@
       "group": "G",
       "home": "Belgium",
       "away": "Iran",
+      "home_id": "belgium",
+      "away_id": "iran",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1188,6 +1262,8 @@
       "group": "G",
       "home": "New Zealand",
       "away": "Egypt",
+      "home_id": "new_zealand",
+      "away_id": "egypt",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1218,6 +1294,8 @@
       "group": "H",
       "home": "Spain",
       "away": "Saudi Arabia",
+      "home_id": "spain",
+      "away_id": "saudi_arabia",
       "pred_outcome": "home",
       "pred_score": [
         3,
@@ -1248,6 +1326,8 @@
       "group": "H",
       "home": "Uruguay",
       "away": "Cape Verde",
+      "home_id": "uruguay",
+      "away_id": "cape_verde",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1278,6 +1358,8 @@
       "group": "I",
       "home": "France",
       "away": "Iraq",
+      "home_id": "france",
+      "away_id": "iraq",
       "pred_outcome": "home",
       "pred_score": [
         3,
@@ -1308,6 +1390,8 @@
       "group": "I",
       "home": "Norway",
       "away": "Senegal",
+      "home_id": "norway",
+      "away_id": "senegal",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1338,6 +1422,8 @@
       "group": "J",
       "home": "Argentina",
       "away": "Austria",
+      "home_id": "argentina",
+      "away_id": "austria",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1368,6 +1454,8 @@
       "group": "J",
       "home": "Jordan",
       "away": "Algeria",
+      "home_id": "jordan",
+      "away_id": "algeria",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -1398,6 +1486,8 @@
       "group": "K",
       "home": "Portugal",
       "away": "Uzbekistan",
+      "home_id": "portugal",
+      "away_id": "uzbekistan",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1428,6 +1518,8 @@
       "group": "K",
       "home": "Colombia",
       "away": "DR Congo",
+      "home_id": "colombia",
+      "away_id": "dr_congo",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1458,6 +1550,8 @@
       "group": "L",
       "home": "England",
       "away": "Ghana",
+      "home_id": "england",
+      "away_id": "ghana",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1488,6 +1582,8 @@
       "group": "L",
       "home": "Panama",
       "away": "Croatia",
+      "home_id": "panama",
+      "away_id": "croatia",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1518,6 +1614,8 @@
       "group": "A",
       "home": "Czech Republic",
       "away": "Mexico",
+      "home_id": "czech_republic",
+      "away_id": "mexico",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1548,6 +1646,8 @@
       "group": "A",
       "home": "South Africa",
       "away": "South Korea",
+      "home_id": "south_africa",
+      "away_id": "south_korea",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1578,6 +1678,8 @@
       "group": "B",
       "home": "Switzerland",
       "away": "Canada",
+      "home_id": "switzerland",
+      "away_id": "canada",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1608,6 +1710,8 @@
       "group": "B",
       "home": "Bosnia and Herzegovina",
       "away": "Qatar",
+      "home_id": "bosnia_and_herzegovina",
+      "away_id": "qatar",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1638,6 +1742,8 @@
       "group": "C",
       "home": "Scotland",
       "away": "Brazil",
+      "home_id": "scotland",
+      "away_id": "brazil",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1668,6 +1774,8 @@
       "group": "C",
       "home": "Morocco",
       "away": "Haiti",
+      "home_id": "morocco",
+      "away_id": "haiti",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1698,6 +1806,8 @@
       "group": "D",
       "home": "Turkey",
       "away": "United States",
+      "home_id": "turkey",
+      "away_id": "united_states",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -1728,6 +1838,8 @@
       "group": "D",
       "home": "Paraguay",
       "away": "Australia",
+      "home_id": "paraguay",
+      "away_id": "australia",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1758,6 +1870,8 @@
       "group": "E",
       "home": "Ecuador",
       "away": "Germany",
+      "home_id": "ecuador",
+      "away_id": "germany",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1788,6 +1902,8 @@
       "group": "E",
       "home": "Curacao",
       "away": "Ivory Coast",
+      "home_id": "curacao",
+      "away_id": "ivory_coast",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1818,6 +1934,8 @@
       "group": "F",
       "home": "Japan",
       "away": "Sweden",
+      "home_id": "japan",
+      "away_id": "sweden",
       "pred_outcome": "home",
       "pred_score": [
         2,
@@ -1848,6 +1966,8 @@
       "group": "F",
       "home": "Tunisia",
       "away": "Netherlands",
+      "home_id": "tunisia",
+      "away_id": "netherlands",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1878,6 +1998,8 @@
       "group": "G",
       "home": "Egypt",
       "away": "Iran",
+      "home_id": "egypt",
+      "away_id": "iran",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -1908,6 +2030,8 @@
       "group": "G",
       "home": "New Zealand",
       "away": "Belgium",
+      "home_id": "new_zealand",
+      "away_id": "belgium",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1938,6 +2062,8 @@
       "group": "H",
       "home": "Cape Verde",
       "away": "Saudi Arabia",
+      "home_id": "cape_verde",
+      "away_id": "saudi_arabia",
       "pred_outcome": "home",
       "pred_score": [
         0,
@@ -1968,6 +2094,8 @@
       "group": "H",
       "home": "Uruguay",
       "away": "Spain",
+      "home_id": "uruguay",
+      "away_id": "spain",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -1998,6 +2126,8 @@
       "group": "I",
       "home": "Norway",
       "away": "France",
+      "home_id": "norway",
+      "away_id": "france",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -2028,6 +2158,8 @@
       "group": "I",
       "home": "Senegal",
       "away": "Iraq",
+      "home_id": "senegal",
+      "away_id": "iraq",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -2058,6 +2190,8 @@
       "group": "J",
       "home": "Algeria",
       "away": "Austria",
+      "home_id": "algeria",
+      "away_id": "austria",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -2088,6 +2222,8 @@
       "group": "J",
       "home": "Jordan",
       "away": "Argentina",
+      "home_id": "jordan",
+      "away_id": "argentina",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -2118,6 +2254,8 @@
       "group": "K",
       "home": "Colombia",
       "away": "Portugal",
+      "home_id": "colombia",
+      "away_id": "portugal",
       "pred_outcome": "away",
       "pred_score": [
         1,
@@ -2148,6 +2286,8 @@
       "group": "K",
       "home": "DR Congo",
       "away": "Uzbekistan",
+      "home_id": "dr_congo",
+      "away_id": "uzbekistan",
       "pred_outcome": "home",
       "pred_score": [
         0,
@@ -2178,6 +2318,8 @@
       "group": "L",
       "home": "Panama",
       "away": "England",
+      "home_id": "panama",
+      "away_id": "england",
       "pred_outcome": "away",
       "pred_score": [
         0,
@@ -2208,6 +2350,8 @@
       "group": "L",
       "home": "Croatia",
       "away": "Ghana",
+      "home_id": "croatia",
+      "away_id": "ghana",
       "pred_outcome": "home",
       "pred_score": [
         1,
@@ -2255,60 +2399,70 @@
   "forecast_top10": [
     {
       "team": "Argentina",
+      "id": "argentina",
       "pct": 28.89,
       "delta_pct": 10.81,
       "rank_delta": 1
     },
     {
       "team": "Spain",
+      "id": "spain",
       "pct": 16.24,
       "delta_pct": -3.09,
       "rank_delta": -1
     },
     {
       "team": "France",
+      "id": "france",
       "pct": 12.55,
       "delta_pct": 0.9,
       "rank_delta": 0
     },
     {
       "team": "England",
+      "id": "england",
       "pct": 10.54,
       "delta_pct": -0.01,
       "rank_delta": 0
     },
     {
       "team": "Brazil",
+      "id": "brazil",
       "pct": 6.35,
       "delta_pct": -1.51,
       "rank_delta": 1
     },
     {
       "team": "Portugal",
+      "id": "portugal",
       "pct": 5.87,
       "delta_pct": -3.21,
       "rank_delta": -1
     },
     {
       "team": "Germany",
+      "id": "germany",
       "pct": 3.84,
       "delta_pct": -0.55,
       "rank_delta": 0
     },
     {
       "team": "Colombia",
+      "id": "colombia",
       "pct": 3.43,
       "delta_pct": 1.13,
       "rank_delta": 2
     },
     {
       "team": "Netherlands",
+      "id": "netherlands",
       "pct": 3.1,
       "delta_pct": -0.29,
       "rank_delta": -1
     },
     {
       "team": "Belgium",
+      "id": "belgium",
       "pct": 1.86,
       "delta_pct": -1.22,
       "rank_delta": -1
@@ -2335,6 +2489,19 @@
             0.1006,
             0.205,
             0.6944
+          ],
+          "p_1x2_120": [
+            0.1219,
+            0.0973,
+            0.7809
+          ],
+          "xg": [
+            0.63,
+            2.01
+          ],
+          "modal": [
+            0,
+            2
           ]
         },
         {
@@ -2353,6 +2520,19 @@
             0.7442,
             0.1776,
             0.0782
+          ],
+          "p_1x2_120": [
+            0.8257,
+            0.0801,
+            0.0943
+          ],
+          "xg": [
+            2.22,
+            0.59
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2371,6 +2551,19 @@
             0.4104,
             0.3184,
             0.2712
+          ],
+          "p_1x2_120": [
+            0.4899,
+            0.1808,
+            0.3293
+          ],
+          "xg": [
+            1.15,
+            0.88
+          ],
+          "modal": [
+            1,
+            0
           ]
         },
         {
@@ -2389,6 +2582,19 @@
             0.4867,
             0.2781,
             0.2352
+          ],
+          "p_1x2_120": [
+            0.5711,
+            0.1441,
+            0.2848
+          ],
+          "xg": [
+            1.47,
+            0.95
+          ],
+          "modal": [
+            1,
+            1
           ]
         },
         {
@@ -2407,6 +2613,19 @@
             0.8418,
             0.112,
             0.0462
+          ],
+          "p_1x2_120": [
+            0.9043,
+            0.0409,
+            0.0547
+          ],
+          "xg": [
+            2.99,
+            0.62
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2425,6 +2644,19 @@
             0.2141,
             0.2725,
             0.5135
+          ],
+          "p_1x2_120": [
+            0.2595,
+            0.1406,
+            0.5999
+          ],
+          "xg": [
+            0.9,
+            1.53
+          ],
+          "modal": [
+            1,
+            1
           ]
         },
         {
@@ -2443,6 +2675,19 @@
             0.4178,
             0.3318,
             0.2505
+          ],
+          "p_1x2_120": [
+            0.4992,
+            0.1953,
+            0.3055
+          ],
+          "xg": [
+            1.09,
+            0.78
+          ],
+          "modal": [
+            0,
+            0
           ]
         },
         {
@@ -2461,6 +2706,19 @@
             0.7786,
             0.1766,
             0.0447
+          ],
+          "p_1x2_120": [
+            0.859,
+            0.0869,
+            0.0541
+          ],
+          "xg": [
+            2.02,
+            0.32
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2479,6 +2737,19 @@
             0.7685,
             0.1529,
             0.0786
+          ],
+          "p_1x2_120": [
+            0.8442,
+            0.0618,
+            0.094
+          ],
+          "xg": [
+            2.59,
+            0.73
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2497,6 +2768,19 @@
             0.4998,
             0.2711,
             0.2291
+          ],
+          "p_1x2_120": [
+            0.5848,
+            0.1381,
+            0.2771
+          ],
+          "xg": [
+            1.54,
+            0.96
+          ],
+          "modal": [
+            1,
+            1
           ]
         },
         {
@@ -2515,6 +2799,19 @@
             0.6044,
             0.2402,
             0.1554
+          ],
+          "p_1x2_120": [
+            0.6933,
+            0.1182,
+            0.1885
+          ],
+          "xg": [
+            1.79,
+            0.79
+          ],
+          "modal": [
+            1,
+            0
           ]
         },
         {
@@ -2533,6 +2830,19 @@
             0.7488,
             0.1752,
             0.076
+          ],
+          "p_1x2_120": [
+            0.8297,
+            0.0786,
+            0.0917
+          ],
+          "xg": [
+            2.24,
+            0.58
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2551,6 +2861,19 @@
             0.4915,
             0.2601,
             0.2484
+          ],
+          "p_1x2_120": [
+            0.5743,
+            0.1267,
+            0.299
+          ],
+          "xg": [
+            1.63,
+            1.1
+          ],
+          "modal": [
+            1,
+            1
           ]
         },
         {
@@ -2569,6 +2892,19 @@
             0.9263,
             0.0638,
             0.0098
+          ],
+          "p_1x2_120": [
+            0.9663,
+            0.0222,
+            0.0114
+          ],
+          "xg": [
+            3.17,
+            0.22
+          ],
+          "modal": [
+            3,
+            0
           ]
         },
         {
@@ -2587,6 +2923,19 @@
             0.7727,
             0.1667,
             0.0606
+          ],
+          "p_1x2_120": [
+            0.8514,
+            0.0756,
+            0.073
+          ],
+          "xg": [
+            2.24,
+            0.48
+          ],
+          "modal": [
+            2,
+            0
           ]
         },
         {
@@ -2605,6 +2954,19 @@
             0.3789,
             0.3359,
             0.2852
+          ],
+          "p_1x2_120": [
+            0.4553,
+            0.198,
+            0.3467
+          ],
+          "xg": [
+            1.02,
+            0.85
+          ],
+          "modal": [
+            0,
+            0
           ]
         }
       ],

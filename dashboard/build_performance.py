@@ -286,6 +286,8 @@ def build():
             "group": g.get("group"),
             "home": disp(home),
             "away": disp(away),
+            "home_id": home,
+            "away_id": away,
             "pred_outcome": pred_outcome,
             "pred_score": list(ml_score),
             "pred_1x2": {"h": round(p_home, 4), "d": round(p_draw, 4),
@@ -466,7 +468,7 @@ def build():
     p_win = forecast.get("p_win", {})
     cur_sorted = sorted(p_win.items(), key=lambda kv: kv[1], reverse=True)
     for rank, (tid, p) in enumerate(cur_sorted[:10], start=1):
-        entry = {"team": f_team_names.get(tid, tid), "pct": round(p * 100, 2)}
+        entry = {"team": f_team_names.get(tid, tid), "id": tid, "pct": round(p * 100, 2)}
         if tid in baseline_pw:
             entry["delta_pct"] = round((p - baseline_pw[tid]) * 100, 2)
             entry["rank_delta"] = baseline_rank.get(tid, rank) - rank  # + = up

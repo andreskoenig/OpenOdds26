@@ -65,6 +65,7 @@
     .pts { font-weight: 700; }
     .p1x2 { font-size: 11px; color: var(--muted); }
     .matchname { font-weight: 600; color: var(--text); }
+    .flag { width: 17px; height: 13px; border-radius: 2px; margin-right: 5px; vertical-align: -2px; object-fit: cover; }
     .cal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 12px; }
     .cal-cell { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
     .cal-cell .bk { font-size: 12px; color: var(--muted); }
@@ -106,10 +107,12 @@
     .disclaimer p { margin: 0 0 8px; }
     .disclaimer p[dir="rtl"] { text-align: right; }
     /* knockout bracket */
-    .bracket { display: flex; gap: 14px; overflow-x: auto; padding: 4px 2px 10px; }
-    .bk-round { display: flex; flex-direction: column; justify-content: space-around; min-width: 172px; gap: 8px; }
+    .bracket { display: flex; gap: 12px; overflow-x: auto; padding: 4px 2px 10px; }
+    .bk-round { display: flex; flex-direction: column; justify-content: space-around; min-width: 150px; flex: 1 1 0; gap: 8px; position: relative; }
     .bk-rlabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); text-align: center; margin-bottom: 2px; }
-    .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; }
+    .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; position: relative; }
+    .bk-round:not(.bk-champ-col) .bk-match::after { content: ""; position: absolute; left: 100%; top: 50%; width: 6px; height: 1px; background: var(--border); }
+    .bracket > .bk-round:not(:first-child):not(.bk-champ-col) .bk-match::before { content: ""; position: absolute; right: 100%; top: 50%; width: 6px; height: 1px; background: var(--border); }
     .bk-tbd { border-left-color: var(--border); }
     .bk-date { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
     .bk-side { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 0; }
@@ -120,7 +123,8 @@
     .bk-fav .bk-bar span { background: var(--good); }
     .bk-pct { width: 30px; text-align: right; font-variant-numeric: tabular-nums; font-size: 11px; color: var(--muted); }
     .bk-fav .bk-pct { color: var(--text); }
-    .bk-x2 { font-size: 10px; color: var(--muted); margin-top: 4px; padding-top: 3px; border-top: 1px solid var(--border); text-align: center; font-variant-numeric: tabular-nums; }
+    .bk-x2 { font-size: 10px; color: var(--muted); margin-top: 4px; padding-top: 3px; border-top: 1px solid var(--border); text-align: center; font-variant-numeric: tabular-nums; display: flex; flex-direction: column; gap: 1px; }
+    .bk-xg { color: var(--muted); opacity: 0.85; }
     .bk-champ-col { justify-content: flex-start; padding-top: 18px; }
     .bk-champ { background: var(--panel2); border: 1px solid var(--warn); border-left: 3px solid var(--warn); border-radius: 8px; padding: 10px; text-align: center; }
     .bk-champ-sub { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
@@ -150,6 +154,25 @@
     // Matchday boundaries (group stage): MD1 ≤ Jun 17, MD2 Jun 18–23, MD3 ≥ Jun 24.
     function matchdayOf(d) { return d <= "2026-06-17" ? 1 : (d <= "2026-06-23" ? 2 : 3); }
     const MD_LABEL = { 1: "Matchday 1", 2: "Matchday 2", 3: "Matchday 3" };
+
+    const ISO = {
+      algeria: "dz", argentina: "ar", australia: "au", austria: "at", belgium: "be",
+      bosnia_and_herzegovina: "ba", brazil: "br", canada: "ca", cape_verde: "cv", colombia: "co",
+      croatia: "hr", curacao: "cw", czech_republic: "cz", dr_congo: "cd", ecuador: "ec",
+      egypt: "eg", england: "gb-eng", france: "fr", germany: "de", ghana: "gh",
+      haiti: "ht", iran: "ir", iraq: "iq", ivory_coast: "ci", japan: "jp",
+      jordan: "jo", mexico: "mx", morocco: "ma", netherlands: "nl", new_zealand: "nz",
+      norway: "no", panama: "pa", paraguay: "py", portugal: "pt", qatar: "qa",
+      saudi_arabia: "sa", scotland: "gb-sct", senegal: "sn", south_africa: "za", south_korea: "kr",
+      spain: "es", sweden: "se", switzerland: "ch", tunisia: "tn", turkey: "tr",
+      united_states: "us", uruguay: "uy", uzbekistan: "uz"
+    };
+    // Image flags (emoji flags don't render on Windows/Chromium); flagcdn is free + keyless.
+    function Flag({ id }) {
+      const c = ISO[id];
+      if (!c) return null;
+      return <img className="flag" src={"https://flagcdn.com/20x15/" + c + ".png"} alt="" loading="lazy" />;
+    }
 
     function pct(x) { return x == null ? "—" : (x * 100).toFixed(0) + "%"; }
     function num(x, d) { return x == null ? "—" : Number(x).toFixed(d == null ? 3 : d); }
@@ -259,7 +282,7 @@
                     <tr className={m.played ? "played" : "upcoming"}>
                       <td>{m.date}</td>
                       <td>{m.group}</td>
-                      <td className="matchname">{m.home} v {m.away}</td>
+                      <td className="matchname"><Flag id={m.home_id} />{m.home} v <Flag id={m.away_id} />{m.away}</td>
                       <td className="matchname">{predWinner(m)}</td>
                       <td>{scoreStr(m.pred_score)}</td>
                       <td className="p1x2">{pct(m.pred_1x2.h)}/{pct(m.pred_1x2.d)}/{pct(m.pred_1x2.a)}</td>
@@ -297,7 +320,7 @@
               <div className="frow" key={i}>
                 <span className="rank">{i + 1}</span>
                 <span className="rankmove"><RankMove d={t.rank_delta} /></span>
-                <span className="fname">{t.team}</span>
+                <span className="fname"><Flag id={t.id} />{t.team}</span>
                 <span className="fbar"><span className="ffill" style={{ width: (t.pct / max * 100) + "%" }}></span></span>
                 <span className="fpct">{t.pct.toFixed(1)}%</span>
                 <span className="move"><ProbMove delta={t.delta_pct} /></span>
@@ -373,10 +396,10 @@
       );
     }
 
-    function KoSide({ name, p, fav }) {
+    function KoSide({ tid, name, p, fav }) {
       return (
         <div className={"bk-side" + (fav ? " bk-fav" : "")}>
-          <span className="bk-team">{name}</span>
+          <span className="bk-team"><Flag id={tid} />{name}</span>
           <span className="bk-bar"><span style={{ width: p + "%" }}></span></span>
           <span className="bk-pct">{p}%</span>
         </div>
@@ -407,13 +430,17 @@
                       );
                     }
                     const ph = Math.round(m.p_home_adv * 100);
-                    const x = m.p_1x2_90 || [0, 0, 0];
+                    const x = m.p_1x2_120 || m.p_1x2_90 || [0, 0, 0];
+                    const xg = m.xg || null;
                     return (
                       <div className="bk-match" key={i}>
                         {m.date ? <div className="bk-date">{m.date.slice(5)}</div> : null}
-                        <KoSide name={m.home_name} p={ph} fav={m.p_home_adv >= m.p_away_adv} />
-                        <KoSide name={m.away_name} p={100 - ph} fav={m.p_away_adv > m.p_home_adv} />
-                        <div className="bk-x2">90′ {Math.round(x[0] * 100)}/{Math.round(x[1] * 100)}/{Math.round(x[2] * 100)}</div>
+                        <KoSide tid={m.home} name={m.home_name} p={ph} fav={m.p_home_adv >= m.p_away_adv} />
+                        <KoSide tid={m.away} name={m.away_name} p={100 - ph} fav={m.p_away_adv > m.p_home_adv} />
+                        <div className="bk-x2">
+                          <span title="full-time result incl. extra time (draw = penalties)">1X2 {Math.round(x[0] * 100)}% / {Math.round(x[1] * 100)}% / {Math.round(x[2] * 100)}%</span>
+                          {xg ? <span className="bk-xg">xG {xg[0]}–{xg[1]}</span> : null}
+                        </div>
                       </div>
                     );
                   })}
@@ -424,7 +451,7 @@
               <div className="bk-rlabel">Champion</div>
               <div className="bk-champ">
                 <div className="bk-champ-sub">model favourite</div>
-                <div className="bk-champ-team">{champ ? champ.team : "TBD"}</div>
+                <div className="bk-champ-team">{champ ? <span><Flag id={champ.id} />{champ.team}</span> : "TBD"}</div>
                 {champ ? <div className="bk-champ-pct">{champ.pct}% to win</div> : null}
               </div>
               {hasThird ? (
@@ -524,8 +551,6 @@
                  market={n ? mlines("mean_brier", "d_mean_brier", "model_mean_brier", "ll") : null} />
           </div>
 
-          <Calibration cal={data.calibration} />
-
           {data.knockout ? <Bracket ko={data.knockout} champ={data.forecast_top10 && data.forecast_top10[0]} /> : null}
 
           {data.knockout ? (
@@ -546,6 +571,8 @@
                     through={data.forecast_conditioned_through} />
 
           <Provenance data={data} />
+
+          <Calibration cal={data.calibration} />
 
           <div className="subline" style={{ marginTop: 24, justifyContent: "center" }}>
             Scoring only — the model is frozen and never re-run here.

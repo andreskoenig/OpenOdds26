@@ -220,7 +220,7 @@ def main():
                 "x90": [round(float(ph), 4), round(float(pd), 4), round(float(pa), 4)],
                 "x120": [round(float(h120), 4), round(float(d120), 4), round(float(a120), 4)],
                 "xg": [round(float(eg_a), 2), round(float(eg_b), 2)],
-                "modal": [int(sx), int(sy)]}
+                "modal": [int(sx), int(sy)], "modal_p": round(float(P[sx, sy]), 4)}
 
     # R32: resolve teams, then align to ESPN's official bracket (fixes the
     # third-place allocation, which our stand-in doesn't match exactly). Each tie
@@ -245,7 +245,8 @@ def main():
                     "p_home_adv": round(pa_adv, 4), "p_away_adv": round(pb_adv, 4),
                     "fav": a if pa_adv >= pb_adv else b, "fav_name": nm(a if pa_adv >= pb_adv else b),
                     "fav_p": round(max(pa_adv, pb_adv), 4),
-                    "p_1x2_90": t["x90"], "p_1x2_120": t["x120"], "xg": t["xg"], "modal": t["modal"]})
+                    "p_1x2_90": t["x90"], "p_1x2_120": t["x120"], "xg": t["xg"],
+                    "modal": t["modal"], "modal_p": t["modal_p"]})
 
     # later rounds: TBD slots (teams unknown until R32 plays) — keep the tree refs
     later = {}

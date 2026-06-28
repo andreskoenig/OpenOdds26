@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-06-28 01:57:23",
+  "generated_at": "2026-06-28 03:02:49",
   "tournament": {
-    "games_played": 67,
+    "games_played": 68,
     "games_total": 72,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 67,
-    "accuracy_1x2": 0.6269,
-    "model_exact_rate": 0.1791,
-    "mean_log_loss": 0.8528,
-    "mean_brier": 0.507
+    "n_played": 68,
+    "accuracy_1x2": 0.6324,
+    "model_exact_rate": 0.1765,
+    "mean_log_loss": 0.8468,
+    "mean_brier": 0.5024
   },
   "kpis_market": {
     "Bet365": {
-      "n": 60,
-      "accuracy_1x2": 0.65,
-      "mean_log_loss": 0.8642,
-      "mean_brier": 0.5148,
-      "model_accuracy_1x2": 0.6167,
-      "model_mean_log_loss": 0.8853,
-      "model_mean_brier": 0.5311,
-      "d_accuracy_1x2": 0.0333,
-      "d_mean_log_loss": -0.0211,
-      "d_mean_brier": -0.0163
+      "n": 68,
+      "accuracy_1x2": 0.6765,
+      "mean_log_loss": 0.8275,
+      "mean_brier": 0.4879,
+      "model_accuracy_1x2": 0.6324,
+      "model_mean_log_loss": 0.8468,
+      "model_mean_brier": 0.5024,
+      "d_accuracy_1x2": 0.0441,
+      "d_mean_log_loss": -0.0193,
+      "d_mean_brier": -0.0145
     },
     "Pinnacle": {
-      "n": 60,
-      "accuracy_1x2": 0.65,
-      "mean_log_loss": 0.8572,
-      "mean_brier": 0.5122,
-      "model_accuracy_1x2": 0.6167,
-      "model_mean_log_loss": 0.8853,
-      "model_mean_brier": 0.5311,
-      "d_accuracy_1x2": 0.0333,
-      "d_mean_log_loss": -0.0281,
-      "d_mean_brier": -0.019
+      "n": 68,
+      "accuracy_1x2": 0.6765,
+      "mean_log_loss": 0.8223,
+      "mean_brier": 0.4861,
+      "model_accuracy_1x2": 0.6324,
+      "model_mean_log_loss": 0.8468,
+      "model_mean_brier": 0.5024,
+      "d_accuracy_1x2": 0.0441,
+      "d_mean_log_loss": -0.0245,
+      "d_mean_brier": -0.0163
     }
   },
   "calibration": [
@@ -59,9 +59,9 @@
       "bucket": "0.55-0.70",
       "lo": 0.55,
       "hi": 0.7,
-      "n": 27,
+      "n": 28,
       "predicted": 0.6411,
-      "realized": 0.6667
+      "realized": 0.6786
     },
     {
       "bucket": "0.70-1.00",
@@ -2210,13 +2210,16 @@
         1.77,
         0.63
       ],
-      "played": false,
-      "actual_score": null,
-      "actual_outcome": null,
-      "outcome_correct": null,
-      "exact_correct": null,
-      "log_loss": null,
-      "brier": null
+      "played": true,
+      "actual_score": [
+        2,
+        1
+      ],
+      "actual_outcome": "home",
+      "outcome_correct": true,
+      "exact_correct": false,
+      "log_loss": 0.4421,
+      "brier": 0.1979
     }
   ],
   "predictions_as_of": "2026-06-24",

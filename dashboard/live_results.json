@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27 22:57",
+  "generated_at": "2026-06-28 00:01",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -593,6 +593,15 @@
       "away_team_id": "belgium",
       "home_goals": 1,
       "away_goals": 5,
+      "competition": "FIFA World Cup",
+      "source": "espn"
+    },
+    {
+      "date": "2026-06-27",
+      "home_team_id": "croatia",
+      "away_team_id": "ghana",
+      "home_goals": 2,
+      "away_goals": 1,
       "competition": "FIFA World Cup",
       "source": "espn"
     },

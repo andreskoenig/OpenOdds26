@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 16:38:03",
+  "generated_at": "2026-06-28 16:47:24",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -2313,5 +2313,434 @@
       "delta_pct": -1.22,
       "rank_delta": -1
     }
-  ]
+  ],
+  "knockout": {
+    "as_of": "2026-06-28",
+    "source": "model knockout P(advance) (ET + penalties folded in)",
+    "rounds": {
+      "R32": [
+        {
+          "match": "M73",
+          "home": "south_africa",
+          "away": "canada",
+          "date": "2026-06-28",
+          "home_name": "South Africa",
+          "away_name": "Canada",
+          "p_home_adv": 0.166,
+          "p_away_adv": 0.834,
+          "fav": "canada",
+          "fav_name": "Canada",
+          "fav_p": 0.834,
+          "p_1x2_90": [
+            0.1006,
+            0.205,
+            0.6944
+          ]
+        },
+        {
+          "match": "M74",
+          "home": "germany",
+          "away": "paraguay",
+          "date": "2026-06-29",
+          "home_name": "Germany",
+          "away_name": "Paraguay",
+          "p_home_adv": 0.871,
+          "p_away_adv": 0.129,
+          "fav": "germany",
+          "fav_name": "Germany",
+          "fav_p": 0.871,
+          "p_1x2_90": [
+            0.7442,
+            0.1776,
+            0.0782
+          ]
+        },
+        {
+          "match": "M75",
+          "home": "netherlands",
+          "away": "morocco",
+          "date": "2026-06-29",
+          "home_name": "Netherlands",
+          "away_name": "Morocco",
+          "p_home_adv": 0.5827,
+          "p_away_adv": 0.4173,
+          "fav": "netherlands",
+          "fav_name": "Netherlands",
+          "fav_p": 0.5827,
+          "p_1x2_90": [
+            0.4104,
+            0.3184,
+            0.2712
+          ]
+        },
+        {
+          "match": "M76",
+          "home": "brazil",
+          "away": "japan",
+          "date": "2026-06-29",
+          "home_name": "Brazil",
+          "away_name": "Japan",
+          "p_home_adv": 0.6464,
+          "p_away_adv": 0.3536,
+          "fav": "brazil",
+          "fav_name": "Brazil",
+          "fav_p": 0.6464,
+          "p_1x2_90": [
+            0.4867,
+            0.2781,
+            0.2352
+          ]
+        },
+        {
+          "match": "M77",
+          "home": "france",
+          "away": "sweden",
+          "date": "2026-06-30",
+          "home_name": "France",
+          "away_name": "Sweden",
+          "p_home_adv": 0.928,
+          "p_away_adv": 0.072,
+          "fav": "france",
+          "fav_name": "France",
+          "fav_p": 0.928,
+          "p_1x2_90": [
+            0.8418,
+            0.112,
+            0.0462
+          ]
+        },
+        {
+          "match": "M78",
+          "home": "ivory_coast",
+          "away": "norway",
+          "date": "2026-06-30",
+          "home_name": "Ivory Coast",
+          "away_name": "Norway",
+          "p_home_adv": 0.3261,
+          "p_away_adv": 0.6739,
+          "fav": "norway",
+          "fav_name": "Norway",
+          "fav_p": 0.6739,
+          "p_1x2_90": [
+            0.2141,
+            0.2725,
+            0.5135
+          ]
+        },
+        {
+          "match": "M79",
+          "home": "mexico",
+          "away": "ecuador",
+          "date": "2026-06-30",
+          "home_name": "Mexico",
+          "away_name": "Ecuador",
+          "p_home_adv": 0.5979,
+          "p_away_adv": 0.4021,
+          "fav": "mexico",
+          "fav_name": "Mexico",
+          "fav_p": 0.5979,
+          "p_1x2_90": [
+            0.4178,
+            0.3318,
+            0.2505
+          ]
+        },
+        {
+          "match": "M80",
+          "home": "england",
+          "away": "dr_congo",
+          "date": "2026-07-01",
+          "home_name": "England",
+          "away_name": "DR Congo",
+          "p_home_adv": 0.9105,
+          "p_away_adv": 0.0895,
+          "fav": "england",
+          "fav_name": "England",
+          "fav_p": 0.9105,
+          "p_1x2_90": [
+            0.7786,
+            0.1766,
+            0.0447
+          ]
+        },
+        {
+          "match": "M81",
+          "home": "united_states",
+          "away": "bosnia_and_herzegovina",
+          "date": "2026-07-01",
+          "home_name": "United States",
+          "away_name": "Bosnia and Herzegovina",
+          "p_home_adv": 0.8783,
+          "p_away_adv": 0.1217,
+          "fav": "united_states",
+          "fav_name": "United States",
+          "fav_p": 0.8783,
+          "p_1x2_90": [
+            0.7685,
+            0.1529,
+            0.0786
+          ]
+        },
+        {
+          "match": "M82",
+          "home": "belgium",
+          "away": "senegal",
+          "date": "2026-07-01",
+          "home_name": "Belgium",
+          "away_name": "Senegal",
+          "p_home_adv": 0.6571,
+          "p_away_adv": 0.3429,
+          "fav": "belgium",
+          "fav_name": "Belgium",
+          "fav_p": 0.6571,
+          "p_1x2_90": [
+            0.4998,
+            0.2711,
+            0.2291
+          ]
+        },
+        {
+          "match": "M83",
+          "home": "portugal",
+          "away": "croatia",
+          "date": "2026-07-02",
+          "home_name": "Portugal",
+          "away_name": "Croatia",
+          "p_home_adv": 0.7572,
+          "p_away_adv": 0.2428,
+          "fav": "portugal",
+          "fav_name": "Portugal",
+          "fav_p": 0.7572,
+          "p_1x2_90": [
+            0.6044,
+            0.2402,
+            0.1554
+          ]
+        },
+        {
+          "match": "M84",
+          "home": "spain",
+          "away": "austria",
+          "date": "2026-07-02",
+          "home_name": "Spain",
+          "away_name": "Austria",
+          "p_home_adv": 0.8743,
+          "p_away_adv": 0.1257,
+          "fav": "spain",
+          "fav_name": "Spain",
+          "fav_p": 0.8743,
+          "p_1x2_90": [
+            0.7488,
+            0.1752,
+            0.076
+          ]
+        },
+        {
+          "match": "M85",
+          "home": "switzerland",
+          "away": "algeria",
+          "date": "2026-07-02",
+          "home_name": "Switzerland",
+          "away_name": "Algeria",
+          "p_home_adv": 0.6402,
+          "p_away_adv": 0.3598,
+          "fav": "switzerland",
+          "fav_name": "Switzerland",
+          "fav_p": 0.6402,
+          "p_1x2_90": [
+            0.4915,
+            0.2601,
+            0.2484
+          ]
+        },
+        {
+          "match": "M86",
+          "home": "argentina",
+          "away": "cape_verde",
+          "date": "2026-07-03",
+          "home_name": "Argentina",
+          "away_name": "Cape Verde",
+          "p_home_adv": 0.9804,
+          "p_away_adv": 0.0196,
+          "fav": "argentina",
+          "fav_name": "Argentina",
+          "fav_p": 0.9804,
+          "p_1x2_90": [
+            0.9263,
+            0.0638,
+            0.0098
+          ]
+        },
+        {
+          "match": "M87",
+          "home": "colombia",
+          "away": "ghana",
+          "date": "2026-07-03",
+          "home_name": "Colombia",
+          "away_name": "Ghana",
+          "p_home_adv": 0.895,
+          "p_away_adv": 0.105,
+          "fav": "colombia",
+          "fav_name": "Colombia",
+          "fav_p": 0.895,
+          "p_1x2_90": [
+            0.7727,
+            0.1667,
+            0.0606
+          ]
+        },
+        {
+          "match": "M88",
+          "home": "australia",
+          "away": "egypt",
+          "date": "2026-07-03",
+          "home_name": "Australia",
+          "away_name": "Egypt",
+          "p_home_adv": 0.5562,
+          "p_away_adv": 0.4438,
+          "fav": "australia",
+          "fav_name": "Australia",
+          "fav_p": 0.5562,
+          "p_1x2_90": [
+            0.3789,
+            0.3359,
+            0.2852
+          ]
+        }
+      ],
+      "R16": [
+        {
+          "match": "M89",
+          "home_ref": "W:M74",
+          "away_ref": "W:M77"
+        },
+        {
+          "match": "M90",
+          "home_ref": "W:M73",
+          "away_ref": "W:M75"
+        },
+        {
+          "match": "M91",
+          "home_ref": "W:M76",
+          "away_ref": "W:M78"
+        },
+        {
+          "match": "M92",
+          "home_ref": "W:M79",
+          "away_ref": "W:M80"
+        },
+        {
+          "match": "M93",
+          "home_ref": "W:M83",
+          "away_ref": "W:M84"
+        },
+        {
+          "match": "M94",
+          "home_ref": "W:M81",
+          "away_ref": "W:M82"
+        },
+        {
+          "match": "M95",
+          "home_ref": "W:M86",
+          "away_ref": "W:M88"
+        },
+        {
+          "match": "M96",
+          "home_ref": "W:M85",
+          "away_ref": "W:M87"
+        }
+      ],
+      "QF": [
+        {
+          "match": "M97",
+          "home_ref": "W:M89",
+          "away_ref": "W:M90"
+        },
+        {
+          "match": "M98",
+          "home_ref": "W:M93",
+          "away_ref": "W:M94"
+        },
+        {
+          "match": "M99",
+          "home_ref": "W:M91",
+          "away_ref": "W:M92"
+        },
+        {
+          "match": "M100",
+          "home_ref": "W:M95",
+          "away_ref": "W:M96"
+        }
+      ],
+      "SF": [
+        {
+          "match": "M101",
+          "home_ref": "W:M97",
+          "away_ref": "W:M98"
+        },
+        {
+          "match": "M102",
+          "home_ref": "W:M99",
+          "away_ref": "W:M100"
+        }
+      ],
+      "Final": [
+        {
+          "match": "M104",
+          "home_ref": "W:M101",
+          "away_ref": "W:M102"
+        }
+      ]
+    },
+    "team_names": {
+      "mexico": "Mexico",
+      "south_africa": "South Africa",
+      "south_korea": "South Korea",
+      "czech_republic": "Czech Republic",
+      "canada": "Canada",
+      "bosnia_and_herzegovina": "Bosnia and Herzegovina",
+      "qatar": "Qatar",
+      "switzerland": "Switzerland",
+      "brazil": "Brazil",
+      "morocco": "Morocco",
+      "haiti": "Haiti",
+      "scotland": "Scotland",
+      "united_states": "United States",
+      "paraguay": "Paraguay",
+      "australia": "Australia",
+      "turkey": "Turkey",
+      "germany": "Germany",
+      "curacao": "Curacao",
+      "ivory_coast": "Ivory Coast",
+      "ecuador": "Ecuador",
+      "netherlands": "Netherlands",
+      "japan": "Japan",
+      "sweden": "Sweden",
+      "tunisia": "Tunisia",
+      "belgium": "Belgium",
+      "egypt": "Egypt",
+      "iran": "Iran",
+      "new_zealand": "New Zealand",
+      "spain": "Spain",
+      "cape_verde": "Cape Verde",
+      "saudi_arabia": "Saudi Arabia",
+      "uruguay": "Uruguay",
+      "france": "France",
+      "senegal": "Senegal",
+      "iraq": "Iraq",
+      "norway": "Norway",
+      "argentina": "Argentina",
+      "algeria": "Algeria",
+      "austria": "Austria",
+      "jordan": "Jordan",
+      "portugal": "Portugal",
+      "dr_congo": "DR Congo",
+      "uzbekistan": "Uzbekistan",
+      "colombia": "Colombia",
+      "england": "England",
+      "croatia": "Croatia",
+      "ghana": "Ghana",
+      "panama": "Panama"
+    }
+  }
 }

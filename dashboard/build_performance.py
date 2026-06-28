@@ -50,6 +50,8 @@ FORECAST_PATH = os.path.join(DATA, "forecast_2026.json")
 LIVE_FORECAST_PATH = os.path.join(DATA, "forecast_live_2026.json")
 # Bookmaker closing odds (bet365/Pinnacle) captured by fetch_market_odds.py.
 MARKET_ARCHIVE = os.path.join(DATA, "research", "market_odds_wc2026.json")
+# Knockout bracket + P(advance) per tie (predict_knockouts_2026.py).
+KNOCKOUT_PATH = os.path.join(DATA, "knockout_2026.json")
 OUT_PATH = os.path.join(HERE, "performance.json")
 
 GAMES_TOTAL_GROUP = 72
@@ -492,6 +494,7 @@ def build():
         "forecast_games_conditioned": forecast.get("games_conditioned", 0),
         "forecast_conditioned_through": forecast.get("conditioned_through"),
         "forecast_top10": forecast_top10,
+        "knockout": load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None,
     }
 
     with open(OUT_PATH, "w", encoding="utf-8") as fh:

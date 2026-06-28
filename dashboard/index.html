@@ -105,6 +105,28 @@
                   color: var(--muted); font-size: 12px; line-height: 1.55; }
     .disclaimer p { margin: 0 0 8px; }
     .disclaimer p[dir="rtl"] { text-align: right; }
+    /* knockout bracket */
+    .bracket { display: flex; gap: 14px; overflow-x: auto; padding: 4px 2px 10px; }
+    .bk-round { display: flex; flex-direction: column; justify-content: space-around; min-width: 172px; gap: 8px; }
+    .bk-rlabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); text-align: center; margin-bottom: 2px; }
+    .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; }
+    .bk-tbd { border-left-color: var(--border); }
+    .bk-date { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
+    .bk-side { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 0; }
+    .bk-team { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
+    .bk-fav .bk-team { color: var(--text); font-weight: 600; }
+    .bk-bar { width: 32px; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; flex: none; }
+    .bk-bar span { display: block; height: 100%; background: var(--muted); }
+    .bk-fav .bk-bar span { background: var(--good); }
+    .bk-pct { width: 30px; text-align: right; font-variant-numeric: tabular-nums; font-size: 11px; color: var(--muted); }
+    .bk-fav .bk-pct { color: var(--text); }
+    /* collapsed group archive */
+    details.archive { border: 1px solid var(--border); border-radius: 10px; background: var(--panel); margin-top: 6px; }
+    details.archive > summary { cursor: pointer; padding: 12px 14px; color: var(--muted); font-size: 13px; list-style: none; }
+    details.archive > summary::-webkit-details-marker { display: none; }
+    details.archive > summary::before { content: "\25B8"; margin-right: 8px; }
+    details.archive[open] > summary::before { content: "\25BE"; }
+    details.archive[open] > summary { border-bottom: 1px solid var(--border); }
     @media (max-width: 600px) {
       .kpi .value { font-size: 22px; }
       th, td { padding: 7px 7px; }
@@ -344,6 +366,58 @@
       );
     }
 
+    function KoSide({ name, p, fav }) {
+      return (
+        <div className={"bk-side" + (fav ? " bk-fav" : "")}>
+          <span className="bk-team">{name}</span>
+          <span className="bk-bar"><span style={{ width: p + "%" }}></span></span>
+          <span className="bk-pct">{p}%</span>
+        </div>
+      );
+    }
+
+    function Bracket({ ko }) {
+      if (!ko || !ko.rounds) return null;
+      const ORDER = ["R32", "R16", "QF", "SF", "Final"];
+      const LABEL = { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-finals", SF: "Semi-finals", Final: "Final" };
+      return (
+        <div>
+          <h2>Knockout bracket — P(advance)</h2>
+          <div className="bracket">
+            {ORDER.map(r => {
+              const ms = ko.rounds[r] || [];
+              return (
+                <div className="bk-round" key={r}>
+                  <div className="bk-rlabel">{LABEL[r]} {ms.length > 1 ? "(" + ms.length + ")" : ""}</div>
+                  {ms.map((m, i) => {
+                    if (r !== "R32") {
+                      return (
+                        <div className="bk-match bk-tbd" key={i}>
+                          <div className="bk-side"><span className="bk-team">TBD</span></div>
+                          <div className="bk-side"><span className="bk-team">TBD</span></div>
+                        </div>
+                      );
+                    }
+                    const ph = Math.round(m.p_home_adv * 100);
+                    return (
+                      <div className="bk-match" key={i}>
+                        {m.date ? <div className="bk-date">{m.date.slice(5)}</div> : null}
+                        <KoSide name={m.home_name} p={ph} fav={m.p_home_adv >= m.p_away_adv} />
+                        <KoSide name={m.away_name} p={100 - ph} fav={m.p_away_adv > m.p_home_adv} />
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+          <div className="subline" style={{ marginTop: 8 }}>
+            Single elimination · P(advance) includes extra time + penalties · later rounds fill in as R32 is played
+          </div>
+        </div>
+      );
+    }
+
     function App() {
       const [data, setData] = useState(null);
       const [error, setError] = useState(null);
@@ -425,8 +499,19 @@
 
           <Calibration cal={data.calibration} />
 
-          <h2>Matches</h2>
-          <MatchTable matches={data.matches || []} />
+          {data.knockout ? <Bracket ko={data.knockout} /> : null}
+
+          {data.knockout ? (
+            <details className="archive">
+              <summary>Group stage — {data.tournament ? data.tournament.games_total : 72} games (complete) · scored above</summary>
+              <MatchTable matches={data.matches || []} />
+            </details>
+          ) : (
+            <React.Fragment>
+              <h2>Matches</h2>
+              <MatchTable matches={data.matches || []} />
+            </React.Fragment>
+          )}
 
           <Forecast top10={data.forecast_top10} genAt={data.forecast_generated_at}
                     isLive={data.forecast_is_live}

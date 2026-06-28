@@ -374,6 +374,13 @@
         "home_ref": "W:M101",
         "away_ref": "W:M102"
       }
+    ],
+    "third_place": [
+      {
+        "match": "M103",
+        "home_ref": "L:M101",
+        "away_ref": "L:M102"
+      }
     ]
   },
   "team_names": {

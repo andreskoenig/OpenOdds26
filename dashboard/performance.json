@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 16:47:24",
+  "generated_at": "2026-06-28 16:55:30",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -2689,6 +2689,13 @@
           "match": "M104",
           "home_ref": "W:M101",
           "away_ref": "W:M102"
+        }
+      ],
+      "third_place": [
+        {
+          "match": "M103",
+          "home_ref": "L:M101",
+          "away_ref": "L:M102"
         }
       ]
     },

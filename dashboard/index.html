@@ -120,6 +120,13 @@
     .bk-fav .bk-bar span { background: var(--good); }
     .bk-pct { width: 30px; text-align: right; font-variant-numeric: tabular-nums; font-size: 11px; color: var(--muted); }
     .bk-fav .bk-pct { color: var(--text); }
+    .bk-x2 { font-size: 10px; color: var(--muted); margin-top: 4px; padding-top: 3px; border-top: 1px solid var(--border); text-align: center; font-variant-numeric: tabular-nums; }
+    .bk-champ-col { justify-content: flex-start; padding-top: 18px; }
+    .bk-champ { background: var(--panel2); border: 1px solid var(--warn); border-left: 3px solid var(--warn); border-radius: 8px; padding: 10px; text-align: center; }
+    .bk-champ-sub { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+    .bk-champ-team { font-size: 15px; font-weight: 700; color: var(--warn); margin: 3px 0; }
+    .bk-champ-pct { font-size: 11px; color: var(--muted); }
+    .bk-third { margin-top: 18px; }
     /* collapsed group archive */
     details.archive { border: 1px solid var(--border); border-radius: 10px; background: var(--panel); margin-top: 6px; }
     details.archive > summary { cursor: pointer; padding: 12px 14px; color: var(--muted); font-size: 13px; list-style: none; }
@@ -376,10 +383,11 @@
       );
     }
 
-    function Bracket({ ko }) {
+    function Bracket({ ko, champ }) {
       if (!ko || !ko.rounds) return null;
       const ORDER = ["R32", "R16", "QF", "SF", "Final"];
       const LABEL = { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-finals", SF: "Semi-finals", Final: "Final" };
+      const hasThird = (ko.rounds.third_place || []).length > 0;
       return (
         <div>
           <h2>Knockout bracket — P(advance)</h2>
@@ -399,20 +407,39 @@
                       );
                     }
                     const ph = Math.round(m.p_home_adv * 100);
+                    const x = m.p_1x2_90 || [0, 0, 0];
                     return (
                       <div className="bk-match" key={i}>
                         {m.date ? <div className="bk-date">{m.date.slice(5)}</div> : null}
                         <KoSide name={m.home_name} p={ph} fav={m.p_home_adv >= m.p_away_adv} />
                         <KoSide name={m.away_name} p={100 - ph} fav={m.p_away_adv > m.p_home_adv} />
+                        <div className="bk-x2">90′ {Math.round(x[0] * 100)}/{Math.round(x[1] * 100)}/{Math.round(x[2] * 100)}</div>
                       </div>
                     );
                   })}
                 </div>
               );
             })}
+            <div className="bk-round bk-champ-col">
+              <div className="bk-rlabel">Champion</div>
+              <div className="bk-champ">
+                <div className="bk-champ-sub">model favourite</div>
+                <div className="bk-champ-team">{champ ? champ.team : "TBD"}</div>
+                {champ ? <div className="bk-champ-pct">{champ.pct}% to win</div> : null}
+              </div>
+              {hasThird ? (
+                <div className="bk-third">
+                  <div className="bk-rlabel">3rd place</div>
+                  <div className="bk-match bk-tbd">
+                    <div className="bk-side"><span className="bk-team">TBD</span></div>
+                    <div className="bk-side"><span className="bk-team">TBD</span></div>
+                  </div>
+                </div>
+              ) : null}
+            </div>
           </div>
           <div className="subline" style={{ marginTop: 8 }}>
-            Single elimination · P(advance) includes extra time + penalties · later rounds fill in as R32 is played
+            Single elimination · P(advance) includes extra time + penalties · 90′ line = home/draw/away · later rounds fill in as R32 is played
           </div>
         </div>
       );
@@ -499,7 +526,7 @@
 
           <Calibration cal={data.calibration} />
 
-          {data.knockout ? <Bracket ko={data.knockout} /> : null}
+          {data.knockout ? <Bracket ko={data.knockout} champ={data.forecast_top10 && data.forecast_top10[0]} /> : null}
 
           {data.knockout ? (
             <details className="archive">

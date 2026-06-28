@@ -243,6 +243,9 @@ def main():
         ms = kb.get(key, [])
         ms = ms if isinstance(ms, list) else [ms]
         later[lab] = [{"match": m["match"], "home_ref": m["home"], "away_ref": m["away"]} for m in ms]
+    tp = kb.get("third_place")
+    if tp:
+        later["third_place"] = [{"match": tp["match"], "home_ref": tp["home"], "away_ref": tp["away"]}]
 
     out = {"as_of": as_of, "source": "model knockout P(advance) (ET + penalties folded in)",
            "rounds": {"R32": r32, **later},

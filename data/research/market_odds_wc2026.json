@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28 16:32",
+  "generated_at": "2026-06-29 00:08",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1512,6 +1512,27 @@
           "home": 22.0,
           "draw": 9.75,
           "away": 1.14
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452545",
+      "kickoff": "2026-06-28",
+      "captured_at": "2026-06-29 00:08",
+      "home_id": "south_africa",
+      "away_id": "canada",
+      "home_name": "South Africa",
+      "away_name": "Canada",
+      "books": {
+        "Pinnacle": {
+          "home": 5.0,
+          "draw": 3.45,
+          "away": 1.877
+        },
+        "Bet365": {
+          "home": 5.75,
+          "draw": 3.6,
+          "away": 1.666
         }
       }
     }

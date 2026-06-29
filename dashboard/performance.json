@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 16:53:52",
+  "generated_at": "2026-06-29 22:47:50",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -2612,7 +2612,16 @@
             1
           ],
           "modal_p": 0.1314,
-          "played": false
+          "played": true,
+          "actual_score": [
+            2,
+            1
+          ],
+          "actual_outcome": "home",
+          "actual_advancer": "brazil",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true
         },
         {
           "match": "M77",
@@ -3155,9 +3164,9 @@
   },
   "knockout_summary": {
     "round": "R32",
-    "n": 1,
+    "n": 2,
     "advance_acc": 1.0,
-    "advance_n": 1,
+    "advance_n": 2,
     "x1x2_acc": 1.0,
     "exact_acc": 0.0
   }

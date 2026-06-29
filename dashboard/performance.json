@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 03:08:37",
+  "generated_at": "2026-06-29 16:53:52",
   "tournament": {
     "games_played": 72,
     "games_total": 72,
@@ -2503,7 +2503,17 @@
             0,
             2
           ],
-          "modal_p": 0.1439
+          "modal_p": 0.1439,
+          "played": true,
+          "actual_score": [
+            0,
+            1
+          ],
+          "actual_outcome": "away",
+          "actual_advancer": "canada",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true
         },
         {
           "match": "M74",
@@ -2535,7 +2545,8 @@
             2,
             0
           ],
-          "modal_p": 0.1488
+          "modal_p": 0.1488,
+          "played": false
         },
         {
           "match": "M75",
@@ -2567,7 +2578,8 @@
             1,
             0
           ],
-          "modal_p": 0.1436
+          "modal_p": 0.1436,
+          "played": false
         },
         {
           "match": "M76",
@@ -2599,7 +2611,8 @@
             1,
             1
           ],
-          "modal_p": 0.1314
+          "modal_p": 0.1314,
+          "played": false
         },
         {
           "match": "M77",
@@ -2631,7 +2644,8 @@
             2,
             0
           ],
-          "modal_p": 0.1211
+          "modal_p": 0.1211,
+          "played": false
         },
         {
           "match": "M78",
@@ -2663,7 +2677,8 @@
             1,
             1
           ],
-          "modal_p": 0.1284
+          "modal_p": 0.1284,
+          "played": false
         },
         {
           "match": "M79",
@@ -2695,7 +2710,8 @@
             0,
             0
           ],
-          "modal_p": 0.1627
+          "modal_p": 0.1627,
+          "played": false
         },
         {
           "match": "M80",
@@ -2727,7 +2743,8 @@
             2,
             0
           ],
-          "modal_p": 0.1969
+          "modal_p": 0.1969,
+          "played": false
         },
         {
           "match": "M81",
@@ -2759,7 +2776,8 @@
             2,
             0
           ],
-          "modal_p": 0.1212
+          "modal_p": 0.1212,
+          "played": false
         },
         {
           "match": "M82",
@@ -2791,7 +2809,8 @@
             1,
             1
           ],
-          "modal_p": 0.1287
+          "modal_p": 0.1287,
+          "played": false
         },
         {
           "match": "M83",
@@ -2823,7 +2842,8 @@
             1,
             0
           ],
-          "modal_p": 0.1289
+          "modal_p": 0.1289,
+          "played": false
         },
         {
           "match": "M84",
@@ -2855,7 +2875,8 @@
             2,
             0
           ],
-          "modal_p": 0.1494
+          "modal_p": 0.1494,
+          "played": false
         },
         {
           "match": "M85",
@@ -2887,7 +2908,8 @@
             1,
             1
           ],
-          "modal_p": 0.1239
+          "modal_p": 0.1239,
+          "played": false
         },
         {
           "match": "M86",
@@ -2919,7 +2941,8 @@
             3,
             0
           ],
-          "modal_p": 0.1794
+          "modal_p": 0.1794,
+          "played": false
         },
         {
           "match": "M87",
@@ -2951,7 +2974,8 @@
             2,
             0
           ],
-          "modal_p": 0.1648
+          "modal_p": 0.1648,
+          "played": false
         },
         {
           "match": "M88",
@@ -2983,7 +3007,8 @@
             0,
             0
           ],
-          "modal_p": 0.1627
+          "modal_p": 0.1627,
+          "played": false
         }
       ],
       "R16": [
@@ -3127,5 +3152,13 @@
       "ghana": "Ghana",
       "panama": "Panama"
     }
+  },
+  "knockout_summary": {
+    "round": "R32",
+    "n": 1,
+    "advance_acc": 1.0,
+    "advance_n": 1,
+    "x1x2_acc": 1.0,
+    "exact_acc": 0.0
   }
 }

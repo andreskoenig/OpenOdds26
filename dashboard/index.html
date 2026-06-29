@@ -121,6 +121,8 @@
     .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; width: 188px; box-sizing: border-box; }
     .bk-tbd { border-left-color: var(--border); }
     .bk-endcol { display: flex; flex-direction: column; gap: 16px; margin-left: 22px; }
+    .bk-result { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; font-size: 10px; margin-top: 4px; padding-top: 3px; border-top: 1px solid var(--border); }
+    .bk-result .bk-ft { color: var(--text); font-weight: 600; }
     .bk-date { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
     .bk-side { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 0; }
     .bk-team { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
@@ -415,6 +417,12 @@
 
     const KO_LABEL = { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-final", SF: "Semi-final", Final: "Final" };
 
+    function Hit({ ok, lab }) {
+      const unknown = ok === null || ok === undefined;
+      const cls = unknown ? "mv-flat" : (ok ? "mv-up" : "mv-down");
+      return <span className={cls}>{lab} {unknown ? "·" : (ok ? "✓" : "✗")}</span>;
+    }
+
     function KoMatch({ node }) {
       if (node.round === "R32") {
         const ph = Math.round(node.p_home_adv * 100);
@@ -429,6 +437,14 @@
               <span title="full-time result incl. extra time (draw = penalties)">1X2 {Math.round(x[0] * 100)}% / {Math.round(x[1] * 100)}% / {Math.round(x[2] * 100)}%</span>
               {xg ? <span className="bk-xg">xG {xg[0]}–{xg[1]}{node.modal ? " | " + node.modal[0] + "-" + node.modal[1] + " (" + Math.round((node.modal_p || 0) * 100) + "%)" : ""}</span> : null}
             </div>
+            {node.played ? (
+              <div className="bk-result">
+                <span className="bk-ft">FT {node.actual_score[0]}-{node.actual_score[1]}</span>
+                <Hit ok={node.advance_correct} lab="Adv" />
+                <Hit ok={node.x1x2_correct} lab="1X2" />
+                <Hit ok={node.exact_correct} lab="Score" />
+              </div>
+            ) : null}
           </div>
         );
       }
@@ -452,7 +468,7 @@
       );
     }
 
-    function Bracket({ ko, champ }) {
+    function Bracket({ ko, champ, summary }) {
       if (!ko || !ko.rounds) return null;
       const idx = {};
       ["R32", "R16", "QF", "SF", "Final"].forEach(r =>
@@ -494,8 +510,16 @@
               ) : null}
             </div>
           </div>
-          <div className="subline" style={{ marginTop: 8 }}>
-            Single elimination · P(advance) incl. extra time + penalties · 1X2 = full-time result (draw → penalties) · later rounds fill in as R32 is played
+          {summary ? (
+            <div className="subline" style={{ marginTop: 6 }}>
+              <b style={{ color: "var(--text)" }}>R32 scored ({summary.n}):</b>&nbsp;
+              P(advance) {summary.advance_acc != null ? Math.round(summary.advance_acc * 100) + "%" : "—"}
+              {summary.advance_n < summary.n ? " (" + summary.advance_n + " decided in play)" : ""} ·
+              1X2 {Math.round(summary.x1x2_acc * 100)}% · modal {Math.round(summary.exact_acc * 100)}%
+            </div>
+          ) : null}
+          <div className="subline" style={{ marginTop: 6 }}>
+            Single elimination · P(advance) incl. extra time + penalties · 1X2 = full-time result (draw → penalties) · per tie: Adv / 1X2 / Score hit once played
           </div>
         </div>
       );
@@ -580,7 +604,7 @@
                  market={n ? mlines("mean_brier", "d_mean_brier", "model_mean_brier", "ll") : null} />
           </div>
 
-          {data.knockout ? <Bracket ko={data.knockout} champ={data.forecast_top10 && data.forecast_top10[0]} /> : null}
+          {data.knockout ? <Bracket ko={data.knockout} champ={data.forecast_top10 && data.forecast_top10[0]} summary={data.knockout_summary} /> : null}
 
           {data.knockout ? (
             <details className="archive">

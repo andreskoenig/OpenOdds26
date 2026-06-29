@@ -439,6 +439,41 @@ def build():
             "realized": round(n_corr / n, 4) if n else None,
         })
 
+    # ---- knockout scoring: per R32 tie, did P(advance) / 1X2 / modal score hit? ----
+    knockout = load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None
+    knockout_summary = None
+    if knockout and knockout.get("rounds", {}).get("R32"):
+        n = adv_n = adv_ok = x_ok = ex_ok = 0
+        for t in knockout["rounds"]["R32"]:
+            actual = find_actual(t["home"], t["away"], t.get("date") or TOURNAMENT_START, actuals_index)
+            t["played"] = actual is not None
+            if actual is None:
+                continue
+            ahg, aag = actual
+            oc = outcome_from_goals(ahg, aag)                       # full-time (incl ET) sign
+            x = t.get("p_1x2_120") or t.get("p_1x2_90") or [0, 0, 0]
+            pred_x = ["home", "draw", "away"][max(range(3), key=lambda i: x[i])]
+            # advancer from the scoreline; a draw means penalties (not in our goal data)
+            adv = t["home"] if ahg > aag else (t["away"] if aag > ahg else None)
+            t["actual_score"] = [ahg, aag]
+            t["actual_outcome"] = oc
+            t["actual_advancer"] = adv
+            t["x1x2_correct"] = (pred_x == oc)
+            t["exact_correct"] = (list(t.get("modal", [])) == [ahg, aag])
+            t["advance_correct"] = None if adv is None else (t.get("fav") == adv)
+            n += 1
+            x_ok += 1 if t["x1x2_correct"] else 0
+            ex_ok += 1 if t["exact_correct"] else 0
+            if adv is not None:
+                adv_n += 1
+                adv_ok += 1 if t["advance_correct"] else 0
+        if n:
+            knockout_summary = {
+                "round": "R32", "n": n,
+                "advance_acc": round(adv_ok / adv_n, 4) if adv_n else None, "advance_n": adv_n,
+                "x1x2_acc": round(x_ok / n, 4), "exact_acc": round(ex_ok / n, 4),
+            }
+
     # Forecast top-10 P(win), with movement vs the FROZEN pre-tournament forecast
     # (the baseline): per team we expose the probability delta (percentage points)
     # and the rank delta (positive = moved up the table). When the displayed
@@ -496,7 +531,8 @@ def build():
         "forecast_games_conditioned": forecast.get("games_conditioned", 0),
         "forecast_conditioned_through": forecast.get("conditioned_through"),
         "forecast_top10": forecast_top10,
-        "knockout": load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None,
+        "knockout": knockout,
+        "knockout_summary": knockout_summary,
     }
 
     with open(OUT_PATH, "w", encoding="utf-8") as fh:

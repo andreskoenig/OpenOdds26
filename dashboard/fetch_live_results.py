@@ -90,8 +90,12 @@ def main():
         for ev in data.get("events", []):
             comp = ev["competitions"][0]
             status = ev["status"]["type"]["name"]
-            if status != "STATUS_FULL_TIME":
-                continue  # only count finished matches
+            # Accept any FINISHED status. Knockout ties decided in extra time
+            # (STATUS_FINAL_AET) or penalties (STATUS_FINAL_PEN) are NOT
+            # STATUS_FULL_TIME — without these, ET/pen knockouts get dropped.
+            if status not in ("STATUS_FULL_TIME", "STATUS_FINAL_AET",
+                              "STATUS_FINAL_PEN", "STATUS_FINAL"):
+                continue
             cs = comp["competitors"]
             try:
                 h = next(c for c in cs if c["homeAway"] == "home")
@@ -103,11 +107,18 @@ def main():
             for nm, tid in ((h["team"]["displayName"], hid), (a["team"]["displayName"], aid)):
                 if tid not in valid:
                     unresolved.add(f"{nm} -> {tid}")
+            # who advanced (ESPN winner flag) — decides penalty ties our goal data can't
+            adv = None
+            if h.get("winner"):
+                adv = hid
+            elif a.get("winner"):
+                adv = aid
             records.append({
                 "date": d.isoformat(),
                 "home_team_id": hid, "away_team_id": aid,
                 "home_goals": int(h["score"]), "away_goals": int(a["score"]),
                 "competition": WC_COMPETITION, "source": "espn",
+                "status": status, "advancer": adv,
             })
         d += dt.timedelta(days=1)
 

@@ -236,6 +236,14 @@ def build():
 
     actuals_index = index_actuals()
     market_index = load_market_index()
+    # who-advanced map from the ESPN layer's winner flag (resolves penalty ties
+    # that the scoreline alone can't — a 1-1 that went to a shootout).
+    advancer_index = {}
+    _lp = os.path.join(HERE, "live_results.json")
+    if os.path.exists(_lp):
+        for r in load_json(_lp).get("results", []):
+            if r.get("advancer"):
+                advancer_index[frozenset((r["home_team_id"], r["away_team_id"]))] = r["advancer"]
     # Per-book accumulators (book -> stats + matched-model stats on the SAME games,
     # so the delta is a fair like-for-like comparison).
     market_acc = {}
@@ -453,8 +461,11 @@ def build():
             oc = outcome_from_goals(ahg, aag)                       # full-time (incl ET) sign
             x = t.get("p_1x2_120") or t.get("p_1x2_90") or [0, 0, 0]
             pred_x = ["home", "draw", "away"][max(range(3), key=lambda i: x[i])]
-            # advancer from the scoreline; a draw means penalties (not in our goal data)
-            adv = t["home"] if ahg > aag else (t["away"] if aag > ahg else None)
+            # advancer: prefer the ESPN winner flag (handles penalty ties), else
+            # infer from the scoreline.
+            adv = advancer_index.get(frozenset((t["home"], t["away"])))
+            if adv is None:
+                adv = t["home"] if ahg > aag else (t["away"] if aag > ahg else None)
             t["actual_score"] = [ahg, aag]
             t["actual_outcome"] = oc
             t["actual_advancer"] = adv

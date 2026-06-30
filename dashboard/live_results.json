@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 19:47",
+  "generated_at": "2026-06-30 16:40",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -9,7 +9,9 @@
       "home_goals": 2,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "mexico"
     },
     {
       "date": "2026-06-11",
@@ -18,7 +20,9 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "south_korea"
     },
     {
       "date": "2026-06-12",
@@ -27,7 +31,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-12",
@@ -36,7 +42,9 @@
       "home_goals": 4,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "united_states"
     },
     {
       "date": "2026-06-13",
@@ -45,7 +53,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-13",
@@ -54,7 +64,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-13",
@@ -63,7 +75,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "scotland"
     },
     {
       "date": "2026-06-14",
@@ -72,7 +86,9 @@
       "home_goals": 2,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "australia"
     },
     {
       "date": "2026-06-14",
@@ -81,7 +97,9 @@
       "home_goals": 7,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "germany"
     },
     {
       "date": "2026-06-14",
@@ -90,7 +108,9 @@
       "home_goals": 2,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-14",
@@ -99,7 +119,9 @@
       "home_goals": 1,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "ivory_coast"
     },
     {
       "date": "2026-06-14",
@@ -108,7 +130,9 @@
       "home_goals": 5,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "sweden"
     },
     {
       "date": "2026-06-15",
@@ -117,7 +141,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-15",
@@ -126,7 +152,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-15",
@@ -135,7 +163,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-15",
@@ -144,7 +174,9 @@
       "home_goals": 2,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-16",
@@ -153,7 +185,9 @@
       "home_goals": 3,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "france"
     },
     {
       "date": "2026-06-16",
@@ -162,7 +196,9 @@
       "home_goals": 1,
       "away_goals": 4,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "norway"
     },
     {
       "date": "2026-06-16",
@@ -171,7 +207,9 @@
       "home_goals": 3,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "argentina"
     },
     {
       "date": "2026-06-17",
@@ -180,7 +218,9 @@
       "home_goals": 3,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "austria"
     },
     {
       "date": "2026-06-17",
@@ -189,7 +229,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-17",
@@ -198,7 +240,9 @@
       "home_goals": 4,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "england"
     },
     {
       "date": "2026-06-17",
@@ -207,7 +251,9 @@
       "home_goals": 1,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "ghana"
     },
     {
       "date": "2026-06-17",
@@ -216,7 +262,9 @@
       "home_goals": 1,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "colombia"
     },
     {
       "date": "2026-06-18",
@@ -225,7 +273,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-18",
@@ -234,7 +284,9 @@
       "home_goals": 4,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "switzerland"
     },
     {
       "date": "2026-06-18",
@@ -243,7 +295,9 @@
       "home_goals": 6,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "canada"
     },
     {
       "date": "2026-06-18",
@@ -252,7 +306,9 @@
       "home_goals": 1,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "mexico"
     },
     {
       "date": "2026-06-19",
@@ -261,7 +317,9 @@
       "home_goals": 2,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "united_states"
     },
     {
       "date": "2026-06-19",
@@ -270,7 +328,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "morocco"
     },
     {
       "date": "2026-06-19",
@@ -279,7 +339,9 @@
       "home_goals": 3,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "brazil"
     },
     {
       "date": "2026-06-19",
@@ -288,7 +350,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "paraguay"
     },
     {
       "date": "2026-06-20",
@@ -297,7 +361,9 @@
       "home_goals": 5,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "netherlands"
     },
     {
       "date": "2026-06-20",
@@ -306,7 +372,9 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "germany"
     },
     {
       "date": "2026-06-20",
@@ -315,7 +383,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-21",
@@ -324,7 +394,9 @@
       "home_goals": 0,
       "away_goals": 4,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "japan"
     },
     {
       "date": "2026-06-21",
@@ -333,7 +405,9 @@
       "home_goals": 4,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "spain"
     },
     {
       "date": "2026-06-21",
@@ -342,7 +416,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-21",
@@ -351,7 +427,9 @@
       "home_goals": 2,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-21",
@@ -360,7 +438,9 @@
       "home_goals": 1,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "egypt"
     },
     {
       "date": "2026-06-22",
@@ -369,7 +449,9 @@
       "home_goals": 2,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "argentina"
     },
     {
       "date": "2026-06-22",
@@ -378,7 +460,9 @@
       "home_goals": 3,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "france"
     },
     {
       "date": "2026-06-22",
@@ -387,7 +471,9 @@
       "home_goals": 3,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "norway"
     },
     {
       "date": "2026-06-22",
@@ -396,7 +482,9 @@
       "home_goals": 1,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "algeria"
     },
     {
       "date": "2026-06-23",
@@ -405,7 +493,9 @@
       "home_goals": 5,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "portugal"
     },
     {
       "date": "2026-06-23",
@@ -414,7 +504,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-23",
@@ -423,7 +515,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "croatia"
     },
     {
       "date": "2026-06-23",
@@ -432,7 +526,9 @@
       "home_goals": 1,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "colombia"
     },
     {
       "date": "2026-06-24",
@@ -441,7 +537,9 @@
       "home_goals": 3,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "bosnia_and_herzegovina"
     },
     {
       "date": "2026-06-24",
@@ -450,7 +548,9 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "switzerland"
     },
     {
       "date": "2026-06-24",
@@ -459,7 +559,9 @@
       "home_goals": 4,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "morocco"
     },
     {
       "date": "2026-06-24",
@@ -468,7 +570,9 @@
       "home_goals": 0,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "brazil"
     },
     {
       "date": "2026-06-24",
@@ -477,7 +581,9 @@
       "home_goals": 0,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "mexico"
     },
     {
       "date": "2026-06-24",
@@ -486,7 +592,9 @@
       "home_goals": 1,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "south_africa"
     },
     {
       "date": "2026-06-25",
@@ -495,7 +603,9 @@
       "home_goals": 0,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "ivory_coast"
     },
     {
       "date": "2026-06-25",
@@ -504,7 +614,9 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "ecuador"
     },
     {
       "date": "2026-06-25",
@@ -513,7 +625,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-25",
@@ -522,7 +636,9 @@
       "home_goals": 1,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "netherlands"
     },
     {
       "date": "2026-06-25",
@@ -531,7 +647,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-25",
@@ -540,7 +658,9 @@
       "home_goals": 3,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "turkey"
     },
     {
       "date": "2026-06-26",
@@ -549,7 +669,9 @@
       "home_goals": 1,
       "away_goals": 4,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "france"
     },
     {
       "date": "2026-06-26",
@@ -558,7 +680,9 @@
       "home_goals": 5,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "senegal"
     },
     {
       "date": "2026-06-26",
@@ -567,7 +691,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-26",
@@ -576,7 +702,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "spain"
     },
     {
       "date": "2026-06-26",
@@ -585,7 +713,9 @@
       "home_goals": 1,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-26",
@@ -594,7 +724,9 @@
       "home_goals": 1,
       "away_goals": 5,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "belgium"
     },
     {
       "date": "2026-06-27",
@@ -603,7 +735,9 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "croatia"
     },
     {
       "date": "2026-06-27",
@@ -612,7 +746,9 @@
       "home_goals": 0,
       "away_goals": 2,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "england"
     },
     {
       "date": "2026-06-27",
@@ -621,7 +757,9 @@
       "home_goals": 0,
       "away_goals": 0,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-27",
@@ -630,7 +768,9 @@
       "home_goals": 3,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "dr_congo"
     },
     {
       "date": "2026-06-27",
@@ -639,7 +779,9 @@
       "home_goals": 3,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": null
     },
     {
       "date": "2026-06-27",
@@ -648,7 +790,9 @@
       "home_goals": 1,
       "away_goals": 3,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "argentina"
     },
     {
       "date": "2026-06-28",
@@ -657,7 +801,9 @@
       "home_goals": 0,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "canada"
     },
     {
       "date": "2026-06-29",
@@ -666,7 +812,31 @@
       "home_goals": 2,
       "away_goals": 1,
       "competition": "FIFA World Cup",
-      "source": "espn"
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "brazil"
+    },
+    {
+      "date": "2026-06-29",
+      "home_team_id": "germany",
+      "away_team_id": "paraguay",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_PEN",
+      "advancer": "paraguay"
+    },
+    {
+      "date": "2026-06-29",
+      "home_team_id": "netherlands",
+      "away_team_id": "morocco",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_PEN",
+      "advancer": "morocco"
     }
   ]
 }

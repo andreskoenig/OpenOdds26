@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 18:17",
+  "generated_at": "2026-06-30 20:26",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -837,6 +837,17 @@
       "source": "espn",
       "status": "STATUS_FINAL_PEN",
       "advancer": "morocco"
+    },
+    {
+      "date": "2026-06-30",
+      "home_team_id": "ivory_coast",
+      "away_team_id": "norway",
+      "home_goals": 1,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "norway"
     }
   ]
 }

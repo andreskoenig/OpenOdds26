@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29 00:08",
+  "generated_at": "2026-06-30 18:17",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1533,6 +1533,69 @@
           "home": 5.75,
           "draw": 3.6,
           "away": 1.666
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452557",
+      "kickoff": "2026-06-29",
+      "captured_at": "2026-06-30 18:17",
+      "home_id": "brazil",
+      "away_id": "japan",
+      "home_name": "Brazil",
+      "away_name": "Japan",
+      "books": {
+        "Bet365": {
+          "home": 1.77,
+          "draw": 3.7,
+          "away": 5.15
+        },
+        "Pinnacle": {
+          "home": 1.793,
+          "draw": 3.59,
+          "away": 5.33
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452541",
+      "kickoff": "2026-06-29",
+      "captured_at": "2026-06-30 18:17",
+      "home_id": "germany",
+      "away_id": "paraguay",
+      "home_name": "Germany",
+      "away_name": "Paraguay",
+      "books": {
+        "Bet365": {
+          "home": 1.37,
+          "draw": 5.2,
+          "away": 9.6
+        },
+        "Pinnacle": {
+          "home": 1.344,
+          "draw": 5.2,
+          "away": 11.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452547",
+      "kickoff": "2026-06-30",
+      "captured_at": "2026-06-30 18:17",
+      "home_id": "netherlands",
+      "away_id": "morocco",
+      "home_name": "Netherlands",
+      "away_name": "Morocco",
+      "books": {
+        "Bet365": {
+          "home": 2.41,
+          "draw": 3.22,
+          "away": 3.38
+        },
+        "Pinnacle": {
+          "home": 2.49,
+          "draw": 3.13,
+          "away": 3.34
         }
       }
     }

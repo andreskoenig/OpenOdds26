@@ -55,6 +55,7 @@ KNOCKOUT_PATH = os.path.join(DATA, "knockout_2026.json")
 OUT_PATH = os.path.join(HERE, "performance.json")
 
 GAMES_TOTAL_GROUP = 72
+GAMES_TOTAL = 104   # full WC2026: 72 group + 32 knockout (now that KPIs span both)
 TOURNAMENT_START = "2026-06-11"
 WC_COMPETITION = "FIFA World Cup"
 EPS = 1e-15
@@ -394,7 +395,64 @@ def build():
     # (played/upcoming) distinguishes them.
     matches.sort(key=lambda m: (m["date"], m["group"] or ""))
 
-    # KPIs
+    # ---- knockout scoring at 120' (folds into the headline KPIs) ----
+    # Knockout ties are scored at the end of extra time (120'): 1X2 = full-time
+    # result (a penalty tie counts as a draw), log-loss/Brier on the 120' 1X2
+    # probabilities, exact = the 120' modal scoreline. These add to the SAME KPI
+    # totals as the group games. P(advance) (which folds in penalties) is tracked
+    # separately in knockout_summary.
+    knockout = load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None
+    knockout_summary = None
+    if knockout and knockout.get("rounds", {}).get("R32"):
+        kn = adv_n = adv_ok = kx_ok = kex_ok = 0
+        for t in knockout["rounds"]["R32"]:
+            actual = find_actual(t["home"], t["away"], t.get("date") or TOURNAMENT_START, actuals_index)
+            t["played"] = actual is not None
+            if actual is None:
+                continue
+            ahg, aag = actual
+            oc = outcome_from_goals(ahg, aag)              # 120' sign (penalty tie -> draw)
+            x = t.get("p_1x2_120") or t.get("p_1x2_90") or [0, 0, 0]
+            xp = {"home": x[0], "draw": x[1], "away": x[2]}
+            pred_x = max(xp, key=xp.get)
+            adv = advancer_index.get(frozenset((t["home"], t["away"])))
+            if adv is None:
+                adv = t["home"] if ahg > aag else (t["away"] if aag > ahg else None)
+            t["actual_score"] = [ahg, aag]
+            t["actual_outcome"] = oc
+            t["actual_advancer"] = adv
+            t["x1x2_correct"] = (pred_x == oc)
+            t["exact_correct"] = (list(t.get("modal", [])) == [ahg, aag])
+            t["advance_correct"] = None if adv is None else (t.get("fav") == adv)
+            ind_ = {"home": 0.0, "draw": 0.0, "away": 0.0}
+            ind_[oc] = 1.0
+            t_ll = -math.log(min(max(xp[oc], EPS), 1.0))
+            t_br = sum((xp[k] - ind_[k]) ** 2 for k in ("home", "draw", "away"))
+            t["log_loss"] = round(t_ll, 4)
+            t["brier"] = round(t_br, 4)
+            # fold into the HEADLINE KPIs (all matches: group + knockout)
+            n_played += 1
+            if t["x1x2_correct"]:
+                n_outcome_correct += 1
+            if t["exact_correct"]:
+                n_model_exact += 1
+            sum_logloss += t_ll
+            sum_brier += t_br
+            # knockout-only summary
+            kn += 1
+            kx_ok += 1 if t["x1x2_correct"] else 0
+            kex_ok += 1 if t["exact_correct"] else 0
+            if adv is not None:
+                adv_n += 1
+                adv_ok += 1 if t["advance_correct"] else 0
+        if kn:
+            knockout_summary = {
+                "round": "R32", "n": kn,
+                "advance_acc": round(adv_ok / adv_n, 4) if adv_n else None, "advance_n": adv_n,
+                "x1x2_acc": round(kx_ok / kn, 4), "exact_acc": round(kex_ok / kn, 4),
+            }
+
+    # KPIs (headline = all played matches, group + knockout @120')
     if n_played > 0:
         kpis = {
             "n_played": n_played,
@@ -447,44 +505,6 @@ def build():
             "realized": round(n_corr / n, 4) if n else None,
         })
 
-    # ---- knockout scoring: per R32 tie, did P(advance) / 1X2 / modal score hit? ----
-    knockout = load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None
-    knockout_summary = None
-    if knockout and knockout.get("rounds", {}).get("R32"):
-        n = adv_n = adv_ok = x_ok = ex_ok = 0
-        for t in knockout["rounds"]["R32"]:
-            actual = find_actual(t["home"], t["away"], t.get("date") or TOURNAMENT_START, actuals_index)
-            t["played"] = actual is not None
-            if actual is None:
-                continue
-            ahg, aag = actual
-            oc = outcome_from_goals(ahg, aag)                       # full-time (incl ET) sign
-            x = t.get("p_1x2_120") or t.get("p_1x2_90") or [0, 0, 0]
-            pred_x = ["home", "draw", "away"][max(range(3), key=lambda i: x[i])]
-            # advancer: prefer the ESPN winner flag (handles penalty ties), else
-            # infer from the scoreline.
-            adv = advancer_index.get(frozenset((t["home"], t["away"])))
-            if adv is None:
-                adv = t["home"] if ahg > aag else (t["away"] if aag > ahg else None)
-            t["actual_score"] = [ahg, aag]
-            t["actual_outcome"] = oc
-            t["actual_advancer"] = adv
-            t["x1x2_correct"] = (pred_x == oc)
-            t["exact_correct"] = (list(t.get("modal", [])) == [ahg, aag])
-            t["advance_correct"] = None if adv is None else (t.get("fav") == adv)
-            n += 1
-            x_ok += 1 if t["x1x2_correct"] else 0
-            ex_ok += 1 if t["exact_correct"] else 0
-            if adv is not None:
-                adv_n += 1
-                adv_ok += 1 if t["advance_correct"] else 0
-        if n:
-            knockout_summary = {
-                "round": "R32", "n": n,
-                "advance_acc": round(adv_ok / adv_n, 4) if adv_n else None, "advance_n": adv_n,
-                "x1x2_acc": round(x_ok / n, 4), "exact_acc": round(ex_ok / n, 4),
-            }
-
     # Forecast top-10 P(win), with movement vs the FROZEN pre-tournament forecast
     # (the baseline): per team we expose the probability delta (percentage points)
     # and the rank delta (positive = moved up the table). When the displayed
@@ -527,7 +547,7 @@ def build():
         "generated_at": now_israel(),  # Israel time (Asia/Jerusalem)
         "tournament": {
             "games_played": n_played,
-            "games_total": GAMES_TOTAL_GROUP,
+            "games_total": GAMES_TOTAL,
             "start_date": TOURNAMENT_START,
         },
         "kpis": kpis,

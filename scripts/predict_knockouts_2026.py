@@ -215,12 +215,28 @@ def main():
         tilt = float(np.clip(PEN_TILT * (team_strength(params, a) - team_strength(params, b)), -PEN_CLIP, PEN_CLIP))
         p_a_adv = ph + pd * (et_a + et_d * (0.5 + tilt))
         h120, d120, a120 = ph + pd * et_a, pd * et_d, pa + pd * et_b   # result by end of ET
-        sx, sy = divmod(int(np.argmax(P)), P.shape[1])     # modal 90' score (a-b)
+        # 120' scoreline distribution: 90' cells stand if decisive, else add ET goals
+        # on top of the level (i,i) cells. Modal = the most likely 120' scoreline.
+        poh, poa = _pois(eg_a * ET_SCALE), _pois(eg_b * ET_SCALE)
+        Q = {}
+        nr, nc = P.shape
+        for i in range(nr):
+            for j in range(nc):
+                p = float(P[i, j])
+                if p < 1e-12:
+                    continue
+                if i != j:
+                    Q[(i, j)] = Q.get((i, j), 0.0) + p
+                else:
+                    for ei, pi in enumerate(poh):
+                        for ej, pj in enumerate(poa):
+                            Q[(i + ei, j + ej)] = Q.get((i + ei, j + ej), 0.0) + p * pi * pj
+        (mi, mj), mp = max(Q.items(), key=lambda kv: kv[1])
         return {"p_a_adv": float(p_a_adv), "p_b_adv": float(1 - p_a_adv),
                 "x90": [round(float(ph), 4), round(float(pd), 4), round(float(pa), 4)],
                 "x120": [round(float(h120), 4), round(float(d120), 4), round(float(a120), 4)],
                 "xg": [round(float(eg_a), 2), round(float(eg_b), 2)],
-                "modal": [int(sx), int(sy)], "modal_p": round(float(P[sx, sy]), 4)}
+                "modal": [int(mi), int(mj)], "modal_p": round(float(mp), 4)}
 
     # R32: resolve teams, then align to ESPN's official bracket (fixes the
     # third-place allocation, which our stand-in doesn't match exactly). Each tie

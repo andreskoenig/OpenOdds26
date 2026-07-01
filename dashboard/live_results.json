@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01 06:19",
+  "generated_at": "2026-07-01 18:22",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -870,6 +870,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "mexico"
+    },
+    {
+      "date": "2026-07-01",
+      "home_team_id": "england",
+      "away_team_id": "dr_congo",
+      "home_goals": 2,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "england"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01 18:22",
+  "generated_at": "2026-07-01 23:14",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -881,6 +881,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "england"
+    },
+    {
+      "date": "2026-07-01",
+      "home_team_id": "belgium",
+      "away_team_id": "senegal",
+      "home_goals": 3,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_AET",
+      "advancer": "belgium"
     }
   ]
 }

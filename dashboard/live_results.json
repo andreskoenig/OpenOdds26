@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 23:04",
+  "generated_at": "2026-07-01 06:19",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -859,6 +859,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "france"
+    },
+    {
+      "date": "2026-06-30",
+      "home_team_id": "mexico",
+      "away_team_id": "ecuador",
+      "home_goals": 2,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "mexico"
     }
   ]
 }

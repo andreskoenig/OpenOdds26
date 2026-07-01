@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-01 02:04:42",
+  "generated_at": "2026-07-01 09:19:56",
   "tournament": {
-    "games_played": 78,
+    "games_played": 79,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 78,
-    "accuracy_1x2": 0.6282,
-    "model_exact_rate": 0.1667,
-    "mean_log_loss": 0.8566,
-    "mean_brier": 0.5064
+    "n_played": 79,
+    "accuracy_1x2": 0.6329,
+    "model_exact_rate": 0.1646,
+    "mean_log_loss": 0.8546,
+    "mean_brier": 0.5049
   },
   "kpis_market": {
     "Bet365": {
@@ -2768,7 +2768,18 @@
             0
           ],
           "modal_p": 0.1925,
-          "played": false
+          "played": true,
+          "actual_score": [
+            2,
+            0
+          ],
+          "actual_outcome": "home",
+          "actual_advancer": "mexico",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true,
+          "log_loss": 0.6945,
+          "brier": 0.3821
         },
         {
           "match": "M80",
@@ -3212,10 +3223,10 @@
   },
   "knockout_summary": {
     "round": "R32",
-    "n": 6,
-    "advance_acc": 0.6667,
-    "advance_n": 6,
-    "x1x2_acc": 0.6667,
-    "exact_acc": 0.1667
+    "n": 7,
+    "advance_acc": 0.7143,
+    "advance_n": 7,
+    "x1x2_acc": 0.7143,
+    "exact_acc": 0.1429
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30 18:17",
+  "generated_at": "2026-07-01 06:19",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1596,6 +1596,69 @@
           "home": 2.49,
           "draw": 3.13,
           "away": 3.34
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452561",
+      "kickoff": "2026-06-30",
+      "captured_at": "2026-07-01 06:19",
+      "home_id": "ivory_coast",
+      "away_id": "norway",
+      "home_name": "Ivory Coast",
+      "away_name": "Norway",
+      "books": {
+        "Pinnacle": {
+          "home": 3.7,
+          "draw": 3.29,
+          "away": 2.12
+        },
+        "Bet365": {
+          "home": 3.72,
+          "draw": 3.42,
+          "away": 2.16
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452543",
+      "kickoff": "2026-06-30",
+      "captured_at": "2026-07-01 06:19",
+      "home_id": "france",
+      "away_id": "sweden",
+      "home_name": "France",
+      "away_name": "Sweden",
+      "books": {
+        "Bet365": {
+          "home": 1.25,
+          "draw": 6.0,
+          "away": 11.0
+        },
+        "Pinnacle": {
+          "home": 1.307,
+          "draw": 6.0,
+          "away": 11.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452563",
+      "kickoff": "2026-07-01",
+      "captured_at": "2026-07-01 06:19",
+      "home_id": "mexico",
+      "away_id": "ecuador",
+      "home_name": "Mexico",
+      "away_name": "Ecuador",
+      "books": {
+        "Bet365": {
+          "home": 2.25,
+          "draw": 2.88,
+          "away": 4.25
+        },
+        "Pinnacle": {
+          "home": 2.38,
+          "draw": 2.81,
+          "away": 4.07
         }
       }
     }

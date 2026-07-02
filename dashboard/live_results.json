@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01 23:14",
+  "generated_at": "2026-07-02 05:52",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -892,6 +892,17 @@
       "source": "espn",
       "status": "STATUS_FINAL_AET",
       "advancer": "belgium"
+    },
+    {
+      "date": "2026-07-01",
+      "home_team_id": "united_states",
+      "away_team_id": "bosnia_and_herzegovina",
+      "home_goals": 2,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "united_states"
     }
   ]
 }

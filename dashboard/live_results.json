@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02 05:52",
+  "generated_at": "2026-07-02 22:01",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -903,6 +903,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "united_states"
+    },
+    {
+      "date": "2026-07-02",
+      "home_team_id": "spain",
+      "away_team_id": "austria",
+      "home_goals": 3,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "spain"
     }
   ]
 }

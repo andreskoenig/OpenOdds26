@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 10:42",
+  "generated_at": "2026-07-03 21:59",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -936,6 +936,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "switzerland"
+    },
+    {
+      "date": "2026-07-03",
+      "home_team_id": "australia",
+      "away_team_id": "egypt",
+      "home_goals": 1,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_PEN",
+      "advancer": "egypt"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-03 01:01:35",
+  "generated_at": "2026-07-03 05:13:16",
   "tournament": {
-    "games_played": 83,
+    "games_played": 84,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 83,
-    "accuracy_1x2": 0.6506,
-    "model_exact_rate": 0.1687,
-    "mean_log_loss": 0.826,
-    "mean_brier": 0.4851
+    "n_played": 84,
+    "accuracy_1x2": 0.6548,
+    "model_exact_rate": 0.1667,
+    "mean_log_loss": 0.8205,
+    "mean_brier": 0.481
   },
   "kpis_market": {
     "Bet365": {
@@ -2944,7 +2944,18 @@
             0
           ],
           "modal_p": 0.1496,
-          "played": false
+          "played": true,
+          "actual_score": [
+            2,
+            1
+          ],
+          "actual_outcome": "home",
+          "actual_advancer": "portugal",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true,
+          "log_loss": 0.366,
+          "brier": 0.1434
         },
         {
           "match": "M84",
@@ -3267,10 +3278,10 @@
   },
   "knockout_summary": {
     "round": "R32",
-    "n": 11,
-    "advance_acc": 0.8182,
-    "advance_n": 11,
-    "x1x2_acc": 0.8182,
-    "exact_acc": 0.1818
+    "n": 12,
+    "advance_acc": 0.8333,
+    "advance_n": 12,
+    "x1x2_acc": 0.8333,
+    "exact_acc": 0.1667
   }
 }

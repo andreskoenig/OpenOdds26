@@ -113,6 +113,41 @@ def devig_1x2(oh, od, oa):
     return [q[0] / s, q[1] / s, q[2] / s]
 
 
+def score_market_game(market_acc, me, frame_home, actual_outcome, ind,
+                      model_correct, model_ll, model_br):
+    """Accumulate each book's de-vigged 1X2 vs the actual outcome, plus the
+    model's own numbers on the SAME game (for a like-for-like delta).
+
+    `frame_home` is the home team id in the outcome's frame; the outcome and
+    `ind` one-hot are 'home'/'draw'/'away' relative to that team. Book odds in
+    the archive may be stored in either orientation, so reorient per entry.
+    """
+    for bname, o in (me.get("books") or {}).items():
+        if me.get("home_id") == frame_home:
+            oh, od, oa = o.get("home"), o.get("draw"), o.get("away")
+        elif me.get("away_id") == frame_home:
+            oh, od, oa = o.get("away"), o.get("draw"), o.get("home")
+        else:
+            continue
+        try:
+            bp = devig_1x2(oh, od, oa)
+        except (TypeError, ZeroDivisionError):
+            continue
+        bprob = {"home": bp[0], "draw": bp[1], "away": bp[2]}
+        bpick = max(bprob, key=bprob.get)
+        pa = min(max(bprob[actual_outcome], EPS), 1.0)
+        a = market_acc.setdefault(bname, {
+            "n": 0, "acc": 0, "ll": 0.0, "br": 0.0,
+            "m_acc": 0, "m_ll": 0.0, "m_br": 0.0})
+        a["n"] += 1
+        a["acc"] += 1 if bpick == actual_outcome else 0
+        a["ll"] += -math.log(pa)
+        a["br"] += sum((bprob[k] - ind[k]) ** 2 for k in ("home", "draw", "away"))
+        a["m_acc"] += 1 if model_correct else 0    # model, same game
+        a["m_ll"] += model_ll
+        a["m_br"] += model_br
+
+
 def load_market_index():
     """frozenset(home_id, away_id) -> archive entry (home_id + per-book 1X2 odds)."""
     if not os.path.exists(MARKET_ARCHIVE):
@@ -240,11 +275,19 @@ def build():
     # who-advanced map from the ESPN layer's winner flag (resolves penalty ties
     # that the scoreline alone can't — a 1-1 that went to a shootout).
     advancer_index = {}
+    # status map (STATUS_FINAL_AET / STATUS_FINAL_PEN / ...) so the market
+    # comparison can recover the 90' outcome: a knockout tie that reached extra
+    # time or penalties was level after 90, which is what the books' regulation
+    # 1X2 market is settled on.
+    status_index = {}
     _lp = os.path.join(HERE, "live_results.json")
     if os.path.exists(_lp):
         for r in load_json(_lp).get("results", []):
+            key = frozenset((r["home_team_id"], r["away_team_id"]))
             if r.get("advancer"):
-                advancer_index[frozenset((r["home_team_id"], r["away_team_id"]))] = r["advancer"]
+                advancer_index[key] = r["advancer"]
+            if r.get("status"):
+                status_index[key] = r["status"]
     # Per-book accumulators (book -> stats + matched-model stats on the SAME games,
     # so the delta is a fair like-for-like comparison).
     market_acc = {}
@@ -362,30 +405,8 @@ def build():
             # and accumulate the model's own numbers on the SAME game for the delta.
             me = market_index.get(frozenset((home, away)))
             if me:
-                for bname, o in (me.get("books") or {}).items():
-                    if me.get("home_id") == home:          # reorient to this game's frame
-                        oh, od, oa = o.get("home"), o.get("draw"), o.get("away")
-                    elif me.get("away_id") == home:
-                        oh, od, oa = o.get("away"), o.get("draw"), o.get("home")
-                    else:
-                        continue
-                    try:
-                        bp = devig_1x2(oh, od, oa)
-                    except (TypeError, ZeroDivisionError):
-                        continue
-                    bprob = {"home": bp[0], "draw": bp[1], "away": bp[2]}
-                    bpick = max(bprob, key=bprob.get)
-                    pa = min(max(bprob[actual_outcome], EPS), 1.0)
-                    a = market_acc.setdefault(bname, {
-                        "n": 0, "acc": 0, "ll": 0.0, "br": 0.0,
-                        "m_acc": 0, "m_ll": 0.0, "m_br": 0.0})
-                    a["n"] += 1
-                    a["acc"] += 1 if bpick == actual_outcome else 0
-                    a["ll"] += -math.log(pa)
-                    a["br"] += sum((bprob[k] - ind[k]) ** 2 for k in ("home", "draw", "away"))
-                    a["m_acc"] += 1 if outcome_correct else 0   # model, same game
-                    a["m_ll"] += log_loss
-                    a["m_br"] += brier
+                score_market_game(market_acc, me, home, actual_outcome, ind,
+                                  outcome_correct, log_loss, brier)
 
         matches.append(entry)
 
@@ -430,6 +451,25 @@ def build():
             t_br = sum((xp[k] - ind_[k]) ** 2 for k in ("home", "draw", "away"))
             t["log_loss"] = round(t_ll, 4)
             t["brier"] = round(t_br, 4)
+            # ---- bookmaker comparison (90' basis) ----
+            # The books' 1X2 (archive) is settled on regulation time. A tie that
+            # reached extra time or penalties was level after 90', so its 90'
+            # outcome is a draw; otherwise it's the sign of the recorded score.
+            # Compare against OUR 90' probs so the delta is like-for-like.
+            key = frozenset((t["home"], t["away"]))
+            me = market_index.get(key)
+            if me:
+                st = status_index.get(key, "")
+                oc90 = "draw" if st in ("STATUS_FINAL_AET", "STATUS_FINAL_PEN") \
+                    else outcome_from_goals(ahg, aag)
+                p90 = t.get("p_1x2_90") or x
+                m90 = {"home": p90[0], "draw": p90[1], "away": p90[2]}
+                ind90 = {"home": 0.0, "draw": 0.0, "away": 0.0}
+                ind90[oc90] = 1.0
+                m_ll90 = -math.log(min(max(m90[oc90], EPS), 1.0))
+                m_br90 = sum((m90[k] - ind90[k]) ** 2 for k in ("home", "draw", "away"))
+                score_market_game(market_acc, me, t["home"], oc90, ind90,
+                                  max(m90, key=m90.get) == oc90, m_ll90, m_br90)
             # fold into the HEADLINE KPIs (all matches: group + knockout)
             n_played += 1
             if t["x1x2_correct"]:

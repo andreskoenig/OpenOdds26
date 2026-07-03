@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 09:07:53",
+  "generated_at": "2026-07-03 10:42:04",
   "tournament": {
     "games_played": 85,
     "games_total": 104,
@@ -14,28 +14,28 @@
   },
   "kpis_market": {
     "Bet365": {
-      "n": 72,
-      "accuracy_1x2": 0.6806,
-      "mean_log_loss": 0.8208,
-      "mean_brier": 0.4828,
-      "model_accuracy_1x2": 0.625,
-      "model_mean_log_loss": 0.8495,
-      "model_mean_brier": 0.5045,
-      "d_accuracy_1x2": 0.0556,
-      "d_mean_log_loss": -0.0286,
-      "d_mean_brier": -0.0218
+      "n": 85,
+      "accuracy_1x2": 0.6941,
+      "mean_log_loss": 0.8058,
+      "mean_brier": 0.4715,
+      "model_accuracy_1x2": 0.6471,
+      "model_mean_log_loss": 0.8253,
+      "model_mean_brier": 0.4876,
+      "d_accuracy_1x2": 0.0471,
+      "d_mean_log_loss": -0.0195,
+      "d_mean_brier": -0.016
     },
     "Pinnacle": {
-      "n": 72,
-      "accuracy_1x2": 0.6806,
-      "mean_log_loss": 0.8173,
-      "mean_brier": 0.4821,
-      "model_accuracy_1x2": 0.625,
-      "model_mean_log_loss": 0.8495,
-      "model_mean_brier": 0.5045,
-      "d_accuracy_1x2": 0.0556,
-      "d_mean_log_loss": -0.0322,
-      "d_mean_brier": -0.0224
+      "n": 85,
+      "accuracy_1x2": 0.6941,
+      "mean_log_loss": 0.8059,
+      "mean_brier": 0.4735,
+      "model_accuracy_1x2": 0.6471,
+      "model_mean_log_loss": 0.8253,
+      "model_mean_brier": 0.4876,
+      "d_accuracy_1x2": 0.0471,
+      "d_mean_log_loss": -0.0194,
+      "d_mean_brier": -0.0141
     }
   },
   "calibration": [

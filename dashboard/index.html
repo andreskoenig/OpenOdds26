@@ -120,6 +120,8 @@
     .bk-mlabel { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); text-align: center; margin-bottom: 3px; }
     .bk-match { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 6px; padding: 6px 8px; width: 188px; box-sizing: border-box; }
     .bk-tbd { border-left-color: var(--border); }
+    .bk-partial { border-left-color: var(--accent); }
+    .bk-partial .bk-team { color: var(--text); }
     .bk-endcol { display: flex; flex-direction: column; gap: 16px; margin-left: 22px; }
     .bk-result { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; font-size: 10px; margin-top: 4px; padding-top: 3px; border-top: 1px solid var(--border); }
     .bk-result .bk-ft { color: var(--text); font-weight: 600; }
@@ -448,11 +450,15 @@
           </div>
         );
       }
+      const side = t => t
+        ? <span className="bk-team"><Flag id={t.id} />{t.name}</span>
+        : <span className="bk-team">TBD</span>;
+      const resolved = node.rHome || node.rAway;
       return (
-        <div className="bk-match bk-tbd">
+        <div className={"bk-match bk-tbd" + (resolved ? " bk-partial" : "")}>
           <div className="bk-mlabel">{KO_LABEL[node.round] || node.round}</div>
-          <div className="bk-side"><span className="bk-team">TBD</span></div>
-          <div className="bk-side"><span className="bk-team">TBD</span></div>
+          <div className="bk-side">{side(node.rHome)}</div>
+          <div className="bk-side">{side(node.rAway)}</div>
         </div>
       );
     }
@@ -473,6 +479,17 @@
       const idx = {};
       ["R32", "R16", "QF", "SF", "Final"].forEach(r =>
         (ko.rounds[r] || []).forEach(m => { idx[m.match] = Object.assign({}, m, { round: r }); }));
+      const nameOf = id => (ko.team_names && ko.team_names[id]) || id;
+      // Resolve "W:Mxx" -> the team that advanced from match Mxx, once decided.
+      // Only R32 ties carry actual_advancer, so R16 slots fill in as R32
+      // results land; deeper rounds stay TBD until their feeders are played.
+      function teamOf(ref) {
+        if (!ref) return null;
+        if (ref[0] !== "W") return { id: ref, name: nameOf(ref) };
+        const src = idx[ref.slice(2)];
+        const adv = src && src.actual_advancer;
+        return adv ? { id: adv, name: nameOf(adv) } : null;
+      }
       function build(id) {
         const m = idx[id];
         if (!m) return null;
@@ -480,7 +497,9 @@
         [m.home_ref, m.away_ref].forEach(ref => {
           if (ref && ref[0] === "W") { const c = build(ref.slice(2)); if (c) kids.push(c); }
         });
-        return Object.assign({}, m, { children: kids });
+        const node = Object.assign({}, m, { children: kids });
+        if (m.round !== "R32") { node.rHome = teamOf(m.home_ref); node.rAway = teamOf(m.away_ref); }
+        return node;
       }
       const finalM = (ko.rounds.Final || [])[0];
       const tree = finalM ? build(finalM.match) : null;

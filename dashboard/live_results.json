@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 02:13",
+  "generated_at": "2026-07-03 06:07",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -925,6 +925,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "portugal"
+    },
+    {
+      "date": "2026-07-02",
+      "home_team_id": "switzerland",
+      "away_team_id": "algeria",
+      "home_goals": 2,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "switzerland"
     }
   ]
 }

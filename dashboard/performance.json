@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-04 04:06:20",
+  "generated_at": "2026-07-04 08:03:55",
   "tournament": {
-    "games_played": 87,
+    "games_played": 88,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 87,
-    "accuracy_1x2": 0.6552,
-    "model_exact_rate": 0.1609,
-    "mean_log_loss": 0.8176,
-    "mean_brier": 0.4789
+    "n_played": 88,
+    "accuracy_1x2": 0.6591,
+    "model_exact_rate": 0.1591,
+    "mean_log_loss": 0.8101,
+    "mean_brier": 0.4738
   },
   "kpis_market": {
     "Bet365": {
@@ -3120,7 +3120,18 @@
             0
           ],
           "modal_p": 0.1727,
-          "played": false
+          "played": true,
+          "actual_score": [
+            1,
+            0
+          ],
+          "actual_outcome": "home",
+          "actual_advancer": "colombia",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true,
+          "log_loss": 0.1609,
+          "brier": 0.0331
         },
         {
           "match": "M88",
@@ -3311,10 +3322,10 @@
   },
   "knockout_summary": {
     "round": "R32",
-    "n": 15,
-    "advance_acc": 0.8,
-    "advance_n": 15,
-    "x1x2_acc": 0.8,
-    "exact_acc": 0.1333
+    "n": 16,
+    "advance_acc": 0.8125,
+    "advance_n": 16,
+    "x1x2_acc": 0.8125,
+    "exact_acc": 0.125
   }
 }

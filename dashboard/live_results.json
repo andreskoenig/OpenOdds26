@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04 01:06",
+  "generated_at": "2026-07-04 05:03",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -958,6 +958,17 @@
       "source": "espn",
       "status": "STATUS_FINAL_AET",
       "advancer": "argentina"
+    },
+    {
+      "date": "2026-07-03",
+      "home_team_id": "colombia",
+      "away_team_id": "ghana",
+      "home_goals": 1,
+      "away_goals": 0,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "colombia"
     }
   ]
 }

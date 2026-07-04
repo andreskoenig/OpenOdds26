@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 10:42",
+  "generated_at": "2026-07-04 12:02",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1785,6 +1785,69 @@
           "home": 2.04,
           "draw": 3.24,
           "away": 4.46
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452503",
+      "kickoff": "2026-07-03",
+      "captured_at": "2026-07-04 12:02",
+      "home_id": "australia",
+      "away_id": "egypt",
+      "home_name": "Australia",
+      "away_name": "Egypt",
+      "books": {
+        "Bet365": {
+          "home": 3.76,
+          "draw": 2.9,
+          "away": 2.41
+        },
+        "Pinnacle": {
+          "home": 3.62,
+          "draw": 2.76,
+          "away": 2.49
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452569",
+      "kickoff": "2026-07-03",
+      "captured_at": "2026-07-04 12:02",
+      "home_id": "argentina",
+      "away_id": "cape_verde",
+      "home_name": "Argentina",
+      "away_name": "Cape Verde",
+      "books": {
+        "Bet365": {
+          "home": 1.16,
+          "draw": 8.2,
+          "away": 24.0
+        },
+        "Pinnacle": {
+          "home": 1.142,
+          "draw": 7.8,
+          "away": 18.31
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452507",
+      "kickoff": "2026-07-04",
+      "captured_at": "2026-07-04 12:02",
+      "home_id": "colombia",
+      "away_id": "ghana",
+      "home_name": "Colombia",
+      "away_name": "Ghana",
+      "books": {
+        "Bet365": {
+          "home": 1.43,
+          "draw": 4.45,
+          "away": 9.8
+        },
+        "Pinnacle": {
+          "home": 1.48,
+          "draw": 4.11,
+          "away": 7.94
         }
       }
     }

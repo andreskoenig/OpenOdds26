@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03 21:59",
+  "generated_at": "2026-07-04 01:06",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -947,6 +947,17 @@
       "source": "espn",
       "status": "STATUS_FINAL_PEN",
       "advancer": "egypt"
+    },
+    {
+      "date": "2026-07-03",
+      "home_team_id": "argentina",
+      "away_team_id": "cape_verde",
+      "home_goals": 3,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_AET",
+      "advancer": "argentina"
     }
   ]
 }

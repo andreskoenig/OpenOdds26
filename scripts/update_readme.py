@@ -26,7 +26,10 @@ def _load(rel):
 
 
 def main():
-    fc = _load("data/forecast_2026.json")
+    # Prefer the live (knockout-conditioned) forecast once the tournament is
+    # underway — the frozen pre-tournament table would show eliminated teams.
+    live = os.path.exists(os.path.join(ROOT, "data/forecast_live_2026.json"))
+    fc = _load("data/forecast_live_2026.json" if live else "data/forecast_2026.json")
     pw = fc["p_win"]
     market = _load("data/polymarket_winner_2026.json")["p_market"]
     names = {t["team_id"]: t["canonical_name"] for t in _load("data/teams.json")}
@@ -42,10 +45,12 @@ def main():
         mt = os.path.getmtime(os.path.join(ROOT, "data/forecast_2026.json"))
         ts = datetime.fromtimestamp(mt).strftime("%Y-%m-%d %H:%M")
 
+    method = ("knockout-conditioned bracket propagation (real results pinned)"
+              if live else f"{fc.get('n_sims', '?')} simulations")
     top = sorted(pw, key=lambda t: -pw[t])[:10]
     lines = [
         f"**Model v{version}** · last run **{ts}** · "
-        f"{fc.get('n_sims', '?')} simulations, as-of {fc.get('as_of', '?')}",
+        f"{method}, as-of {fc.get('as_of', '?')}",
         "",
         "| # | Team | Model P(win) | Market (Polymarket) |",
         "|---|------|-------------:|--------------------:|",
@@ -54,8 +59,9 @@ def main():
         mk = market.get(t)
         mk_s = f"{mk * 100:.1f}%" if mk is not None else "—"
         lines.append(f"| {i} | {names.get(t, t)} | {pw[t] * 100:.1f}% | {mk_s} |")
+    src = "data/forecast_live_2026.json" if live else "data/forecast_2026.json"
     lines += ["",
-              "_Auto-generated from `data/forecast_2026.json` by "
+              f"_Auto-generated from `{src}` by "
               "`scripts/update_readme.py`. Market = de-vigged-free Polymarket "
               "winner odds (a model input, not an independent benchmark)._"]
     block = "\n".join(lines)

@@ -18,6 +18,7 @@ Inputs (see ``simulate_tournament``):
 
 from __future__ import annotations
 
+import math
 from collections import Counter, defaultdict
 from typing import Callable, Dict, List, Optional, Tuple
 
@@ -28,6 +29,21 @@ _ROUND_LABELS = {64: "R64", 32: "R32", 16: "R16", 8: "QF", 4: "SF", 2: "final"}
 
 # Extra time is 30 of 90 minutes (SPEC §6).
 _ET_SCALE = 30.0 / 90.0
+# ET draw calibration (mirrors scripts/predict_knockouts_2026.py): independent
+# pro-rata Poissons say ~54% of ET games stay level (-> pens); major-tournament
+# history (WC18/E20/WC22/WC26) says 15/21 = 71%. Shrunk target ~0.67 -> inflate
+# the matchup-specific P(ET draw) by 1.25 (capped). In the sampler this becomes:
+# a decisive ET result is kept only with prob dec_scale, else sent to penalties.
+_ET_DRAW_INFLATION = 1.25
+_ET_DRAW_CAP = 0.90
+
+
+def _et_draw_prob(lam_h: float, lam_a: float, K: int = 15) -> float:
+    """P(equal ET goals) for independent Poissons (matches the closed form)."""
+    ks = np.arange(K + 1)
+    ph = np.exp(-lam_h) * lam_h ** ks / np.array([math.factorial(k) for k in ks])
+    pa = np.exp(-lam_a) * lam_a ** ks / np.array([math.factorial(k) for k in ks])
+    return float(np.dot(ph, pa))
 
 
 def _round_label(size: int) -> str:
@@ -106,6 +122,7 @@ def _knockout_play(
     # Extra time: independent Poisson goals at 30/90 of the match goal rate.
     home, away, _ = _orient(a, b, teams)
     eg_home, eg_away = expected_goals(p)
+    level_90 = ga  # == gb (that's why we're in extra time)
     et_home = int(rng.poisson(eg_home * _ET_SCALE))
     et_away = int(rng.poisson(eg_away * _ET_SCALE))
     if home == a:
@@ -115,8 +132,16 @@ def _knockout_play(
         ga += et_away
         gb += et_home
     if ga != gb:
-        w = a if ga > gb else b
-        return w, (b if w == a else a), ga, gb, "extra_time"
+        # ET draw calibration: keep the decisive ET result only with prob
+        # dec_scale = (1 - et_d_adj)/(1 - et_d_raw); otherwise deem the tie
+        # level after 120 (trailing side equalized) and go to penalties.
+        et_d_raw = _et_draw_prob(eg_home * _ET_SCALE, eg_away * _ET_SCALE)
+        et_d_adj = min(_ET_DRAW_INFLATION * et_d_raw, _ET_DRAW_CAP)
+        dec_scale = (1.0 - et_d_adj) / (1.0 - et_d_raw) if et_d_raw < 1.0 else 0.0
+        if rng.random() < dec_scale:
+            w = a if ga > gb else b
+            return w, (b if w == a else a), ga, gb, "extra_time"
+        ga = gb = level_90 + min(et_home, et_away)
 
     # Penalties: ~50/50 with a small tilt toward the higher-rated side.
     rating_a = float(teams.get(a, {}).get("rating", 0.0))

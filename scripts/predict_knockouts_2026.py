@@ -47,6 +47,12 @@ HP = dict(xi=0.0012651, lambda_reg=8.0, c_a=0.30, c_x=0.10, c_d=0.30, c_y=0.10, 
 ET_SCALE = 30.0 / 90.0
 PEN_TILT = 0.05
 PEN_CLIP = 0.15
+# ET draw calibration (see scripts/forecast_live_knockout.py for derivation):
+# independent pro-rata Poissons say ~54% of ET games reach pens; major-tournament
+# history (WC18/E20/WC22/WC26) says 15/21 = 71%. Shrunk target ~0.67 -> inflate
+# the matchup-specific et_d by 1.25 (capped), renormalize the decisive mass.
+ET_DRAW_INFLATION = 1.25
+ET_DRAW_CAP = 0.90
 ROUND_LABELS = [("round_of_32", "R32"), ("round_of_16", "R16"),
                 ("quarter_finals", "QF"), ("semi_finals", "SF"), ("final", "Final")]
 
@@ -212,11 +218,17 @@ def main():
         ph, pd, pa = result_probs(P)                       # 90-min 1X2 (a, draw, b)
         eg_a, eg_b = expected_goals(P)
         et_a, et_d, et_b = et_outcome(eg_a * ET_SCALE, eg_b * ET_SCALE)
+        # calibrate P(pens | ET): inflate the ET draw, renormalize decisive mass
+        et_d_adj = min(ET_DRAW_INFLATION * et_d, ET_DRAW_CAP)
+        dec_scale = (1.0 - et_d_adj) / (1.0 - et_d) if et_d < 1.0 else 0.0
+        f_draw = et_d_adj / et_d if et_d > 0 else 1.0
+        et_a, et_b, et_d = et_a * dec_scale, et_b * dec_scale, et_d_adj
         tilt = float(np.clip(PEN_TILT * (team_strength(params, a) - team_strength(params, b)), -PEN_CLIP, PEN_CLIP))
         p_a_adv = ph + pd * (et_a + et_d * (0.5 + tilt))
         h120, d120, a120 = ph + pd * et_a, pd * et_d, pa + pd * et_b   # result by end of ET
         # 120' scoreline distribution: 90' cells stand if decisive, else add ET goals
-        # on top of the level (i,i) cells. Modal = the most likely 120' scoreline.
+        # on top of the level (i,i) cells, reweighted by the same calibration so the
+        # modal score stays consistent with the 120' 1X2.
         poh, poa = _pois(eg_a * ET_SCALE), _pois(eg_b * ET_SCALE)
         Q = {}
         nr, nc = P.shape
@@ -230,7 +242,8 @@ def main():
                 else:
                     for ei, pi in enumerate(poh):
                         for ej, pj in enumerate(poa):
-                            Q[(i + ei, j + ej)] = Q.get((i + ei, j + ej), 0.0) + p * pi * pj
+                            w = f_draw if ei == ej else dec_scale
+                            Q[(i + ei, j + ej)] = Q.get((i + ei, j + ej), 0.0) + p * pi * pj * w
         (mi, mj), mp = max(Q.items(), key=lambda kv: kv[1])
         return {"p_a_adv": float(p_a_adv), "p_b_adv": float(1 - p_a_adv),
                 "x90": [round(float(ph), 4), round(float(pd), 4), round(float(pa), 4)],

@@ -12,22 +12,22 @@ Validated on the 2022 World Cup against Bet365's closing odds. Honest headline:
 ## Current 2026 prediction
 
 <!-- PREDICTIONS:START -->
-**Model v1.1** · last run **2026-06-11 11:59** · 20000 simulations, as-of 2026-06-10
+**Model v1.2** · last run **2026-07-04 15:19** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-04
 
 | # | Team | Model P(win) | Market (Polymarket) |
 |---|------|-------------:|--------------------:|
-| 1 | Spain | 19.3% | 16.3% |
-| 2 | Argentina | 18.1% | 9.0% |
-| 3 | France | 11.7% | 15.4% |
-| 4 | England | 10.6% | 10.4% |
-| 5 | Portugal | 9.1% | 10.4% |
-| 6 | Brazil | 7.9% | 8.1% |
-| 7 | Germany | 4.4% | 5.0% |
-| 8 | Netherlands | 3.4% | 3.9% |
-| 9 | Belgium | 3.1% | 2.1% |
-| 10 | Colombia | 2.3% | 1.8% |
+| 1 | Argentina | 25.8% | 17.4% |
+| 2 | France | 21.7% | 34.6% |
+| 3 | Spain | 16.4% | 12.5% |
+| 4 | Brazil | 9.1% | 6.3% |
+| 5 | England | 7.9% | 7.0% |
+| 6 | Portugal | 5.6% | 6.1% |
+| 7 | Colombia | 3.4% | 3.2% |
+| 8 | Morocco | 3.3% | 2.6% |
+| 9 | Belgium | 2.0% | 1.2% |
+| 10 | Mexico | 2.0% | 3.4% |
 
-_Auto-generated from `data/forecast_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
+_Auto-generated from `data/forecast_live_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
 <!-- PREDICTIONS:END -->
 
 ### Sensitivity band
@@ -70,6 +70,23 @@ How robust is the forecast to its two judgment knobs? Re-run over market-prior w
    points, squad value, and the de-pathed market.
 3. **Simulation:** 20,000 Monte Carlo runs of the group stage + explicit 48-team
    knockout bracket (best-thirds allocation, host advantage, extra time/penalties).
+4. **Knockout stage (live):** each tie is a closed-form probability tree — no
+   thresholds anywhere. Regulation gives a full Dixon–Coles scoreline matrix;
+   **extra time** enters only weighted by P(level at 90), modeled as independent
+   Poisson goals at 30/90 of the match rate; **penalties** enter only weighted by
+   P(level after 120), as a near-coin-flip with a small rating tilt
+   (`0.5 + clip(0.05·Δstrength, ±0.15)`). The published knockout 1X2 is the
+   **120-minute** result (draw = goes to penalties); the 90-minute 1X2 is kept
+   for the bookmaker comparison (books settle regulation time). Because
+   independent Poissons ignore the positive correlation of ET goals, the ET draw
+   is **calibrated**: major-tournament history (WC18/E20/WC22/WC26) shows 15/21
+   ET games reached penalties (~71%) vs the raw model's ~54%, so the
+   matchup-specific P(ET draw) is inflated ×1.25 (shrunk target ≈0.67, capped at
+   0.90) with the decisive mass renormalized — consistently in the closed form,
+   the 120' modal-score distribution, and the Monte Carlo sampler. Once results
+   land, the tournament P(win) is a **knockout-conditioned bracket propagation**:
+   decided ties pin their real advancer, undecided ties propagate the model's
+   frozen P(advance), so eliminated teams drop to 0 and no simulation noise enters.
 
 ## Results
 
@@ -135,6 +152,16 @@ Current version lives in `VERSION`. The prediction table and version stamp above
 are refreshed on every substantial change via `python scripts/update_readme.py`
 (run it after each forecast). Git tags mark releases.
 
+- **v1.2** — knockout stage goes live: closed-form P(advance)/120' 1X2 per tie
+  (ET + penalties folded in, no thresholds); **ET draw calibration** — inflate
+  matchup P(ET draw) ×1.25 toward the historical P(pens|ET) ≈ 0.71 (raw
+  independent-Poisson model said ~54%; shrunk target ≈0.67), applied identically
+  in closed form, modal-score distribution and MC sampler; **knockout-conditioned
+  P(win)** — deterministic bracket propagation pinning real advancers (eliminated
+  teams → 0) replaces group-conditioned re-simulation once knockout results land;
+  KPIs + bookmaker comparison span group + knockout (knockout scored at 120',
+  books compared at 90'); dashboard: bracket tree with R32 collapsed by default,
+  R16+ prediction cards fill in as rounds resolve.
 - **v1.1** — fix penalty-shootout strength sign (`atk + def_`, was `atk − def_`;
   strong defenses were penalized in simulated shootouts); honest relabeling of
   the half-life (recency prior, not validated optimum) and the 2022 number

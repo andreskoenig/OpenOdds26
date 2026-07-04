@@ -56,6 +56,7 @@ OUT_PATH = os.path.join(HERE, "performance.json")
 
 GAMES_TOTAL_GROUP = 72
 GAMES_TOTAL = 104   # full WC2026: 72 group + 32 knockout (now that KPIs span both)
+KNOCKOUT_START = "2026-06-28"   # first R32 kickoff; group stage ended 06-27
 TOURNAMENT_START = "2026-06-11"
 WC_COMPETITION = "FIFA World Cup"
 EPS = 1e-15
@@ -149,13 +150,34 @@ def score_market_game(market_acc, me, frame_home, actual_outcome, ind,
 
 
 def load_market_index():
-    """frozenset(home_id, away_id) -> archive entry (home_id + per-book 1X2 odds)."""
+    """frozenset(home_id, away_id) -> LIST of archive entries (a pair can play
+    twice: group stage + a knockout rematch, e.g. a third-place tie). Callers
+    select the entry whose kickoff matches their game's window."""
     if not os.path.exists(MARKET_ARCHIVE):
         return {}
     idx = {}
     for e in load_json(MARKET_ARCHIVE).get("fixtures", []):
-        idx[frozenset((e["home_id"], e["away_id"]))] = e
+        idx.setdefault(frozenset((e["home_id"], e["away_id"])), []).append(e)
     return idx
+
+
+def pick_market_entry(entries, near, tol_days=2):
+    """The archive entry whose kickoff is closest to the game's date (within
+    tol_days). OddsPapi kickoffs are UTC and can sit +1 day from the ESPN
+    scoreboard date, so proximity beats fixed windows; it also keeps a group
+    game and a knockout rematch of the same pair (weeks apart) from
+    cross-matching each other's odds."""
+    best, bd = None, None
+    for e in entries or []:
+        try:
+            delta = abs((parse_date(e.get("kickoff", "")) - parse_date(near)).days)
+        except Exception:
+            continue
+        if delta > tol_days:
+            continue
+        if bd is None or delta < bd:
+            best, bd = e, delta
+    return best
 
 
 # ----------------------------------------------------------------------------
@@ -279,10 +301,15 @@ def build():
     # comparison can recover the 90' outcome: a knockout tie that reached extra
     # time or penalties was level after 90, which is what the books' regulation
     # 1X2 market is settled on.
+    # KNOCKOUT window only: ESPN flags winners of decisive GROUP games too, and
+    # a pair can rematch in the knockout — a group record must never resolve a
+    # knockout tie's advancer or status.
     status_index = {}
     _lp = os.path.join(HERE, "live_results.json")
     if os.path.exists(_lp):
         for r in load_json(_lp).get("results", []):
+            if r.get("date", "") < KNOCKOUT_START:
+                continue
             key = frozenset((r["home_team_id"], r["away_team_id"]))
             if r.get("advancer"):
                 advancer_index[key] = r["advancer"]
@@ -403,7 +430,10 @@ def build():
 
             # (d) bookmaker comparison: de-vig each book's closing 1X2, score it,
             # and accumulate the model's own numbers on the SAME game for the delta.
-            me = market_index.get(frozenset((home, away)))
+            # nearest-dated archive entry (a pair can meet again in the
+            # knockout; don't cross-match the odds)
+            me = pick_market_entry(market_index.get(frozenset((home, away))),
+                                   near=g["date"])
             if me:
                 score_market_game(market_acc, me, home, actual_outcome, ind,
                                   outcome_correct, log_loss, brier)
@@ -422,16 +452,42 @@ def build():
     # probabilities, exact = the 120' modal scoreline. These add to the SAME KPI
     # totals as the group games. P(advance) (which folds in penalties) is tracked
     # separately in knockout_summary.
+    #
+    # Covers EVERY round that has predictions (R32 now, R16+ as their cards fill
+    # in), not just R32 — otherwise KPIs/market freeze again after each round.
+    def find_actual_knockout(home, away):
+        """Pair-only match within the knockout window (predictions for later
+        rounds carry no kickoff date; single elimination means a pair can meet
+        at most once in the window, so the pair alone is unambiguous).
+        Returns ((home_goals, away_goals), date) or None."""
+        cands = [r for r in actuals_index.get(frozenset((home, away)), [])
+                 if r.get("date", "") >= KNOCKOUT_START]
+        if not cands:
+            return None
+        best = max(cands, key=lambda r: r["date"])
+        if best["home_team_id"] == home:
+            return (int(best["home_goals"]), int(best["away_goals"])), best["date"]
+        return (int(best["away_goals"]), int(best["home_goals"])), best["date"]
+
     knockout = load_json(KNOCKOUT_PATH) if os.path.exists(KNOCKOUT_PATH) else None
     knockout_summary = None
     if knockout and knockout.get("rounds", {}).get("R32"):
         kn = adv_n = adv_ok = kx_ok = kex_ok = 0
-        for t in knockout["rounds"]["R32"]:
-            actual = find_actual(t["home"], t["away"], t.get("date") or TOURNAMENT_START, actuals_index)
-            t["played"] = actual is not None
-            if actual is None:
+        rounds_scored = []
+        ko_ties = []
+        for rname in ("R32", "R16", "QF", "SF", "third_place", "Final"):
+            for t in knockout["rounds"].get(rname, []) or []:
+                # only ties whose teams are known AND predicted
+                if t.get("home") and t.get("away") and t.get("p_home_adv") is not None:
+                    ko_ties.append((rname, t))
+        for rname, t in ko_ties:
+            found = find_actual_knockout(t["home"], t["away"])
+            t["played"] = found is not None
+            if found is None:
                 continue
-            ahg, aag = actual
+            if rname not in rounds_scored:
+                rounds_scored.append(rname)
+            (ahg, aag), played_date = found
             oc = outcome_from_goals(ahg, aag)              # 120' sign (penalty tie -> draw)
             x = t.get("p_1x2_120") or t.get("p_1x2_90") or [0, 0, 0]
             xp = {"home": x[0], "draw": x[1], "away": x[2]}
@@ -456,10 +512,12 @@ def build():
             # reached extra time or penalties was level after 90', so its 90'
             # outcome is a draw; otherwise it's the sign of the recorded score.
             # Compare against OUR 90' probs so the delta is like-for-like.
+            # Requires the ESPN status: without it, an AET score (e.g. 3-2)
+            # is indistinguishable from a 90' win — skip rather than mis-score.
             key = frozenset((t["home"], t["away"]))
-            me = market_index.get(key)
-            if me:
-                st = status_index.get(key, "")
+            me = pick_market_entry(market_index.get(key), near=played_date)
+            st = status_index.get(key)
+            if me and st:
                 oc90 = "draw" if st in ("STATUS_FINAL_AET", "STATUS_FINAL_PEN") \
                     else outcome_from_goals(ahg, aag)
                 p90 = t.get("p_1x2_90") or x
@@ -487,7 +545,7 @@ def build():
                 adv_ok += 1 if t["advance_correct"] else 0
         if kn:
             knockout_summary = {
-                "round": "R32", "n": kn,
+                "round": "+".join(rounds_scored), "n": kn,
                 "advance_acc": round(adv_ok / adv_n, 4) if adv_n else None, "advance_n": adv_n,
                 "x1x2_acc": round(kx_ok / kn, 4), "exact_acc": round(kex_ok / kn, 4),
             }

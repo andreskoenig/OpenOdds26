@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-30",
+  "as_of": "2026-07-04",
   "source": "model knockout P(advance) (ET + penalties folded in)",
   "rounds": {
     "R32": [
@@ -520,42 +520,274 @@
       {
         "match": "M89",
         "home_ref": "W:M74",
-        "away_ref": "W:M77"
+        "away_ref": "W:M77",
+        "home": "paraguay",
+        "away": "france",
+        "home_name": "Paraguay",
+        "away_name": "France",
+        "p_home_adv": 0.0899,
+        "p_away_adv": 0.9101,
+        "fav": "france",
+        "fav_name": "France",
+        "fav_p": 0.9101,
+        "p_1x2_90": [
+          0.0463,
+          0.1546,
+          0.7991
+        ],
+        "p_1x2_120": [
+          0.0538,
+          0.0874,
+          0.8588
+        ],
+        "xg": [
+          0.4,
+          2.28
+        ],
+        "modal": [
+          0,
+          2
+        ],
+        "modal_p": 0.1855,
+        "date": "2026-07-04"
       },
       {
         "match": "M90",
         "home_ref": "W:M73",
-        "away_ref": "W:M75"
+        "away_ref": "W:M75",
+        "home": "canada",
+        "away": "morocco",
+        "home_name": "Canada",
+        "away_name": "Morocco",
+        "p_home_adv": 0.3615,
+        "p_away_adv": 0.6385,
+        "fav": "morocco",
+        "fav_name": "Morocco",
+        "fav_p": 0.6385,
+        "p_1x2_90": [
+          0.2284,
+          0.3051,
+          0.4665
+        ],
+        "p_1x2_120": [
+          0.2625,
+          0.2126,
+          0.5249
+        ],
+        "xg": [
+          0.81,
+          1.28
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.1695,
+        "date": "2026-07-04"
       },
       {
         "match": "M91",
         "home_ref": "W:M76",
-        "away_ref": "W:M78"
+        "away_ref": "W:M78",
+        "home": "brazil",
+        "away": "norway",
+        "home_name": "Brazil",
+        "away_name": "Norway",
+        "p_home_adv": 0.736,
+        "p_away_adv": 0.264,
+        "fav": "brazil",
+        "fav_name": "Brazil",
+        "fav_p": 0.736,
+        "p_1x2_90": [
+          0.5998,
+          0.2239,
+          0.1763
+        ],
+        "p_1x2_120": [
+          0.668,
+          0.1271,
+          0.2049
+        ],
+        "xg": [
+          2.0,
+          1.0
+        ],
+        "modal": [
+          2,
+          1
+        ],
+        "modal_p": 0.1213,
+        "date": "2026-07-05"
       },
       {
         "match": "M92",
         "home_ref": "W:M79",
-        "away_ref": "W:M80"
+        "away_ref": "W:M80",
+        "home": "mexico",
+        "away": "england",
+        "home_name": "Mexico",
+        "away_name": "England",
+        "p_home_adv": 0.3771,
+        "p_away_adv": 0.6229,
+        "fav": "england",
+        "fav_name": "England",
+        "fav_p": 0.6229,
+        "p_1x2_90": [
+          0.2421,
+          0.3049,
+          0.453
+        ],
+        "p_1x2_120": [
+          0.2782,
+          0.2112,
+          0.5107
+        ],
+        "xg": [
+          0.85,
+          1.27
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.1624,
+        "date": "2026-07-05"
       },
       {
         "match": "M93",
         "home_ref": "W:M83",
-        "away_ref": "W:M84"
+        "away_ref": "W:M84",
+        "home": "portugal",
+        "away": "spain",
+        "home_name": "Portugal",
+        "away_name": "Spain",
+        "p_home_adv": 0.3794,
+        "p_away_adv": 0.6206,
+        "fav": "spain",
+        "fav_name": "Spain",
+        "fav_p": 0.6206,
+        "p_1x2_90": [
+          0.2504,
+          0.2869,
+          0.4627
+        ],
+        "p_1x2_120": [
+          0.2885,
+          0.1888,
+          0.5227
+        ],
+        "xg": [
+          0.96,
+          1.4
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.1405,
+        "date": "2026-07-06"
       },
       {
         "match": "M94",
         "home_ref": "W:M81",
-        "away_ref": "W:M82"
+        "away_ref": "W:M82",
+        "home": "united_states",
+        "away": "belgium",
+        "home_name": "United States",
+        "away_name": "Belgium",
+        "p_home_adv": 0.4291,
+        "p_away_adv": 0.5709,
+        "fav": "belgium",
+        "fav_name": "Belgium",
+        "fav_p": 0.5709,
+        "p_1x2_90": [
+          0.3139,
+          0.2486,
+          0.4374
+        ],
+        "p_1x2_120": [
+          0.3612,
+          0.1416,
+          0.4972
+        ],
+        "xg": [
+          1.41,
+          1.7
+        ],
+        "modal": [
+          1,
+          2
+        ],
+        "modal_p": 0.1099,
+        "date": "2026-07-06"
       },
       {
         "match": "M95",
         "home_ref": "W:M86",
-        "away_ref": "W:M88"
+        "away_ref": "W:M88",
+        "home": "argentina",
+        "away": "egypt",
+        "home_name": "Argentina",
+        "away_name": "Egypt",
+        "p_home_adv": 0.8976,
+        "p_away_adv": 0.1024,
+        "fav": "argentina",
+        "fav_name": "Argentina",
+        "fav_p": 0.8976,
+        "p_1x2_90": [
+          0.7734,
+          0.1763,
+          0.0503
+        ],
+        "p_1x2_120": [
+          0.8352,
+          0.1064,
+          0.0584
+        ],
+        "xg": [
+          2.06,
+          0.37
+        ],
+        "modal": [
+          1,
+          0
+        ],
+        "modal_p": 0.1994,
+        "date": "2026-07-07"
       },
       {
         "match": "M96",
         "home_ref": "W:M85",
-        "away_ref": "W:M87"
+        "away_ref": "W:M87",
+        "home": "switzerland",
+        "away": "colombia",
+        "home_name": "Switzerland",
+        "away_name": "Colombia",
+        "p_home_adv": 0.3764,
+        "p_away_adv": 0.6236,
+        "fav": "colombia",
+        "fav_name": "Colombia",
+        "fav_p": 0.6236,
+        "p_1x2_90": [
+          0.2524,
+          0.2769,
+          0.4707
+        ],
+        "p_1x2_120": [
+          0.2912,
+          0.177,
+          0.5318
+        ],
+        "xg": [
+          1.02,
+          1.48
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.1288,
+        "date": "2026-07-07"
       }
     ],
     "QF": [

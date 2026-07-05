@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05 06:23",
+  "generated_at": "2026-07-05 22:56",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -991,6 +991,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "france"
+    },
+    {
+      "date": "2026-07-05",
+      "home_team_id": "brazil",
+      "away_team_id": "norway",
+      "home_goals": 1,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "norway"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05 06:23",
+  "generated_at": "2026-07-06 00:02",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1890,6 +1890,27 @@
           "home": 21.0,
           "draw": 7.5,
           "away": 1.18
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452517",
+      "kickoff": "2026-07-05",
+      "captured_at": "2026-07-06 00:02",
+      "home_id": "brazil",
+      "away_id": "norway",
+      "home_name": "Brazil",
+      "away_name": "Norway",
+      "books": {
+        "Pinnacle": {
+          "home": 1.8,
+          "draw": 3.71,
+          "away": 5.01
+        },
+        "Bet365": {
+          "home": 1.75,
+          "draw": 3.7,
+          "away": 4.75
         }
       }
     }

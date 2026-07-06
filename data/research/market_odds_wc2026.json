@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 00:02",
+  "generated_at": "2026-07-06 18:24",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1911,6 +1911,27 @@
           "home": 1.75,
           "draw": 3.7,
           "away": 4.75
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452519",
+      "kickoff": "2026-07-06",
+      "captured_at": "2026-07-06 18:24",
+      "home_id": "mexico",
+      "away_id": "england",
+      "home_name": "Mexico",
+      "away_name": "England",
+      "books": {
+        "Pinnacle": {
+          "home": 3.24,
+          "draw": 3.09,
+          "away": 2.57
+        },
+        "Bet365": {
+          "home": 3.0,
+          "draw": 3.1,
+          "away": 2.5
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06 18:24",
+  "generated_at": "2026-07-08 07:02",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -1932,6 +1932,90 @@
           "home": 3.0,
           "draw": 3.1,
           "away": 2.5
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452513",
+      "kickoff": "2026-07-06",
+      "captured_at": "2026-07-08 07:02",
+      "home_id": "portugal",
+      "away_id": "spain",
+      "home_name": "Portugal",
+      "away_name": "Spain",
+      "books": {
+        "Pinnacle": {
+          "home": 3.9,
+          "draw": 3.5,
+          "away": 1.99
+        },
+        "Bet365": {
+          "home": 4.1,
+          "draw": 3.5,
+          "away": 1.9
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452515",
+      "kickoff": "2026-07-07",
+      "captured_at": "2026-07-08 07:02",
+      "home_id": "united_states",
+      "away_id": "belgium",
+      "home_name": "USA",
+      "away_name": "Belgium",
+      "books": {
+        "Pinnacle": {
+          "home": 2.62,
+          "draw": 3.31,
+          "away": 2.97
+        },
+        "Bet365": {
+          "home": 2.5,
+          "draw": 3.4,
+          "away": 2.75
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452521",
+      "kickoff": "2026-07-07",
+      "captured_at": "2026-07-08 07:02",
+      "home_id": "argentina",
+      "away_id": "egypt",
+      "home_name": "Argentina",
+      "away_name": "Egypt",
+      "books": {
+        "Pinnacle": {
+          "home": 1.363,
+          "draw": 4.8,
+          "away": 11.75
+        },
+        "Bet365": {
+          "home": 1.33,
+          "draw": 4.75,
+          "away": 11.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452523",
+      "kickoff": "2026-07-07",
+      "captured_at": "2026-07-08 07:02",
+      "home_id": "switzerland",
+      "away_id": "colombia",
+      "home_name": "Switzerland",
+      "away_name": "Colombia",
+      "books": {
+        "Pinnacle": {
+          "home": 3.56,
+          "draw": 2.9,
+          "away": 2.52
+        },
+        "Bet365": {
+          "home": 3.5,
+          "draw": 3.1,
+          "away": 2.25
         }
       }
     }

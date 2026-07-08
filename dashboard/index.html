@@ -188,6 +188,7 @@
     }
 
     function pct(x) { return x == null ? "—" : (x * 100).toFixed(0) + "%"; }
+    function pct1(x) { return x == null ? "—" : (x * 100).toFixed(1) + "%"; }
     function num(x, d) { return x == null ? "—" : Number(x).toFixed(d == null ? 3 : d); }
     function scoreStr(s) { return (s && s[0] != null) ? (s[0] + "-" + s[1]) : "—"; }
     function ilTime(d) {
@@ -480,11 +481,21 @@
     }
 
     function Bracket({ ko, champ, summary }) {
-      const [showR32, setShowR32] = useState(false);   // R32 over -> collapsed by default
+      const [showDone, setShowDone] = useState(false); // completed rounds collapsed by default
       if (!ko || !ko.rounds) return null;
+      const ROUND_ORDER = ["R32", "R16", "QF", "SF", "Final"];
       const idx = {};
-      ["R32", "R16", "QF", "SF", "Final"].forEach(r =>
+      ROUND_ORDER.forEach(r =>
         (ko.rounds[r] || []).forEach(m => { idx[m.match] = Object.assign({}, m, { round: r }); }));
+      // Completed prefix: rounds where every tie is played collapse by default,
+      // so the tree opens on the active round (R32 done -> R16 leaves; R16 done
+      // -> QF leaves; ...).
+      const done = [];
+      for (const r of ROUND_ORDER) {
+        const ms = ko.rounds[r] || [];
+        if (ms.length && ms.every(m => m.played)) done.push(r); else break;
+      }
+      const doneSet = new Set(done);
       const nameOf = id => (ko.team_names && ko.team_names[id]) || id;
       // Resolve "W:Mxx" (winner) / "L:Mxx" (loser — third-place tie) -> the
       // team, once that match is decided; slots fill in as results land.
@@ -508,9 +519,9 @@
           if (ref && ref[0] === "W") {
             const childId = ref.slice(2);
             const child = idx[childId];
-            // With R32 collapsed, R16 nodes render as leaves (resolved teams),
-            // so the tree opens on the active round instead of 16 detail cards.
-            if (child && child.round === "R32" && !showR32) return;
+            // Completed rounds collapse: their nodes are dropped from the tree,
+            // so the first non-completed round renders as the leaf column.
+            if (child && doneSet.has(child.round) && !showDone) return;
             const c = build(childId); if (c) kids.push(c);
           }
         });
@@ -525,9 +536,11 @@
         <div>
           <h2 style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             Knockout bracket — P(advance)
-            <button className="r32-toggle" onClick={() => setShowR32(v => !v)}>
-              {showR32 ? "▾ Hide Round of 32" : "▸ Show Round of 32"}
-            </button>
+            {done.length ? (
+              <button className="r32-toggle" onClick={() => setShowDone(v => !v)}>
+                {showDone ? "▾ Hide completed rounds" : "▸ Show completed rounds (" + done.join(", ") + ")"}
+              </button>
+            ) : null}
           </h2>
           <div className="bracket2">
             {tree ? <Bout node={tree} /> : null}
@@ -633,9 +646,9 @@
           ) : null}
 
           <div className="kpis">
-            <Kpi label="1X2 Accuracy" value={n ? pct(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"}
+            <Kpi label="1X2 Accuracy" value={n ? pct1(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"}
                  market={n ? mlines("accuracy_1x2", "d_accuracy_1x2", "model_accuracy_1x2", "acc") : null} />
-            <Kpi label="Model Exact Score" value={n ? pct(k.model_exact_rate) : "—"} sub="modal score hit rate" />
+            <Kpi label="Model Exact Score" value={n ? pct1(k.model_exact_rate) : "—"} sub="modal score hit rate" />
             <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better"
                  labelHref="https://en.wikipedia.org/wiki/Loss_functions_for_classification"
                  market={n ? mlines("mean_log_loss", "d_mean_log_loss", "model_mean_log_loss", "ll") : null} />

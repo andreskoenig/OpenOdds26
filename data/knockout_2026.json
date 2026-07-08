@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-04",
+  "as_of": "2026-07-08",
   "source": "model knockout P(advance) (ET + penalties folded in)",
   "rounds": {
     "R32": [
@@ -794,22 +794,138 @@
       {
         "match": "M97",
         "home_ref": "W:M89",
-        "away_ref": "W:M90"
+        "away_ref": "W:M90",
+        "home": "france",
+        "away": "morocco",
+        "home_name": "France",
+        "away_name": "Morocco",
+        "date": "2026-07-09",
+        "p_home_adv": 0.7254,
+        "p_away_adv": 0.2746,
+        "fav": "france",
+        "fav_name": "France",
+        "fav_p": 0.7254,
+        "p_1x2_90": [
+          0.5566,
+          0.2834,
+          0.16
+        ],
+        "p_1x2_120": [
+          0.6199,
+          0.1952,
+          0.1848
+        ],
+        "xg": [
+          1.44,
+          0.65
+        ],
+        "modal": [
+          1,
+          0
+        ],
+        "modal_p": 0.1929
       },
       {
         "match": "M98",
         "home_ref": "W:M93",
-        "away_ref": "W:M94"
+        "away_ref": "W:M94",
+        "home": "spain",
+        "away": "belgium",
+        "home_name": "Spain",
+        "away_name": "Belgium",
+        "date": "2026-07-10",
+        "p_home_adv": 0.7666,
+        "p_away_adv": 0.2334,
+        "fav": "spain",
+        "fav_name": "Spain",
+        "fav_p": 0.7666,
+        "p_1x2_90": [
+          0.6262,
+          0.2257,
+          0.1481
+        ],
+        "p_1x2_120": [
+          0.6944,
+          0.1333,
+          0.1723
+        ],
+        "xg": [
+          1.93,
+          0.83
+        ],
+        "modal": [
+          1,
+          0
+        ],
+        "modal_p": 0.1295
       },
       {
         "match": "M99",
         "home_ref": "W:M91",
-        "away_ref": "W:M92"
+        "away_ref": "W:M92",
+        "home": "norway",
+        "away": "england",
+        "home_name": "Norway",
+        "away_name": "England",
+        "date": "2026-07-11",
+        "p_home_adv": 0.2844,
+        "p_away_adv": 0.7156,
+        "fav": "england",
+        "fav_name": "England",
+        "fav_p": 0.7156,
+        "p_1x2_90": [
+          0.1833,
+          0.2497,
+          0.567
+        ],
+        "p_1x2_120": [
+          0.2127,
+          0.1536,
+          0.6337
+        ],
+        "xg": [
+          0.89,
+          1.73
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.134
       },
       {
         "match": "M100",
         "home_ref": "W:M95",
-        "away_ref": "W:M96"
+        "away_ref": "W:M96",
+        "home": "argentina",
+        "away": "switzerland",
+        "home_name": "Argentina",
+        "away_name": "Switzerland",
+        "date": "2026-07-11",
+        "p_home_adv": 0.8223,
+        "p_away_adv": 0.1777,
+        "fav": "argentina",
+        "fav_name": "Argentina",
+        "fav_p": 0.8223,
+        "p_1x2_90": [
+          0.6845,
+          0.2111,
+          0.1044
+        ],
+        "p_1x2_120": [
+          0.7517,
+          0.1267,
+          0.1216
+        ],
+        "xg": [
+          1.97,
+          0.63
+        ],
+        "modal": [
+          1,
+          0
+        ],
+        "modal_p": 0.1569
       }
     ],
     "SF": [

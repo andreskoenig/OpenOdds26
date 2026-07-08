@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 02:27:52",
+  "generated_at": "2026-07-08 07:25:34",
   "tournament": {
     "games_played": 96,
     "games_total": 104,
@@ -14,28 +14,28 @@
   },
   "kpis_market": {
     "Bet365": {
-      "n": 92,
-      "accuracy_1x2": 0.6848,
-      "mean_log_loss": 0.8201,
-      "mean_brier": 0.4818,
-      "model_accuracy_1x2": 0.6413,
-      "model_mean_log_loss": 0.8453,
-      "model_mean_brier": 0.4996,
-      "d_accuracy_1x2": 0.0435,
-      "d_mean_log_loss": -0.0252,
-      "d_mean_brier": -0.0178
+      "n": 96,
+      "accuracy_1x2": 0.6771,
+      "mean_log_loss": 0.8202,
+      "mean_brier": 0.4814,
+      "model_accuracy_1x2": 0.6458,
+      "model_mean_log_loss": 0.8428,
+      "model_mean_brier": 0.4976,
+      "d_accuracy_1x2": 0.0312,
+      "d_mean_log_loss": -0.0226,
+      "d_mean_brier": -0.0161
     },
     "Pinnacle": {
-      "n": 92,
-      "accuracy_1x2": 0.6848,
-      "mean_log_loss": 0.8219,
-      "mean_brier": 0.4844,
-      "model_accuracy_1x2": 0.6413,
-      "model_mean_log_loss": 0.8453,
-      "model_mean_brier": 0.4996,
-      "d_accuracy_1x2": 0.0435,
-      "d_mean_log_loss": -0.0234,
-      "d_mean_brier": -0.0152
+      "n": 96,
+      "accuracy_1x2": 0.6771,
+      "mean_log_loss": 0.8217,
+      "mean_brier": 0.4838,
+      "model_accuracy_1x2": 0.6458,
+      "model_mean_log_loss": 0.8428,
+      "model_mean_brier": 0.4976,
+      "d_accuracy_1x2": 0.0312,
+      "d_mean_log_loss": -0.0211,
+      "d_mean_brier": -0.0138
     }
   },
   "calibration": [
@@ -2392,84 +2392,70 @@
     ]
   },
   "pretournament_forecast_generated_at": "2026-06-11 11:59",
-  "forecast_generated_at": "2026-07-04 15:19",
+  "forecast_generated_at": "2026-07-08 07:25",
   "forecast_is_live": true,
-  "forecast_games_conditioned": 88,
-  "forecast_conditioned_through": "2026-07-03",
+  "forecast_games_conditioned": 96,
+  "forecast_conditioned_through": "2026-07-07",
   "forecast_top10": [
     {
       "team": "Argentina",
       "id": "argentina",
-      "pct": 25.83,
-      "delta_pct": 7.75,
-      "rank_delta": 1
-    },
-    {
-      "team": "France",
-      "id": "france",
-      "pct": 21.73,
-      "delta_pct": 10.08,
+      "pct": 28.96,
+      "delta_pct": 10.88,
       "rank_delta": 1
     },
     {
       "team": "Spain",
       "id": "spain",
-      "pct": 16.38,
-      "delta_pct": -2.95,
-      "rank_delta": -2
+      "pct": 25.66,
+      "delta_pct": 6.33,
+      "rank_delta": -1
     },
     {
-      "team": "Brazil",
-      "id": "brazil",
-      "pct": 9.08,
-      "delta_pct": 1.22,
-      "rank_delta": 2
+      "team": "France",
+      "id": "france",
+      "pct": 21.85,
+      "delta_pct": 10.2,
+      "rank_delta": 0
     },
     {
       "team": "England",
       "id": "england",
-      "pct": 7.9,
-      "delta_pct": -2.66,
-      "rank_delta": -1
-    },
-    {
-      "team": "Portugal",
-      "id": "portugal",
-      "pct": 5.63,
-      "delta_pct": -3.44,
-      "rank_delta": -1
-    },
-    {
-      "team": "Colombia",
-      "id": "colombia",
-      "pct": 3.38,
-      "delta_pct": 1.08,
-      "rank_delta": 3
+      "pct": 15.33,
+      "delta_pct": 4.77,
+      "rank_delta": 0
     },
     {
       "team": "Morocco",
       "id": "morocco",
-      "pct": 3.34,
-      "delta_pct": 1.4,
-      "rank_delta": 3
+      "pct": 2.85,
+      "delta_pct": 0.91,
+      "rank_delta": 6
     },
     {
       "team": "Belgium",
       "id": "belgium",
-      "pct": 2.05,
-      "delta_pct": -1.03,
-      "rank_delta": 0
+      "pct": 2.37,
+      "delta_pct": -0.71,
+      "rank_delta": 3
     },
     {
-      "team": "Mexico",
-      "id": "mexico",
-      "pct": 2.03,
-      "delta_pct": 1.14,
-      "rank_delta": 5
+      "team": "Norway",
+      "id": "norway",
+      "pct": 1.83,
+      "delta_pct": 0.81,
+      "rank_delta": 6
+    },
+    {
+      "team": "Switzerland",
+      "id": "switzerland",
+      "pct": 1.14,
+      "delta_pct": 0.34,
+      "rank_delta": 8
     }
   ],
   "knockout": {
-    "as_of": "2026-07-04",
+    "as_of": "2026-07-08",
     "source": "model knockout P(advance) (ET + penalties folded in)",
     "rounds": {
       "R32": [
@@ -3552,22 +3538,142 @@
         {
           "match": "M97",
           "home_ref": "W:M89",
-          "away_ref": "W:M90"
+          "away_ref": "W:M90",
+          "home": "france",
+          "away": "morocco",
+          "home_name": "France",
+          "away_name": "Morocco",
+          "date": "2026-07-09",
+          "p_home_adv": 0.7254,
+          "p_away_adv": 0.2746,
+          "fav": "france",
+          "fav_name": "France",
+          "fav_p": 0.7254,
+          "p_1x2_90": [
+            0.5566,
+            0.2834,
+            0.16
+          ],
+          "p_1x2_120": [
+            0.6199,
+            0.1952,
+            0.1848
+          ],
+          "xg": [
+            1.44,
+            0.65
+          ],
+          "modal": [
+            1,
+            0
+          ],
+          "modal_p": 0.1929,
+          "played": false
         },
         {
           "match": "M98",
           "home_ref": "W:M93",
-          "away_ref": "W:M94"
+          "away_ref": "W:M94",
+          "home": "spain",
+          "away": "belgium",
+          "home_name": "Spain",
+          "away_name": "Belgium",
+          "date": "2026-07-10",
+          "p_home_adv": 0.7666,
+          "p_away_adv": 0.2334,
+          "fav": "spain",
+          "fav_name": "Spain",
+          "fav_p": 0.7666,
+          "p_1x2_90": [
+            0.6262,
+            0.2257,
+            0.1481
+          ],
+          "p_1x2_120": [
+            0.6944,
+            0.1333,
+            0.1723
+          ],
+          "xg": [
+            1.93,
+            0.83
+          ],
+          "modal": [
+            1,
+            0
+          ],
+          "modal_p": 0.1295,
+          "played": false
         },
         {
           "match": "M99",
           "home_ref": "W:M91",
-          "away_ref": "W:M92"
+          "away_ref": "W:M92",
+          "home": "norway",
+          "away": "england",
+          "home_name": "Norway",
+          "away_name": "England",
+          "date": "2026-07-11",
+          "p_home_adv": 0.2844,
+          "p_away_adv": 0.7156,
+          "fav": "england",
+          "fav_name": "England",
+          "fav_p": 0.7156,
+          "p_1x2_90": [
+            0.1833,
+            0.2497,
+            0.567
+          ],
+          "p_1x2_120": [
+            0.2127,
+            0.1536,
+            0.6337
+          ],
+          "xg": [
+            0.89,
+            1.73
+          ],
+          "modal": [
+            0,
+            1
+          ],
+          "modal_p": 0.134,
+          "played": false
         },
         {
           "match": "M100",
           "home_ref": "W:M95",
-          "away_ref": "W:M96"
+          "away_ref": "W:M96",
+          "home": "argentina",
+          "away": "switzerland",
+          "home_name": "Argentina",
+          "away_name": "Switzerland",
+          "date": "2026-07-11",
+          "p_home_adv": 0.8223,
+          "p_away_adv": 0.1777,
+          "fav": "argentina",
+          "fav_name": "Argentina",
+          "fav_p": 0.8223,
+          "p_1x2_90": [
+            0.6845,
+            0.2111,
+            0.1044
+          ],
+          "p_1x2_120": [
+            0.7517,
+            0.1267,
+            0.1216
+          ],
+          "xg": [
+            1.97,
+            0.63
+          ],
+          "modal": [
+            1,
+            0
+          ],
+          "modal_p": 0.1569,
+          "played": false
         }
       ],
       "SF": [

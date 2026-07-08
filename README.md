@@ -12,20 +12,18 @@ Validated on the 2022 World Cup against Bet365's closing odds. Honest headline:
 ## Current 2026 prediction
 
 <!-- PREDICTIONS:START -->
-**Model v1.2** · last run **2026-07-04 15:19** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-04
+**Model v1.2** · last run **2026-07-08 07:25** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-08
 
 | # | Team | Model P(win) | Market (Polymarket) |
 |---|------|-------------:|--------------------:|
-| 1 | Argentina | 25.8% | 17.4% |
-| 2 | France | 21.7% | 34.6% |
-| 3 | Spain | 16.4% | 12.5% |
-| 4 | Brazil | 9.1% | 6.3% |
-| 5 | England | 7.9% | 7.0% |
-| 6 | Portugal | 5.6% | 6.1% |
-| 7 | Colombia | 3.4% | 3.2% |
-| 8 | Morocco | 3.3% | 2.6% |
-| 9 | Belgium | 2.0% | 1.2% |
-| 10 | Mexico | 2.0% | 3.4% |
+| 1 | Argentina | 29.0% | 18.9% |
+| 2 | Spain | 25.7% | 18.7% |
+| 3 | France | 21.9% | 33.0% |
+| 4 | England | 15.3% | 15.7% |
+| 5 | Morocco | 2.9% | 3.0% |
+| 6 | Belgium | 2.4% | 2.4% |
+| 7 | Norway | 1.8% | 6.0% |
+| 8 | Switzerland | 1.1% | 2.3% |
 
 _Auto-generated from `data/forecast_live_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
 <!-- PREDICTIONS:END -->

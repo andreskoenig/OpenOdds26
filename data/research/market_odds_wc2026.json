@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08 07:02",
+  "generated_at": "2026-07-10 06:24",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -2016,6 +2016,27 @@
           "home": 3.5,
           "draw": 3.1,
           "away": 2.25
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452525",
+      "kickoff": "2026-07-09",
+      "captured_at": "2026-07-10 06:24",
+      "home_id": "france",
+      "away_id": "morocco",
+      "home_name": "France",
+      "away_name": "Morocco",
+      "books": {
+        "Pinnacle": {
+          "home": 1.609,
+          "draw": 3.95,
+          "away": 6.9
+        },
+        "Bet365": {
+          "home": 1.6,
+          "draw": 3.8,
+          "away": 6.0
         }
       }
     }

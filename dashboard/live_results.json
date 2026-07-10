@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 06:24",
+  "generated_at": "2026-07-10 21:32",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -1068,6 +1068,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "france"
+    },
+    {
+      "date": "2026-07-10",
+      "home_team_id": "spain",
+      "away_team_id": "belgium",
+      "home_goals": 2,
+      "away_goals": 1,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "spain"
     }
   ]
 }

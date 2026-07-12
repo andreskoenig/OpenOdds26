@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 21:32",
+  "generated_at": "2026-07-12 01:02",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -1079,6 +1079,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "spain"
+    },
+    {
+      "date": "2026-07-11",
+      "home_team_id": "norway",
+      "away_team_id": "england",
+      "home_goals": 1,
+      "away_goals": 2,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FINAL_AET",
+      "advancer": "england"
     }
   ]
 }

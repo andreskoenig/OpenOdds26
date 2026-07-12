@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-11 00:32:55",
+  "generated_at": "2026-07-12 04:02:17",
   "tournament": {
-    "games_played": 98,
+    "games_played": 99,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 98,
-    "accuracy_1x2": 0.6735,
-    "model_exact_rate": 0.1531,
-    "mean_log_loss": 0.8005,
-    "mean_brier": 0.4665
+    "n_played": 99,
+    "accuracy_1x2": 0.6768,
+    "model_exact_rate": 0.1515,
+    "mean_log_loss": 0.797,
+    "mean_brier": 0.4639
   },
   "kpis_market": {
     "Bet365": {
@@ -3660,7 +3660,18 @@
             1
           ],
           "modal_p": 0.134,
-          "played": false
+          "played": true,
+          "actual_score": [
+            1,
+            2
+          ],
+          "actual_outcome": "away",
+          "actual_advancer": "england",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true,
+          "log_loss": 0.4562,
+          "brier": 0.203
         },
         {
           "match": "M100",
@@ -3778,10 +3789,10 @@
   },
   "knockout_summary": {
     "round": "R32+R16+QF",
-    "n": 26,
-    "advance_acc": 0.8077,
-    "advance_n": 26,
-    "x1x2_acc": 0.8077,
-    "exact_acc": 0.1154
+    "n": 27,
+    "advance_acc": 0.8148,
+    "advance_n": 27,
+    "x1x2_acc": 0.8148,
+    "exact_acc": 0.1111
   }
 }

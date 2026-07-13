@@ -12,18 +12,14 @@ Validated on the 2022 World Cup against Bet365's closing odds. Honest headline:
 ## Current 2026 prediction
 
 <!-- PREDICTIONS:START -->
-**Model v1.2** · last run **2026-07-08 07:25** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-08
+**Model v1.3** · last run **2026-07-13 18:42** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-13
 
 | # | Team | Model P(win) | Market (Polymarket) |
 |---|------|-------------:|--------------------:|
-| 1 | Argentina | 29.0% | 18.9% |
-| 2 | Spain | 25.7% | 18.7% |
-| 3 | France | 21.9% | 33.0% |
-| 4 | England | 15.3% | 15.7% |
-| 5 | Morocco | 2.9% | 3.0% |
-| 6 | Belgium | 2.4% | 2.4% |
-| 7 | Norway | 1.8% | 6.0% |
-| 8 | Switzerland | 1.1% | 2.3% |
+| 1 | France | 38.0% | 39.4% |
+| 2 | Spain | 24.0% | 21.2% |
+| 3 | Argentina | 22.1% | 17.5% |
+| 4 | England | 16.0% | 21.9% |
 
 _Auto-generated from `data/forecast_live_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
 <!-- PREDICTIONS:END -->
@@ -150,6 +146,11 @@ Current version lives in `VERSION`. The prediction table and version stamp above
 are refreshed on every substantial change via `python scripts/update_readme.py`
 (run it after each forecast). Git tags mark releases.
 
+- **v1.3** — P(win) evolution chart: `scripts/build_pwin_history.py` mines the
+  git history of every end-of-round forecast into `data/pwin_history.json`;
+  the dashboard renders an SVG time series of the top-4 candidates from the
+  pre-tournament baseline through each completed round. Repo hygiene:
+  `.claude/launch.json` gitignored; group-archive label fixed (72, not 104).
 - **v1.2** — knockout stage goes live: closed-form P(advance)/120' 1X2 per tie
   (ET + penalties folded in, no thresholds); **ET draw calibration** — inflate
   matchup P(ET draw) ×1.25 toward the historical P(pens|ET) ≈ 0.71 (raw

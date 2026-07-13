@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10 06:24",
+  "generated_at": "2026-07-13 18:18",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -2036,6 +2036,69 @@
         "Bet365": {
           "home": 1.6,
           "draw": 3.8,
+          "away": 6.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452527",
+      "kickoff": "2026-07-10",
+      "captured_at": "2026-07-13 18:18",
+      "home_id": "spain",
+      "away_id": "belgium",
+      "home_name": "Spain",
+      "away_name": "Belgium",
+      "books": {
+        "Bet365": {
+          "home": 1.57,
+          "draw": 4.1,
+          "away": 5.75
+        },
+        "Pinnacle": {
+          "home": 1.649,
+          "draw": 3.95,
+          "away": 5.9
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452529",
+      "kickoff": "2026-07-11",
+      "captured_at": "2026-07-13 18:18",
+      "home_id": "norway",
+      "away_id": "england",
+      "home_name": "Norway",
+      "away_name": "England",
+      "books": {
+        "Pinnacle": {
+          "home": 4.54,
+          "draw": 3.82,
+          "away": 1.84
+        },
+        "Bet365": {
+          "home": 4.1,
+          "draw": 3.8,
+          "away": 1.83
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452531",
+      "kickoff": "2026-07-12",
+      "captured_at": "2026-07-13 18:18",
+      "home_id": "argentina",
+      "away_id": "switzerland",
+      "home_name": "Argentina",
+      "away_name": "Switzerland",
+      "books": {
+        "Pinnacle": {
+          "home": 1.74,
+          "draw": 3.29,
+          "away": 6.08
+        },
+        "Bet365": {
+          "home": 1.66,
+          "draw": 3.5,
           "away": 6.0
         }
       }

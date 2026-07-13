@@ -40,3 +40,4 @@ dashboard/serve.log
 dashboard/serve.log.err
 dashboard/serve.out
 dashboard/__pycache__/
+.claude/launch.json

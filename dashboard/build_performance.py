@@ -52,6 +52,8 @@ LIVE_FORECAST_PATH = os.path.join(DATA, "forecast_live_2026.json")
 MARKET_ARCHIVE = os.path.join(DATA, "research", "market_odds_wc2026.json")
 # Knockout bracket + P(advance) per tie (predict_knockouts_2026.py).
 KNOCKOUT_PATH = os.path.join(DATA, "knockout_2026.json")
+# P(win) time series mined from git history (scripts/build_pwin_history.py).
+PWIN_HISTORY_PATH = os.path.join(DATA, "pwin_history.json")
 OUT_PATH = os.path.join(HERE, "performance.json")
 
 GAMES_TOTAL_GROUP = 72
@@ -662,6 +664,8 @@ def build():
         "forecast_top10": forecast_top10,
         "knockout": knockout,
         "knockout_summary": knockout_summary,
+        "pwin_history": (load_json(PWIN_HISTORY_PATH)
+                         if os.path.exists(PWIN_HISTORY_PATH) else None),
     }
 
     with open(OUT_PATH, "w", encoding="utf-8") as fh:

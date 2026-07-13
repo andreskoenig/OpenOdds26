@@ -1,28 +1,20 @@
 {
-  "as_of": "2026-07-08",
-  "generated_at": "2026-07-08 07:25",
+  "as_of": "2026-07-13",
+  "generated_at": "2026-07-13 18:42",
   "is_live": true,
   "source": "knockout-conditioned bracket propagation (R32 results pinned)",
-  "games_conditioned": 96,
-  "conditioned_through": "2026-07-07",
+  "games_conditioned": 100,
+  "conditioned_through": "2026-07-11",
   "team_names": {
-    "argentina": "Argentina",
-    "spain": "Spain",
     "france": "France",
-    "england": "England",
-    "morocco": "Morocco",
-    "belgium": "Belgium",
-    "norway": "Norway",
-    "switzerland": "Switzerland"
+    "spain": "Spain",
+    "argentina": "Argentina",
+    "england": "England"
   },
   "p_win": {
-    "argentina": 0.28963355924899026,
-    "spain": 0.25660811699204966,
-    "france": 0.21853599658455442,
-    "england": 0.15327377198075898,
-    "morocco": 0.028531542487826356,
-    "belgium": 0.023729735254420778,
-    "norway": 0.01826410738568328,
-    "switzerland": 0.01142317006571626
+    "france": 0.3796586108329393,
+    "spain": 0.23951539197404023,
+    "argentina": 0.22105244847733296,
+    "england": 0.1597735487156875
   }
 }

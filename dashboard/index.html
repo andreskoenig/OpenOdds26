@@ -214,7 +214,9 @@
           {sub ? <div className="sub">{sub}</div> : null}
           {market && market.rows ? (
             <div className="mkt">
-              <div className="mkt-head">vs market · {market.n} shared games</div>
+              <div className="mkt-head" title="Bookmakers settle 1X2 on regulation time, so this block scores BOTH the books and OpenOdds26 at 90 minutes on the same games (a knockout tie that reached extra time counts as a draw here). The headline number above scores knockout games at 120 minutes instead — that basis difference, not the game set, is why the two OpenOdds26 numbers differ.">
+                vs market · {market.n} shared games · 90-min basis <span style={{ opacity: 0.6 }}>ⓘ</span>
+              </div>
               {market.rows.map((b, i) => (
                 <div key={i} className={"mkt-row " + (b.us ? "mkt-us" : b.bookBetter ? "mkt-better" : "mkt-worse")}>
                   <span className="mkt-name">{b.name}</span>
@@ -469,6 +471,67 @@
       );
     }
 
+    function PwinChart({ hist }) {
+      // P(win) through the tournament for the current top-4 candidates.
+      // Pure inline SVG (no chart lib): x = real time, y = P(win)%.
+      if (!hist || !hist.snapshots || hist.snapshots.length < 2) return null;
+      const snaps = hist.snapshots;
+      const names = hist.team_names || {};
+      const latest = snaps[snaps.length - 1].p_win;
+      const teams = Object.keys(latest).sort((a, b) => latest[b] - latest[a]).slice(0, 4);
+      const PALETTE = ["#7fb8e6", "#e05656", "#8b95f6", "#d9dee3"];
+      const W = 760, H = 300, L = 40, R = 148, T = 16, B = 40;
+      const t0 = new Date(snaps[0].date).getTime();
+      const t1 = new Date(snaps[snaps.length - 1].date).getTime();
+      const x = d => L + (new Date(d).getTime() - t0) / (t1 - t0) * (W - L - R);
+      const peak = Math.max(...snaps.flatMap(s => teams.map(t => (s.p_win[t] || 0) * 100)));
+      const ymax = Math.min(100, Math.ceil((peak + 4) / 10) * 10);
+      const y = p => T + (1 - p * 100 / ymax) * (H - T - B);
+      const ticks = [];
+      for (let v = 0; v <= ymax; v += 10) ticks.push(v);
+      return (
+        <div style={{ marginTop: 26 }}>
+          <h2>Winner probability through the tournament</h2>
+          <svg viewBox={"0 0 " + W + " " + H} style={{ width: "100%", maxWidth: 860, height: "auto", display: "block" }}>
+            {ticks.map(v => (
+              <g key={v}>
+                <line x1={L} x2={W - R} y1={y(v / 100)} y2={y(v / 100)} stroke="var(--border)" strokeWidth="1" />
+                <text x={L - 6} y={y(v / 100) + 3} textAnchor="end" fontSize="10" fill="var(--muted)">{v}%</text>
+              </g>
+            ))}
+            {snaps.map(s => (
+              <g key={s.date}>
+                <line x1={x(s.date)} x2={x(s.date)} y1={T} y2={H - B} stroke="var(--border)" strokeWidth="1" strokeDasharray="2,4" />
+                <text x={x(s.date)} y={H - B + 14} textAnchor="middle" fontSize="10" fill="var(--muted)">{s.label}</text>
+                <text x={x(s.date)} y={H - B + 26} textAnchor="middle" fontSize="9" fill="var(--muted)" opacity="0.6">{s.date.slice(5)}</text>
+              </g>
+            ))}
+            {teams.map((t, i) => {
+              const pts = snaps.map(s => [x(s.date), y(s.p_win[t] || 0)]);
+              const dpath = pts.map((p, j) => (j ? "L" : "M") + p[0].toFixed(1) + "," + p[1].toFixed(1)).join("");
+              const last = pts[pts.length - 1];
+              return (
+                <g key={t}>
+                  <path d={dpath} fill="none" stroke={PALETTE[i]} strokeWidth="2.2" strokeLinejoin="round" />
+                  {pts.map((p, j) => (
+                    <circle key={j} cx={p[0]} cy={p[1]} r="3" fill={PALETTE[i]}>
+                      <title>{(names[t] || t) + " — " + snaps[j].label + ": " + ((snaps[j].p_win[t] || 0) * 100).toFixed(1) + "%"}</title>
+                    </circle>
+                  ))}
+                  <text x={last[0] + 8} y={last[1] + 4} fontSize="11" fill={PALETTE[i]} fontWeight="600">
+                    {(names[t] || t) + " " + ((latest[t] || 0) * 100).toFixed(1) + "%"}
+                  </text>
+                </g>
+              );
+            })}
+          </svg>
+          <div className="subline" style={{ marginTop: 4 }}>
+            P(win tournament) at each recalculation point (pre-tournament baseline, then after every completed round) · top 4 by current P(win) · knockout-conditioned from R32 onwards
+          </div>
+        </div>
+      );
+    }
+
     function Bout({ node }) {
       if (!node) return null;
       const kids = node.children || [];
@@ -620,7 +683,7 @@
         const present = BOOKS.filter(b => mkt[b]);
         if (!present.length) return null;
         const m0 = mkt[present[0]];
-        const rows = [{ name: "OpenOdds26", text: fmtV(m0[modelKey], kind), us: true }];
+        const rows = [{ name: "OpenOdds26 (90')", text: fmtV(m0[modelKey], kind), us: true }];
         present.forEach(b => {
           const m = mkt[b], d = m[dKey];
           // book better than us on this metric (acc: higher; log-loss/brier: lower)
@@ -646,22 +709,24 @@
           ) : null}
 
           <div className="kpis">
-            <Kpi label="1X2 Accuracy" value={n ? pct1(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"}
+            <Kpi label="1X2 Accuracy (up to 120')" value={n ? pct1(k.accuracy_1x2) : "—"} sub={n ? n + " games" : "no games yet"}
                  market={n ? mlines("accuracy_1x2", "d_accuracy_1x2", "model_accuracy_1x2", "acc") : null} />
-            <Kpi label="Model Exact Score" value={n ? pct1(k.model_exact_rate) : "—"} sub="modal score hit rate" />
-            <Kpi label="Mean Log-Loss" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better"
+            <Kpi label="Model Exact Score (up to 120')" value={n ? pct1(k.model_exact_rate) : "—"} sub="modal score hit rate" />
+            <Kpi label="Mean Log-Loss (up to 120')" value={n ? num(k.mean_log_loss) : "—"} sub="lower is better"
                  labelHref="https://en.wikipedia.org/wiki/Loss_functions_for_classification"
                  market={n ? mlines("mean_log_loss", "d_mean_log_loss", "model_mean_log_loss", "ll") : null} />
-            <Kpi label="Mean Brier" value={n ? num(k.mean_brier) : "—"} sub="lower is better"
+            <Kpi label="Mean Brier (up to 120')" value={n ? num(k.mean_brier) : "—"} sub="lower is better"
                  labelHref="https://en.wikipedia.org/wiki/Brier_score"
                  market={n ? mlines("mean_brier", "d_mean_brier", "model_mean_brier", "ll") : null} />
           </div>
 
           {data.knockout ? <Bracket ko={data.knockout} champ={data.forecast_top10 && data.forecast_top10[0]} summary={data.knockout_summary} /> : null}
 
+          {data.pwin_history ? <PwinChart hist={data.pwin_history} /> : null}
+
           {data.knockout ? (
             <details className="archive">
-              <summary>Group stage — {data.tournament ? data.tournament.games_total : 72} games (complete) · scored above</summary>
+              <summary>Group stage — {(data.matches || []).length || 72} games (complete) · scored above</summary>
               <MatchTable matches={data.matches || []} />
             </details>
           ) : (

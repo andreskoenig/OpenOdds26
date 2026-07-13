@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-08",
+  "as_of": "2026-07-13",
   "source": "model knockout P(advance) (ET + penalties folded in)",
   "rounds": {
     "R32": [
@@ -932,12 +932,70 @@
       {
         "match": "M101",
         "home_ref": "W:M97",
-        "away_ref": "W:M98"
+        "away_ref": "W:M98",
+        "home": "france",
+        "away": "spain",
+        "home_name": "France",
+        "away_name": "Spain",
+        "date": "2026-07-14",
+        "p_home_adv": 0.5832,
+        "p_away_adv": 0.4168,
+        "fav": "france",
+        "fav_name": "France",
+        "fav_p": 0.5832,
+        "p_1x2_90": [
+          0.4249,
+          0.2963,
+          0.2788
+        ],
+        "p_1x2_120": [
+          0.4815,
+          0.1982,
+          0.3203
+        ],
+        "xg": [
+          1.29,
+          1.0
+        ],
+        "modal": [
+          1,
+          0
+        ],
+        "modal_p": 0.1385
       },
       {
         "match": "M102",
         "home_ref": "W:M99",
-        "away_ref": "W:M100"
+        "away_ref": "W:M100",
+        "home": "england",
+        "away": "argentina",
+        "home_name": "England",
+        "away_name": "Argentina",
+        "date": "2026-07-15",
+        "p_home_adv": 0.4496,
+        "p_away_adv": 0.5504,
+        "fav": "argentina",
+        "fav_name": "Argentina",
+        "fav_p": 0.5504,
+        "p_1x2_90": [
+          0.3039,
+          0.3038,
+          0.3922
+        ],
+        "p_1x2_120": [
+          0.3481,
+          0.2063,
+          0.4456
+        ],
+        "xg": [
+          1.03,
+          1.2
+        ],
+        "modal": [
+          0,
+          1
+        ],
+        "modal_p": 0.1369
       }
     ],
     "Final": [

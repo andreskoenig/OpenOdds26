@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-15 00:51:41",
+  "generated_at": "2026-07-16 00:28:19",
   "tournament": {
-    "games_played": 101,
+    "games_played": 102,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 101,
-    "accuracy_1x2": 0.6733,
-    "model_exact_rate": 0.1485,
-    "mean_log_loss": 0.7953,
-    "mean_brier": 0.4628
+    "n_played": 102,
+    "accuracy_1x2": 0.6765,
+    "model_exact_rate": 0.1471,
+    "mean_log_loss": 0.7955,
+    "mean_brier": 0.4629
   },
   "kpis_market": {
     "Bet365": {
@@ -3772,7 +3772,18 @@
             1
           ],
           "modal_p": 0.1369,
-          "played": false
+          "played": true,
+          "actual_score": [
+            1,
+            2
+          ],
+          "actual_outcome": "away",
+          "actual_advancer": "argentina",
+          "x1x2_correct": true,
+          "exact_correct": false,
+          "advance_correct": true,
+          "log_loss": 0.8083,
+          "brier": 0.4711
         }
       ],
       "Final": [
@@ -3843,11 +3854,11 @@
   },
   "knockout_summary": {
     "round": "R32+R16+QF+SF",
-    "n": 29,
-    "advance_acc": 0.7931,
-    "advance_n": 29,
-    "x1x2_acc": 0.7931,
-    "exact_acc": 0.1034
+    "n": 30,
+    "advance_acc": 0.8,
+    "advance_n": 30,
+    "x1x2_acc": 0.8,
+    "exact_acc": 0.1
   },
   "pwin_history": {
     "snapshots": [

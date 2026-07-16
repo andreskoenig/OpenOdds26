@@ -478,7 +478,16 @@
       const snaps = hist.snapshots;
       const names = hist.team_names || {};
       const latest = snaps[snaps.length - 1].p_win;
-      const teams = Object.keys(latest).sort((a, b) => latest[b] - latest[a]).slice(0, 4);
+      // Top 4 by current P(win), padded by tournament peak — so late in the
+      // knockout (fewer than 4 alive) recently eliminated candidates keep
+      // their line, which visibly drops to 0 at the round they went out.
+      const peakOf = {};
+      snaps.forEach(s => Object.entries(s.p_win).forEach(([t, p]) => {
+        if (!(t in peakOf) || p > peakOf[t]) peakOf[t] = p;
+      }));
+      const teams = Object.keys(peakOf)
+        .sort((a, b) => (latest[b] || 0) - (latest[a] || 0) || peakOf[b] - peakOf[a])
+        .slice(0, 4);
       const PALETTE = ["#7fb8e6", "#e05656", "#8b95f6", "#d9dee3"];
       const W = 760, H = 300, L = 40, R = 148, T = 16, B = 40;
       const t0 = new Date(snaps[0].date).getTime();

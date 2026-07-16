@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13 18:18",
+  "generated_at": "2026-07-16 11:51",
   "tournament_id": 16,
   "source": "OddsPapi /v4/historical-odds (closing = last snapshot <= kickoff)",
   "fixtures": [
@@ -2100,6 +2100,48 @@
           "home": 1.66,
           "draw": 3.5,
           "away": 6.0
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452533",
+      "kickoff": "2026-07-14",
+      "captured_at": "2026-07-16 11:51",
+      "home_id": "france",
+      "away_id": "spain",
+      "home_name": "France",
+      "away_name": "Spain",
+      "books": {
+        "Pinnacle": {
+          "home": 2.65,
+          "draw": 2.94,
+          "away": 3.12
+        },
+        "Bet365": {
+          "home": 2.35,
+          "draw": 3.1,
+          "away": 3.25
+        }
+      }
+    },
+    {
+      "fixture_id": "id1000001653452535",
+      "kickoff": "2026-07-15",
+      "captured_at": "2026-07-16 11:51",
+      "home_id": "england",
+      "away_id": "argentina",
+      "home_name": "England",
+      "away_name": "Argentina",
+      "books": {
+        "Pinnacle": {
+          "home": 2.82,
+          "draw": 2.85,
+          "away": 3.1
+        },
+        "Bet365": {
+          "home": 2.62,
+          "draw": 2.87,
+          "away": 3.1
         }
       }
     }

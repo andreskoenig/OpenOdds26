@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16 00:28:19",
+  "generated_at": "2026-07-16 11:51:42",
   "tournament": {
     "games_played": 102,
     "games_total": 104,
@@ -14,28 +14,28 @@
   },
   "kpis_market": {
     "Bet365": {
-      "n": 100,
-      "accuracy_1x2": 0.67,
-      "mean_log_loss": 0.8246,
-      "mean_brier": 0.4848,
-      "model_accuracy_1x2": 0.64,
-      "model_mean_log_loss": 0.849,
-      "model_mean_brier": 0.503,
-      "d_accuracy_1x2": 0.03,
-      "d_mean_log_loss": -0.0245,
-      "d_mean_brier": -0.0182
+      "n": 102,
+      "accuracy_1x2": 0.6569,
+      "mean_log_loss": 0.8321,
+      "mean_brier": 0.4898,
+      "model_accuracy_1x2": 0.6373,
+      "model_mean_log_loss": 0.8541,
+      "model_mean_brier": 0.5063,
+      "d_accuracy_1x2": 0.0196,
+      "d_mean_log_loss": -0.022,
+      "d_mean_brier": -0.0165
     },
     "Pinnacle": {
-      "n": 100,
-      "accuracy_1x2": 0.67,
-      "mean_log_loss": 0.8251,
-      "mean_brier": 0.4864,
-      "model_accuracy_1x2": 0.64,
-      "model_mean_log_loss": 0.849,
-      "model_mean_brier": 0.503,
-      "d_accuracy_1x2": 0.03,
-      "d_mean_log_loss": -0.024,
-      "d_mean_brier": -0.0166
+      "n": 102,
+      "accuracy_1x2": 0.6569,
+      "mean_log_loss": 0.8318,
+      "mean_brier": 0.4909,
+      "model_accuracy_1x2": 0.6373,
+      "model_mean_log_loss": 0.8541,
+      "model_mean_brier": 0.5063,
+      "d_accuracy_1x2": 0.0196,
+      "d_mean_log_loss": -0.0223,
+      "d_mean_brier": -0.0154
     }
   },
   "calibration": [
@@ -2392,42 +2392,28 @@
     ]
   },
   "pretournament_forecast_generated_at": "2026-06-11 11:59",
-  "forecast_generated_at": "2026-07-13 18:42",
+  "forecast_generated_at": "2026-07-16 11:50",
   "forecast_is_live": true,
-  "forecast_games_conditioned": 100,
-  "forecast_conditioned_through": "2026-07-11",
+  "forecast_games_conditioned": 102,
+  "forecast_conditioned_through": "2026-07-15",
   "forecast_top10": [
-    {
-      "team": "France",
-      "id": "france",
-      "pct": 37.97,
-      "delta_pct": 26.31,
-      "rank_delta": 2
-    },
     {
       "team": "Spain",
       "id": "spain",
-      "pct": 23.95,
-      "delta_pct": 4.62,
-      "rank_delta": -1
+      "pct": 65.74,
+      "delta_pct": 46.41,
+      "rank_delta": 0
     },
     {
       "team": "Argentina",
       "id": "argentina",
-      "pct": 22.11,
-      "delta_pct": 4.03,
-      "rank_delta": -1
-    },
-    {
-      "team": "England",
-      "id": "england",
-      "pct": 15.98,
-      "delta_pct": 5.42,
+      "pct": 34.26,
+      "delta_pct": 16.18,
       "rank_delta": 0
     }
   ],
   "knockout": {
-    "as_of": "2026-07-13",
+    "as_of": "2026-07-16",
     "source": "model knockout P(advance) (ET + penalties folded in)",
     "rounds": {
       "R32": [
@@ -3790,14 +3776,74 @@
         {
           "match": "M104",
           "home_ref": "W:M101",
-          "away_ref": "W:M102"
+          "away_ref": "W:M102",
+          "home": "spain",
+          "away": "argentina",
+          "home_name": "Spain",
+          "away_name": "Argentina",
+          "date": "2026-07-19",
+          "p_home_adv": 0.6574,
+          "p_away_adv": 0.3426,
+          "fav": "spain",
+          "fav_name": "Spain",
+          "fav_p": 0.6574,
+          "p_1x2_90": [
+            0.4972,
+            0.283,
+            0.2198
+          ],
+          "p_1x2_120": [
+            0.5592,
+            0.1871,
+            0.2537
+          ],
+          "xg": [
+            1.44,
+            0.87
+          ],
+          "modal": [
+            1,
+            0
+          ],
+          "modal_p": 0.1518,
+          "played": false
         }
       ],
       "third_place": [
         {
           "match": "M103",
           "home_ref": "L:M101",
-          "away_ref": "L:M102"
+          "away_ref": "L:M102",
+          "home": "france",
+          "away": "england",
+          "home_name": "France",
+          "away_name": "England",
+          "date": "2026-07-18",
+          "p_home_adv": 0.5335,
+          "p_away_adv": 0.4665,
+          "fav": "france",
+          "fav_name": "France",
+          "fav_p": 0.5335,
+          "p_1x2_90": [
+            0.3786,
+            0.3015,
+            0.3198
+          ],
+          "p_1x2_120": [
+            0.4309,
+            0.2031,
+            0.366
+          ],
+          "xg": [
+            1.19,
+            1.07
+          ],
+          "modal": [
+            1,
+            0
+          ],
+          "modal_p": 0.1302,
+          "played": false
         }
       ]
     },
@@ -4123,64 +4169,73 @@
       {
         "date": "2026-07-13",
         "label": "QF",
-        "source": "working-tree",
+        "source": "61c4278",
         "p_win": {
           "france": 0.3797,
           "spain": 0.2395,
           "argentina": 0.2211,
           "england": 0.1598
         }
+      },
+      {
+        "date": "2026-07-16",
+        "label": "SF",
+        "source": "working-tree",
+        "p_win": {
+          "spain": 0.6574,
+          "argentina": 0.3426
+        }
       }
     ],
     "team_names": {
-      "uruguay": "Uruguay",
-      "germany": "Germany",
-      "south_africa": "South Africa",
-      "brazil": "Brazil",
-      "ghana": "Ghana",
-      "bosnia_and_herzegovina": "Bosnia and Herzegovina",
-      "spain": "Spain",
-      "switzerland": "Switzerland",
       "tunisia": "Tunisia",
+      "colombia": "Colombia",
+      "new_zealand": "New Zealand",
+      "spain": "Spain",
+      "iran": "Iran",
+      "ecuador": "Ecuador",
+      "japan": "Japan",
+      "algeria": "Algeria",
+      "brazil": "Brazil",
+      "switzerland": "Switzerland",
+      "argentina": "Argentina",
+      "saudi_arabia": "Saudi Arabia",
+      "qatar": "Qatar",
+      "panama": "Panama",
+      "england": "England",
+      "iraq": "Iraq",
+      "south_africa": "South Africa",
+      "germany": "Germany",
+      "bosnia_and_herzegovina": "Bosnia and Herzegovina",
+      "australia": "Australia",
+      "canada": "Canada",
+      "curacao": "Curacao",
+      "uzbekistan": "Uzbekistan",
+      "norway": "Norway",
+      "senegal": "Senegal",
+      "netherlands": "Netherlands",
+      "egypt": "Egypt",
       "czech_republic": "Czech Republic",
       "ivory_coast": "Ivory Coast",
-      "algeria": "Algeria",
-      "uzbekistan": "Uzbekistan",
-      "mexico": "Mexico",
-      "croatia": "Croatia",
-      "curacao": "Curacao",
-      "jordan": "Jordan",
-      "portugal": "Portugal",
-      "austria": "Austria",
-      "turkey": "Turkey",
-      "iran": "Iran",
-      "sweden": "Sweden",
-      "dr_congo": "DR Congo",
-      "new_zealand": "New Zealand",
-      "united_states": "United States",
       "morocco": "Morocco",
-      "japan": "Japan",
-      "belgium": "Belgium",
-      "norway": "Norway",
-      "saudi_arabia": "Saudi Arabia",
       "paraguay": "Paraguay",
-      "australia": "Australia",
+      "jordan": "Jordan",
       "haiti": "Haiti",
-      "england": "England",
-      "senegal": "Senegal",
-      "argentina": "Argentina",
-      "netherlands": "Netherlands",
-      "colombia": "Colombia",
-      "ecuador": "Ecuador",
-      "egypt": "Egypt",
       "south_korea": "South Korea",
-      "panama": "Panama",
-      "qatar": "Qatar",
-      "iraq": "Iraq",
       "france": "France",
+      "mexico": "Mexico",
+      "sweden": "Sweden",
       "cape_verde": "Cape Verde",
-      "canada": "Canada",
-      "scotland": "Scotland"
+      "austria": "Austria",
+      "portugal": "Portugal",
+      "croatia": "Croatia",
+      "scotland": "Scotland",
+      "ghana": "Ghana",
+      "united_states": "United States",
+      "dr_congo": "DR Congo",
+      "uruguay": "Uruguay",
+      "turkey": "Turkey",
+      "belgium": "Belgium"
     }
   }
 }

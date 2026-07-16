@@ -121,7 +121,13 @@ def main():
     matches = _load("data/match_results.json")
     fifa = _load("data/fifa_ratings.json")
     squad = _load("data/squad_values.json")
-    market = _load("data/polymarket_winner_2026_depathed.json")["p_market"]
+    # --raw-market: use the raw normalized Polymarket winner odds as the market
+    # prior instead of the de-pathed version. Correct late in the knockout: with
+    # only the final (+ 3rd place) left, there is no bracket path luck to strip —
+    # P(win WC) IS the finalists' per-game probability, so de-path = identity.
+    raw_market = "--raw-market" in sys.argv
+    market = _load("data/polymarket_winner_2026.json" if raw_market
+                   else "data/polymarket_winner_2026_depathed.json")["p_market"]
     cfg = _load("config/tournament_config_2026.json")
     kb = cfg["knockout_bracket"]
     hosts = set(cfg["host_team_ids"])
@@ -340,7 +346,9 @@ def main():
         "as_of": as_of,
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "is_live": True,
-        "source": "knockout-conditioned bracket propagation (R32 results pinned)",
+        "source": "knockout-conditioned bracket propagation (decided ties pinned)",
+        "market_prior": "raw polymarket winner odds (no de-path; identity with <=2 games left)"
+                        if raw_market else "de-pathed polymarket winner odds",
         "games_conditioned": n_cond,
         "conditioned_through": through,
         "team_names": {t: nm(t) for t in p_win},

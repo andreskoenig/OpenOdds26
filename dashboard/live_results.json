@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16 11:47",
+  "generated_at": "2026-07-18 23:45",
   "source": "ESPN public scoreboard (fifa.world), finished matches only",
   "results": [
     {
@@ -1123,6 +1123,17 @@
       "source": "espn",
       "status": "STATUS_FULL_TIME",
       "advancer": "argentina"
+    },
+    {
+      "date": "2026-07-18",
+      "home_team_id": "france",
+      "away_team_id": "england",
+      "home_goals": 4,
+      "away_goals": 6,
+      "competition": "FIFA World Cup",
+      "source": "espn",
+      "status": "STATUS_FULL_TIME",
+      "advancer": "england"
     }
   ]
 }

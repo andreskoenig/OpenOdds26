@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-19 02:45:06",
+  "generated_at": "2026-07-20 01:22:31",
   "tournament": {
-    "games_played": 103,
+    "games_played": 104,
     "games_total": 104,
     "start_date": "2026-06-11"
   },
   "kpis": {
-    "n_played": 103,
-    "accuracy_1x2": 0.6699,
-    "model_exact_rate": 0.1456,
-    "mean_log_loss": 0.7975,
-    "mean_brier": 0.4645
+    "n_played": 104,
+    "accuracy_1x2": 0.6731,
+    "model_exact_rate": 0.1538,
+    "mean_log_loss": 0.7954,
+    "mean_brier": 0.4629
   },
   "kpis_market": {
     "Bet365": {
@@ -3806,7 +3806,18 @@
             0
           ],
           "modal_p": 0.1518,
-          "played": false
+          "played": true,
+          "actual_score": [
+            1,
+            0
+          ],
+          "actual_outcome": "home",
+          "actual_advancer": "spain",
+          "x1x2_correct": true,
+          "exact_correct": true,
+          "advance_correct": true,
+          "log_loss": 0.5812,
+          "brier": 0.2937
         }
       ],
       "third_place": [
@@ -3910,12 +3921,12 @@
     }
   },
   "knockout_summary": {
-    "round": "R32+R16+QF+SF+third_place",
-    "n": 31,
-    "advance_acc": 0.7742,
-    "advance_n": 31,
-    "x1x2_acc": 0.7742,
-    "exact_acc": 0.0968
+    "round": "R32+R16+QF+SF+third_place+Final",
+    "n": 32,
+    "advance_acc": 0.7812,
+    "advance_n": 32,
+    "x1x2_acc": 0.7812,
+    "exact_acc": 0.125
   },
   "pwin_history": {
     "snapshots": [

@@ -12,12 +12,11 @@ Validated on the 2022 World Cup against Bet365's closing odds. Honest headline:
 ## Current 2026 prediction
 
 <!-- PREDICTIONS:START -->
-**Model v1.3** · last run **2026-07-16 11:50** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-16
+**Model v1.3** · last run **2026-07-20 08:34** · knockout-conditioned bracket propagation (real results pinned), as-of 2026-07-20
 
 | # | Team | Model P(win) | Market (Polymarket) |
 |---|------|-------------:|--------------------:|
-| 1 | Spain | 65.7% | 58.2% |
-| 2 | Argentina | 34.3% | 41.8% |
+| 1 | Spain | 100.0% | 100.0% |
 
 _Auto-generated from `data/forecast_live_2026.json` by `scripts/update_readme.py`. Market = de-vigged-free Polymarket winner odds (a model input, not an independent benchmark)._
 <!-- PREDICTIONS:END -->

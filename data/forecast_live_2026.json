@@ -1,17 +1,15 @@
 {
-  "as_of": "2026-07-16",
-  "generated_at": "2026-07-16 11:50",
+  "as_of": "2026-07-20",
+  "generated_at": "2026-07-20 08:34",
   "is_live": true,
   "source": "knockout-conditioned bracket propagation (decided ties pinned)",
   "market_prior": "raw polymarket winner odds (no de-path; identity with <=2 games left)",
-  "games_conditioned": 102,
-  "conditioned_through": "2026-07-15",
+  "games_conditioned": 104,
+  "conditioned_through": "2026-07-19",
   "team_names": {
-    "spain": "Spain",
-    "argentina": "Argentina"
+    "spain": "Spain"
   },
   "p_win": {
-    "spain": 0.6574382013071647,
-    "argentina": 0.3425617986928353
+    "spain": 1.0
   }
 }

@@ -544762,5 +544762,27 @@
     "competition": "FIFA World Cup",
     "home_goals": 1,
     "away_goals": 2
+  },
+  {
+    "match_id": "49524_2026-07-18_france_england",
+    "date": "2026-07-18",
+    "home_team_id": "france",
+    "away_team_id": "england",
+    "venue_country": "United States",
+    "neutral": true,
+    "competition": "FIFA World Cup",
+    "home_goals": 4,
+    "away_goals": 6
+  },
+  {
+    "match_id": "49525_2026-07-19_spain_argentina",
+    "date": "2026-07-19",
+    "home_team_id": "spain",
+    "away_team_id": "argentina",
+    "venue_country": "United States",
+    "neutral": true,
+    "competition": "FIFA World Cup",
+    "home_goals": 1,
+    "away_goals": 0
   }
 ]

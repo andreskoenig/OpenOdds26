@@ -1,14 +1,14 @@
 {
-  "as_of": "2026-07-16",
+  "as_of": "2026-07-20",
   "source": "polymarket world-cup-winner (normalized, not de-vigged)",
-  "raw_price_sum": 0.9949999999999999,
+  "raw_price_sum": 0.9995,
   "n_teams_priced": 48,
   "p_market": {
-    "spain": 0.5824120603015075,
+    "spain": 1.0,
     "england": 0.0,
     "france": 0.0,
     "brazil": 0.0,
-    "argentina": 0.4175879396984925,
+    "argentina": 0.0,
     "germany": 0.0,
     "portugal": 0.0,
     "netherlands": 0.0,
@@ -54,11 +54,11 @@
     "turkey": 0.0
   },
   "raw_price": {
-    "spain": 0.5794999999999999,
+    "spain": 0.9995,
     "england": 0.0,
     "france": 0.0,
     "brazil": 0.0,
-    "argentina": 0.4155,
+    "argentina": 0.0,
     "germany": 0.0,
     "portugal": 0.0,
     "netherlands": 0.0,

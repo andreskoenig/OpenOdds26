@@ -1,0 +1,83 @@
+{
+ "generated_at": "2026-07-20 08:34:35",
+ "tournament": {
+  "games_played": 104,
+  "games_total": 104,
+  "start_date": "2026-06-11"
+ },
+ "kpis": {
+  "n_played": 104,
+  "accuracy_1x2": 0.6731,
+  "model_exact_rate": 0.1538,
+  "mean_log_loss": 0.7954,
+  "mean_brier": 0.4629
+ },
+ "kpis_market": {
+  "Bet365": {
+   "n": 104,
+   "accuracy_1x2": 0.6442,
+   "mean_log_loss": 0.8405,
+   "mean_brier": 0.4958,
+   "model_accuracy_1x2": 0.625,
+   "model_mean_log_loss": 0.8608,
+   "model_mean_brier": 0.5111,
+   "d_accuracy_1x2": 0.0192,
+   "d_mean_log_loss": -0.0202,
+   "d_mean_brier": -0.0153
+  },
+  "Pinnacle": {
+   "n": 104,
+   "accuracy_1x2": 0.6442,
+   "mean_log_loss": 0.8419,
+   "mean_brier": 0.4979,
+   "model_accuracy_1x2": 0.625,
+   "model_mean_log_loss": 0.8608,
+   "model_mean_brier": 0.5111,
+   "d_accuracy_1x2": 0.0192,
+   "d_mean_log_loss": -0.0189,
+   "d_mean_brier": -0.0132
+  }
+ },
+ "knockout_summary": {
+  "round": "R32+R16+QF+SF+third_place+Final",
+  "n": 32,
+  "advance_acc": 0.7812,
+  "advance_n": 32,
+  "x1x2_acc": 0.7812,
+  "exact_acc": 0.125
+ },
+ "calibration": [
+  {
+   "bucket": "0.33-0.45",
+   "lo": 0.33,
+   "hi": 0.45,
+   "n": 11,
+   "predicted": 0.3935,
+   "realized": 0.3636
+  },
+  {
+   "bucket": "0.45-0.55",
+   "lo": 0.45,
+   "hi": 0.55,
+   "n": 10,
+   "predicted": 0.4887,
+   "realized": 0.4
+  },
+  {
+   "bucket": "0.55-0.70",
+   "lo": 0.55,
+   "hi": 0.7,
+   "n": 28,
+   "predicted": 0.6411,
+   "realized": 0.6786
+  },
+  {
+   "bucket": "0.70-1.00",
+   "lo": 0.7,
+   "hi": 1.0,
+   "n": 23,
+   "predicted": 0.8183,
+   "realized": 0.7826
+  }
+ ]
+}

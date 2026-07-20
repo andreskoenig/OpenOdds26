@@ -124,6 +124,8 @@ wc_model/        deterministic core (pure Python, unit-tested)
 scripts/         data fetchers, tuners, forecast/backtest runners, run_pipeline
 config/          tournament_config_2022.json, tournament_config_2026.json
 data/            inputs + outputs (forecast_2026.json, predict_groupstage_2026.csv, ...)
+analysis/        FINAL WC2026 dataset: per-match predictions + closing odds +
+                 ground truth + P(win) history + closing KPIs; see HANDOFF.md
 tests/           72 unit tests
 SPEC.md          original design spec
 ```

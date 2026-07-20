@@ -22,7 +22,7 @@ import sys
 from datetime import date, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_DIR = os.path.join(ROOT, "data", "export")
+OUT_DIR = os.path.join(ROOT, "analysis")
 PERF = os.path.join(ROOT, "dashboard", "performance.json")
 MARKET = os.path.join(ROOT, "data", "research", "market_odds_wc2026.json")
 LIVE = os.path.join(ROOT, "dashboard", "live_results.json")
@@ -196,7 +196,23 @@ def main():
             for t, p in sorted(s["p_win"].items(), key=lambda kv: -kv[1]):
                 w.writerow([s["date"], s["label"], t, pw["team_names"].get(t, t), p])
 
-    # ---- column README ---------------------------------------------------
+    # ---- closing KPIs + calibration + market comparison ------------------
+    kpis_out = {
+        "generated_at": perf.get("generated_at"),
+        "tournament": perf.get("tournament"),
+        "kpis": perf.get("kpis"),
+        "kpis_market": perf.get("kpis_market"),
+        "knockout_summary": perf.get("knockout_summary"),
+        "calibration": perf.get("calibration"),
+    }
+    with open(os.path.join(OUT_DIR, "wc2026_kpis.json"), "w", encoding="utf-8") as f:
+        json.dump(kpis_out, f, ensure_ascii=False, indent=1)
+
+    # ---- raw closing-odds archive (verbatim copy for provenance) ---------
+    with open(os.path.join(OUT_DIR, "wc2026_market_odds_raw.json"), "w", encoding="utf-8") as f:
+        json.dump(load(MARKET), f, ensure_ascii=False, indent=1)
+
+    # ---- handoff document ------------------------------------------------
     readme = """# WC2026 dataset export
 
 Generated {now} by scripts/export_wc2026_dataset.py from the OpenOdds26 model
@@ -232,8 +248,49 @@ rounds frozen the day the previous round completed). No look-ahead.
 P(win tournament) snapshot after each completed round (knockout-conditioned
 bracket propagation from R32 on). Columns: date, round, team_id, team_name, p_win.
 Eliminated teams are absent from later snapshots (i.e. 0).
+
+## wc2026_kpis.json
+
+Closing aggregate metrics as shown on the dashboard:
+- kpis — headline over all 104 games: accuracy_1x2, model_exact_rate,
+  mean_log_loss, mean_brier (group games scored at 90'; knockout at 120').
+- kpis_market — per book (Bet365, Pinnacle): n matched games, the book's
+  accuracy/log-loss/brier, the model's SAME-GAME numbers (model_*), and deltas
+  (d_* = book minus model). All on the 90' basis (books settle regulation time).
+- knockout_summary — knockout-only: n ties, advance accuracy, 1X2@120 accuracy,
+  modal (exact score) rate.
+- calibration — favourite-probability buckets vs realized favourite win rate.
+
+## wc2026_market_odds_raw.json
+
+Verbatim copy of the closing-odds archive (OddsPapi /v4/historical-odds;
+closing = last snapshot at or before kickoff). Per fixture: kickoff (UTC date,
+can sit +1 day vs the ESPN scoreboard date), home_id/away_id in the PROVIDER'S
+orientation (may be flipped vs the match dataset - the CSV already reorients),
+and raw decimal 1X2 per book. Kept so the de-vig step is reproducible.
+
+## Reading guide / caveats for analysis
+
+- Two scoring bases coexist by design. Headline model metrics score knockout
+  games at 120' ("did the model call the game"); every model-vs-book comparison
+  is at 90' because that is what a 1X2 market settles on. Use outcome_90 with
+  the book probabilities, outcome_120 with model_p_*_120.
+- A knockout game with status PEN is a draw at BOTH bases (level after 120);
+  AET games are a draw at 90' and decisive at 120'. The final (Spain 1-0
+  Argentina, AET) is a 90'-draw / 120'-home-win.
+- Model exact-score is the modal scoreline of a full bivariate distribution -
+  the modal probability (model_modal_p) is the fair yardstick, typically 9-19%.
+- The Polymarket winner prior is a MODEL INPUT (weight c_m=0.35), so
+  wc2026_pwin_history is not fully independent of the market. Bet365/Pinnacle
+  per-match odds are independent benchmarks - the model never saw them.
+- The 2022 backtest (see repo README) is development-set grade; this 2026 file
+  is the only true out-of-sample record of the model.
+- Suggested analyses: model vs book log-loss/Brier with paired tests (same 104
+  games), calibration curves from the probability columns, skill by stage
+  (group vs knockout), upset analysis (low-probability outcomes that landed),
+  and P(win) trajectory vs the market over the 9 snapshots.
 """.format(now=datetime.now().strftime("%Y-%m-%d %H:%M"))
-    with open(os.path.join(OUT_DIR, "README.md"), "w", encoding="utf-8") as f:
+    with open(os.path.join(OUT_DIR, "HANDOFF.md"), "w", encoding="utf-8") as f:
         f.write(readme)
 
     n_books = sum(1 for r in rows if r["bet365_p_home"] is not None)
